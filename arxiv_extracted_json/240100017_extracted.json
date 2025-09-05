@@ -1,0 +1,879 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00017/2401.00017/main.tex",
+    "display_formulas": [
+      {
+        "content": "$$\\hat{U}(t)= e^{-i \\int_{0}^t d\\tau \\hat{H}(\\tau)}$$",
+        "start": 4722,
+        "end": 4808,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\hat{U}(t)= e^{-i \\int_{0}^t d\\tau \\hat{H}(\\tau)}"
+        }
+      },
+      {
+        "content": "$$\\braket{C}= \\bra{\\gamma, \\beta} \\hat{H}_C \\ket{\\gamma, \\beta}$$",
+        "start": 9209,
+        "end": 9307,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\braket{C}= \\bra{\\gamma, \\beta} \\hat{H}_C \\ket{\\gamma, \\beta}"
+        }
+      },
+      {
+        "content": "$$H_C= \\sum_{i,j=1}^{|\\mathcal{V}|} w_{i,j} \\frac{1}{4} (1-Z_i)Z_j= \\frac{1}{4} \\sum_{i,j=1}^{|\\mathcal{V}|} w_{i,j} (Z_j-Z_iZ_j) \\$$",
+        "start": 12215,
+        "end": 12391,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "H_C= \\sum_{i,j=1}^{|\\mathcal{V}|} w_{i,j}    \\frac{1}{4}   (1-Z_i)Z_j= \\frac{1}{4}   \\sum_{i,j=1}^{|\\mathcal{V}|} w_{i,j} (Z_j-Z_iZ_j)\n    \\"
+        }
+      },
+      {
+        "content": "$$x_{v,j} \\rightarrow \\frac{1}{2} (1- Z_{i,j})$$",
+        "start": 14493,
+        "end": 14574,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "x_{v,j} \\rightarrow \\frac{1}{2} (1- Z_{i,j})"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned} &x_{1,1}\\equiv 1 \\quad \\text{We always fix the position of the first vertex to be 1.} \\\\ &x_{1,2}\\equiv x_{1,3}\\equiv x_{2,1}\\equiv x_{3,1}\\equiv 0 \\quad \\text{The impossible assignment when the first vertex is fixed.} \\\\ &x_{2,2}=1 \\quad \\text{Vertex 2 is at the second position.} \\\\ &x_{2,3}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\ &x_{3,3}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\ \\end{aligned}$$",
+        "start": 15019,
+        "end": 15531,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{aligned}\n      &x_{1,1}\\equiv 1 \\quad \\text{We always fix the position of the first vertex to be 1.} \\\\\n    &x_{1,2}\\equiv x_{1,3}\\equiv x_{2,1}\\equiv x_{3,1}\\equiv 0 \\quad \\text{The impossible assignment when the first vertex is fixed.} \\\\\n      &x_{2,2}=1 \\quad \\text{Vertex 2 is at the second position.} \\\\\n      &x_{2,3}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\      \n      &x_{3,3}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\    \n\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_1 &=\\sum_{v=2}^3(1-\\sum_{j=2}^3x_{v,j})^2\\\\ &=(1-x_{2,2}-x_{2,3})^2+(1-x_{3,2}-x_{3,3})^2\\\\ &=2+x_{2,2}^2+x_{2,3}^2+x_{3,2}^2+x_{3,3}^2-2x_{2,2}-2x_{2,3}+2x_{2,2}x_{2,3}-2x_{3,2}-2x_{3,3}+2x_{3,2}x_{3,3}\\\\\\end{aligned}$$",
+        "start": 16145,
+        "end": 16394,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_1 &=\\sum_{v=2}^3(1-\\sum_{j=2}^3x_{v,j})^2\\\\\n      &=(1-x_{2,2}-x_{2,3})^2+(1-x_{3,2}-x_{3,3})^2\\\\\n      &=2+x_{2,2}^2+x_{2,3}^2+x_{3,2}^2+x_{3,3}^2-2x_{2,2}-2x_{2,3}+2x_{2,2}x_{2,3}-2x_{3,2}-2x_{3,3}+2x_{3,2}x_{3,3}\\\\\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_1 &=\\sum_{v=2}^3(1-\\sum_{j=2}^3x_{v,j})^2\\\\ & \\Rightarrow (\\frac{1}{2}Z_{2,2}+\\frac{1}{2}Z_{2,3})^2+(\\frac{1}{2}Z_{3,2}+\\frac{1}{2}Z_{3,3})^2\\\\ &=\\frac{1}{4}[I+I+2Z_{2,2}Z_{2,3}+I+I+2Z_{3,2}Z_{3,3}]\\\\ &=I+\\frac{1}{2}Z_{2,2}Z_{2,3}+\\frac{1}{2}Z_{3,2}Z_{3,3}\\end{aligned}$$",
+        "start": 16482,
+        "end": 16788,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_1 &=\\sum_{v=2}^3(1-\\sum_{j=2}^3x_{v,j})^2\\\\\n      & \\Rightarrow (\\frac{1}{2}Z_{2,2}+\\frac{1}{2}Z_{2,3})^2+(\\frac{1}{2}Z_{3,2}+\\frac{1}{2}Z_{3,3})^2\\\\\n      &=\\frac{1}{4}[I+I+2Z_{2,2}Z_{2,3}+I+I+2Z_{3,2}Z_{3,3}]\\\\\n      &=I+\\frac{1}{2}Z_{2,2}Z_{2,3}+\\frac{1}{2}Z_{3,2}Z_{3,3}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_2&=\\sum_{j=2}^3(1-\\sum_{v=2}^3x_{v,j})^2\\\\ &=(1-x_{2,2}-x_{3,2})^2+(1-x_{2,3}-x_{3,3})^2\\\\\\end{aligned}$$",
+        "start": 16835,
+        "end": 16958,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_2&=\\sum_{j=2}^3(1-\\sum_{v=2}^3x_{v,j})^2\\\\\n   &=(1-x_{2,2}-x_{3,2})^2+(1-x_{2,3}-x_{3,3})^2\\\\\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_2 &=(1-x_{2,2}-x_{3,2})^2+(1-x_{2,3}-x_{3,3})^2\\\\ & \\Rightarrow (\\frac{1}{2}Z_{2,2}+\\frac{1}{2}Z_{3,2})^2+(\\frac{1}{2}Z_{2,3}+\\frac{1}{2}Z_{3,3})^2 \\\\ & =\\frac{1}{4}(I+I+2Z_{2,2}Z_{3,2}+I+I+2Z_{2,3}Z_{3,3})\\\\ & = I +\\frac{1}{2}Z_{2,2}Z_{3,2}+\\frac{1}{2}Z_{2,3}Z_{3,3}\\end{aligned}$$",
+        "start": 17041,
+        "end": 17358,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_2 &=(1-x_{2,2}-x_{3,2})^2+(1-x_{2,3}-x_{3,3})^2\\\\\n      & \\Rightarrow (\\frac{1}{2}Z_{2,2}+\\frac{1}{2}Z_{3,2})^2+(\\frac{1}{2}Z_{2,3}+\\frac{1}{2}Z_{3,3})^2 \\\\\n      & =\\frac{1}{4}(I+I+2Z_{2,2}Z_{3,2}+I+I+2Z_{2,3}Z_{3,3})\\\\\n      & = I +\\frac{1}{2}Z_{2,2}Z_{3,2}+\\frac{1}{2}Z_{2,3}Z_{3,3}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$H_3=\\sum_{(uv) \\notin \\mathcal{E}} \\sum_{j=2}^2 x_{u,j}x_{v,j+1} + \\sum_{(u1) \\notin \\mathcal{E}}x_{u,3}+\\sum_{(1u) \\notin \\mathcal{E}}x_{u,2}$$",
+        "start": 17401,
+        "end": 17549,
+        "metadata": {
+          "type": "display_math",
+          "latex": "H_3=\\sum_{(uv) \\notin \\mathcal{E}} \\sum_{j=2}^2 x_{u,j}x_{v,j+1} + \\sum_{(u1) \\notin \\mathcal{E}}x_{u,3}+\\sum_{(1u) \\notin \\mathcal{E}}x_{u,2}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_C &=H_1+H_2+H_3\\\\ &=2I+\\frac{1}{2}Z_{2,2}Z_{2,3}+\\frac{1}{2}Z_{3,2}Z_{3,3}+\\frac{1}{2}Z_{2,2}Z_{3,2}+\\frac{1}{2}Z_{2,3}Z_{3,3}\\end{aligned}$$",
+        "start": 17646,
+        "end": 17822,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_C &=H_1+H_2+H_3\\\\\n           &=2I+\\frac{1}{2}Z_{2,2}Z_{2,3}+\\frac{1}{2}Z_{3,2}Z_{3,3}+\\frac{1}{2}Z_{2,2}Z_{3,2}+\\frac{1}{2}Z_{2,3}Z_{3,3}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_C &=Z_{2,2}Z_{2,3}+Z_{3,2}Z_{3,3}+Z_{2,2}Z_{3,2}+Z_{2,3}Z_{3,3}\\end{aligned}$$",
+        "start": 17924,
+        "end": 18026,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_C &=Z_{2,2}Z_{2,3}+Z_{3,2}Z_{3,3}+Z_{2,2}Z_{3,2}+Z_{2,3}Z_{3,3}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned} &x_{1,1}\\equiv 1 \\quad \\text{We always fix the position of the first vertex to be 1.} \\\\ &x_{1,2}\\equiv x_{1,3}\\equiv x_{1,4} \\equiv x_{2,1} \\equiv x_{3,1} \\equiv x_{4,1} \\equiv 0 \\quad \\text{The impossible assignment when the first vertex is fixed.} \\\\ &x_{2,2}=1 \\quad \\text{Vertex 2 is at the second position.} \\\\ &x_{2,3}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\ &x_{2,4}=1 \\quad \\text{Vertex 2 is at the fourth position.} \\\\ &x_{3,2}=1 \\quad \\text{Vertex 3 is at the second position.} \\\\ &x_{3,3}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\ &x_{3,4}=1 \\quad \\text{Vertex 2 is at the fourth position.} \\\\ &x_{4,2}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\ &x_{4,3}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\ &x_{4,4}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\ \\end{aligned}$$",
+        "start": 22112,
+        "end": 23080,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{aligned}\n      &x_{1,1}\\equiv 1 \\quad \\text{We always fix the position of the first vertex to be 1.} \\\\\n    &x_{1,2}\\equiv x_{1,3}\\equiv x_{1,4} \\equiv x_{2,1} \\equiv x_{3,1} \\equiv x_{4,1} \\equiv 0 \\quad \\text{The impossible assignment when the first vertex is fixed.} \\\\\n      &x_{2,2}=1 \\quad \\text{Vertex 2 is at the second position.} \\\\\n      &x_{2,3}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\\n      &x_{2,4}=1 \\quad \\text{Vertex 2 is at the fourth position.} \\\\      \n      &x_{3,2}=1 \\quad \\text{Vertex 3 is at the second position.} \\\\ \n      &x_{3,3}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\    \n      &x_{3,4}=1 \\quad \\text{Vertex 2 is at the fourth position.} \\\\    \n      &x_{4,2}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\  \n      &x_{4,3}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\   \n      &x_{4,4}=1 \\quad \\text{Vertex 2 is at the third position.} \\\\   \n\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_1 &=\\sum_{v=2}^4(1-\\sum_{j=2}^4x_{v,j})^2\\\\ &=(1-x_{2,2}-x_{2,3}-x_{2,4})^2+(1-x_{3,2}-x_{3,3}-x_{3,4})^2+(1-x_{4,2}-x_{4,3}-x_{4,4})^2\\\\\\end{aligned}$$",
+        "start": 23575,
+        "end": 23750,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_1 &=\\sum_{v=2}^4(1-\\sum_{j=2}^4x_{v,j})^2\\\\\n      &=(1-x_{2,2}-x_{2,3}-x_{2,4})^2+(1-x_{3,2}-x_{3,3}-x_{3,4})^2+(1-x_{4,2}-x_{4,3}-x_{4,4})^2\\\\\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_1 &=\\sum_{v=2}^4(1-\\sum_{j=2}^4x_{v,j})^2\\\\ & =(-\\frac{I}{2}+\\frac{1}{2}Z_{2,2}+\\frac{1}{2}Z_{2,3}+\\frac{1}{2}Z_{2,4})^2+(-\\frac{I}{2}+\\frac{1}{2}Z_{3,2}+\\frac{1}{2}Z_{3,3}+\\frac{1}{2}Z_{3,4})^2+(-\\frac{I}{2}+\\frac{1}{2}Z_{4,2}+\\frac{1}{2}Z_{4,3}+\\frac{1}{2}Z_{4,4})^2\\\\ &=\\frac{1}{4}[I+Z_{2,2}^2+Z_{2,3}^2+Z_{2,4}^2-2Z_{2,2}-2Z_{2,3}-2Z_{2,4}+2Z_{2,2}Z_{2,3}+2Z_{2,2}Z_{2,4}+2Z_{2,3}Z_{2,4}+ \\\\ &I+Z_{3,2}^2+Z_{3,3}^2+Z_{3,4}^2-2Z_{3,2}-2Z_{3,3}-2Z_{3,4}+2Z_{3,2}Z_{3,3}+2Z_{3,2}Z_{3,4}+2Z_{3,3}Z_{3,4}+ \\\\ &I+Z_{4,2}^2+Z_{4,3}^2+Z_{4,4}^2-2Z_{4,2}-2Z_{4,3}-2Z_{4,4}+2Z_{4,2}Z_{4,3}+2Z_{4,2}Z_{4,4}+2Z_{4,3}Z_{4,4}]\\\\ &=\\frac{1}{4}[12I-2Z_{2,2}-2Z_{2,3}-2Z_{2,4}+2Z_{2,2}Z_{2,3}+2Z_{2,2}Z_{2,4}+2Z_{2,3}Z_{2,4} \\\\ &-2Z_{3,2}-2Z_{3,3}-2Z_{3,4}+2Z_{3,2}Z_{3,3}+2Z_{3,2}Z_{3,4}+2Z_{3,3}Z_{3,4}+ \\\\ &-2Z_{4,2}-2Z_{4,3}-2Z_{4,4}+2Z_{4,2}Z_{4,3}+2Z_{4,2}Z_{4,4}+2Z_{4,3}Z_{4,4}]\\end{aligned}$$",
+        "start": 23838,
+        "end": 24829,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_1 &=\\sum_{v=2}^4(1-\\sum_{j=2}^4x_{v,j})^2\\\\\n      & =(-\\frac{I}{2}+\\frac{1}{2}Z_{2,2}+\\frac{1}{2}Z_{2,3}+\\frac{1}{2}Z_{2,4})^2+(-\\frac{I}{2}+\\frac{1}{2}Z_{3,2}+\\frac{1}{2}Z_{3,3}+\\frac{1}{2}Z_{3,4})^2+(-\\frac{I}{2}+\\frac{1}{2}Z_{4,2}+\\frac{1}{2}Z_{4,3}+\\frac{1}{2}Z_{4,4})^2\\\\\n      &=\\frac{1}{4}[I+Z_{2,2}^2+Z_{2,3}^2+Z_{2,4}^2-2Z_{2,2}-2Z_{2,3}-2Z_{2,4}+2Z_{2,2}Z_{2,3}+2Z_{2,2}Z_{2,4}+2Z_{2,3}Z_{2,4}+  \\\\\n            &I+Z_{3,2}^2+Z_{3,3}^2+Z_{3,4}^2-2Z_{3,2}-2Z_{3,3}-2Z_{3,4}+2Z_{3,2}Z_{3,3}+2Z_{3,2}Z_{3,4}+2Z_{3,3}Z_{3,4}+ \\\\\n            &I+Z_{4,2}^2+Z_{4,3}^2+Z_{4,4}^2-2Z_{4,2}-2Z_{4,3}-2Z_{4,4}+2Z_{4,2}Z_{4,3}+2Z_{4,2}Z_{4,4}+2Z_{4,3}Z_{4,4}]\\\\\n      &=\\frac{1}{4}[12I-2Z_{2,2}-2Z_{2,3}-2Z_{2,4}+2Z_{2,2}Z_{2,3}+2Z_{2,2}Z_{2,4}+2Z_{2,3}Z_{2,4} \\\\\n                   &-2Z_{3,2}-2Z_{3,3}-2Z_{3,4}+2Z_{3,2}Z_{3,3}+2Z_{3,2}Z_{3,4}+2Z_{3,3}Z_{3,4}+   \\\\\n                   &-2Z_{4,2}-2Z_{4,3}-2Z_{4,4}+2Z_{4,2}Z_{4,3}+2Z_{4,2}Z_{4,4}+2Z_{4,3}Z_{4,4}]\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned} H_1 &=-Z_{2,2}-Z_{2,3}-Z_{2,4}+Z_{2,2}Z_{2,3}+Z_{2,2}Z_{2,4}+Z_{2,3}Z_{2,4} \\\\ &-Z_{3,2}-Z_{3,3}-Z_{3,4}+Z_{3,2}Z_{3,3}+Z_{3,2}Z_{3,4}+Z_{3,3}Z_{3,4}+ \\\\ &-Z_{4,2}-Z_{4,3}-Z_{4,4}+Z_{4,2}Z_{4,3}+Z_{4,2}Z_{4,4}+Z_{4,3}Z_{4,4} \\end{aligned}$$",
+        "start": 24887,
+        "end": 25222,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{aligned}\n  H_1 &=-Z_{2,2}-Z_{2,3}-Z_{2,4}+Z_{2,2}Z_{2,3}+Z_{2,2}Z_{2,4}+Z_{2,3}Z_{2,4} \\\\\n                   &-Z_{3,2}-Z_{3,3}-Z_{3,4}+Z_{3,2}Z_{3,3}+Z_{3,2}Z_{3,4}+Z_{3,3}Z_{3,4}+   \\\\\n                   &-Z_{4,2}-Z_{4,3}-Z_{4,4}+Z_{4,2}Z_{4,3}+Z_{4,2}Z_{4,4}+Z_{4,3}Z_{4,4}       \n\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_2&=\\sum_{j=2}^4(1-\\sum_{v=2}^4x_{v,j})^2\\\\ &=(1-x_{3,2}-x_{3,2}-x_{4,2})^2+(1-x_{2,2}-x_{2,3})^2\\\\\\end{aligned}$$",
+        "start": 25268,
+        "end": 25399,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_2&=\\sum_{j=2}^4(1-\\sum_{v=2}^4x_{v,j})^2\\\\\n   &=(1-x_{3,2}-x_{3,2}-x_{4,2})^2+(1-x_{2,2}-x_{2,3})^2\\\\\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_2 &=(1-x_{2,2}-x_{3,2}-x_{4,2})^2+(1-x_{2,3}-x_{3,3}-x_{4,3})^2+(1-x_{2,4}-x_{3,4}-x_{4,4})^2\\\\\\end{aligned}$$",
+        "start": 25482,
+        "end": 25609,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_2 &=(1-x_{2,2}-x_{3,2}-x_{4,2})^2+(1-x_{2,3}-x_{3,3}-x_{4,3})^2+(1-x_{2,4}-x_{3,4}-x_{4,4})^2\\\\\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned} H_2 &=-Z_{2,2}-Z_{3,2}-Z_{4,2}+Z_{2,2}Z_{3,2}+Z_{2,2}Z_{4,2}+Z_{3,2}Z_{4,2} \\\\ &-Z_{2,3}-Z_{3,3}-Z_{4,3}+Z_{2,3}Z_{3,3}+Z_{2,3}Z_{4,3}+Z_{3,3}Z_{4,3}+ \\\\ &-Z_{2,4}-Z_{3,4}-Z_{4,4}+Z_{2,4}Z_{3,4}+Z_{2,4}Z_{4,4}+Z_{3,4}Z_{4,4} \\end{aligned}$$",
+        "start": 25794,
+        "end": 26129,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{aligned}\n  H_2 &=-Z_{2,2}-Z_{3,2}-Z_{4,2}+Z_{2,2}Z_{3,2}+Z_{2,2}Z_{4,2}+Z_{3,2}Z_{4,2} \\\\\n                   &-Z_{2,3}-Z_{3,3}-Z_{4,3}+Z_{2,3}Z_{3,3}+Z_{2,3}Z_{4,3}+Z_{3,3}Z_{4,3}+   \\\\\n                   &-Z_{2,4}-Z_{3,4}-Z_{4,4}+Z_{2,4}Z_{3,4}+Z_{2,4}Z_{4,4}+Z_{3,4}Z_{4,4}       \n\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$H_3=\\sum_{(uv) \\notin \\mathcal{E}} \\sum_{j=2}^3 x_{u,j}x_{v,j+1} + \\sum_{(u1) \\notin \\mathcal{E}}x_{u,4}+\\sum_{(1u) \\notin \\mathcal{E}}x_{u,2}$$",
+        "start": 26173,
+        "end": 26326,
+        "metadata": {
+          "type": "display_math",
+          "latex": "H_3=\\sum_{(uv) \\notin \\mathcal{E}} \\sum_{j=2}^3 x_{u,j}x_{v,j+1} + \\sum_{(u1) \\notin \\mathcal{E}}x_{u,4}+\\sum_{(1u) \\notin \\mathcal{E}}x_{u,2}"
+        }
+      },
+      {
+        "content": "$$H_3=x_{2,2}x_{4,3}+x_{2,3}x_{4,4}+x_{4,2}x_{2,3}+x_{4,3}x_{2,4}+x_{3,4}+x_{3,2}$$",
+        "start": 26598,
+        "end": 26687,
+        "metadata": {
+          "type": "display_math",
+          "latex": "H_3=x_{2,2}x_{4,3}+x_{2,3}x_{4,4}+x_{4,2}x_{2,3}+x_{4,3}x_{2,4}+x_{3,4}+x_{3,2}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_3&=(I-Z_{2,2})(I-Z_{4,3})+(I-Z_{2,3})(I-Z_{4,4})+(I-Z_{4,2})(I-Z_{2,3})\\\\ &+(I-Z_{4,3})(I-Z_{2,4})+2(I-Z_{3,4})+2(I-Z_{3,2}) \\\\ &=-Z_{2,2}-Z_{4,3}+Z_{2,2}Z_{4,3}-Z_{2,3}-Z_{4,4}+Z_{2,3}Z_{4,4}-Z_{4,2}-\\\\ &Z_{2,3}+Z_{4,2}Z_{2,3}-Z_{4,3}-Z_{2,4}+Z_{4,3}Z_{2,4}-2Z_{3,4}-2Z_{3,2}\\\\ &=-Z_{2,2}-2Z_{4,3}-2Z_{2,3}-Z_{4,4}-Z_{4,2}-Z_{2,4}-2Z_{3,4}-2Z_{3,2}\\\\ &+Z_{2,2}Z_{4,3}+Z_{2,3}Z_{4,4}+Z_{4,2}Z_{2,3}+Z_{4,3}Z_{2,4}\\end{aligned}$$",
+        "start": 26742,
+        "end": 27211,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_3&=(I-Z_{2,2})(I-Z_{4,3})+(I-Z_{2,3})(I-Z_{4,4})+(I-Z_{4,2})(I-Z_{2,3})\\\\\n    &+(I-Z_{4,3})(I-Z_{2,4})+2(I-Z_{3,4})+2(I-Z_{3,2})   \\\\\n    &=-Z_{2,2}-Z_{4,3}+Z_{2,2}Z_{4,3}-Z_{2,3}-Z_{4,4}+Z_{2,3}Z_{4,4}-Z_{4,2}-\\\\\n    &Z_{2,3}+Z_{4,2}Z_{2,3}-Z_{4,3}-Z_{2,4}+Z_{4,3}Z_{2,4}-2Z_{3,4}-2Z_{3,2}\\\\\n    &=-Z_{2,2}-2Z_{4,3}-2Z_{2,3}-Z_{4,4}-Z_{4,2}-Z_{2,4}-2Z_{3,4}-2Z_{3,2}\\\\\n    &+Z_{2,2}Z_{4,3}+Z_{2,3}Z_{4,4}+Z_{4,2}Z_{2,3}+Z_{4,3}Z_{2,4}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_C &=H_1+H_2+H_3\\\\ &=-Z_{2,2}-Z_{2,3}-Z_{2,4}+Z_{2,2}Z_{2,3}+Z_{2,2}Z_{2,4}+Z_{2,3}Z_{2,4} \\\\ &-Z_{3,2}-Z_{3,3}-Z_{3,4}+Z_{3,2}Z_{3,3}+Z_{3,2}Z_{3,4}+Z_{3,3}Z_{3,4}+ \\\\ &-Z_{4,2}-Z_{4,3}-Z_{4,4}+Z_{4,2}Z_{4,3}+Z_{4,2}Z_{4,4}+Z_{4,3}Z_{4,4}\\end{aligned}$$",
+        "start": 27218,
+        "end": 27548,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_C &=H_1+H_2+H_3\\\\\n           &=-Z_{2,2}-Z_{2,3}-Z_{2,4}+Z_{2,2}Z_{2,3}+Z_{2,2}Z_{2,4}+Z_{2,3}Z_{2,4} \\\\\n                   &-Z_{3,2}-Z_{3,3}-Z_{3,4}+Z_{3,2}Z_{3,3}+Z_{3,2}Z_{3,4}+Z_{3,3}Z_{3,4}+   \\\\\n                   &-Z_{4,2}-Z_{4,3}-Z_{4,4}+Z_{4,2}Z_{4,3}+Z_{4,2}Z_{4,4}+Z_{4,3}Z_{4,4}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned} H_C &=-Z_{2,2}-Z_{2,3}-Z_{2,4}+Z_{2,2}Z_{2,3}+Z_{2,2}Z_{2,4}+Z_{2,3}Z_{2,4} \\\\ &-Z_{3,2}-Z_{3,3}-Z_{3,4}+Z_{3,2}Z_{3,3}+Z_{3,2}Z_{3,4}+Z_{3,3}Z_{3,4}+ \\\\ &-Z_{4,2}-Z_{4,3}-Z_{4,4}+Z_{4,2}Z_{4,3}+Z_{4,2}Z_{4,4}+Z_{4,3}Z_{4,4}\\\\ & -Z_{2,2}-Z_{3,2}-Z_{4,2}+Z_{2,2}Z_{3,2}+Z_{2,2}Z_{4,2}+Z_{3,2}Z_{4,2}\\\\ &-Z_{2,3}-Z_{3,3}-Z_{4,3}+Z_{2,3}Z_{3,3}+Z_{2,3}Z_{4,3}+Z_{3,3}Z_{4,3}+ \\\\ &-Z_{2,4}-Z_{3,4}-Z_{4,4}+Z_{2,4}Z_{3,4}+Z_{2,4}Z_{4,4}+Z_{3,4}Z_{4,4}\\\\ &-Z_{2,2}-2Z_{4,3}-2Z_{2,3}-Z_{4,4}-Z_{4,2}-Z_{2,4}-2Z_{3,4}-2Z_{3,2}\\\\ &+Z_{2,2}Z_{4,3}+Z_{2,3}Z_{4,4}+Z_{4,2}Z_{2,3}+Z_{4,3}Z_{2,4} \\\\ &= Z_{2,2}Z_{2,3} + Z_{2,2}Z_{2,4} + Z_{2,2}Z_{3,2} + Z_{2,2}Z_{4,2} + Z_{2,2}Z_{4,3} - 3Z_{2,2} \\\\ &+ Z_{2,3}Z_{2,4} + Z_{2,3}Z_{3,3} + Z_{2,3}Z_{4,2} + Z_{2,3}Z_{4,3} + Z_{2,3}Z_{4,4} - 4Z_{2,3} \\\\ &+ Z_{2,4}Z_{3,4} + Z_{2,4}Z_{4,3} + Z_{2,4}Z_{4,4} - 3Z_{2,4} + Z_{3,2}Z_{3,3} + Z_{3,2}Z_{3,4} + Z_{3,2}Z_{4,2} - 4Z_{3,2} \\\\ &+ Z_{3,3}Z_{3,4} + Z_{3,3}Z_{4,3} - 2Z_{3,3} + Z_{3,4}Z_{4,4} - 4Z_{3,4} \\\\ &+ Z_{4,2}Z_{4,3} + Z_{4,2}Z_{4,4} - 3Z_{4,2} + Z_{4,3}Z_{4,4} - 4Z_{4,3} - 3Z_{4,4} \\end{aligned}$$",
+        "start": 27552,
+        "end": 28847,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{aligned}\n  H_C &=-Z_{2,2}-Z_{2,3}-Z_{2,4}+Z_{2,2}Z_{2,3}+Z_{2,2}Z_{2,4}+Z_{2,3}Z_{2,4} \\\\\n                   &-Z_{3,2}-Z_{3,3}-Z_{3,4}+Z_{3,2}Z_{3,3}+Z_{3,2}Z_{3,4}+Z_{3,3}Z_{3,4}+   \\\\\n                   &-Z_{4,2}-Z_{4,3}-Z_{4,4}+Z_{4,2}Z_{4,3}+Z_{4,2}Z_{4,4}+Z_{4,3}Z_{4,4}\\\\\n                 &  -Z_{2,2}-Z_{3,2}-Z_{4,2}+Z_{2,2}Z_{3,2}+Z_{2,2}Z_{4,2}+Z_{3,2}Z_{4,2}\\\\\n                   &-Z_{2,3}-Z_{3,3}-Z_{4,3}+Z_{2,3}Z_{3,3}+Z_{2,3}Z_{4,3}+Z_{3,3}Z_{4,3}+   \\\\\n                   &-Z_{2,4}-Z_{3,4}-Z_{4,4}+Z_{2,4}Z_{3,4}+Z_{2,4}Z_{4,4}+Z_{3,4}Z_{4,4}\\\\\n                   &-Z_{2,2}-2Z_{4,3}-2Z_{2,3}-Z_{4,4}-Z_{4,2}-Z_{2,4}-2Z_{3,4}-2Z_{3,2}\\\\\n                    &+Z_{2,2}Z_{4,3}+Z_{2,3}Z_{4,4}+Z_{4,2}Z_{2,3}+Z_{4,3}Z_{2,4} \\\\\n                 &= Z_{2,2}Z_{2,3} + Z_{2,2}Z_{2,4} + Z_{2,2}Z_{3,2} + Z_{2,2}Z_{4,2} + Z_{2,2}Z_{4,3} - 3Z_{2,2} \\\\\n&+ Z_{2,3}Z_{2,4} + Z_{2,3}Z_{3,3} + Z_{2,3}Z_{4,2} + Z_{2,3}Z_{4,3} + Z_{2,3}Z_{4,4} - 4Z_{2,3} \\\\\n&+ Z_{2,4}Z_{3,4} + Z_{2,4}Z_{4,3} + Z_{2,4}Z_{4,4} - 3Z_{2,4} + Z_{3,2}Z_{3,3} + Z_{3,2}Z_{3,4} + Z_{3,2}Z_{4,2} - 4Z_{3,2} \\\\\n&+ Z_{3,3}Z_{3,4} + Z_{3,3}Z_{4,3} - 2Z_{3,3} + Z_{3,4}Z_{4,4} - 4Z_{3,4} \\\\\n&+ Z_{4,2}Z_{4,3} + Z_{4,2}Z_{4,4} - 3Z_{4,2} + Z_{4,3}Z_{4,4} - 4Z_{4,3} - 3Z_{4,4}  \n\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H_C &= Z_1Z_2 + Z_1Z_3 + Z_1Z_4 + Z_1Z_7 + Z_1Z_8 - 3Z_1 + Z_2Z_3 + Z_2Z_5 + Z_2Z_7 \\\\ &+ Z_2Z_8 + Z_2Z_9 - 4Z_2 + Z_3Z_6 + Z_3Z_8 + Z_3Z_9 - 3Z_3 + Z_4Z_5 + Z_4Z_6 + Z_4Z_7 \\\\ &- 4Z_4 + Z_5Z_6 + Z_5Z_8 - 2Z_5 + Z_6Z_9 - 4Z_6 + Z_7Z_8 + Z_7Z_9 - 3Z_7 + Z_8Z_9 - 4Z_8 - 3Z_9\\end{aligned}$$",
+        "start": 29531,
+        "end": 29838,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align*",
+          "latex": "\\begin{aligned}H_C &= Z_1Z_2 + Z_1Z_3 + Z_1Z_4 + Z_1Z_7 + Z_1Z_8 - 3Z_1 + Z_2Z_3 + Z_2Z_5 + Z_2Z_7 \\\\\n &+ Z_2Z_8 + Z_2Z_9 - 4Z_2 + Z_3Z_6 + Z_3Z_8 + Z_3Z_9 - 3Z_3 + Z_4Z_5 + Z_4Z_6 + Z_4Z_7 \\\\\n &- 4Z_4 + Z_5Z_6 + Z_5Z_8 - 2Z_5 + Z_6Z_9 - 4Z_6 + Z_7Z_8 + Z_7Z_9 - 3Z_7 + Z_8Z_9 - 4Z_8 - 3Z_9\\end{aligned}"
+        }
+      }
+    ],
+    "inline_texts": [
+      {
+        "content": "First, inspired by Lucas \\cite{Lucas_2014}, I define the QUBO form of Hamiltonian Cycle an transform it to a quantum circuit by embedding the problem of $n$ vertices to an encoding of $(n-1)^2$ qubits.",
+        "start": 1128,
+        "end": 1330,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Since the $(n-1)^2$ embedding limit my simulation of graph size to be less than $5$, I decide to test the correctness, only for small and simple graph in this project.",
+        "start": 1671,
+        "end": 1839,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "I also use two different kinds of mixer, $R_x$ mixer and $R_y$ circuit to run the simulation.",
+        "start": 2331,
+        "end": 2425,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "It turns out that $R_x$ mixer performs much better than $R_y$ mixer in this problem.",
+        "start": 2425,
+        "end": 2510,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The initial idea of QAOA comes from quantum adabatic theorem. Consider a time dependent hamiltonian that evolve slowly with time. The initial hamiltonian is $\\hat{H}_M$ and the final one after evolution time $T$ is $\\hat{H}_C$. The adabitic theorem tells us that if we set the initial state as the ground state of $\\hat{H}_M$, the final state will also be the ground state of $\\hat{H}_C$.",
+        "start": 3543,
+        "end": 3932,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "The theorem has a potential implementation, when we can easily prepare the ground state of $\\hat{H}_C$, and encode the solution of a hard problem we want to solve to be the ground state of $\\hat{H}_M$. We can choose the $\\hat{H}_M$, to be Pauli X gates on all qubits, the ground state of which, is simply $\\ket{+}^{\\otimes n}$, which can be easily prepared in a quantum computer by a row of Hadmard gate on the initial $\\ket{0}^{\\otimes n}$.",
+        "start": 3934,
+        "end": 4377,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "The two function $f(t)$ and $g(t)$ changes slowly in time. An example for such $f(t)$ $g(t)$ is $f(t)=t/T$ and $g(t)=1-t/T$. The unitary of such slowly varying hamiltonian is",
+        "start": 4546,
+        "end": 4721,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "Next, let's talk about how to find suitable $\\hat{H_C}$ with regard to the problem we want to solve and how to embed the solution to its ground state.",
+        "start": 5126,
+        "end": 5276,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The most formal way to describe the classical problem that QAOA want to solve is define a set of boolean functions, $\\{C_{\\alpha}, \\alpha=0,1,\\cdots,m\\}$, each one of these function define a condition to be satisfied given the specific problem, or mathematically as a mapping: $C_\\alpha: \\{ 0,1\\}^n \\rightarrow \\{0,1\\}$. The input of the boolean function represent an ``assignment'' to the given problem and the output is whether the assignment belong to the solution space or not.",
+        "start": 5279,
+        "end": 5762,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "When $C(z)=m$, all of the conditions of the problem are satisfied, otherwise some of them are not. Our goal is to maximized the value of $C(z)$.",
+        "start": 5966,
+        "end": 6111,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "However, if we want to get accurate solution, we have to choose infinitly small $\\Delta \\tau$ in \\hyperref[eq:adiabatic]{Equation (3)}, which is unacceptable for a quantum computer in the real application. Thus, in QAOA algorithm, we only construct a fixed number of layers, and assign each layer with a parameter to be optimized, under the hope that after such optimization, the hamiltonian of the quantum computer approximate the Trotterized adiabitic unitary very well.",
+        "start": 6340,
+        "end": 6814,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "First, we have to design the cost hamiltonian $\\hat{H}_C$ with regard to the given problem. All of the possible solutions for embedded as $\\ket{x}$ should be an eigen state of $\\hat{H}_C$, whose eigen value contain the information of the cost function:",
+        "start": 7366,
+        "end": 7620,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The unitary for the cost circuit, with parameter $\\gamma$ , is defined as",
+        "start": 7727,
+        "end": 7800,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The circuit, can be implemented by two CNOT gate and a $R(Z)$ gate",
+        "start": 7949,
+        "end": 8015,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The unitary for the mixer part, with parameter $\\beta$, is defined as",
+        "start": 8210,
+        "end": 8280,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The circuit, can be implemented by a $R_X$ gate.",
+        "start": 8397,
+        "end": 8445,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Just as most of the circuti structure of quantum algorithm, there should be a row of Hadamard gate ad the front of the circuit that convert $\\ket{0}^{\\otimes n}$ to $\\ket{+}^n$. And then, we add $p$ alternating layers of Cost circuit and Mixer circuit. The two set of parameters, are denoted as $\\gamma=(\\gamma_1,\\cdots,\\gamma_p)$ and $\\beta=(\\beta_1,\\cdots,\\beta_p)$. The",
+        "start": 8584,
+        "end": 8960,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "\\item Define a cost Hamiltonion $\\hat{H}_C$ given the problem. The eigen state with the highest eigen energy of $\\hat{H}_C$ should be the exact solution to the optimization problem.",
+        "start": 9478,
+        "end": 9663,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item Initialize the state in $\\ket{s}$.",
+        "start": 9664,
+        "end": 9709,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\end{equation} $\\ket{s}$ here is actually the eigen state of the highest eigen state of the mixer hamiltonian $H_M$ defined in \\hyperref[eq:Mixer]{Equation (7)}",
+        "start": 9845,
+        "end": 10010,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item Choose the number of layer $p$. Make $p$ alternating pair of mixer and cost circuit.",
+        "start": 10011,
+        "end": 10106,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item Initialize $2p$ parameters $\\vec{\\gamma}=(\\gamma_1,\\gamma_2,\\cdots,\\gamma_p)$ and $\\vec{\\beta}=(\\beta_1,\\beta_2,\\cdots,\\beta_p)$ such that $\\gamma_i,\\beta_k \\in \\{0,2\\pi \\}$",
+        "start": 10107,
+        "end": 10290,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "The input to the MAXCUT is a graph $\\mathcal{G}=(\\mathcal{V},\\mathcal{E})$. $\\mathcal{V}$ is the set of vertices, $\\mathcal{E}$ is the set of edges. Assume that there is a weight $w_{ij}$ assigned to each of the edge $(i,j) \\in \\mathcal{E}$. We want to find the largest cut in graph $\\mathcal{G}$, which is a subset of the vertices whose ``cut'' with the rest of the vertices are the maximum. The ``cut'' is defined as the sum of all the weight between a vertex in the subset and a vertex that is not in the subset. Any possible assignment can be represented by a set of $0,1$. So we use $x_i$ to represent the assignment for vertex $i$. $x_i=1$ if and only if $x_i$ is assigned to the subset.",
+        "start": 11047,
+        "end": 11741,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 11
+        }
+      },
+      {
+        "content": "The correspondence between the $x_i$ in \\hyperref[eq:Cmax]{Equation (11)} with the Pauli Z gate used in our Cost Hamiltonian is:",
+        "start": 11857,
+        "end": 11985,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The input for the Hamiltonian Circle problem is a graph $\\mathcal{G}=(\\mathcal{V},\\mathcal{E})$. Suppose $|\\mathcal{G}|=n$. Our goal is to find a cycle to travel thorough all vertices exactly once. I use the QUBO form given by Lucas \\cite{Lucas_2014} for the Hamiltonian Circle as follows:",
+        "start": 13167,
+        "end": 13456,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$x_{v,j}$ is the encoding of whether the vertex $v$ is at the $j^{th}$ position of the Circle. The first part of $H$ requires that every vertex can be only assigned to one position in the Circle, which we call \\textbf{vertex uniqueness term}. The second part is the constraint that every position in the Circle of length $N$ we find is only assigned to one vertex, which we call \\textbf{edge uniqueness term}. The final term is the penalty for the two consecutive vertices in the Circle are actually not connected in the original graph, which we call \\textbf{edge validity term}. Thus, it is obvious that the minimal value of $H$, given any assignment $x_{v,j}=f(v,j)$, is $0$, when such assignment represent a hamiltonian Circle.",
+        "start": 13690,
+        "end": 14421,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 8
+        }
+      },
+      {
+        "content": "The encoding of a given graph requires $(n-1) \\times (n-1)$ qubits.",
+        "start": 14576,
+        "end": 14643,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "By the above definition, we can see that $2 \\times 2$ qubits are enough for defining the hamiltonian for hamiltonian circle.",
+        "start": 15533,
+        "end": 15657,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Now we can derive the concrete form of the hamiltonian defined in \\autoref{eq:HCircle}, where we set the constant $A=1$.",
+        "start": 15659,
+        "end": 15779,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We can simply use the substitution rule $x_{i,j} \\rightarrow \\frac{1}{2}(1-Z_{i,j})$",
+        "start": 16396,
+        "end": 16480,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We also use the substitution rule $x_{i,j} \\rightarrow \\frac{1}{2}(1-Z_{i,j})$",
+        "start": 16961,
+        "end": 17039,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Notice the the triangle is actually a completely connected graph, so $H_3=0$.",
+        "start": 17550,
+        "end": 17627,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Since I and constant factor don't affect the eigen energy and eigen state, we can rewrite $H_C$ as",
+        "start": 17824,
+        "end": 17922,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\item $Q_1$ represent $x_{2,2}$.",
+        "start": 18173,
+        "end": 18210,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item $Q_2$ represent $x_{2,3}$.",
+        "start": 18211,
+        "end": 18248,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item $Q_3$ represent $x_{3,2}$.",
+        "start": 18249,
+        "end": 18286,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item $Q_4$ represent $x_{3,3}$.",
+        "start": 18287,
+        "end": 18324,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Since the correct result must be either $(x_{2,2}=1,x_{2,3}=0,x_{3,2}=0,x_{3,3}=1)$, which represent the hamiltonian cycle $(1 \\rightarrow 2\\rightarrow3\\rightarrow1 )$ or $(x_{2,2}=0,x_{2,3}=1,x_{3,2}=1,x_{3,3}=0)$, which represent the hamiltonian cycle $(1 \\rightarrow 3\\rightarrow2\\rightarrow1 )$. The ground state for this solution must in dirac notation be either $\\ket{1001}$ or $\\ket{0110}$. We can check the correctness.",
+        "start": 18356,
+        "end": 18783,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "We can write our $H_C$ as:",
+        "start": 18784,
+        "end": 18811,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{The sketch of the cost function for the triangle. The lowest energy is $-4$, with eigenstates $\\ket{0110}$ and $\\ket{1001}$, which are the exact solution for hamiltonian cycle for a triangle. The spectrum justify the correctness of our definition.}",
+        "start": 21229,
+        "end": 21490,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "We can see that $3 \\otimes 3=9$ for defining the hamiltonian for hamiltonian circle.",
+        "start": 23082,
+        "end": 23167,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Finally, after removing $I$ and the constant factor:",
+        "start": 24831,
+        "end": 24883,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We also also use the substitution rule $x_{i,j} \\rightarrow \\frac{1}{2}(1-Z_{i,j})$, and finally get the same kind of format as $H_1$:",
+        "start": 25658,
+        "end": 25792,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Different from the triangle case, there are two pairs of vertices not connected with each other: $(X_1,X_3)$ and $(X_2,X_4)$. Which means that our cost function will punish the assignment which try to find a path with $X_1, X_3$ or $X_2,X_4$ adjacent with each other.",
+        "start": 26329,
+        "end": 26596,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "\\item $Q_1$ represent $x_{2,2}$",
+        "start": 28997,
+        "end": 29035,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item $Q_2$ represent $x_{2,3}=1$",
+        "start": 29036,
+        "end": 29076,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item $Q_3$ represent $x_{2,4}=1$",
+        "start": 29077,
+        "end": 29123,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item $Q_4$ represent $x_{3,2}=1$",
+        "start": 29124,
+        "end": 29165,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item $Q_5$ represent $x_{3,3}=1$",
+        "start": 29166,
+        "end": 29211,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item $Q_6$ represent $x_{3,4}=1$",
+        "start": 29212,
+        "end": 29256,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item $Q_7$ represent $x_{4,2}=1$",
+        "start": 29257,
+        "end": 29299,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item $Q_8$ represent $x_{4,3}=1$",
+        "start": 29300,
+        "end": 29344,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item $Q_9$ represent $x_{4,4}=1$",
+        "start": 29345,
+        "end": 29386,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Since the correct result \\footnote{The benefit to use a cycle to be the example is that there are only two solution, clockwise and counterclockwise, and thus we can easily check the correctness of our hamiltonian} must be either $(1,0,0,0,1,0,0,0,1)$, which represent the hamiltonian cycle $(1 \\rightarrow 2\\rightarrow3\\rightarrow \\rightarrow 4 \\rightarrow 1 )$ or $(0,0,1,0,1,0,1,0,0)$, which represent the hamiltonian cycle $(1 \\rightarrow 4\\rightarrow 3\\rightarrow 2 \\rightarrow 1 )$. The ground state for this solution must in dirac notation be either $\\ket{100010001}$ or $\\ket{001010100}$. We can check the correctness by calculating the eigen value and eigen energies of the above equation:",
+        "start": 29843,
+        "end": 30540,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "\\caption{The output has proved the correctness of our hamiltonian, because the eigen states with the lowest energies are $\\ket{001010100}$ and $\\ket{100010001}$, which are the exact solution for the hamiltonian path of a square.}",
+        "start": 32722,
+        "end": 32956,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\caption{Plot the energy spectrum of the cost hamiltonian. The minimum energy is -20, and the eigen states are $\\ket{001010100}$ and $\\ket{100010001}$. The energy spectrum justify the design of our hamiltonian for hamiltonian cycle because there is a huge energy gap between the solution we want and the other solutions.}",
+        "start": 33090,
+        "end": 33416,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "After a row of hadamard gate, there are four pairs of $ZZ$ gate, as defined and calculated in \\autoref{eq:",
+        "start": 38589,
+        "end": 38696,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The mixer part, is chosen as a row of $R_x$ gate, with the same rotation angle.",
+        "start": 38744,
+        "end": 38824,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Since our goal is to minimize the energy of the cost hamiltonian with respect to the output state, we have to to calculate the cost value\\footnote{In classcal simulation, the cost is easy to calculate, because we only need to the the matrix vector calculation:",
+        "start": 38875,
+        "end": 39136,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "However, in a real quantum computer, to get $\\bra{\\psi} H\\ket{\\psi}$ is much harder.",
+        "start": 39161,
+        "end": 39246,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Generally speaking, we have to divide $H$ into different Pauli Gate, and measure the expectation of each pauli gate by sampling.",
+        "start": 39246,
+        "end": 39375,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{The experimental result of QAOA for hamiltonian cycle without noise when the graph is a square. I use red color to highlight the two exact solution $\\ket{001010100}$ and $\\ket{100010001}$.}",
+        "start": 41512,
+        "end": 41715,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\caption{Compare the result of noiseless simulation in \\autoref{fig:squareNoNoise} and noisy simulation \\autoref{fig:squareNoise} together. The blue color denotes the result of simulation on a noiseless simulator and the green color denotes the result of a noisy simulator. I highlight the correct result,$\\ket{001010100}$ and $\\ket{100010001}$ in red for the noiseless result and in pink for the noisy result. The final probability of getting the accurate result is much higher in the FakeAlmadenV2 simulator! }",
+        "start": 42395,
+        "end": 42911,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The choice of mixer can be essential in the training and optimization process of QAOA. In the previous, I used the default $R_x$ mixer. In this section, I also use $R_y$ mixer to run the QAOA and compare the new result with the previous one.",
+        "start": 42999,
+        "end": 43240,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In \\autoref{fig:mixer3}, we run the same noiseless simulation for hamiltonian cycle on a triangle, and compare the result of $R_x$ mixer and $R_y$ mixer. I also simulate for the same comparison when the graph is a square, which is plotted in \\autoref{fig:mixer4}. From the result in \\autoref{fig:mixer3} and \\autoref{fig:mixer4}, it's clear that $R_x$ mixer is much better than $R_y$ mixer.",
+        "start": 43242,
+        "end": 43632,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "\\caption{Compare the QAOA for hamiltonian cycle on a triangle result between two different mixers. The two outstanding red bars represent the measurement of the correct solution by circuit with $R_x$ mixer, while two tiny pinks bars are the result of simulation by circuit with $R_y$ mixer.}",
+        "start": 43721,
+        "end": 44016,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\caption{Compare the QAOA for hamiltonian cycle on a square result between two different mixers. The two outstanding red bars represent the measurement of the correct solution by circuit with $R_x$ mixer, while two tiny pinks bars are the result of simulation by circuit with $R_y$ mixer.}",
+        "start": 44141,
+        "end": 44434,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "I got many interesting result in this project. First and foremost, this is the first time I test that the QAOA really works, for solving the NP complete problem such as hamiltonian cycle path problem. However, since the embedding require $(n-1)^2$ qubits, I can only simulate up to no more than $n=6$.",
+        "start": 51595,
+        "end": 51897,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In this problem, I choose $n=3,4$ and run the simulation on the simplest case:",
+        "start": 51899,
+        "end": 51977,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      }
+    ],
+    "tables": [],
+    "total_items": 94
+  }
+]

@@ -1,0 +1,370 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00009/2401.00009/turing-beautiful.tex",
+    "display_formulas": [],
+    "inline_texts": [
+      {
+        "content": "\\author{Bernardo Gonçalves$\\,$\\href{https://orcid.org/0000-0003-2794-8478}{\\includegraphics[scale=0.07]{orcid128.png}}$\\,$}",
+        "start": 1870,
+        "end": 1993,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "I address a few problems that we will keep track as we go along: ($P_1$ Why would Turing design a test based on imitation, which can be seen as encouraging deception? ($P_2$ Why to present multiple versions of a test, as opposed to a well-defined, controlled experiment? ($P_3$ Why gender imitation in a test of machine intelligence, and why conversation for an intelligence task? ($P_4$ Why are practical ``Turing'' tests circular, as Hayes and Ford \\cite{hayes1995} claimed? Finally, the core problem, ($P_5$ What is the value of Turing's test for AI?",
+        "start": 5523,
+        "end": 6083,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "Section~\\ref{sec:test} presents a reading of Turing's 1950 paper. Section~\\ref{sec:imitation} introduces newly discovered archival sources and examines Turing's concept of imitation, addressing $P_1$. Section~\\ref{sec:mach} shows that his presentation of the imitation game fits ``the basic method of thought experiments'' \\cite{mach1897}, addressing $P_2$. Section~\\ref{sec:1949} reconstructs the historical conditions of Turing's proposal, addressing $P_3$. Section~\\ref{sec:galileo} draws a parallel with the history of ``the most beautiful experiment in the history of science'' \\cite{palmieri2005b}, addressing $P_4$. Finally, Section~\\ref{sec:ai} revisits the history of AI, addressing $P_5$, and Section~\\ref{sec:conclusion} concludes the paper.",
+        "start": 6085,
+        "end": 6838,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "\\footnote{Turing was coming from unstructured multidisciplinary debates in at least two editions of a seminar, ``Mind and Machine,'' held at the Philosophy Department of Manchester University in October and December, 1949. Of the latter, one participant wrote in a Christmas postcard sent to Warren McCulloch: ``I wish you had been with us a few days ago we had an amusing evening discussion with Thuring [\\emph{sic}], Williams, Max Newman, Polyani [\\emph{sic}], Jefferson, J Z Young \\& myself $\\hdots$ An electronic analyser and a digital computer (universal type) might have sorted the arguments out a bit.'' Jules Y. Bogue to McCulloch, c. December 1949. American Philosophical Society, Warren S. McCulloch Papers, Mss.B.M139\\_005. Thanks to J. Swinton for this archival finding.}",
+        "start": 7452,
+        "end": 8236,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "``a combination of parts moving mechanically as contrasted with a being having life, consciousness and will $\\hdots$ Hence applied to a person who acts merely from habit or obedience to a rule, without intelligence, or to one whose actions have the undeviating precision and uniformity of a machine.''",
+        "start": 8823,
+        "end": 9125,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In addition to varying the genus/species (types) of the players, he also increased the storage and speed of the machine and provided it with a hypothetically appropriate program ($Q^{\\prime\\prime\\prime}$, and suggested a base time for the interrogation session ($Q^{\\prime\\prime\\prime\\prime}$. Other seemingly relevant parameters were not mentioned, such as the number of interrogators used to arrive at a statistically sound conclusion, although their profile is mentioned --- they should be ``average'' ---, and later reiterated --- they ``should not be expert about machines.''%",
+        "start": 11612,
+        "end": 12195,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$Q$: ``I propose to consider the question, `Can machines think?'$\\,$'' (p.~433)",
+        "start": 12855,
+        "end": 12934,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$Q^{\\prime}$: ``What will happen when a machine takes the part of A in this [man-woman] game?’ Will the interrogator decide wrongly as often when the game is played like this [machine-woman] as he does when the game is played between a man and a woman? These questions replace our original, `Can machines think?'$\\,$'' (pp.~433-434)",
+        "start": 12959,
+        "end": 13291,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$Q^{\\prime\\prime}$: ``There are already a number of digital computers in working order, and it may be asked, ‘Why not try the experiment straight away? It would be easy to satisfy the conditions of the game. A number of interrogators could be used, and statistics compiled to show how often the right identification was given.’ The short answer is that we are not asking whether all digital computers would do well in the game nor whether the computers at present available would do well, but whether there are imaginable computers which would do well.'' (p.~436)%But this is only the short answer. We shall see this question in a different light later.'' (p.~436)",
+        "start": 13316,
+        "end": 13981,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$Q^{\\prime\\prime\\prime}$: ``It was suggested tentatively that the question [$Q$] %, ‘Can machines think?’",
+        "start": 14006,
+        "end": 14112,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "should be replaced by [$Q^{\\prime\\prime}$] $\\hdots$ %`Are there imaginable digital computers which would do well in the imitation game?'",
+        "start": 14113,
+        "end": 14250,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "`Let us fix our attention on one particular digital computer C. Is it true that by modifying this computer to have an adequate storage, suitably increasing its speed of action, and providing it with an appropriate programme, C can be made to play satisfactorily the part of A in the imitation game, the part of B being taken by a man?'$\\,$'' (p.~442)",
+        "start": 14477,
+        "end": 14827,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$Q^{\\prime\\prime\\prime\\prime}$: ``I believe that in about fifty years' time it will be possible to programme computers, with a storage capacity of about $10^9$, to make them play the imitation game so well that an average interrogator will not have more than 70 per cent. chance of making the right identification after five minutes of questioning.'' (p.~442)",
+        "start": 14852,
+        "end": 15211,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\footnote{\\mbox{`Lecture to L.M.S. Feb. 20 1947.' $\\!$Archive Centre, King's College, Cambridge, AMT/B/1.}}",
+        "start": 16321,
+        "end": 16428,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "``the view which I hold myself, that it is not altogether unreasonable to describe digital computers as brains $\\hdots$ %A different point of view has already been put by Professor Hartree ...",
+        "start": 17859,
+        "end": 18052,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "An original answer to problem $P_1$, why design a test based on imitation, which can be seen as encouraging deception, is as follows. Actually, imitation was Turing's fundamental principle of the new science of universal digital computing. He conceived his 1950 paper largely in continuity with his 1936 paper. Both were based on his core concepts of machine and imitation, i.e., what it takes for a machine to imitate another machine. A point of difference is that by 1950 he had generalized the machine architecture and how `universal' imitation can be achieved. Using Turing's 1948 language,%",
+        "start": 22147,
+        "end": 22742,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "``Another important result of preparing our machine for its part in the imitation game by a process of teaching and learning is that `human fallibility' is likely to be omitted in a rather natural way, i.e., without special `coaching'$\\,$'' \\cite[p.~459]{turing1950}. %$\\hdots$ Processes that are learnt do not produce a hundred per cent. certainty of result; if they did they could not be unlearnt'' \\cite[p.~459]{turing1950}.",
+        "start": 25632,
+        "end": 26060,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Dear Miss Worsley, $\\,\\hdots$\\\\",
+        "start": 26902,
+        "end": 26933,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\section{$\\!\\!\\!$\\mbox{The method of thought experiments}}\\label{sec:mach}",
+        "start": 29528,
+        "end": 29602,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The various rhetorical questions Turing posed, $Q^{\\prime} \\hdots Q^{\\prime\\prime\\prime\\prime}$, to replace the original question, $Q$, can be generalized as follows \\cite{goncalves2023experiment}:",
+        "start": 29604,
+        "end": 29802,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Question $Q^\\star$: could player A imitate intellectual stereotypes associated with player B's type successfully (well enough to deceive player C), despite A and B's physical differences?",
+        "start": 29804,
+        "end": 29992,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "It has been largely unnoticed that the various questions instantiating $Q^\\star$ follow a case-control methodology, applied in two stages.",
+        "start": 29994,
+        "end": 30133,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "A stone falls to the ground. Increase the stone’s distance from the earth, and it would go against the grain to expect that this continuous increase would lead to some discontinuity. Even at lunar distance the stone will not suddenly lose its tendency to fall. Moreover, big stones fall like small ones: the moon tends to fall to the earth. Our ideas would lose the requisite determination if one body were attracted to the other but not the reverse, thus the attraction is mutual and remains so with unequal bodies, for the cases merge into one another continuously $\\hdots$ %. Not only logical elements are at play here: logically,",
+        "start": 32319,
+        "end": 32953,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We can now follow Turing's use of the method of continuous variation in the design of his imitation tests. The essential question ($Q^\\star$ Turing asks is whether the intellectual and cultural performances (the \\emph{stereotypes})%",
+        "start": 39551,
+        "end": 39784,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Note that for any arbitrarily chosen type, say, a woman, further specific subtypes can be continuously conceived and considered as varied conditions of the imitation game: women having property $p$, women having subproperty $p^\\prime \\subset p$, and so on. For any two arbitrarily chosen types, a new type can be conceived, whether as a specialization or a modification (``any small part of a man''). Because concepts are fluid entities, there is an evolving continuum of levels and types.",
+        "start": 40008,
+        "end": 40498,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "A historically sound problem, because it does not struggle with the materiality of Turing's texts and their chronological coherence, does not erase some of his tests in favor of others, does not ignore the historical conditions of his proposal, is ($P_2$ Why would Turing present multiple versions of his test, as opposed to a well-defined, controlled experiment?",
+        "start": 42581,
+        "end": 42945,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Now in 1949, Hartree added strength to his argument by quoting the words of Ada Lovelace from the 1840s about Charles Babbage's machine: ``The Analytical Engine has no pretensions to originate anything $\\hdots$ It can do \\emph{whatever we know how to order it} to perform'' (her emphasis) \\cite[p.~70]{hartree1949}. %\\cite{lovelace1842}.",
+        "start": 45135,
+        "end": 45474,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In the imitation game, Turing suggested, the interrogator would be able to evaluate the machine's ability to learn: ``The game (with the player B omitted) is frequently used in practice under the name of \\emph{viva voce} to discover whether some one really understands something or has `learnt it parrot fashion'$\\,$'' (p.~446). But then we might ask, what is player B doing in the imitation game? Following the 1949 events will suggest an answer.",
+        "start": 46182,
+        "end": 46630,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Thus, an answer to the first part of problem $P_3$, why gender imitation in a test of machine intelligence, is that Turing's design of his test was an ironic response to Jefferson's association of sex and gender with intelligence, particularly his suggestion that gendered behavior is causally related to the physiology of male and female sex hormones.",
+        "start": 52427,
+        "end": 52780,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "It remains to address the second part of problem $P_3$, why Turing chose conversation as the intelligence task of his test.",
+        "start": 52781,
+        "end": 52904,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Some time later, probably around Christmas 1949, Turing will read Jefferson's Lister Oration \\cite{jefferson1949} and mark the passage quoting René Descartes (p.~1106), which starts: ``Descartes made the point, and a basic one it is, that a parrot repeated only what it had been taught and only a fragment of that; it never used words to express its own thoughts.'' Overall, Jefferson suggested `speech' to be the distinguishing feature of human intelligence compared to other kinds of animal intelligence: ``Granted that much that goes on in our heads is wordless $\\hdots$ %(for if it is not, then we must concede words, an internal vocabulary, to animals),",
+        "start": 57277,
+        "end": 57936,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "we certainly require words for conceptual thinking as well as for expression $\\hdots$ It is here that there is the sudden and mysterious leap from the highest animal to man, and it is in the speech areas of the dominant hemisphere $\\hdots$ that Descartes should have put the soul, the highest intellectual faculties'' (p.~1109).",
+        "start": 57937,
+        "end": 58266,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\section{$\\!\\!\\!$\\mbox{A hammer and a feather on the moon}}\\label{sec:galileo}",
+        "start": 60218,
+        "end": 60296,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "SALVIATI: But without experiences, by a short and conclusive demonstration, we can prove clearly that it is not true that a heavier moveable is moved more swiftly than another, less heavy, these being of the same material, and in a word, those of which Aristotle speaks. Tell me, Simplicio, whether you assume that for every heavy falling body there is a speed determined by nature such that this cannot be increased or diminished except by using force or opposing some impediment to it $\\hdots$ [SIMPLICIO agrees]",
+        "start": 62254,
+        "end": 62768,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Then if we had two moveables whose natural speeds were unequal, it is evident that were we to connect the slower to the faster, the latter would be partly retarded by the slower, and this would be partly speeded up by the faster $\\hdots$ %(pp.~66-67)",
+        "start": 62793,
+        "end": 63043,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Commenting on ``the Turing definition of thinking'' (p.~vi), McCarthy and Shannon found it ``interesting'' because it ``has the advantages of being operational or, in the psychologists' term, behavioristic $\\hdots$ No metaphysical notions of consciousness, ego and the like are involved.'' They also thought that this very strength could be a weakness, because it has ``the disadvantage'' of being susceptible to a memorizing machine playing the imitation game by looking up ``a suitable dictionary.''",
+        "start": 73913,
+        "end": 74415,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "``He proposes an experiment --- commonly called `Turing's test' --- in which the unprejudiced comparison could be made $\\hdots$ Though the test has flaws, it is the best that has been proposed to date.",
+        "start": 77319,
+        "end": 77522,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In 2013, when asked about the Turing test in a taped interview, Minsky said: ``The Turing test is a joke, sort of, about saying `A machine would be intelligent if it does things that an observer would say must be being done by a human' $\\hdots$ it was suggested by Alan Turing as one way to evaluate a machine but he had never intended it as being the way to decide whether a machine was really intelligent.''%",
+        "start": 82095,
+        "end": 82505,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Turing's test moved the burgeoning field of AI away from unproductive debates about the meaning of words, for example, allowing Minsky to write in 1967 \\cite{minsky1967}: ``Turing discusses some of these issues in his brilliant article, `Comput­ing Machines and Intelligence'' [\\emph{sic}], and I will not recapitulate his arguments $\\hdots$ They amount, in my view, to a satisfactory refutation of many such objections'' (p.~107).",
+        "start": 83312,
+        "end": 83746,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The value of Turing's test ($P_5$ is that it has long been and still is a unifying `definition,' a `criterion,' a `goal' for, in the words of McCarthy et al., the science and engineering of ``making a machine behave in ways that would be called intelligent if a human were so behaving.'' %For better or worse,",
+        "start": 83753,
+        "end": 84064,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      }
+    ],
+    "tables": [],
+    "total_items": 40
+  }
+]

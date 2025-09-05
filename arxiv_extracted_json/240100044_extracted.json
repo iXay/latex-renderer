@@ -1,0 +1,1572 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00044/2401.00044/main.tex",
+    "display_formulas": [
+      {
+        "content": "$$\\begin{aligned} #1 \\end{aligned}$$",
+        "start": 3948,
+        "end": 4010,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{aligned} #1 \\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{gathered} #1 \\end{gathered}$$",
+        "start": 4034,
+        "end": 4098,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{gathered} #1 \\end{gathered}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}#1\\end{aligned}$$",
+        "start": 4121,
+        "end": 4149,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}#1\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$#1$$",
+        "start": 4372,
+        "end": 4406,
+        "metadata": {
+          "type": "display_env",
+          "envname": "multline",
+          "latex": "#1"
+        }
+      },
+      {
+        "content": "$$\\tilde{h}(f) = F_+ \\tilde{h}_+(f) + F_\\times \\tilde{h}_\\times(f)\\,,$$",
+        "start": 13272,
+        "end": 13375,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\tilde{h}(f) = F_+ \\tilde{h}_+(f) + F_\\times \\tilde{h}_\\times(f)\\,,"
+        }
+      },
+      {
+        "content": "$$\\tilde{h}_+(f) = (1 + \\cos^2\\iota) \\tilde{h}_0(f)\\,,\\quad \\tilde{h}_\\times(F) = -2 i \\cos\\iota \\tilde{h}_0(f)\\,,$$",
+        "start": 13500,
+        "end": 13652,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\tilde{h}_+(f) = (1 + \\cos^2\\iota) \\tilde{h}_0(f)\\,,\\quad\n    \\tilde{h}_\\times(F) = -2 i \\cos\\iota \\tilde{h}_0(f)\\,,"
+        }
+      },
+      {
+        "content": "$$\\tilde{h}_0(f) = \\sqrt{\\frac{5}{96}} \\pi^{-2/3} \\qty(\\frac{(1+z)G\\Mc}{c^3})^{5/6} \\frac{c}{d_\\mathrm{L}} f^{-7/6} \\ee^{i\\Psi(f)}\\,,$$",
+        "start": 13715,
+        "end": 13881,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\tilde{h}_0(f) = \\sqrt{\\frac{5}{96}} \\pi^{-2/3} \\qty(\\frac{(1+z)G\\Mc}{c^3})^{5/6} \\frac{c}{d_\\mathrm{L}} f^{-7/6} \\ee^{i\\Psi(f)}\\,,"
+        }
+      },
+      {
+        "content": "$$\\Mc \\coloneqq \\frac{(m_1 m_2)^{3/5}}{(m_1 + m_2)^{1/5}}\\,,$$",
+        "start": 14028,
+        "end": 14122,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\Mc \\coloneqq \\frac{(m_1 m_2)^{3/5}}{(m_1 + m_2)^{1/5}}\\,,"
+        }
+      },
+      {
+        "content": "$$d_\\textrm{L} = (1+z) \\int^z_0 \\frac{c\\dd{z}}{H(z)}\\,.$$",
+        "start": 14304,
+        "end": 14393,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "d_\\textrm{L} = (1+z) \\int^z_0 \\frac{c\\dd{z}}{H(z)}\\,."
+        }
+      },
+      {
+        "content": "$$\\varrho_0 = \\qty[ 4\\int^\\infty_0 \\frac{|\\tilde{h}(f)|^2}{S_\\mathrm{n}(f)} \\dd{f}]^{1/2}\\,.$$",
+        "start": 14632,
+        "end": 14758,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\varrho_0 = \\qty[ 4\\int^\\infty_0 \\frac{|\\tilde{h}(f)|^2}{S_\\mathrm{n}(f)} \\dd{f}]^{1/2}\\,."
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}f_\\textrm{max} = \\frac{f_\\textrm{merge}^\\textrm{WD-PBH}}{1 + z}\\,,\\end{aligned}$$",
+        "start": 16235,
+        "end": 16327,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}f_\\textrm{max} = \\frac{f_\\textrm{merge}^\\textrm{WD-PBH}}{1 + z}\\,,\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$R_\\textrm{WD} = 0.0126R_\\odot \\left(\\frac{\\mwd}{M_\\odot}\\right)^{-1/3}\\,,$$",
+        "start": 17283,
+        "end": 17392,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "R_\\textrm{WD} = 0.0126R_\\odot \\left(\\frac{\\mwd}{M_\\odot}\\right)^{-1/3}\\,,"
+        }
+      },
+      {
+        "content": "$$f_\\textrm{tidal} = \\frac{1}{\\pi} \\sqrt{\\frac{G (\\mwd + \\mpbh)}{R_\\textrm{tidal}^3}}\\,.$$",
+        "start": 17483,
+        "end": 17605,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "f_\\textrm{tidal} = \\frac{1}{\\pi} \\sqrt{\\frac{G (\\mwd + \\mpbh)}{R_\\textrm{tidal}^3}}\\,."
+        }
+      },
+      {
+        "content": "$$f_\\textrm{Kepler} = \\frac{1}{\\pi} \\sqrt{ \\frac{G (\\mwd + \\mpbh)}{(\\Rwd + \\Rpbh)^3} }.$$",
+        "start": 17932,
+        "end": 18053,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "f_\\textrm{Kepler} = \\frac{1}{\\pi} \\sqrt{ \\frac{G (\\mwd + \\mpbh)}{(\\Rwd + \\Rpbh)^3} }."
+        }
+      },
+      {
+        "content": "$$f_\\textrm{min} = \\frac{f_\\textrm{start}}{1 + z}\\,.$$",
+        "start": 18343,
+        "end": 18425,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "f_\\textrm{min} = \\frac{f_\\textrm{start}}{1 + z}\\,."
+        }
+      },
+      {
+        "content": "$$t(f_2) - t(f_1) = \\frac{5}{256} \\left( \\frac{G \\Mc}{c^3} \\right)^{-5/3} \\pi^{-8/3} (f_1^{-8/3} - f_2^{-8/3})\\,.$$",
+        "start": 18602,
+        "end": 18749,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "t(f_2) - t(f_1) = \\frac{5}{256} \\left( \\frac{G \\Mc}{c^3} \\right)^{-5/3} \\pi^{-8/3} (f_1^{-8/3} - f_2^{-8/3})\\,."
+        }
+      },
+      {
+        "content": "$$T_\\textrm{obs} = t(\\fmergewb) - t(f_\\textrm{start})\\,,$$",
+        "start": 19038,
+        "end": 19124,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "T_\\textrm{obs} = t(\\fmergewb) - t(f_\\textrm{start})\\,,"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}&f_\\textrm{start} \\nonumber \\\\ &= \\left\\{ \\qty(f_\\textrm{merge}^\\textrm{WD-PBH})^{-8/3} + T_\\textrm{obs} \\frac{256 \\pi^{8/3}}{5} \\left( \\frac{G \\Mc}{c^3} \\right)^{5/3} \\right\\}^{-3/8}.\\end{aligned}$$",
+        "start": 19138,
+        "end": 19355,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}&f_\\textrm{start} \\nonumber \\\\\n   &= \\left\\{ \\qty(f_\\textrm{merge}^\\textrm{WD-PBH})^{-8/3} + T_\\textrm{obs} \\frac{256 \\pi^{8/3}}{5} \\left( \\frac{G \\Mc}{c^3} \\right)^{5/3} \\right\\}^{-3/8}.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$R_\\textrm{tidal,1} = \\left( \\frac{2M_\\textrm{WD,2}}{M_\\textrm{WD,1}} \\right)^{1/3} R_\\textrm{WD,1}\\,.$$",
+        "start": 22614,
+        "end": 22751,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "R_\\textrm{tidal,1} = \\left( \\frac{2M_\\textrm{WD,2}}{M_\\textrm{WD,1}} \\right)^{1/3} R_\\textrm{WD,1}\\,."
+        }
+      },
+      {
+        "content": "$$R_\\textrm{tidal}^\\textrm{BWD} = \\max[R_\\textrm{tidal,1}, R_\\textrm{tidal,2}]\\,,$$",
+        "start": 22906,
+        "end": 23021,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "R_\\textrm{tidal}^\\textrm{BWD} = \\max[R_\\textrm{tidal,1}, R_\\textrm{tidal,2}]\\,,"
+        }
+      },
+      {
+        "content": "$$f_\\textrm{tidal}^\\textrm{BWD} = \\frac{1}{\\pi} \\sqrt{\\frac{G (M_\\mathrm{WD,1} + M_\\mathrm{WD,2})}{\\qty(R_\\textrm{tidal}^\\textrm{BWD})^3}}\\,.$$",
+        "start": 23136,
+        "end": 23311,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "f_\\textrm{tidal}^\\textrm{BWD} = \\frac{1}{\\pi} \\sqrt{\\frac{G (M_\\mathrm{WD,1} + M_\\mathrm{WD,2})}{\\qty(R_\\textrm{tidal}^\\textrm{BWD})^3}}\\,."
+        }
+      },
+      {
+        "content": "$$f_\\textrm{Kepler}^\\textrm{BWD} = \\frac{1}{\\pi}\\sqrt{\\frac{G(M_\\textrm{WD,1} + M_\\textrm{WD,2})}{(R_\\textrm{WD,1} + R_\\textrm{WD,2})^3}}\\,.$$",
+        "start": 23596,
+        "end": 23770,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "f_\\textrm{Kepler}^\\textrm{BWD} = \\frac{1}{\\pi}\\sqrt{\\frac{G(M_\\textrm{WD,1} + M_\\textrm{WD,2})}{(R_\\textrm{WD,1} + R_\\textrm{WD,2})^3}}\\,."
+        }
+      },
+      {
+        "content": "$$f_\\textrm{merge}^\\textrm{BWD} = \\min[f_\\textrm{Kepler}^\\textrm{BWD}, f_\\textrm{tidal}^\\textrm{BWD}]\\,.$$",
+        "start": 23882,
+        "end": 24020,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "f_\\textrm{merge}^\\textrm{BWD} = \\min[f_\\textrm{Kepler}^\\textrm{BWD}, f_\\textrm{tidal}^\\textrm{BWD}]\\,."
+        }
+      },
+      {
+        "content": "$$\\varrho' = \\frac{8}{5} \\frac{A}{d_\\textrm{L}} \\sqrt{I'_7}\\,,$$",
+        "start": 25613,
+        "end": 25709,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\varrho' = \\frac{8}{5} \\frac{A}{d_\\textrm{L}} \\sqrt{I'_7}\\,,"
+        }
+      },
+      {
+        "content": "$$I'_{7} = \\begin{cases} \\displaystyle \\int^{f_\\textrm{merge}^\\textrm{BWD} / (1+z)}_{f_\\textrm{start}^\\textrm{WD-PBH}/(1+z)} \\df %\\ \\frac{f^{-7/3}}{S_\\textrm{n}(f)} & \\text{for $f_\\textrm{start}^\\textrm{WD-PBH} < f_\\textrm{merge}^\\textrm{BWD}$,} \\\\ 0 & \\text{for $f_\\textrm{start}^\\textrm{WD-PBH} \\geq f_\\textrm{merge}^\\textrm{BWD}$.} %\\,. \\end{cases}$$",
+        "start": 25812,
+        "end": 26218,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "I'_{7} = \\begin{cases}\n    \\displaystyle\n    \\int^{f_\\textrm{merge}^\\textrm{BWD} / (1+z)}_{f_\\textrm{start}^\\textrm{WD-PBH}/(1+z)} \\df %\\ \n    \\frac{f^{-7/3}}{S_\\textrm{n}(f)} & \\text{for $f_\\textrm{start}^\\textrm{WD-PBH} < f_\\textrm{merge}^\\textrm{BWD}$,} \\\\\n    0 & \\text{for $f_\\textrm{start}^\\textrm{WD-PBH} \\geq f_\\textrm{merge}^\\textrm{BWD}$.} %\\,.\n    \\end{cases}"
+        }
+      },
+      {
+        "content": "$$N_\\textrm{event}^\\text{WD-PBH} = T_\\textrm{obs} \\int^{M_\\textrm{WD,max}}_{M_\\textrm{WD,min}} \\frac{\\dd{\\mwd}}{\\mwd}\\ \\int^{z_\\textrm{up}}_0 \\dd{z}\\diff{V}{z} \\int^{M_\\textrm{h,max}}_{M_\\textrm{h,min}} \\dd{M_\\textrm{h}} \\diff{n_\\textrm{halo}}{M_\\textrm{h}} \\dv{R_\\textrm{WD-PBH}}{\\ln\\mwd}\\,,$$",
+        "start": 29307,
+        "end": 29641,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "N_\\textrm{event}^\\text{WD-PBH} = T_\\textrm{obs} \\int^{M_\\textrm{WD,max}}_{M_\\textrm{WD,min}} \\frac{\\dd{\\mwd}}{\\mwd}\\ \\int^{z_\\textrm{up}}_0 \\dd{z}\\diff{V}{z} \\int^{M_\\textrm{h,max}}_{M_\\textrm{h,min}} \\dd{M_\\textrm{h}} \\diff{n_\\textrm{halo}}{M_\\textrm{h}} \\dv{R_\\textrm{WD-PBH}}{\\ln\\mwd}\\,,"
+        }
+      },
+      {
+        "content": "$$\\tilde{N}^\\textrm{PBH-PBH}_\\textrm{event} \\sim (\\alpha_\\textrm{PBH} f_\\textrm{PBH})^2 N^\\textrm{PBH-PBH}_\\textrm{event}$$",
+        "start": 33171,
+        "end": 33326,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\tilde{N}^\\textrm{PBH-PBH}_\\textrm{event} \\sim (\\alpha_\\textrm{PBH} f_\\textrm{PBH})^2 N^\\textrm{PBH-PBH}_\\textrm{event}"
+        }
+      },
+      {
+        "content": "$$\\tilde{N}^\\textrm{PBH-PBH}_\\textrm{event} \\lesssim 1 \\quad\\Rightarrow\\quad \\alpha_\\textrm{PBH} f_\\textrm{PBH} \\lesssim 3 \\times 10^2\\,.$$",
+        "start": 33857,
+        "end": 34032,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\tilde{N}^\\textrm{PBH-PBH}_\\textrm{event} \\lesssim 1\n    \\quad\\Rightarrow\\quad \\alpha_\\textrm{PBH} f_\\textrm{PBH} \\lesssim 3 \\times 10^2\\,."
+        }
+      },
+      {
+        "content": "$$\\tilde{N}^\\textrm{WD-PBH}_\\textrm{event} \\gtrsim 1 \\quad\\Rightarrow\\quad \\alpha_\\textrm{WD} \\gtrsim 2\\times 10^3\\,.$$",
+        "start": 34296,
+        "end": 34451,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\tilde{N}^\\textrm{WD-PBH}_\\textrm{event} \\gtrsim 1\n    \\quad\\Rightarrow\\quad \\alpha_\\textrm{WD} \\gtrsim 2\\times 10^3\\,."
+        }
+      },
+      {
+        "content": "$$\\frac{\\rho_\\us}{\\rho_\\textrm{crit}} = \\frac{200}{3} \\frac{C^3}{\\ln(1+C) - C/(1+C)}\\,.$$",
+        "start": 40117,
+        "end": 40238,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\rho_\\us}{\\rho_\\textrm{crit}} = \\frac{200}{3} \\frac{C^3}{\\ln(1+C) - C/(1+C)}\\,."
+        }
+      },
+      {
+        "content": "$$C(\\nu) = c_0 \\left(\\frac{\\nu}{\\nu_0} \\right)^{-\\gamma_1} \\left[ 1 + \\left(\\frac{\\nu}{\\nu_0}\\right)^{1/\\beta} \\right]^{-\\beta(\\gamma_2 - \\gamma_1)}\\,,$$",
+        "start": 40590,
+        "end": 40775,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "C(\\nu) = c_0 \\left(\\frac{\\nu}{\\nu_0} \\right)^{-\\gamma_1} \\left[ 1 + \\left(\\frac{\\nu}{\\nu_0}\\right)^{1/\\beta} \\right]^{-\\beta(\\gamma_2 - \\gamma_1)}\\,,"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}c_0 &= 3.395 \\times x^{-0.215}\\,,\\\\ \\beta &= 0.307 \\times x^{0.540}\\,,\\\\ \\gamma_1 &= 0.628 \\times x^{-0.047}\\,,\\\\ \\gamma_2 &= 0.317 \\times x^{-0.893}\\,,\\\\ \\nu_0 &= (4.135 - 0.564x - 0.210 x^2 \\notag\\\\ &\\quad + 0.0557 x^3 - 0.00348 x^4) \\times D(z)^{-1}\\,,\\end{aligned}$$",
+        "start": 41020,
+        "end": 41325,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}c_0 &= 3.395 \\times x^{-0.215}\\,,\\\\\n    \\beta &= 0.307 \\times x^{0.540}\\,,\\\\\n    \\gamma_1 &= 0.628 \\times x^{-0.047}\\,,\\\\\n    \\gamma_2 &= 0.317 \\times x^{-0.893}\\,,\\\\\n    \\nu_0 &= (4.135 - 0.564x - 0.210 x^2 \\notag\\\\\n    &\\quad + 0.0557 x^3 - 0.00348 x^4) \\times D(z)^{-1}\\,,\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\sigma_\\mathrm{m}(M, z) = D(z)\\frac{22.26 \\xi^{0.292}}{1 + 1.53\\xi^{0.275} + 3.36\\xi^{0.198}}\\,,$$",
+        "start": 42172,
+        "end": 42304,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\sigma_\\mathrm{m}(M, z) = D(z)\\frac{22.26 \\xi^{0.292}}{1 + 1.53\\xi^{0.275} + 3.36\\xi^{0.198}}\\,,"
+        }
+      },
+      {
+        "content": "$$\\xi \\coloneqq \\left(\\frac{M_\\textrm{h}}{10^{10} h^{-1} M_\\odot} \\right)^{-1}\\,.$$",
+        "start": 42311,
+        "end": 42426,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\xi \\coloneqq \\left(\\frac{M_\\textrm{h}}{10^{10} h^{-1} M_\\odot} \\right)^{-1}\\,."
+        }
+      },
+      {
+        "content": "$$D(z) = \\frac{\\Omega_\\textrm{m}(z)}{\\Omega_\\textrm{m,0}} \\frac{\\Psi(0)}{\\Psi(z)} (1+z)^{-1}\\,,$$",
+        "start": 42471,
+        "end": 42600,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "D(z) = \\frac{\\Omega_\\textrm{m}(z)}{\\Omega_\\textrm{m,0}} \\frac{\\Psi(0)}{\\Psi(z)} (1+z)^{-1}\\,,"
+        }
+      },
+      {
+        "content": "$$\\sigma = 2\\pi \\left(\\frac{85\\pi}{6\\sqrt{2}} \\right)^{2/7} \\frac{G^2 (\\mpbh + \\mwd)^{10/7} \\mwd^{2/7} \\mpbh^{2/7}}{c^{10/7} v_\\textrm{rel}^{18/7}}\\,.$$",
+        "start": 43192,
+        "end": 43376,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\sigma = 2\\pi \\left(\\frac{85\\pi}{6\\sqrt{2}} \\right)^{2/7} \\frac{G^2 (\\mpbh + \\mwd)^{10/7} \\mwd^{2/7} \\mpbh^{2/7}}{c^{10/7} v_\\textrm{rel}^{18/7}}\\,."
+        }
+      },
+      {
+        "content": "$$1 = 4\\pi \\int^{\\vvir}_0 \\dd{v} v^2 p(v; \\vvir, \\vdm)\\,.$$",
+        "start": 43938,
+        "end": 44027,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "1 = 4\\pi \\int^{\\vvir}_0 \\dd{v} v^2 p(v; \\vvir, \\vdm)\\,."
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}M(r<r_\\textrm{max}) &= 4\\pi \\int^{r_\\textrm{max}}_0 \\dd r\\ r^2 \\rho_\\textrm{DM}(r) \\notag\\\\ &= 4\\pi r_\\textrm{s}^3 \\rho_\\textrm{s} \\int^{x_\\textrm{max}}_0 \\dd x\\ \\frac{x}{(1+x)^2} \\notag\\\\ &= 4\\pi r_\\textrm{s}^3 \\rho_\\textrm{s} \\left[ \\ln(1+x_\\textrm{max}) - \\frac{x_\\textrm{max}}{1 + x_\\textrm{max}} \\right]\\,.\\end{aligned}$$",
+        "start": 44604,
+        "end": 44953,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}M(r<r_\\textrm{max}) &= 4\\pi \\int^{r_\\textrm{max}}_0 \\dd r\\ r^2 \\rho_\\textrm{DM}(r) \\notag\\\\\n    &= 4\\pi r_\\textrm{s}^3 \\rho_\\textrm{s} \\int^{x_\\textrm{max}}_0 \\dd x\\ \\frac{x}{(1+x)^2} \\notag\\\\\n    &= 4\\pi r_\\textrm{s}^3 \\rho_\\textrm{s} \\left[ \\ln(1+x_\\textrm{max}) - \\frac{x_\\textrm{max}}{1 + x_\\textrm{max}} \\right]\\,.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\langle \\sigma \\vrel \\rangle = 4\\pi \\int^{\\vvir}_0 \\dd{v} v^2 p(v; \\vvir, \\vdm) \\sigma v\\,.$$",
+        "start": 45209,
+        "end": 45336,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\langle \\sigma \\vrel \\rangle = 4\\pi \\int^{\\vvir}_0 \\dd{v} v^2 p(v; \\vvir, \\vdm) \\sigma v\\,."
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\langle \\sigma v_\\textrm{rel} \\rangle &\\simeq \\mathsf{N} \\times 2\\pi \\left(\\frac{85\\pi}{6\\sqrt{2}} \\right)^{2/7} \\notag\\\\ &\\quad \\times \\frac{G^2 (\\mpbh + \\mwd)^{10/7} \\mwd^{2/7} \\mpbh^{2/7}}{c^{10/7} v_\\textrm{DM}^{11/7}}\\,,\\end{aligned}$$",
+        "start": 45395,
+        "end": 45654,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\langle \\sigma v_\\textrm{rel} \\rangle &\\simeq \\mathsf{N} \\times 2\\pi \\left(\\frac{85\\pi}{6\\sqrt{2}} \\right)^{2/7} \\notag\\\\\n    &\\quad \\times \\frac{G^2 (\\mpbh + \\mwd)^{10/7} \\mwd^{2/7} \\mpbh^{2/7}}{c^{10/7} v_\\textrm{DM}^{11/7}}\\,,\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\mathsf{N} = \\hat{F}_0 \\int^{\\hat{v}_\\mathrm{vir}}_0 \\dd{\\hat{v}} \\hat{v}^{3/7} \\qty(e^{-\\hat{v}^2} - e^{-\\hat{v}_\\mathrm{vir}^2})\\,,$$",
+        "start": 45661,
+        "end": 45830,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\mathsf{N} = \\hat{F}_0 \\int^{\\hat{v}_\\mathrm{vir}}_0 \\dd{\\hat{v}} \\hat{v}^{3/7} \\qty(e^{-\\hat{v}^2} - e^{-\\hat{v}_\\mathrm{vir}^2})\\,,"
+        }
+      },
+      {
+        "content": "$$\\dv{R_\\textrm{WD-PBH}}{\\ln\\mwd} = 4\\pi \\int^{r_\\textrm{vir}}_0 \\dd{r} r^2 \\diff{n_\\WD}{\\ln\\mwd} n_\\PBH \\langle \\sigma v_\\textrm{rel} \\rangle\\,,$$",
+        "start": 46107,
+        "end": 46286,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\dv{R_\\textrm{WD-PBH}}{\\ln\\mwd} = 4\\pi \\int^{r_\\textrm{vir}}_0 \\dd{r} r^2 \\diff{n_\\WD}{\\ln\\mwd} n_\\PBH \\langle \\sigma v_\\textrm{rel} \\rangle\\,,"
+        }
+      },
+      {
+        "content": "$$\\rho_\\textrm{PBH}(r) = \\fpbh \\rho_\\textrm{DM}(r)\\,,$$",
+        "start": 46487,
+        "end": 46574,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\rho_\\textrm{PBH}(r) = \\fpbh \\rho_\\textrm{DM}(r)\\,,"
+        }
+      },
+      {
+        "content": "$$n_\\PBH(r) = \\frac{\\rho_\\PBH(r)}{M_\\PBH} = \\fpbh \\frac{\\rho_\\textrm{DM}(r)}{M_\\PBH}\\,.$$",
+        "start": 46628,
+        "end": 46749,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "n_\\PBH(r) = \\frac{\\rho_\\PBH(r)}{M_\\PBH} = \\fpbh \\frac{\\rho_\\textrm{DM}(r)}{M_\\PBH}\\,."
+        }
+      },
+      {
+        "content": "$${\\dv{n_\\WD}{\\ln\\mwd}}(r) = \\mathcal{N}_\\WD \\ee^{-r/r_\\WD}\\,,$$",
+        "start": 46930,
+        "end": 47026,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "{\\dv{n_\\WD}{\\ln\\mwd}}(r) = \\mathcal{N}_\\WD \\ee^{-r/r_\\WD}\\,,"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\log_{10} M_1 &= M_{1,0} + M_{1,a} (a - 1)\\,,\\\\ \\log_{10} M_{\\ast,0} &= M_{\\ast,0,0} + M_{\\ast,0,a} (a-1)\\,,\\\\ \\beta &= \\beta_0 + \\beta_a (a-1)\\,,\\\\ \\gamma &= \\gamma_0 + \\gamma_a (a-1)\\,,\\\\ \\delta &= \\delta_0 + \\delta_a (a-1)\\,,\\end{aligned}$$",
+        "start": 47829,
+        "end": 48103,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\log_{10} M_1 &= M_{1,0} + M_{1,a} (a - 1)\\,,\\\\\n    \\log_{10} M_{\\ast,0} &= M_{\\ast,0,0} + M_{\\ast,0,a} (a-1)\\,,\\\\\n    \\beta &= \\beta_0 + \\beta_a (a-1)\\,,\\\\\n    \\gamma &= \\gamma_0 + \\gamma_a (a-1)\\,,\\\\\n    \\delta &= \\delta_0 + \\delta_a (a-1)\\,,\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$V = \\frac{4\\pi}{3} r_\\textrm{max}^3\\,,$$",
+        "start": 48850,
+        "end": 48924,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "V = \\frac{4\\pi}{3} r_\\textrm{max}^3\\,,"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}&\\frac{\\mathrm{d} n}{\\mathrm{d} \\ln M_\\mathrm{MS}} \\notag\\\\ &= \\begin{cases}A_{\\mathrm{BD}}\\left(\\frac{M_\\MS}{0.08 M_{\\odot}}\\right)^{1-\\alpha_{\\mathrm{BD}}} & \\left(0.01 \\leq M_\\MS / M_{\\odot} \\leq 0.08\\right) \\\\ A_{\\mathrm{MS}}\\left(\\frac{M_\\MS}{0.5 M_{\\odot}}\\right)^{1-\\alpha_{\\mathrm{MS} 1}} & \\left(0.08 \\leq M_\\MS / M_{\\odot} \\leq 0.5\\right) \\\\ A_{\\mathrm{MS}}\\left(\\frac{M_\\MS}{0.5 M_{\\odot}}\\right)^{1-\\alpha_{\\mathrm{MS} 2}} & \\left(M_\\MS / M_{\\odot} \\geq 0.5\\right) \\end{cases}\\end{aligned}$$",
+        "start": 49065,
+        "end": 49599,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}&\\frac{\\mathrm{d} n}{\\mathrm{d} \\ln M_\\mathrm{MS}} \\notag\\\\\n    &= \\begin{cases}A_{\\mathrm{BD}}\\left(\\frac{M_\\MS}{0.08 M_{\\odot}}\\right)^{1-\\alpha_{\\mathrm{BD}}} & \\left(0.01 \\leq M_\\MS / M_{\\odot} \\leq 0.08\\right) \\\\\n    A_{\\mathrm{MS}}\\left(\\frac{M_\\MS}{0.5 M_{\\odot}}\\right)^{1-\\alpha_{\\mathrm{MS} 1}} & \\left(0.08 \\leq M_\\MS / M_{\\odot} \\leq 0.5\\right) \\\\\n    A_{\\mathrm{MS}}\\left(\\frac{M_\\MS}{0.5 M_{\\odot}}\\right)^{1-\\alpha_{\\mathrm{MS} 2}} & \\left(M_\\MS / M_{\\odot} \\geq 0.5\\right)\n    \\end{cases}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\frac{\\mwd}{M_\\odot} = 0.339 + 0.129 \\frac{M_\\textrm{MS}}{M_\\odot}\\,,$$",
+        "start": 50132,
+        "end": 50237,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\mwd}{M_\\odot} = 0.339 + 0.129 \\frac{M_\\textrm{MS}}{M_\\odot}\\,,"
+        }
+      },
+      {
+        "content": "$$\\diff{\\bar{n}_\\WD}{\\ln \\mwd}\\,,$$",
+        "start": 50429,
+        "end": 50498,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation*",
+          "latex": "\\diff{\\bar{n}_\\WD}{\\ln \\mwd}\\,,"
+        }
+      },
+      {
+        "content": "$$\\diff{\\bar{n}_\\WD}{\\ln\\mwd} = \\frac{1}{V} \\int_0^{r_\\textrm{max}} \\mathcal{N}_\\WD \\ee^{-r/r_\\WD} \\times4\\pi r^2 \\dd{r}.$$",
+        "start": 50595,
+        "end": 50750,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\diff{\\bar{n}_\\WD}{\\ln\\mwd} = \\frac{1}{V} \\int_0^{r_\\textrm{max}} \\mathcal{N}_\\WD \\ee^{-r/r_\\WD} \\times4\\pi r^2 \\dd{r}."
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\mathcal{N}_\\WD &= \\frac{V}{4\\pi \\int^{r_\\textrm{max}}_0 \\dd{r}r^2 \\ee^{-r/r_\\WD}} \\diff{\\bar{n}_\\WD}{\\ln\\mwd} \\notag\\\\ &\\simeq \\frac{0.5 V}{4\\pi r_\\WD^3} \\diff{\\bar{n}_\\WD}{\\ln\\mwd}\\,.\\end{aligned}$$",
+        "start": 50801,
+        "end": 51020,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\mathcal{N}_\\WD &= \\frac{V}{4\\pi \\int^{r_\\textrm{max}}_0 \\dd{r}r^2 \\ee^{-r/r_\\WD}} \\diff{\\bar{n}_\\WD}{\\ln\\mwd} \\notag\\\\\n    &\\simeq \\frac{0.5 V}{4\\pi r_\\WD^3} \\diff{\\bar{n}_\\WD}{\\ln\\mwd}\\,.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\int^{M_\\textrm{h,max}}_{M_\\textrm{h,min}} \\dd{M_\\textrm{h}} \\diff{n_\\textrm{halo}}{M_\\textrm{h}} \\dv{R_\\textrm{WD-PBH}(M_\\textrm{h})}{\\ln \\mwd}\\,,$$",
+        "start": 51647,
+        "end": 51830,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\int^{M_\\textrm{h,max}}_{M_\\textrm{h,min}} \\dd{M_\\textrm{h}} \\diff{n_\\textrm{halo}}{M_\\textrm{h}} \\dv{R_\\textrm{WD-PBH}(M_\\textrm{h})}{\\ln \\mwd}\\,,"
+        }
+      },
+      {
+        "content": "$$f(\\sigma_\\mathrm{m}) = A\\left[ \\left(\\frac{\\sigma_\\mathrm{m}}{b}\\right)^{-a} + 1 \\right] \\ee^{-c/\\sigma_\\mathrm{m}^2}\\,.$$",
+        "start": 52276,
+        "end": 52432,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "f(\\sigma_\\mathrm{m}) = A\\left[ \\left(\\frac{\\sigma_\\mathrm{m}}{b}\\right)^{-a} + 1 \\right] \\ee^{-c/\\sigma_\\mathrm{m}^2}\\,."
+        }
+      },
+      {
+        "content": "$$A=0.186\\,,\\quad a=1.47\\,,\\quad b=2.57\\,,\\quad c=1.19\\,.$$",
+        "start": 52617,
+        "end": 52720,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A=0.186\\,,\\quad\n    a=1.47\\,,\\quad\n    b=2.57\\,,\\quad\n    c=1.19\\,."
+        }
+      },
+      {
+        "content": "$$\\int^{z_\\textrm{up}}_0 \\dd{z}\\diff{V}{z} \\int^{M_\\textrm{h,max}}_{M_\\textrm{h,min}} \\dd{M_\\textrm{h}}\\diff{n_\\textrm{halo}}{M_\\textrm{h}} \\dv{R_\\textrm{WD-PBH}(M_\\textrm{h})}{\\ln\\mwd}\\,.$$",
+        "start": 53513,
+        "end": 53739,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\int^{z_\\textrm{up}}_0 \\dd{z}\\diff{V}{z}     \\int^{M_\\textrm{h,max}}_{M_\\textrm{h,min}} \\dd{M_\\textrm{h}}\\diff{n_\\textrm{halo}}{M_\\textrm{h}} \\dv{R_\\textrm{WD-PBH}(M_\\textrm{h})}{\\ln\\mwd}\\,."
+        }
+      },
+      {
+        "content": "$$R_\\textrm{PBH-PBH} = 4\\pi \\int^{r_\\textrm{vir}}_0 \\dd{r} r^2 f_\\textrm{PBH}^2 n_\\textrm{DM}^2(r) \\langle \\sigma v_\\textrm{rel} \\rangle\\,.$$",
+        "start": 54826,
+        "end": 54999,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "R_\\textrm{PBH-PBH} = 4\\pi \\int^{r_\\textrm{vir}}_0 \\dd{r} r^2 f_\\textrm{PBH}^2 n_\\textrm{DM}^2(r) \\langle \\sigma v_\\textrm{rel} \\rangle\\,."
+        }
+      }
+    ],
+    "inline_texts": [
+      {
+        "content": "We discuss the detectability of the inspiral \\acp{GW} from binaries consisting of a \\ac{PBH} and a \\ac{WD} by using space-borne gravitational wave interferometers like DECIGO. The conservative assessment shows the expected event number in three years by DECIGO is $\\calO(10^{-6})$ for $\\mpbh \\sim 0.1M_\\odot$.",
+        "start": 5985,
+        "end": 6294,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In this work, as another system, we consider the binaries consisting of a subsolar mass \\ac{PBH} and a \\ac{WD}. The merger frequencies of the WD-PBH binaries are $\\mathcal{O}(10^{-2} \\text{--} 10^{-1})\\,\\si{Hz}$, which are interesting targets of DECIGO.",
+        "start": 10715,
+        "end": 10969,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In this subsection, we evaluate the detectability of WD-PBH binaries only through the inspiral \\acp{GW}. The most optimistic scenario, which we hereafter assume, is that DECIGO keeps observing the binary inspiral for three years from the beginning of the observation run, and the binary merges just after the end of the observation run. The detectability is quantified by the \\ac{SNR} of the inspiral waveform from the initial frequency $\\fmin$ to the final frequency $\\fmax$ in the detector frame.",
+        "start": 12397,
+        "end": 12895,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $F_+$ and $F_\\times$ are the antenna pattern functions, and $\\tilde{h}_{+/ \\times}$ are plus/cross modes expressed by",
+        "start": 13376,
+        "end": 13499,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "with the inclination angle $\\iota$.",
+        "start": 13653,
+        "end": 13688,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$\\tilde{h}_0$ is given by",
+        "start": 13689,
+        "end": 13714,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\Psi(f)$ is the \\ac{GW} phase, $G$ is the Newtonian constant of gravity, and $c$ is the speed of light. $\\Mc$ is the chirp mass defined by",
+        "start": 13882,
+        "end": 14027,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "with the component masses $m_1$ and $m_2$ in the source frame.",
+        "start": 14123,
+        "end": 14186,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$z$ and $d_\\mathrm{L}$ are the source redshift and the luminosity distance, respectively. Their relation is given by",
+        "start": 14187,
+        "end": 14303,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Given the detector noise spectrum $S_\\mathrm{n}(f)$, we define the \\ac{SNR} by",
+        "start": 14553,
+        "end": 14631,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $I_7$ and $A$ are given by",
+        "start": 15045,
+        "end": 15077,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The integration range $[\\fmin, \\fmax]$ in Eq.~\\eqref{eq:inner product} is obtained below as a frequency evolution during the three-year observation of DECIGO.",
+        "start": 15334,
+        "end": 15492,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "with $f_\\textrm{p} = \\SI{7.36}{Hz}$.",
+        "start": 15962,
+        "end": 15998,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We assume that $\\fmax$ is",
+        "start": 16132,
+        "end": 16158,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\fmergewb$ is a typical merger frequency in the source frame.",
+        "start": 16328,
+        "end": 16396,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$\\fmergewb$ is determined by the binary separation equal to the tidal radius, $R_\\textrm{tidal}$, which is estimated by balancing the tidal force and the WD's self-gravity as",
+        "start": 16516,
+        "end": 16690,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\quad\\text{at $r=R_\\tidal$}\\notag\\\\",
+        "start": 16817,
+        "end": 16856,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\mwd$ and $\\mpbh$ are respectively masses of the \\ac{WD} and the PBH, and $\\Rwd$ is the radius of the \\ac{WD}.%, for which",
+        "start": 17110,
+        "end": 17239,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Equation~\\eqref{eq:tidal} implies that $R_\\textrm{tidal}$ is smaller than the radius of the \\ac{WD}, $\\Rwd$, if $2\\mpbh < \\mwd$.",
+        "start": 17607,
+        "end": 17735,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "In such cases, as the merger frequency, $\\fmergewb$, we should use the Kepler frequency at the time when the orbital radius becomes the sum of the radii of the \\ac{WD} and the \\ac{PBH} ($\\Rpbh$:",
+        "start": 17736,
+        "end": 17931,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "As for $\\fmin$, we introduce $f_\\textrm{start}$ as the corresponding frequency in the source frame:",
+        "start": 18243,
+        "end": 18342,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The duration that the binary requires to evolve from the frequency $f_1$ to $f_2$ ($>f_1$ is given by (see Refs.~\\cite{Creighton:2011zz, Maggiore:2007ulw, Jaranowski:2009zz})",
+        "start": 18426,
+        "end": 18601,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "we can evaluate the frequency at the onset of the observation run (i.e., three years ($=T_\\obs$ before the merger),",
+        "start": 18872,
+        "end": 18988,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "which is corresponding to $f_\\textrm{start}$, as",
+        "start": 18989,
+        "end": 19037,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{Horizon distance as a function of $M_\\textrm{PBH}$ and $M_\\textrm{WD}$. The black solid line indicates $\\SI{1}{Gpc}$. There are breaks around $\\mpbh \\sim (2\\text{--}5)\\times 10^{-1}M_\\odot$. Around there, the merger frequency, defined by Eq.~\\eqref{eq: f merger pbh-wd}, changes drastically because the tidal frequency $f_\\tidal$ and the Kepler frequency $f_\\Kepler$ have different mass dependencies.}",
+        "start": 19462,
+        "end": 19876,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "We set the detection threshold on the \\ac{SNR} at $8$~\\cite{Maggiore:2007ulw} and refer to the maximum distance of the detectable binaries as the horizon distance. Figure~\\ref{fig:horizon distance} shows the horizon distance depending on the masses of a \\ac{PBH} and a \\ac{WD}. From this figure, we can find that we would detect the \\Acp{GW} from a \\ac{WD}-\\ac{PBH} binary at $\\sim\\SI{1}{Gpc}$ for $M_\\textrm{WD} \\gtrsim 0.8M_\\odot$ and $M_\\textrm{PBH} \\gtrsim 0.5M_\\odot$.",
+        "start": 19926,
+        "end": 20399,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "\\caption{Comparison of the relevant frequencies for \\ac{WD}-\\ac{PBH} and \\ac{WD}-\\ac{WD} binaries. Black solid and dotted lines are maximum and minimum frequencies realized by \\ac{WD}-\\ac{PBH} inspirals, respectively. Orange dashed lines show the merger frequency of the WD-WD binary whose component masses are $M_\\textrm{WD,1}$ and $M_\\textrm{WD,2}$. If the orange dashed line is below the black dotted line, \\ac{WD}-\\ac{PBH} and \\ac{WD}-\\ac{WD} binaries can be distinguished only by the inspiral waveform.",
+        "start": 20951,
+        "end": 21462,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The \\ac{GW} waveform from a compact binary is characterized by the chirp mass $\\Mc$. Therefore, if a WD-WD binary and a WD-PBH binary have similar component masses, they can not be distinguished only from the chirp mass. However, the merger frequency can be different because of the difference in the radii of \\Acp{WD} and \\Acp{PBH}. We discuss, here, how we can distinguish WD-WD binaries and WD-PBH binaries by the difference in the merger frequencies.",
+        "start": 21709,
+        "end": 22163,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The merger frequency of WD-WD binaries, which is denoted by $f_\\textrm{merge}^\\textrm{BWD}$, is estimated as well as the merger frequency of WD-PBH binaries. We consider the WD-WD binary with the masses of $M_\\textrm{WD,1}$ and $M_\\textrm{WD,2}$. We use $R_\\textrm{tidal,1}$ to denote the tidal radius in which the first \\ac{WD} ($M_\\textrm{WD,1}$ and $R_\\textrm{WD,1}$ is disrupted by the companion \\ac{WD} ($M_\\textrm{WD,2}$. It is estimated by",
+        "start": 22165,
+        "end": 22613,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "By changing the labels $1 \\leftrightarrow 2$, the tidal radius $R_\\textrm{tidal,2}$ can be defined.",
+        "start": 22752,
+        "end": 22851,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We define the frequency corresponding to $R_\\textrm{tidal}^\\textrm{BWD}$ by",
+        "start": 23060,
+        "end": 23135,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "When $M_\\textrm{WD,1} \\simeq M_\\textrm{WD,2}$, $R_\\textrm{tidal}^\\textrm{BWD}$ could be smaller than the sum of the WD's radii. In such cases, as the merger frequency, we should employ the Kepler frequency at the time when the binary separation is equal to the sum of the WD's radii:",
+        "start": 23312,
+        "end": 23595,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Figure~\\ref{fig: merger frequency} shows the comparisons between the merger frequencies, $f^\\textrm{WD-PBH}_\\textrm{merge}$ and $f^\\textrm{BWD}_\\textrm{merge}$, and the initial frequency $f^\\textrm{WD-PBH}_\\textrm{start}$ of the WD-PBH binary as functions of $\\mpbh$. If the frequency satisfies $f_\\textrm{merge}^\\textrm{BWD} \\leq f_\\textrm{start}^\\textrm{WD-PBH}$, the WD-PBH binary merges at the frequency that WD-WD binaries with the same masses never reach. So, we can distinguish the WD-PBH binary and the WD-WD binary by the difference in the merger frequencies.",
+        "start": 24022,
+        "end": 24590,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "Figure~\\ref{fig: merger frequency zoom} zooms in on the right panel of Fig.~\\ref{fig: merger frequency}, focusing on the regions where $0.5~ M_\\odot \\lesssim M_{\\WD,1} \\lesssim 0.6 ~M_\\odot$.",
+        "start": 24789,
+        "end": 24980,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "the merger frequency of the WD-WD binary is located between $f^\\textrm{WD-PBH}_\\textrm{start}$ and $f^\\textrm{WD-PBH}_\\textrm{merge}$.",
+        "start": 25041,
+        "end": 25176,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $\\varrho'$ is defined by",
+        "start": 25582,
+        "end": 25612,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\frac{f^{-7/3}}{S_\\textrm{n}(f)} & \\text{for $f_\\textrm{start}^\\textrm{WD-PBH} < f_\\textrm{merge}^\\textrm{BWD}$,} \\\\",
+        "start": 25972,
+        "end": 26092,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "0 & \\text{for $f_\\textrm{start}^\\textrm{WD-PBH} \\geq f_\\textrm{merge}^\\textrm{BWD}$.} %\\,.",
+        "start": 26093,
+        "end": 26187,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "If $f^\\textrm{BWD}_\\textrm{merge}$ is equal or very close to $f^\\textrm{WD-PBH}_\\textrm{merge}$, we could not judge whether the binary is a WD-PBH binary or a WD-WD binary only from their inspiral parts because they have the same frequency evolution during the observational period. In such case, $\\varrho'$ equals $\\varrho$. In this sense, the ``distinguishability\" $x_\\mathrm{dis}$ is a quantity representing how likely we can distinguish a WD-PBH binary from a WD-WD binary.",
+        "start": 26219,
+        "end": 26696,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "That is, for $x_\\mathrm{dis} \\simeq 1$, we can distinguish a WD-PBH binary and a WD-WD binary, but for $x_\\mathrm{dis} \\simeq 0$, we can not distinguish a WD-PBH binary and a WD-WD binary.",
+        "start": 26697,
+        "end": 26885,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Figure~\\ref{fig: overlap} shows the distinguishability $x_\\mathrm{dis}$ as a function of the WD's mass with $\\mpbh=1.2M_\\odot$ and $1.4M_\\odot$.",
+        "start": 26888,
+        "end": 27032,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Let us focus on the case of $\\mpbh = 1.4M_\\odot$ (thick black line in Fig.~\\ref{fig: overlap}).",
+        "start": 27033,
+        "end": 27128,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For $\\mwd \\gtrsim 0.55M_\\odot$, the distinguishability $x_\\mathrm{dis}$ of a WD-PBH binary and a WD-WD binary is almost unity. This is because the merger frequency of a WD-WD binary is lower than the initial frequency of a WD-PBH binary, as Fig.~\\ref{fig: merger frequency zoom} shows. On the other hand, for $\\mwd \\lesssim 0.55 M_\\odot$, the merger frequencies of a WD-WD binary and a WD-PBH binary are the same. This leads to no distinguishability in SNR.",
+        "start": 27129,
+        "end": 27586,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\caption{Enlarged figure of the right panel of Fig.~\\ref{fig: merger frequency}. While binaries are distinguishable for $M_{\\WD,1}\\gtrsim0.56M_\\odot$, it is hard for $M_{\\WD,1}\\lesssim0.56M_\\odot$ and impossible for $M_{\\WD,1}\\lesssim0.54M_\\odot$ to distinguish them only by the inspiral waveform and hence the merger waveform is required which is beyond the scope of the paper.}",
+        "start": 27958,
+        "end": 28341,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\caption{Distinguishability~\\eqref{eq: overlap} in black lines. The thick (thin) line shows the \\ac{PBH} mass of 1.4 $M_\\odot$ (1.2 $M_\\odot$. The distance to the source is chosen such that the reference \\ac{SNR} $\\varrho=30$. Although the integrals $I_7$ and $I'_7$ depend on the redshift, the result is not much affected by the value of the reference SNR.",
+        "start": 28471,
+        "end": 28833,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "The orange dash-dotted lines represent the contact radius of the WD-WD binary whose component masses are $\\mwd$ and $1.4M_\\odot$ ($1.2M_\\odot$.}",
+        "start": 28909,
+        "end": 29058,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "with the comoving volume $V(z)$ within the redshift $z$, the halo mass function $\\displaystyle \\dv{n_\\textrm{halo}}{M_\\textrm{h}}$, and the merger rate density per halo per logarithmic \\ac{WD} mass $\\displaystyle \\dv{R_\\textrm{WD-PBH}}{\\ln \\mwd}$.",
+        "start": 29657,
+        "end": 29904,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "We set the minimum and maximum masses of halos at $M_{\\uh,\\umin}=400M_\\odot$ and $M_{\\uh,\\umax}=10^{16} M_\\odot$, respectively.",
+        "start": 30035,
+        "end": 30162,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We have confirmed that the event rate of WD-PBH mergers is not very sensitive to the choice of $M_\\mathrm{h,min}$ and $M_\\mathrm{h,max}$.",
+        "start": 30163,
+        "end": 30300,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Note that we assume the fraction of \\ac{PBH} to the dark matter, $\\fpbh$, is unity though astrophysical observations have already put the constraint $\\fpbh \\lesssim \\calO(10^{-1})$ for $\\mpbh = 0.1M_\\odot$.",
+        "start": 30736,
+        "end": 30943,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "where $\\alpha_\\textrm{WD}$ and $\\alpha_\\textrm{PBH}$ are the enhancement factors induced by some mechanisms related to the \\Acp{WD} and the \\Acp{PBH}, respectively.",
+        "start": 32001,
+        "end": 32165,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Even forgetting about the realistic astrophysical processes, $\\alpha_\\PBH$ cannot be enlarged arbitrarily because it would conflict with the current constraint on the \\ac{PBH}-\\ac{PBH} merger rate achieved by the ground-based \\ac{GW} detectors.",
+        "start": 32167,
+        "end": 32411,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As we explained in Sec.~\\ref{sec: introduction}, PBH-PBH binaries are formed in two channels, and the early-time formation basically dominates the late-time formation. However, if the enhancement factor $\\alpha_\\mathrm{PBH}$ for \\ac{WD}-\\ac{PBH} is too large, it would also enhance the late-time \\ac{PBH}-\\ac{PBH} formation, making it dominant and leading to the violation of the current constraint on the event rate of subsolar mass \\ac{PBH} binary coalescences.",
+        "start": 32412,
+        "end": 32875,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Because $\\alpha_\\PBH$ phenomenologically parametrizes the enhancement due to the \\ac{PBH} properties, the \\ac{PBH}-\\ac{PBH} merger rate would also be enhanced in a similar way as",
+        "start": 32992,
+        "end": 33170,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $N^\\textrm{PBH-PBH}_\\textrm{event}$ is the expected number of PBH-PBH mergers estimated with $f_\\textrm{PBH} = 1$ and $\\alpha_\\textrm{PBH}=1$. So far, binary mergers with masses of less than $1M_\\odot$ have not been detected.",
+        "start": 33327,
+        "end": 33558,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Therefore, $\\tilde{N}^\\textrm{PBH-PBH}_\\textrm{event}$ should be less than unity. For $\\mpbh = 10^{-1} M_\\odot$ as our interest, we find $N^\\textrm{PBH-PBH}_\\textrm{event} \\sim 1 \\times 10^{-5}$ (see Fig.~\\ref{fig: event number of PBHPBH merger} in the appendix). Therefore, we get the upper bound",
+        "start": 33559,
+        "end": 33856,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Substituting this into $\\tilde{N}^\\textrm{WD-PBH}_\\textrm{event}$ and taking the value $N^\\textrm{WD-PBH}_\\textrm{event} = 2 \\times 10^{-6}$, the required enhancement factor $\\alpha_\\textrm{WD}$ for the detectable event rate of \\ac{WD}-\\ac{PBH} binaries would be",
+        "start": 34033,
+        "end": 34295,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "We have shown that the \\Acp{GW} from WD-PBH binaries at $\\sim \\SI{1}{Gpc}$ are detectable when their mass satisfies $M_{\\textrm{WD}}\\gtrsim 0.",
+        "start": 35272,
+        "end": 35414,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "8 M_{\\odot}$ and $M_{\\textrm{PBH}} \\gtrsim 0.",
+        "start": 35414,
+        "end": 35459,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "We found that WD-PBH mergers can be distinguished from other binaries just by looking at the merger frequency unless the \\ac{WD} mass is less than $\\sim 0.",
+        "start": 35638,
+        "end": 35794,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "The conservative expectation of the number of WD-PBH merger events is too small ($\\sim \\calO(10^{-6})$ to be detected for $\\mpbh \\sim 10^{-1}M_\\odot$.",
+        "start": 36015,
+        "end": 36167,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We conclude that $\\calO(10^3)$ enhancement due to WD-related mechanisms could enable the detection of $\\calO(1)$ WD-PBH merger events by three-year DECIGO observation without violating the current \\ac{PBH}-\\ac{PBH} constraint.",
+        "start": 36611,
+        "end": 36837,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We employ the definition of the halo mass by the mass contained in a sphere where the averaged density is $200$ times larger than the critical density $\\rho_\\textrm{crit}$. The virial radius $r_\\textrm{vir}$ is defined by the radius of the sphere which is used in the definition of the halo mass. In other words, $r_\\textrm{vir}$ satisfies",
+        "start": 38827,
+        "end": 39167,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "where $\\rho_\\textrm{DM}(r)$ is the dark matter density profile. We use the \\ac{NFW} profile~\\cite{Navarro:1995iw,Navarro:1996gj} for dark matter mass density profile (see Fig.~\\ref{fig:NFW profile} for examples of this profile),",
+        "start": 39373,
+        "end": 39601,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\rho_\\us$ and $r_\\us$ characterize the density profile and are determined from the halo mass $M_\\textrm{h}$ and the concentration factor $C \\coloneqq r_\\textrm{vir} / r_\\textrm{s}$. The virial radius is given by the halo mass as shown in Eq.~\\eqref{eq:virial radius}. So, we get the $r_\\textrm{s}$ from $M_\\textrm{h}$ and $C$. The density parameter $\\rho_\\textrm{s}$ is given by",
+        "start": 39731,
+        "end": 40116,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 8
+        }
+      },
+      {
+        "content": "\\caption{Examples of NFW profiles. We fix the redshift to $z=0$.}",
+        "start": 40325,
+        "end": 40394,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\nu(z) \\coloneqq \\delta_\\textrm{sc} / \\sigma_\\mathrm{m}(M,z)$ is the dimensionless peak height, $\\delta_\\textrm{sc} = 1.686$ is the spherical top-hat collapse threshold, and the parameters $\\{c_0, \\beta, \\gamma_1, \\gamma_2, \\nu_0\\}$ are",
+        "start": 40776,
+        "end": 41019,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "with $x = 1+z$ and the linear growth factor $D(z)^{-1}$. These relation is valid for $0 \\leq \\log(1+z) \\leq 1$ and $-8 \\leq \\log_{10} \\bqty{ M / \\pqty{h^{-1}M_\\odot}} \\leq 16.5$\\,.",
+        "start": 41326,
+        "end": 41506,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Here, $h$ is the Hubble parameter in the unit of $\\SI{100}{km.s^{-1}.Mpc^{-1}}$.",
+        "start": 41507,
+        "end": 41587,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The function $\\sigma_\\mathrm{m}(M, z)$ is the root mean square of the linear density field smoothed on the scale $R(M)=\\bqty{3M/\\pqty{4 \\pi \\bar{\\rho}_\\um}}^{1/3}$ and defined by",
+        "start": 41588,
+        "end": 41766,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $P(k)$ stands for the linear matter power spectrum and $\\hat{W}(kR)$ is the Fourier transformation of the top-hat window function with radius $R$ defined in the real space.",
+        "start": 41953,
+        "end": 42131,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "$\\sigma_\\mathrm{m}$ is approximated by",
+        "start": 42132,
+        "end": 42171,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "and $\\Omega_\\textrm{m}(z) = 1 - \\Omega_\\Lambda(z)$.",
+        "start": 42899,
+        "end": 42950,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\subsection{Average of capture rate $\\sigma \\vrel$}",
+        "start": 42953,
+        "end": 43004,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The cross-section $\\sigma$ (not to confuse it with the perturbation amplitude $\\sigma_\\um$~\\eqref{eq: variance sigma}) of a \\ac{PBH} and a \\ac{WD} with the relative velocity $v_\\rel$ is",
+        "start": 43006,
+        "end": 43191,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The probability distribution of $\\vrel$ would be approximated by the truncated Maxwell--Boltzmann distribution~\\cite{Bird:2016dcv}:\\footnote{Strictly speaking, Bird~\\etal~\\cite{Bird:2016dcv} employed this distribution for the \\ac{PBH}-\\ac{PBH} relative velocity.}",
+        "start": 43377,
+        "end": 43640,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\vvir$ is the virial velocity, $\\vdm$ is the velocity dispersion of the dark matter (PBHs), and $F_0$ is the constant determined by the normalization",
+        "start": 43781,
+        "end": 43937,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "$\\vdm$ and $\\vvir$ can be related with halo parameters via Eq.~(6) of Ref.~\\cite{Bird:2016dcv}: \\begin{equation}\\label{eq: vDM}",
+        "start": 44028,
+        "end": 44155,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $g(C) = \\ln (1+C) - C/(1+C)$, and $x_\\mathrm{max} = r_\\mathrm{max} / r_s = 2.1626$ (equal to $C_m$ of Ref.~\\cite{Bird:2016dcv}).",
+        "start": 44326,
+        "end": 44460,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "$M(r<r_\\textrm{max})$ is the mass contained in the sphere of the radius $r_\\textrm{max}$.",
+        "start": 44461,
+        "end": 44550,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Once we get the parameters $\\{r_\\mathrm{s}, \\rho_\\mathrm{s}, C\\}$, we obtain the velocity dispersion $\\vdm$ from the first equality of Eq.~\\eqref{eq: vDM} and the virial velocity $\\vvir$ from the second equality.",
+        "start": 44954,
+        "end": 45166,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The average of $\\sigma \\vrel$ is given by",
+        "start": 45167,
+        "end": 45208,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "with $\\hat{v} = v / \\vdm$, $\\hat{v}_\\mathrm{vir} = \\vvir / \\vdm$, and $\\hat{F}_0 = 4\\pi \\vdm^3 F_0$.",
+        "start": 45831,
+        "end": 45931,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The merger rate of a \\ac{WD} with the mass of $M_\\WD$ and a \\ac{PBH} in a particular halo with the mass of $M_\\textrm{h}$ is",
+        "start": 45981,
+        "end": 46106,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $n_\\WD$ and $n_\\PBH$ are the number density profiles of \\Acp{WD} and \\Acp{PBH}, respectively.",
+        "start": 46287,
+        "end": 46386,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $\\mathcal{N}_\\WD$ is the normalization constant depending on the mass $\\mwd$, and $r_\\WD$ is the characteristic radius that is assumed to be independent of the mass.",
+        "start": 47027,
+        "end": 47199,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The normalization $\\mathcal{N}_\\WD$ is calculated as follows.",
+        "start": 47324,
+        "end": 47385,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We use the relation between the halo mass $M_\\uh$ and the stellar mass $M_\\ast$ of the galaxy. Behroozi~\\etal~\\cite{Behroozi_2010} gives the fitting function",
+        "start": 47452,
+        "end": 47610,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $a$ is the scale factor. The parameters are taken from Table 2 of Ref.~\\cite{Behroozi_2010}: $M_{1,0} = 12.35$, $M_{1,a} = 0.28$, $M_{\\ast,0,0} = 10.72$, $M_{\\ast,0,a} = 0.55$, $\\beta_0 = 0.44$, $\\beta_a = 0.18$, $\\gamma_0 = 1.56$, $\\gamma_a = 2.51$, $\\delta_0 = 0.57$, and $\\delta_a = 0.17$.",
+        "start": 48104,
+        "end": 48403,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 11
+        }
+      },
+      {
+        "content": "where $V$ is defined by",
+        "start": 48826,
+        "end": 48849,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "and we set $M_\\mathrm{MS, min}=0.01 M_\\odot$ and $M_\\mathrm{MS,max} = 100M_\\odot$.",
+        "start": 48925,
+        "end": 49007,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $\\alpha_\\textrm{BD} = 0.8$, $\\alpha_\\textrm{MS1} = 1.3$, and $\\alpha_\\textrm{MS2} = 2.0$~\\cite{2017Natur.548..183M}.",
+        "start": 49600,
+        "end": 49723,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The constant $A_\\textrm{MS}$ is determined by the continuity at $M_\\MS=0.08M_\\odot$, and $A_\\textrm{BD}$ is chosen so that Eq.~\\eqref{eq: M ast condition} holds.",
+        "start": 49724,
+        "end": 49885,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "We assume that the main sequence stars with masses of $1M_\\odot \\leq M_\\MS \\leq 8 M_\\odot$ collapse to \\Acp{WD}. Taking into account the mass loss of the stars, the mass of a \\ac{WD} is estimated by the empirical relation~\\cite{Williams:2008ms},",
+        "start": 49886,
+        "end": 50131,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $M_\\textrm{MS}$ is a mass of the progenitor of the \\ac{WD}. Using this relation, we can convert the mass spectrum of the main sequence stars to that of the \\Acp{WD} which is denoted by",
+        "start": 50238,
+        "end": 50428,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{Halo mass function~\\eqref{eq: halo mass function} in the form of $\\log_{10}\\pqty{\\frac{M_\\uh^2}{\\bar{\\rho}_\\um}\\dv{n_\\halo}{M_\\uh}}$.}",
+        "start": 51184,
+        "end": 51331,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Integrating the merger rate in a particular halo with a weight due to the halo mass function (i.e., the number of halos with the mass of $M_\\textrm{h}$ per comoving volume), we get the merger rate of a particular mass of \\ac{WD} per unit time per comoving volume by",
+        "start": 51381,
+        "end": 51646,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\dv*{n_\\textrm{halo}}{M_\\textrm{h}}$ is the halo mass function. The fitting function of the halo mass function is given by Tinker~\\etal~\\cite{Tinker:2008ff}:",
+        "start": 51831,
+        "end": 51995,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "with the matter density $\\bar{\\rho}_\\um(z) = \\Omega_\\um(z) \\rho_\\textrm{crit}(z)$ and",
+        "start": 52190,
+        "end": 52275,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For $\\{A, a,b, c\\}$, we use the values for $\\Delta =200$ (corresponding to the definition of the virial radius~\\eqref{eq:virial radius}) in Table~2 in Ref.~\\cite{Tinker:2008ff}, i.e.,",
+        "start": 52433,
+        "end": 52616,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\subsection{Rate of detectable mergers of \\ac{PBH} and \\ac{WD} with a particular mass $M_\\WD$}",
+        "start": 52814,
+        "end": 52908,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{Unit comoving volume $\\dv*{V}{z}$~\\eqref{eq: unit comoving volume}.}",
+        "start": 53003,
+        "end": 53084,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Figure~\\ref{fig:unit comoving volume} shows $\\dv*{V}{z}$.",
+        "start": 53334,
+        "end": 53391,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Using $\\dv*{V}{z}$, we get the rate of the detectable mergers of \\ac{PBH} and \\ac{WD} with a particular mass $M_\\WD$ by",
+        "start": 53393,
+        "end": 53512,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Here, $z_\\textrm{up}$ is determined by the horizon distance,",
+        "start": 53740,
+        "end": 53800,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The horizon distance depends on the \\ac{WD} and \\ac{PBH} masses and the detector's sensitivity, and so does $z_\\textrm{up}$.",
+        "start": 53976,
+        "end": 54100,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Because we assume the monochromatic mass distribution for \\Acp{PBH}, we do not carry out the integration over $\\mpbh$.",
+        "start": 54637,
+        "end": 54755,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The merger rate density per one halo $R_\\mathrm{PBH-PBH}$ is given by",
+        "start": 54756,
+        "end": 54825,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "When we estimate $z_\\mathrm{up}$, we use the PSD achieved in the first observation run of the LIGO-Virgo Collaboration,",
+        "start": 55178,
+        "end": 55297,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      }
+    ],
+    "tables": [
+      {
+        "content": "\\begin{tabular}{ccc}\n        \\begin{minipage}{0.33\\hsize}\n            \\centering\n            \\includegraphics[width=5.9cm]{merger_frequencies_mbh0.4.pdf}\n        \\end{minipage} &\n        \\begin{minipage}{0.33\\hsize}\n            \\centering\n            \\includegraphics[width=5.9cm]{merger_frequencies_mbh1.2.pdf}\n        \\end{minipage} &\n        \\begin{minipage}{0.33\\hsize}\n            \\centering\n            \\includegraphics[width=5.9cm]{merger_frequencies_mbh1.4.pdf}\n        \\end{minipage}\n    \\end{tabular}",
+        "start": 20440,
+        "end": 20950,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      }
+    ],
+    "total_items": 167
+  }
+]

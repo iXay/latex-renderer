@@ -1,0 +1,2414 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00018/2401.00018/br.tex",
+    "display_formulas": [
+      {
+        "content": "$$G(\\tau) = \\langle \\mathcal{T}_{\\tau} d(\\tau) d^{\\dagger}(0)\\rangle,$$",
+        "start": 13210,
+        "end": 13309,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "G(\\tau) = \\langle \\mathcal{T}_{\\tau} d(\\tau) d^{\\dagger}(0)\\rangle,"
+        }
+      },
+      {
+        "content": "$$G(i\\omega_n) = \\int^{\\beta}_0 d\\tau~e^{-i\\omega_n \\tau} G(\\tau),$$",
+        "start": 13617,
+        "end": 13713,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "G(i\\omega_n) = \\int^{\\beta}_0 d\\tau~e^{-i\\omega_n \\tau} G(\\tau),"
+        }
+      },
+      {
+        "content": "$$P[A|G] = \\frac{P[G|A] P[A]}{P[G]},$$",
+        "start": 16158,
+        "end": 16224,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "P[A|G] = \\frac{P[G|A] P[A]}{P[G]},"
+        }
+      },
+      {
+        "content": "$$P[A|G] \\propto e^{Q},$$",
+        "start": 17173,
+        "end": 17226,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "P[A|G] \\propto e^{Q},"
+        }
+      },
+      {
+        "content": "$$S_{\\text{SJ}}[A] = -\\int d\\omega~A(\\omega) \\log \\left(\\frac{A(\\omega)}{D(\\omega)}\\right).$$",
+        "start": 18962,
+        "end": 19083,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "S_{\\text{SJ}}[A] = -\\int d\\omega~A(\\omega)\n\\log \\left(\\frac{A(\\omega)}{D(\\omega)}\\right)."
+        }
+      },
+      {
+        "content": "$$\\int d\\omega~A(\\omega) > 0.$$",
+        "start": 20219,
+        "end": 20278,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\int d\\omega~A(\\omega) > 0."
+        }
+      },
+      {
+        "content": "$$\\int d\\omega~A(\\omega) = 0.$$",
+        "start": 20462,
+        "end": 20521,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\int d\\omega~A(\\omega) = 0."
+        }
+      },
+      {
+        "content": "$$A(\\omega) = A^{+}(\\omega) - A^{-}(\\omega).$$",
+        "start": 21017,
+        "end": 21091,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A(\\omega) = A^{+}(\\omega) - A^{-}(\\omega)."
+        }
+      },
+      {
+        "content": "$$S^{\\pm}[A] = S[A^{+},A^{-}] = S[A^+] + S[A^-].$$",
+        "start": 21230,
+        "end": 21308,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "S^{\\pm}[A] = S[A^{+},A^{-}] = S[A^+] + S[A^-]."
+        }
+      },
+      {
+        "content": "$$s_{\\text{SJ}}(x) = x - 1 - x\\log{x},$$",
+        "start": 23116,
+        "end": 23184,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "s_{\\text{SJ}}(x) = x - 1 - x\\log{x},"
+        }
+      },
+      {
+        "content": "$$s_{\\text{BR}}(x) = 1 - x + \\log{x},$$",
+        "start": 23185,
+        "end": 23252,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "s_{\\text{BR}}(x) = 1 - x + \\log{x},"
+        }
+      },
+      {
+        "content": "$$s^{\\pm}_{\\text{SJ}}(x) = \\sqrt{x^2 + 4} - 2 - x \\log{\\frac{\\sqrt{x^2 + 4}+x}{2}},$$",
+        "start": 23253,
+        "end": 23366,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "s^{\\pm}_{\\text{SJ}}(x) = \\sqrt{x^2 + 4} - 2 - x \\log{\\frac{\\sqrt{x^2 + 4}+x}{2}},"
+        }
+      },
+      {
+        "content": "$$s^{\\pm}_{\\text{BR}}(x) = 2 - (\\sqrt{x^2 + 1} + 1) + \\log{\\frac{\\sqrt{x^2+1}+1}{2}}.$$",
+        "start": 23367,
+        "end": 23482,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "s^{\\pm}_{\\text{BR}}(x) = 2 - (\\sqrt{x^2 + 1} + 1) + \\log{\\frac{\\sqrt{x^2+1}+1}{2}}."
+        }
+      },
+      {
+        "content": "$$R_i = 100 \\left|\\frac{\\Delta G_i}{G_i}\\right| = 100 \\left|\\frac{G_i - \\tilde{G}_i[\\hat{A}]}{G_i}\\right|,$$",
+        "start": 28817,
+        "end": 28957,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "R_i = 100 \\left|\\frac{\\Delta G_i}{G_i}\\right|\n    = 100 \\left|\\frac{G_i - \\tilde{G}_i[\\hat{A}]}{G_i}\\right|,"
+        }
+      },
+      {
+        "content": "$$\\mathbf{A}'(\\omega) = \\left[ \\begin{array}{cc} A'_{11}(\\omega) & 0 \\\\ 0 & A'_{22}(\\omega) \\\\ \\end{array} \\right].$$",
+        "start": 32556,
+        "end": 32709,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\mathbf{A}'(\\omega) =\n\\left[\n\\begin{array}{cc}\n    A'_{11}(\\omega) & 0 \\\\\n    0 & A'_{22}(\\omega) \\\\\n\\end{array}\n\\right]."
+        }
+      },
+      {
+        "content": "$$\\mathbf{A}(\\omega) = \\left[ \\begin{array}{cc} A_{11}(\\omega) & A_{12}(\\omega) \\\\ A_{21}(\\omega) & A_{22}(\\omega) \\\\ \\end{array} \\right].$$",
+        "start": 33189,
+        "end": 33365,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\mathbf{A}(\\omega) =\n\\left[\n\\begin{array}{cc}\n    A_{11}(\\omega) & A_{12}(\\omega) \\\\\n    A_{21}(\\omega) & A_{22}(\\omega) \\\\\n\\end{array}\n\\right]."
+        }
+      },
+      {
+        "content": "$$K_{b}(i\\omega_n,\\omega) = \\int^{\\infty}_{-\\infty} d\\omega'~ K(i\\omega_n,\\omega') g_b(\\omega - \\omega').$$",
+        "start": 39563,
+        "end": 39702,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "K_{b}(i\\omega_n,\\omega) = \\int^{\\infty}_{-\\infty} d\\omega'~\n    K(i\\omega_n,\\omega') g_b(\\omega - \\omega')."
+        }
+      },
+      {
+        "content": "$$g_b(\\omega) = \\frac{\\exp{(-\\omega^2 / 2b^2)}}{\\sqrt{2\\pi} b},$$",
+        "start": 39869,
+        "end": 39962,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "g_b(\\omega) = \\frac{\\exp{(-\\omega^2 / 2b^2)}}{\\sqrt{2\\pi} b},"
+        }
+      },
+      {
+        "content": "$$\\chi^2 [A] = \\sum^{N}_{n = 1} \\frac{(G_n - \\sum_m K_{nm} A_m \\Delta_m)^2 }{\\sigma^2_n}.$$",
+        "start": 50528,
+        "end": 50647,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\chi^2 [A] = \\sum^{N}_{n = 1} \\frac{(G_n - \\sum_m K_{nm} A_m \\Delta_m)^2 }{\\sigma^2_n}."
+        }
+      },
+      {
+        "content": "$$K = U \\xi V^{T},$$",
+        "start": 52153,
+        "end": 52201,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "K = U \\xi V^{T},"
+        }
+      },
+      {
+        "content": "$$\\frac{\\partial Q[A]}{\\partial A_i} = 0.$$",
+        "start": 53072,
+        "end": 53143,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\partial Q[A]}{\\partial A_i} = 0."
+        }
+      },
+      {
+        "content": "$$\\alpha \\Delta_i \\log \\left(\\frac{A_i}{D_i}\\right) + \\sum^{N}_{n=1} \\frac{K_{ni} \\Delta_i}{\\sigma^2_{n}} \\left(\\sum_m K_{nm} A_m \\Delta_m - G_n \\right) = 0.$$",
+        "start": 53415,
+        "end": 53610,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\alpha \\Delta_i \\log \\left(\\frac{A_i}{D_i}\\right) +\n    \\sum^{N}_{n=1} \\frac{K_{ni} \\Delta_i}{\\sigma^2_{n}}\n    \\left(\\sum_m K_{nm} A_m \\Delta_m - G_n \\right) = 0."
+        }
+      },
+      {
+        "content": "$$&~& \\alpha \\sum_m V_{im} u_m + \\nonumber\\\\ &~&~~\\sum^{N}_{n = 1} \\frac{1}{\\sigma^2_n} \\sum_m U_{nm} \\xi_m V_{im} \\left(\\sum_l K_{nl}A_l \\Delta_l -G_n \\right) = 0.$$",
+        "start": 53918,
+        "end": 54116,
+        "metadata": {
+          "type": "display_env",
+          "envname": "eqnarray",
+          "latex": "&~& \\alpha \\sum_m V_{im} u_m + \\nonumber\\\\\n&~&~~\\sum^{N}_{n = 1} \\frac{1}{\\sigma^2_n} \\sum_m U_{nm} \\xi_m V_{im}\n    \\left(\\sum_l K_{nl}A_l \\Delta_l -G_n \\right) = 0."
+        }
+      },
+      {
+        "content": "$$B_m = \\sum^{N}_{n = 1} \\frac{1}{\\sigma^2_n} \\xi_m U_{nm} G_n,$$",
+        "start": 55470,
+        "end": 55563,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "B_m = \\sum^{N}_{n = 1} \\frac{1}{\\sigma^2_n} \\xi_m U_{nm} G_n,"
+        }
+      },
+      {
+        "content": "$$W_{ml} = \\sum_{pn} \\frac{1}{\\sigma^2_n} U_{nm}\\xi_m U_{np} \\xi_p V_{lp} \\Delta_l D_l,$$",
+        "start": 55564,
+        "end": 55685,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "W_{ml} = \\sum_{pn} \\frac{1}{\\sigma^2_n}\n    U_{nm}\\xi_m U_{np} \\xi_p V_{lp} \\Delta_l D_l,"
+        }
+      },
+      {
+        "content": "$$W_{mli} = W_{ml} V_{li}.$$",
+        "start": 55686,
+        "end": 55742,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "W_{mli} = W_{ml} V_{li}."
+        }
+      },
+      {
+        "content": "$$f_m = \\alpha u_m + \\sum_l W_{ml} w_l - B_m,$$",
+        "start": 55968,
+        "end": 56043,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "f_m = \\alpha u_m + \\sum_l W_{ml} w_l - B_m,"
+        }
+      },
+      {
+        "content": "$$J_{mi} = \\alpha \\delta_{mi} + \\sum_l W_{mli} w_l,$$",
+        "start": 56044,
+        "end": 56125,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "J_{mi} = \\alpha \\delta_{mi} + \\sum_l W_{mli} w_l,"
+        }
+      },
+      {
+        "content": "$$w_l = \\exp \\left(\\sum_m V_{lm} u_m\\right).$$",
+        "start": 56132,
+        "end": 56206,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "w_l = \\exp \\left(\\sum_m V_{lm} u_m\\right)."
+        }
+      },
+      {
+        "content": "$$A = A^{+} - A^{-},$$",
+        "start": 56656,
+        "end": 56706,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A = A^{+} - A^{-},"
+        }
+      },
+      {
+        "content": "$$A^{-} = A^{+} - A.$$",
+        "start": 56707,
+        "end": 56757,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A^{-} = A^{+} - A."
+        }
+      },
+      {
+        "content": "$$S_{\\text{SJ}}[A,A^{+}] = \\int d\\omega \\left[ A^{+} - D - A^{+} \\log \\left(\\frac{A^{+}}{D}\\right) \\right]+ \\int d\\omega \\left [(A^{+} - A) - D - (A^{+} - A) \\log \\left(\\frac{A^{+}-A}{D}\\right)\\right],$$",
+        "start": 57332,
+        "end": 57571,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "S_{\\text{SJ}}[A,A^{+}] =\n    \\int d\\omega \\left[ A^{+} - D - A^{+} \\log \\left(\\frac{A^{+}}{D}\\right) \\right]+\n    \\int d\\omega \\left [(A^{+} - A) - D - (A^{+} - A) \\log \\left(\\frac{A^{+}-A}{D}\\right)\\right],"
+        }
+      },
+      {
+        "content": "$$Q[A,A^{+}] = \\alpha S_{\\text{SJ}}[A,A^{+}] - \\frac{1}{2} \\chi^{2}[A].$$",
+        "start": 57598,
+        "end": 57699,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "Q[A,A^{+}] = \\alpha S_{\\text{SJ}}[A,A^{+}] - \\frac{1}{2} \\chi^{2}[A]."
+        }
+      },
+      {
+        "content": "$$\\frac{\\partial Q[A,A^{+}]}{\\partial A^{+}} = \\frac{\\partial S_{\\text{SJ}}[A,A^{+}]}{\\partial A^{+}} = 0,$$",
+        "start": 57792,
+        "end": 57932,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\partial Q[A,A^{+}]}{\\partial A^{+}} =\n    \\frac{\\partial S_{\\text{SJ}}[A,A^{+}]}{\\partial A^{+}} = 0,"
+        }
+      },
+      {
+        "content": "$$%\\frac{\\partial S_{\\text{SJ}}[A,A^{+}]}{\\partial A^{+}} = \\int d\\omega \\left[ \\log \\left(\\frac{A^{+}}{D}\\right) +\\log \\left(\\frac{A^{+}-A}{D}\\right) \\right] = 0,$$",
+        "start": 58009,
+        "end": 58210,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "%\\frac{\\partial S_{\\text{SJ}}[A,A^{+}]}{\\partial A^{+}} =\n\\int d\\omega\n\\left[\n    \\log \\left(\\frac{A^{+}}{D}\\right)\n    +\\log \\left(\\frac{A^{+}-A}{D}\\right)\n\\right]\n= 0,"
+        }
+      },
+      {
+        "content": "$$\\log \\left(\\frac{A^{+}}{D}\\right) + \\log \\left(\\frac{A^{+}-A}{D}\\right) = 0,$$",
+        "start": 58211,
+        "end": 58319,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\log \\left(\\frac{A^{+}}{D}\\right) + \\log \\left(\\frac{A^{+}-A}{D}\\right) = 0,"
+        }
+      },
+      {
+        "content": "$$\\frac{A^{+}(A^{+} - A)}{D^2} = 1.$$",
+        "start": 58320,
+        "end": 58385,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{A^{+}(A^{+} - A)}{D^2} = 1."
+        }
+      },
+      {
+        "content": "$$S_{\\text{SJ}}[A^{+}, A^{-}] &=& \\sum_m \\Bigg[ \\sqrt{A_m^2 + 4D_m^2} - 2D_m \\nonumber \\\\ &-& A_m\\log\\left(\\frac{\\sqrt{A_m^2 + 4D_m^2} + A_m}{2D_m}\\right) \\Bigg]\\Delta_m.$$",
+        "start": 58939,
+        "end": 59139,
+        "metadata": {
+          "type": "display_env",
+          "envname": "eqnarray",
+          "latex": "S_{\\text{SJ}}[A^{+}, A^{-}] &=& \\sum_m\n\\Bigg[ \\sqrt{A_m^2 + 4D_m^2} - 2D_m \\nonumber \\\\\n&-& A_m\\log\\left(\\frac{\\sqrt{A_m^2 + 4D_m^2} + A_m}{2D_m}\\right)\n\\Bigg]\\Delta_m."
+        }
+      },
+      {
+        "content": "$$\\frac{\\partial S_{\\text{SJ}}[A^+,A^-]}{\\partial A_i} = -\\Delta_i \\log \\left(\\frac{A^+_i}{D_i}\\right).$$",
+        "start": 59353,
+        "end": 59491,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\partial S_{\\text{SJ}}[A^+,A^-]}{\\partial A_i} = \n    -\\Delta_i \\log \\left(\\frac{A^+_i}{D_i}\\right)."
+        }
+      },
+      {
+        "content": "$$A^{+} A^{-} = D^{2}.$$",
+        "start": 59628,
+        "end": 59680,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A^{+} A^{-} = D^{2}."
+        }
+      },
+      {
+        "content": "$$A^+_i = D_i \\exp \\left(\\sum_m V_{im} u_m\\right),$$",
+        "start": 59802,
+        "end": 59882,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A^+_i = D_i \\exp \\left(\\sum_m V_{im} u_m\\right),"
+        }
+      },
+      {
+        "content": "$$A^-_i = D_i \\exp \\left(-\\sum_m V_{im} u_m\\right).$$",
+        "start": 59883,
+        "end": 59964,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A^-_i = D_i \\exp \\left(-\\sum_m V_{im} u_m\\right)."
+        }
+      },
+      {
+        "content": "$$A_i = D_i \\exp \\left(\\sum_m V_{im} u_m\\right) - D_i \\exp \\left(-\\sum_m V_{im} u_m\\right)$$",
+        "start": 59972,
+        "end": 60093,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A_i = D_i \\exp \\left(\\sum_m V_{im} u_m\\right) - D_i \\exp \\left(-\\sum_m V_{im} u_m\\right)"
+        }
+      },
+      {
+        "content": "$$A_i = D_i \\left(w_i - \\frac{1}{w_i}\\right).$$",
+        "start": 60094,
+        "end": 60169,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A_i = D_i \\left(w_i - \\frac{1}{w_i}\\right)."
+        }
+      },
+      {
+        "content": "$$\\frac{\\partial A^+_l}{\\partial u_i} = A^+_l V_{li}.$$",
+        "start": 60170,
+        "end": 60253,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\partial A^+_l}{\\partial u_i} = A^+_l V_{li}."
+        }
+      },
+      {
+        "content": "$$\\frac{\\partial A^-_l}{\\partial u_i} = -A^-_l V_{li}.$$",
+        "start": 60254,
+        "end": 60338,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\partial A^-_l}{\\partial u_i} = -A^-_l V_{li}."
+        }
+      },
+      {
+        "content": "$$\\frac{\\partial A}{\\partial u_i} = (A^+_l + A^-_l) V_{li} = D_l \\left (w_l + \\frac{1}{w_l} \\right) V_{li}.$$",
+        "start": 60339,
+        "end": 60480,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\partial A}{\\partial u_i} = (A^+_l + A^-_l) V_{li}\n    = D_l \\left (w_l + \\frac{1}{w_l} \\right) V_{li}."
+        }
+      },
+      {
+        "content": "$$f_m = \\alpha u_m + \\sum_l W_{ml}\\left(w_l - \\frac{1}{w_l}\\right) - B_m,$$",
+        "start": 60586,
+        "end": 60689,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "f_m = \\alpha u_m + \\sum_l W_{ml}\\left(w_l - \\frac{1}{w_l}\\right) - B_m,"
+        }
+      },
+      {
+        "content": "$$J_{mi} = \\alpha \\delta_{mi} + \\sum_{l} W_{mli} \\left(w_l + \\frac{1}{w_l}\\right).$$",
+        "start": 60690,
+        "end": 60806,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "J_{mi} = \\alpha \\delta_{mi} +\n    \\sum_{l} W_{mli} \\left(w_l + \\frac{1}{w_l}\\right)."
+        }
+      },
+      {
+        "content": "$$S_{\\text{BR}}[A] = \\int d\\omega \\left[ 1 - \\frac{A(\\omega)}{D(\\omega)} + \\log \\left(\\frac{A(\\omega)}{D(\\omega)}\\right) \\right].$$",
+        "start": 61055,
+        "end": 61218,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "S_{\\text{BR}}[A] = \\int d\\omega\n\\left[\n    1 - \\frac{A(\\omega)}{D(\\omega)} + \\log \\left(\\frac{A(\\omega)}{D(\\omega)}\\right)\n\\right]."
+        }
+      },
+      {
+        "content": "$$S_{\\text{BR}}[A] = \\sum_i \\Delta_i \\left[ 1 - \\frac{A_i}{D_i} + \\log \\left(\\frac{A_i}{D_i}\\right) \\right].$$",
+        "start": 61247,
+        "end": 61389,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "S_{\\text{BR}}[A] = \\sum_i \\Delta_i\n\\left[\n    1 - \\frac{A_i}{D_i} + \\log \\left(\\frac{A_i}{D_i}\\right)\n\\right]."
+        }
+      },
+      {
+        "content": "$$A_l = \\frac{D_l}{ 1 - D_l \\sum_m V_{lm} u_m}.$$",
+        "start": 61911,
+        "end": 61988,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A_l = \\frac{D_l}{ 1 - D_l \\sum_m V_{lm} u_m}."
+        }
+      },
+      {
+        "content": "$$\\alpha \\Delta_i \\left(\\frac{1}{D_i} - \\frac{1}{A_i}\\right) + \\sum^{N}_{n=1} \\frac{K_{ni} \\Delta_i}{\\sigma^2_{n}} \\left(\\sum_m K_{nm} A_m \\Delta_m - G_n \\right) = 0.$$",
+        "start": 62343,
+        "end": 62547,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\alpha \\Delta_i \\left(\\frac{1}{D_i} - \\frac{1}{A_i}\\right) +\n    \\sum^{N}_{n=1} \\frac{K_{ni} \\Delta_i}{\\sigma^2_{n}}\n    \\left(\\sum_m K_{nm} A_m \\Delta_m - G_n \\right) = 0."
+        }
+      },
+      {
+        "content": "$$&~& \\alpha \\sum_m V_{im} u_m + \\nonumber \\\\ &~&~~ \\sum^{N}_{n = 1} \\frac{1}{\\sigma^2_n} \\sum_m U_{nm} \\xi_m V_{im} \\left(\\sum_l K_{nl}A_l \\Delta_l -G_n \\right) = 0.$$",
+        "start": 62845,
+        "end": 63047,
+        "metadata": {
+          "type": "display_env",
+          "envname": "eqnarray",
+          "latex": "&~& \\alpha \\sum_m V_{im} u_m + \\nonumber \\\\\n&~&~~ \\sum^{N}_{n = 1} \\frac{1}{\\sigma^2_n} \\sum_m U_{nm} \\xi_m V_{im}\n      \\left(\\sum_l K_{nl}A_l \\Delta_l -G_n \\right) = 0."
+        }
+      },
+      {
+        "content": "$$f_m = \\alpha u_m + \\sum_l W_{ml} w_l - B_m,$$",
+        "start": 64111,
+        "end": 64186,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "f_m = \\alpha u_m + \\sum_l W_{ml} w_l - B_m,"
+        }
+      },
+      {
+        "content": "$$J_{mi} = \\alpha \\delta_{mi} + \\sum_l W_{mli} D_l w_l w_l,$$",
+        "start": 64187,
+        "end": 64276,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "J_{mi} = \\alpha \\delta_{mi} + \\sum_l W_{mli} D_l w_l w_l,"
+        }
+      },
+      {
+        "content": "$$w_l = \\frac{1}{1 - D_l \\sum_m V_{lm} u_m}.$$",
+        "start": 64283,
+        "end": 64357,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "w_l = \\frac{1}{1 - D_l \\sum_m V_{lm} u_m}."
+        }
+      },
+      {
+        "content": "$$\\frac{\\partial S_{\\text{BR}}[A, A^+] }{\\partial A^+} = 0 = \\int d\\omega \\left(\\frac{1}{A^+} + \\frac{1}{A^+-A} -\\frac{2}{D} \\right),$$",
+        "start": 65484,
+        "end": 65655,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\partial S_{\\text{BR}}[A, A^+] }{\\partial A^+} = 0 =\n    \\int d\\omega\n    \\left(\\frac{1}{A^+} + \\frac{1}{A^+-A} -\\frac{2}{D} \\right),"
+        }
+      },
+      {
+        "content": "$$A^+ = \\frac{\\sqrt{A^2 + D^2} + D + A}{2},$$",
+        "start": 65676,
+        "end": 65749,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A^+ = \\frac{\\sqrt{A^2 + D^2} + D + A}{2},"
+        }
+      },
+      {
+        "content": "$$A^- = \\frac{\\sqrt{A^2 + D^2} + D - A}{2}.$$",
+        "start": 65754,
+        "end": 65827,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A^- = \\frac{\\sqrt{A^2 + D^2} + D - A}{2}."
+        }
+      },
+      {
+        "content": "$$S_{\\text{BR}}[A^+,A^-] = \\sum_m \\left[ 2 - \\frac{\\sqrt{A_m^2 + D_m^2} + D_m}{D_m} + \\log \\left(\\frac{\\sqrt{A_m^2 + D_m^2} + D_m}{2D_m}\\right) \\right]\\Delta_m.$$",
+        "start": 66888,
+        "end": 67086,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "S_{\\text{BR}}[A^+,A^-] = \\sum_m\n\\left[\n    2 - \\frac{\\sqrt{A_m^2 + D_m^2} + D_m}{D_m} +\n    \\log \\left(\\frac{\\sqrt{A_m^2 + D_m^2} + D_m}{2D_m}\\right)\n\\right]\\Delta_m."
+        }
+      },
+      {
+        "content": "$$\\frac{\\partial S[A^+,A^-]}{\\partial A_i} = -\\Delta_i \\left(\\frac{1}{D_i} - \\frac{1}{A_i^+}\\right)$$",
+        "start": 67320,
+        "end": 67453,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\partial S[A^+,A^-]}{\\partial A_i} =\n    -\\Delta_i \\left(\\frac{1}{D_i} - \\frac{1}{A_i^+}\\right)"
+        }
+      },
+      {
+        "content": "$$A^+_l = \\frac{D_l}{ 1 - D_l \\sum_m V_{lm} u_m},$$",
+        "start": 67603,
+        "end": 67682,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A^+_l = \\frac{D_l}{ 1 - D_l \\sum_m V_{lm} u_m},"
+        }
+      },
+      {
+        "content": "$$A^-_l = \\frac{D_l}{ 1 + D_l \\sum_m V_{lm} u_m}.$$",
+        "start": 67687,
+        "end": 67766,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A^-_l = \\frac{D_l}{ 1 + D_l \\sum_m V_{lm} u_m}."
+        }
+      },
+      {
+        "content": "$$w^+_l = \\frac{1}{ 1 - D_l \\sum_m V_{lm} u_m},$$",
+        "start": 67786,
+        "end": 67863,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "w^+_l = \\frac{1}{ 1 - D_l \\sum_m V_{lm} u_m},"
+        }
+      },
+      {
+        "content": "$$w^-_l = \\frac{1}{ 1 + D_l \\sum_m V_{lm} u_m}.$$",
+        "start": 67868,
+        "end": 67945,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "w^-_l = \\frac{1}{ 1 + D_l \\sum_m V_{lm} u_m}."
+        }
+      },
+      {
+        "content": "$$\\frac{\\partial A^+_l}{\\partial u_i} = A^+_l A^+_l V_{li},$$",
+        "start": 68190,
+        "end": 68279,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\partial A^+_l}{\\partial u_i} = A^+_l A^+_l V_{li},"
+        }
+      },
+      {
+        "content": "$$\\frac{\\partial A^-_l}{\\partial u_i} = -A^-_l A^-_l V_{li}.$$",
+        "start": 68284,
+        "end": 68374,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\partial A^-_l}{\\partial u_i} = -A^-_l A^-_l V_{li}."
+        }
+      },
+      {
+        "content": "$$\\frac{\\partial A_l}{\\partial u_i} = A^+_l A^+_l V_{li} + A^-_l A^-_l V_{li}.$$",
+        "start": 68431,
+        "end": 68539,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\partial A_l}{\\partial u_i} = A^+_l A^+_l V_{li} + A^-_l A^-_l V_{li}."
+        }
+      },
+      {
+        "content": "$$f_m = \\alpha u_m + \\sum_l W_{ml} (w^+_l - w^-_l) - B_m,$$",
+        "start": 68582,
+        "end": 68669,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "f_m = \\alpha u_m + \\sum_l W_{ml} (w^+_l - w^-_l) - B_m,"
+        }
+      },
+      {
+        "content": "$$J_{mi} = \\alpha \\delta_{mi} + \\sum_l W_{mli} D_l (w^+_l w^+_l + w^-_l w^-_l).$$",
+        "start": 68670,
+        "end": 68779,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "J_{mi} = \\alpha \\delta_{mi} + \\sum_l W_{mli} D_l (w^+_l w^+_l + w^-_l w^-_l)."
+        }
+      }
+    ],
+    "inline_texts": [
+      {
+        "content": "In theory, the retarded Green's function $G^{R}(\\omega)$ and the spectral function $A(\\omega)$ can be derived from the imaginary-time Green's function $G(\\tau)$ or Matsubara Green's function $G(i\\omega_n)$ by performing an inverse Laplace transformation~\\cite{many_body_book,many_body_book_2016}.",
+        "start": 3038,
+        "end": 3335,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Even minor fluctuations or noises in $G(\\tau)$ or $G(i\\omega_n)$ can result in nonsensical changes for $A(\\omega)$ or $G^{R}(\\omega)$, making analytic continuations extremely unstable.",
+        "start": 3520,
+        "end": 3705,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Several open source toolkits, such as \\texttt{$\\Omega$MAXENT}~\\cite{PhysRevE.",
+        "start": 5218,
+        "end": 5296,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Initially, the spectral function $A(\\omega)$ is constrained to be non-negative and is interpreted as a probability distribution.",
+        "start": 5773,
+        "end": 5902,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Subsequently, the MaxEnt method endeavors to identify the most probable spectrum by minimizing a functional $Q[A]$, which comprises the misfit functional $L[A]$ and the entropic term $S[A]$ [see Eq.",
+        "start": 5902,
+        "end": 6101,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Here, $L[A]$ quantifies the difference between the input and reconstructed Green's function, while $S[A]$ is employed to regulate the spectrum~\\cite{JARRELL1996133}.",
+        "start": 6117,
+        "end": 6283,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "As mentioned above, the essence of the MaxEnt method lies in the definition of the entropic term $S[A]$.",
+        "start": 9096,
+        "end": 9201,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Typically, it takes the form of Shannon-Jaynes entropy (dubbed $S_{\\text{SJ}}$ in the realm of quantum many-body physics~\\cite{PhysRev.",
+        "start": 9201,
+        "end": 9338,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Burnier and Rothkopf introduced an enhanced dimensionless prior distribution, known as the Bayesian reconstruction entropy (dubbed $S_{\\text{BR}}$~\\cite{PhysRevLett.",
+        "start": 9839,
+        "end": 10006,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "1028995}, which demonstrates superior asymptotic behavior compared to $S_{\\text{SJ}}$~\\cite{PhysRev.",
+        "start": 10027,
+        "end": 10127,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "They discovered that by using $S_{\\text{BR}}$ in conjunction with the MaxEnt method, a significant improvement in the reconstruction of spectral functions for Euclidean time correlators can be achieved.",
+        "start": 10136,
+        "end": 10339,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "They latter extended $S_{\\text{BR}}$ to support Bayesian inference of non-positive spectral functions in quantum field theory~\\cite{PhysRevD.",
+        "start": 10339,
+        "end": 10481,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "But to the best of our knowledge, the application of $S_{\\text{BR}}$ has been limited to post-processing for lattice QCD data thus far.",
+        "start": 10492,
+        "end": 10628,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "How effective is $S_{\\text{BR}}$ for solving analytic continuation problems in quantum many-body simulations?",
+        "start": 10667,
+        "end": 10777,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Is it truly superior to $S_{\\text{SJ}}$?",
+        "start": 10777,
+        "end": 10818,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Keeping these questions in mind, the primary objective of this study is to broaden the application scope of $S_{\\text{BR}}$.",
+        "start": 10818,
+        "end": 10943,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We at first verify whether $S_{\\text{BR}}$ can handle Matsubara (or imaginary-time) Green's functions.",
+        "start": 10943,
+        "end": 11046,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Then, we generalize $S_{\\text{BR}}$ to implement the positive-negative entropy algorithm~\\cite{PhysRevB.",
+        "start": 11046,
+        "end": 11151,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The simulated results indicate that $S_{\\text{BR}}$ works quite well in transforming imaginary-time or Matsubara Green's function data to real frequency, no matter whether the Green's function is a matrix or not.",
+        "start": 11224,
+        "end": 11437,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We find that $S_{\\text{BR}}$ has a tendency to sharpen the peaks in spectral functions, but this shortcoming can be largely overcame by the preblur trick~\\cite{KAUFMANN2023108519,PhysRevB.",
+        "start": 11437,
+        "end": 11626,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Overall, the performance of $S_{\\text{BR}}$ is comparable to that of $S_{\\text{SJ}}$~\\cite{PhysRev.",
+        "start": 11637,
+        "end": 11737,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The spectral functions obtained by $S_{\\text{SJ}}$ and $S_{\\text{BR}}$ are compared with the exact spectra.",
+        "start": 12304,
+        "end": 12412,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "discussions}, we further examine the preblur trick and the auxiliary Green's function algorithm for $S_{\\text{SJ}}$ and $S_{\\text{BR}}$.",
+        "start": 12433,
+        "end": 12569,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The robustness of $S_{\\text{BR}}$ with respect to noisy Matsubara data is discussed and compared with that of $S_{\\text{SJ}}$.",
+        "start": 12569,
+        "end": 12696,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The detailed mathematical derivations for $S_{\\text{SJ}}$ and $S_{\\text{BR}}$ are provided in Appendices~\\ref{sec:",
+        "start": 12837,
+        "end": 12952,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "It is well known that the single-particle imaginary-time Green's function $G(\\tau)$ can be defined as follows:",
+        "start": 13099,
+        "end": 13209,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\tau$ is imaginary time, $\\mathcal{T}_{\\tau}$ means the time-ordered operator, $d$ ($d^{\\dagger}$ denotes the annihilation (creation) operator~\\cite{many_body_book,many_body_book_2016}. Given $G(\\tau)$, Matsubara Green's function $G(i\\omega_n)$ can be constructed via direct Fourier transformation:",
+        "start": 13310,
+        "end": 13616,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "where $\\beta$ is the inverse temperature of the system ($\\beta \\equiv 1/T$, and $\\omega_n$ is the Matsubara frequency. Note that $\\omega_n$ is equal to $(2n+1)\\pi /\\beta$ for fermions and $2n\\pi / \\beta$ for bosons ($n$ is an integer).",
+        "start": 13714,
+        "end": 13950,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "Let us assume that the spectral function of the single-particle Green's function is $A(\\omega)$, then the spectral representations of $G(\\tau)$ and $G(i\\omega_n)$ read:",
+        "start": 13952,
+        "end": 14120,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "respectively. Here, $K(\\tau,\\omega)$ and $K(i\\omega_n,\\omega)$ are called the kernel functions. Their definitions are as follows:",
+        "start": 14369,
+        "end": 14498,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "When $A(\\omega)$ is given, it is relatively straightforward to compute the corresponding $G(\\tau)$ and $G(i\\omega_n)$ by numerical integration methods.",
+        "start": 15048,
+        "end": 15200,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "However, the inverse problem of deducing $A(\\omega)$ from $G(\\tau)$ or $G(i\\omega_n)$ is challenging due to the ill-conditioned nature of the kernel function $K$.",
+        "start": 15200,
+        "end": 15363,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "To be more specific, the condition number of $K$ is very large because of the exponential decay of $K$ with $\\omega$ and $\\tau$.",
+        "start": 15363,
+        "end": 15492,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Consequently, direct inversion of $K$ becomes impractical from a numerical standpoint~\\cite{PhysRevB.",
+        "start": 15492,
+        "end": 15594,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Furthermore, the $G(\\tau)$ or $G(i\\omega_n)$ data obtained from finite temperature quantum Monte Carlo simulations is not free from errors~\\cite{RevModPhys.",
+        "start": 15603,
+        "end": 15760,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The cornerstone of the MaxEnt method is Bayes' theorem. Let us treat the input Green's function $G$ and the spectrum $A$ as two events. According to Bayes' theorem, the posterior probability $P[A|G]$ can be calculated by:",
+        "start": 15936,
+        "end": 16157,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "where $P[G|A]$ is the likelihood function, $P[A]$ is the prior probability, and $P[G]$ is the evidence~\\cite{statistics_book}. $P[G|A]$ is assumed to be in direct proportion to $e^{-L[A]}$, where the misfit functional $L[A]$ reads:",
+        "start": 16225,
+        "end": 16456,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "Here, $N$ is the number of input data points, $\\sigma$ denotes the standard deviation of $G$, $\\tilde{G}[A]$ is the reconstructed Green's function via Eqs.~(\\ref{eq:gtau}) and (\\ref{eq:giwn}), and $\\chi^2[A]$ is called the goodness-of-fit functional (see Appendix~\\ref{sec:goodness} for more details). On the other hand, $P[A]$ is supposed to be in direct proportion to $e^{\\alpha S[A]}$, where $\\alpha$ is a regulation parameter and $S$ is entropy. Since the evidence $P[G]$ can be viewed as a normalization constant, it is ignored in what follows. Thus,",
+        "start": 16617,
+        "end": 17172,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 10
+        }
+      },
+      {
+        "content": "where $Q$ is a functional of $A$~\\cite{JARRELL1996133}. It is defined as follows:",
+        "start": 17227,
+        "end": 17308,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The basic idea of the MaxEnt method is to identify the optimal spectrum $\\hat{A}$ that maximizes the posterior probability $P[A|G]$ (or equivalently $Q[A]$. In essence, our goal is to determine the most favorable $\\hat{A}$ that satisfies the following equation:",
+        "start": 17421,
+        "end": 17683,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "The entropy $S$ is also known as the Kullback-Leibler distance sometimes. In principle, there are multiple choices for it. Perhaps $S_{\\text{SJ}}$ is the most frequently used in quantum many-body physics and condensed matter physics~\\cite{PhysRev.106.620,JARRELL1996133}. It reads:",
+        "start": 18140,
+        "end": 18421,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Here, $D(\\omega)$ is called the default model, providing the essential features of spectra. Usually $D(\\omega)$ is a constant or a Gaussian function, but it can be determined by making use of high-frequency behavior of input data as well~\\cite{PhysRevE.94.023303}. If both $A(\\omega)$ and $D(\\omega)$ have the same normalization, Eq.~(\\ref{eq:sje}) reduces to:",
+        "start": 18601,
+        "end": 18961,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "The $S_{\\text{BR}}$ introduced by Burnier and Rothkopf~\\cite{PhysRevLett.111.182003,fphy.2022.1028995} is dominant in high-energy physics and particle physics. It reads:",
+        "start": 19084,
+        "end": 19253,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Note that $S_{\\text{SJ}}$ is constructed from four axioms~\\cite{JARRELL1996133}. While for $S_{\\text{BR}}$, two of these axioms are replaced~\\cite{PhysRevLett.111.182003}. First of all, the scale invariance is incorporated in $S_{\\text{BR}}$. It means that $S_{\\text{BR}}$ only depends on the ratio between $A$ and $D$. The integrand in Eq.~(\\ref{eq:bre}) is dimensionless, such that the choice of units for $A$ and $D$ will not change the result of the spectral reconstruction. Second, $S_{\\text{BR}}$ favors choosing smooth spectrum. The spectra that deviate between two adjacent frequencies, $\\omega_1$ and $\\omega_2$, should be penalized.",
+        "start": 19433,
+        "end": 20075,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 11
+        }
+      },
+      {
+        "content": "This suggests that the spectral function is not positive definite any more. The equations for $S_{\\text{SJ}}$ and $S_{\\text{BR}}$ [i.e., Eqs.~(\\ref{eq:sje}) and (\\ref{eq:bre})] should be adapted to this new circumstance. The positive-negative entropy algorithm proposed by Kraberger \\emph{et al.} is a graceful solution to this problem~\\cite{PhysRevB.96.155128,KAUFMANN2023108519}. They rewrite the off-diagonal spectral function $A(\\omega)$ as the subtraction of two positive definite spectra:",
+        "start": 20522,
+        "end": 21016,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Here $A^{+}(\\omega)$ and $A^{-}(\\omega)$ are independent, but have the same norm. Then the resulting entropy can be split into two parts:",
+        "start": 21092,
+        "end": 21229,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$S^{\\pm}[A]$ (or $S[A^{+},A^{-}]$ is called the positive-negative entropy, which was first used for the analysis of NMR spectra~\\cite{LAUE1985418,Sibisi1990}. The expressions of positive-negative entropy for $S_{\\text{SJ}}$ and $S_{\\text{BR}}$ are as follows:",
+        "start": 21309,
+        "end": 21569,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "The default models for $A^{+}$ and $A^{-}$ are $D^{+}$ and $D^{-}$, respectively. To derive Eqs.~(\\ref{eq:sj_pm}) and (\\ref{eq:br_pm}), $D^{+} = D^{-} = D$ is assumed. For a detailed derivation, please see Appendices~\\ref{sec:sj} and \\ref{sec:br}. Similar to $S_{\\text{BR}}[A]$, $S^{\\pm}_{\\text{BR}}[A]$ also exhibits scale invariance. In other words, it depends on $A/D$ only.",
+        "start": 21992,
+        "end": 22370,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 8
+        }
+      },
+      {
+        "content": "\\caption{Comparison of entropy densities for different entropic terms. The entropy $S$ is related to the entropy density $s$ via Eq.~(\\ref{eq:density}). For the positive-negative entropy $S^{\\pm}$, $D^{+} = D^{-} = D$ is assumed. \\label{fig:entropy}}",
+        "start": 22472,
+        "end": 22722,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "The integrand in the expression for entropy $S$ is referred as entropy density $s$, i.e.,",
+        "start": 22737,
+        "end": 22826,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Next, we would like to make a detailed comparison about the entropy densities of different entropic terms. Supposed that $x = A/D$, the expressions for various entropy densities are collected as follows:",
+        "start": 22912,
+        "end": 23115,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": ", $s \\le 0$ and $s^{\\pm} \\le 0$.",
+        "start": 23610,
+        "end": 23643,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The ordinary entropy density $s(x)$ is just defined for positive $x$.",
+        "start": 23643,
+        "end": 23713,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$s_{\\text{BR}}(x)$ becomes maximal at $x = 1$, and exhibits a similar quadratic behavior around its maximum as $s_{\\text{SJ}}(x)$.",
+        "start": 23713,
+        "end": 23844,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "In the case $x \\to 0$ ($A \\ll D$, $s_{\\text{BR}}(x)$ is not suppressed, while $s_{\\text{SJ}}(x) \\to -1$.",
+        "start": 23844,
+        "end": 23950,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Thus, $s_{\\text{BR}}(x)$ avoids the asymptotic flatness inherent in $s_{\\text{SJ}}(x)$~\\cite{PhysRevLett.",
+        "start": 23950,
+        "end": 24056,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The positive-negative entropy density $s^{\\pm}(x)$ is valid for any $x$ ($x \\in \\mathbb{R}$.",
+        "start": 24068,
+        "end": 24162,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Both $s^{\\pm}_{\\text{BR}}(x)$ and $s^{\\pm}_{\\text{SJ}}(x)$ are even functions.",
+        "start": 24162,
+        "end": 24241,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "They also exhibit quadratic behaviors around $x = 0$, and $s^{\\pm}_{\\text{BR}}(x) \\ge s^{\\pm}_{\\text{SJ}}(x)$.",
+        "start": 24241,
+        "end": 24352,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In the limit of $\\alpha \\to \\infty$, the goodness-of-fit functional $\\chi^2[A]$ has negligible weight, and the entropic term $\\alpha S[A]$ becomes dominant~\\cite{PhysRevE.",
+        "start": 24352,
+        "end": 24524,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Thus, the maximization of $Q[A]$ (equivalently, the maximization of $S[A]$ yields $\\hat{A} = D$ (at $x = 1$ for conventional entropy, in contrast to $\\hat{A} = 0$ (at $x = 0$ for the positive-negative entropy~\\cite{PhysRevB.",
+        "start": 24535,
+        "end": 24763,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "\\caption{Analytic continuations of single-band Green's functions. (a)-(c) For single off-centered peak case. (d)-(f) For two Gaussian peaks with a gap case. In panels (a) and (d), the calculated and exact spectra are compared. In panels (b) and (e), the $\\log_{10}(\\chi^2)-\\log_{10}(\\alpha)$ curves are plotted. The inverted triangle symbols indicate the optimal $\\alpha$ parameters, which are determined by the $\\chi^2$-kink algorithm~\\cite{PhysRevE.94.023303}. The deviations of the reproduced Green's function from the raw ones are shown in panels (c) and (f). Note that in panel (c), $R$ is a function of Matsubara frequency. However, $R$ is $\\tau$-dependent in panel (c). \\label{fig:A06}}",
+        "start": 24879,
+        "end": 25572,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "\\caption{Analytic continuations of two-band matrix-valued Green's functions. For analytic continuations for the diagonal elements of the Green's function, $S_{\\text{SJ}}$ and $S_{\\text{BR}}$ are used in the calculations. While for the off-diagonal elements of the Green's functions, $S^{\\pm}_{\\text{SJ}}$ and $S^{\\pm}_{\\text{BR}}$ are employed. In the MaxEnt-BR simulations, the preblur trick is always applied, and the blur parameter $b$ is fixed to 0.2. The default models for off-diagonal calculations are constructed by $A_{11}$ and $A_{22}$. See main text for more details. (a)-(c) $\\theta = 0.1$; (d)-(f) $\\theta = 0.5$; (g)-(i) $\\theta = 0.9$. \\label{fig:A08}}",
+        "start": 25653,
+        "end": 26320,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 10
+        }
+      },
+      {
+        "content": "When the conventional MaxEnt method is combined with $S_{\\text{SJ}}$ (or $S^{\\pm}_{\\text{SJ}}$~\\cite{PhysRev.106.620}, it is called the MaxEnt-SJ method. On the other hand, a combination of the MaxEnt method with $S_{\\text{BR}}$ (or $S^{\\pm}_{\\text{BR}}$~\\cite{PhysRevLett.111.182003,PhysRevD.95.056016,fphy.2022.1028995} is called the MaxEnt-BR method. We implemented both methods in the open source analytic continuation toolkit, namely \\texttt{ACFlow}~\\cite{Huang:2022}. All the benchmark calculations involved in this paper were done by this toolkit. The simulated results for the MaxEnt-SJ and MaxEnt-BR methods will be presented in this section. Next, we will explain the computational details.",
+        "start": 26371,
+        "end": 27073,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "We always start from an exact spectrum $A(\\omega)$, which consists of one or more Gaussian-like peaks. Then $A(\\omega)$ is used to construct the imaginary-time Green's function $G(\\tau)$ via Eq.~(\\ref{eq:gtau}), or the Matsubara Green's function $G(i\\omega_n)$ via Eq.~(\\ref{eq:giwn}). Here, for the sake of simplicity, the kernel function $K$ is assumed to be fermionic. Since the realistic Green's function data from finite temperature quantum Monte Carlo simulations is usually noisy, multiplicative Gaussian noise will be manually added to the clean $G(\\tau)$ or $G(i\\omega_n)$ to imitate this situation. The following formula is adopted:",
+        "start": 27075,
+        "end": 27717,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "where $\\delta$ denotes the noise level of the input data and $N_{\\mathbb{C}}$ is the complex-valued normal Gaussian noise~\\cite{PhysRevB.",
+        "start": 27836,
+        "end": 27973,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Unless stated otherwise, the standard deviation of $G$ is fixed to $10^{-4}$.",
+        "start": 27985,
+        "end": 28063,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The numbers of input data for $G(\\tau)$ and $G(i\\omega_n)$ are 1000 and 50, respectively.",
+        "start": 28063,
+        "end": 28153,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "During the MaxEnt simulations, the $\\chi^{2}$-kink algorithm~\\cite{PhysRevE.",
+        "start": 28153,
+        "end": 28230,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "023303} is used to determine the regulation parameter $\\alpha$.",
+        "start": 28233,
+        "end": 28296,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Once $S_{\\text{BR}}$ and $S^{\\pm}_{\\text{BR}}$ are chosen, the preblur trick~\\cite{KAUFMANN2023108519,PhysRevB.",
+        "start": 28425,
+        "end": 28537,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $\\tilde{G}$ is evaluated by $\\hat{A}$ via Eq.~(\\ref{eq:gtau}) or Eq.~(\\ref{eq:giwn}).",
+        "start": 28958,
+        "end": 29049,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $\\epsilon = 0.5$, $\\Gamma = 1.0$, $\\delta = 10^{-4}$, $\\sigma = 10^{-4}$, and $\\beta = 20.0$. The input data is Matsubara Green's function, which contains 50 Matsubara frequencies ($N = 50$. The blur parameter for the MaxEnt-BR method is 0.45. (ii) Two Gaussian peaks with a gap. The spectral function is:",
+        "start": 29511,
+        "end": 29823,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "where $f_1 = f_2 = 1.0$, $\\epsilon_1 = -\\epsilon_2 = 2.0$, $\\Gamma_1 = \\Gamma_2 = 0.5$, $\\delta = 10^{-4}$, $\\sigma = 10^{-3}$, and $\\beta = 5.0$. The synthetic data is imaginary-time Green's function, which contains 1000 imaginary time slices ($N = 1000$. The blur parameter for the MaxEnt-BR method is 0.30.",
+        "start": 30167,
+        "end": 30477,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "We also observe that the difference between $G(\\tau)$ and $\\tilde{G}(\\tau)$ becomes relatively apparent in the vicinity of $\\tau = \\beta/2$ [see Fig.",
+        "start": 30929,
+        "end": 31079,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "A06}(b) and (e) plot $\\log_{10} (\\chi^2)$ as a function of $\\log_{10} (\\alpha)$.",
+        "start": 31123,
+        "end": 31203,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "(i) \\emph{Default model region} ($\\alpha \\to \\infty$.",
+        "start": 31281,
+        "end": 31336,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$\\chi^2$ is relatively flat and goes to its global maximum.",
+        "start": 31336,
+        "end": 31396,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The entropic term $\\alpha S$ is much larger than $\\chi^2$.",
+        "start": 31396,
+        "end": 31455,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The obtained spectrum $A(\\omega)$ resembles the default model $D(\\omega)$.",
+        "start": 31455,
+        "end": 31530,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "(ii) \\emph{Noise-fitting region} ($\\alpha \\to 0$.",
+        "start": 31530,
+        "end": 31581,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$\\chi^2$ approaches its global minimum, but it is larger than $\\alpha S$.",
+        "start": 31581,
+        "end": 31655,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In this region, the calculated spectrum $A(\\omega)$ tends to fit the noise in $G(\\tau)$ or $G(i\\omega_n)$.",
+        "start": 31655,
+        "end": 31762,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "$\\chi^2$ increases with the increment of $\\alpha$.",
+        "start": 31803,
+        "end": 31854,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "It is comparable with $\\alpha S$.",
+        "start": 31854,
+        "end": 31888,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The optimal $\\alpha$ parameter is located at the crossover between the noise-fitting region and the information-fitting region.",
+        "start": 31888,
+        "end": 32016,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For $S_{\\text{BR}}$ and $S_{\\text{SJ}}$, their $\\chi^{2}(\\alpha)$ curves almost overlap at the default model region and the noise-fitting region, but differ at the information-fitting region.",
+        "start": 32016,
+        "end": 32208,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "It indicates that the optimal $\\alpha$ parameters for $S_{\\text{SJ}}$ are larger than those for $S_{\\text{BR}}$.",
+        "start": 32208,
+        "end": 32321,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Here $A'_{11}(\\omega)$ and $A'_{22}(\\omega)$ are constructed by using Eq.~(\\ref{eq:gauss2}). For $A'_{11}(\\omega)$, the parameters are: $f_1 = f_2 = 0.5$, $\\epsilon_1 = 1.0$, $\\epsilon_2 = 2.0$, $\\Gamma_1 = 0.20$, and $\\Gamma_2 = 0.70$. For $A'_{22}(\\omega)$, the parameters are: $f_1 = f_2 = 0.5$, $\\epsilon_1 = -1.0$, $\\epsilon_2 = -2.1$, $\\Gamma_1 = 0.25$, and $\\Gamma_2 = 0.60$. The true spectral function is a general matrix with non-zero off-diagonal components. It reads:",
+        "start": 32710,
+        "end": 33188,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 14
+        }
+      },
+      {
+        "content": "The diagonal matrix $\\mathbf{A}'(\\omega)$ is rotated by a rotation matrix $\\mathbf{R}$ to generate $\\mathbf{A}(\\omega)$. The rotation matrix $\\mathbf{R}$ is defined as follows:",
+        "start": 33366,
+        "end": 33542,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "where $\\theta$ denotes the rotation angle.",
+        "start": 33721,
+        "end": 33763,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "(i) $\\theta = 0.",
+        "start": 33839,
+        "end": 33856,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "1$, (ii) $\\theta = 0.",
+        "start": 33856,
+        "end": 33877,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "5$, and (iii) $\\theta = 0.",
+        "start": 33877,
+        "end": 33903,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "Then $\\mathbf{A}(\\omega)$ is used to construct the matrix-valued Green's function $\\mathbf{G}(i\\omega_n)$ by using Eq.",
+        "start": 33906,
+        "end": 34025,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$\\delta = 0.",
+        "start": 34072,
+        "end": 34085,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "0$, $\\sigma = 10^{-4}$, and $\\beta = 40.",
+        "start": 34085,
+        "end": 34125,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For analytic continuations of the diagonal elements of $\\mathbf{G}(i\\omega_n)$, the default models are Gaussian-like.",
+        "start": 34178,
+        "end": 34296,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "They are evaluated by $D_{12}(\\omega) = \\sqrt{A_{11}(\\omega)A_{22}(\\omega) }$, where $A_{11}(\\omega)$ and $A_{22}(\\omega)$ are the calculated spectral functions for diagonal elements~\\cite{PhysRevB.",
+        "start": 34376,
+        "end": 34575,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "For the diagonal spectral spectral functions ($A_{11}$ and $A_{22}$, both the MaxEnt-SJ and MaxEnt-BR methods can accurately resolve the peaks that are close to the Fermi level.",
+        "start": 34973,
+        "end": 35152,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "However, for the high-energy peaks, the MaxEnt-BR method tends to overestimate their heights and yield sharper peaks [see the peaks around $\\omega = 2.",
+        "start": 35152,
+        "end": 35304,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "For the off-diagonal spectral functions, only $A_{12}$ is shown, since $A_{21}$ is equivalent to $A_{12}$.",
+        "start": 35347,
+        "end": 35454,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "We observe that the major features of $A_{12}$ are well captured by both the MaxEnt-SJ and MaxEnt-BR methods.",
+        "start": 35454,
+        "end": 35564,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The MaxEnt-BR method exhibits good performance when the rotation angle is small [$\\theta = 0.",
+        "start": 35629,
+        "end": 35723,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "But some wiggles emerge around $\\omega = \\pm 2.",
+        "start": 35754,
+        "end": 35802,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "0$ when the rotation angle is large [$\\theta = 0.",
+        "start": 35802,
+        "end": 35851,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "5$ and $\\theta = 0.",
+        "start": 35851,
+        "end": 35870,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "We test more rotation angles ($0.",
+        "start": 35909,
+        "end": 35943,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "It seems that these wiggles won't be enhanced unless the blur parameter $b$ is decreased.",
+        "start": 35962,
+        "end": 36052,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{Test of the preblur trick. A matrix-valued Green's function is treated via the positive-negative entropy approach. The initial spectral function is generated by using Eq.~(\\ref{eq:gauss2}). The model parameters are the same as those used in Sec.~\\ref{subsec:two-band}. The rotation angle $\\theta$ is 0.1. Only the off-diagonal spectral functions ($A_{12}$ obtained by the MaxEnt-BR method are shown. \\label{fig:blur2}}",
+        "start": 36583,
+        "end": 37011,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\caption{Analytic continuations of matrix-valued Green's functions via the auxiliary Green's function approach. The model parameters are the same as those used in Sec.~\\ref{subsec:two-band}. For the MaxEnt-BR simulations, the preblur trick is always applied, and the blur parameter $b$ is fixed to 0.2. Only the results for the off-diagonal elements are presented ($A_{12}$. The upper panels show the spectral functions for the auxiliary Green's functions [see Eq.~(\\ref{eq:gaux})]. The lower panels show the off-diagonal spectral functions evaluated by Eq.~(\\ref{eq:Aaux}). (a)-(b) $\\theta = 0.1$; (c)-(d) $\\theta = 0.5$; (e)-(f) $\\theta = 0.9$. \\label{fig:A08aux}}",
+        "start": 37094,
+        "end": 37761,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "\\caption{Robustness of the MaxEnt method with respect to the noisy Matsubara data. Here we treat the off-diagonal elements ($G_{12}$ of the two-band matrix-valued Green's functions only via the positive-negative entropy method. The model parameters are the same as those used in Sec.~\\ref{subsec:two-band}. The rotation angle $\\theta$ is 0.5. The blur parameter for the MaxEnt-BR method is fixed to 0.2. (a)-(g) Off-diagonal spectral functions ($A_{12}$ extracted from noisy Matsubara data. $\\delta$ denotes the noise level of the input data. It varies from $10^{-8}$ (tiny noise) to $10^{-2}$ (large noise). (h) Integrated real axis error as a function of $\\delta$. It measures the deviations from the exact spectral function, see Eq.~(\\ref{eq:err}). \\label{fig:AN}}",
+        "start": 37841,
+        "end": 38610,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "The benchmark results shown in Section~\\ref{sec:results} imply that the MaxEnt-BR method has a tendency to generate sharp peaks or small fluctuations in the high-energy regions of the spectra. The preblur algorithm is helpful to alleviate this phenomenon. In the context of analytic continuation, the preblur algorithm was introduced by Kraberger \\emph{et al.}~\\cite{PhysRevB.96.155128}. The kernel function $K(i\\omega_n,\\omega)$ [see Eq.~(\\ref{eq:kiwn})] is ``blurred'' by using the following expression:",
+        "start": 39057,
+        "end": 39562,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Here, $K_{b}(i\\omega_n,\\omega)$ is the blurred kernel, which is then used in Eq.~(\\ref{eq:loss}) to evaluate the $\\chi^2$-term. $g_b(\\omega)$ is a Gaussian function:",
+        "start": 39703,
+        "end": 39868,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "where $b$ is the blur parameter.",
+        "start": 39963,
+        "end": 39995,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "It is evident that the MaxEnt-BR method without the preblur trick ($b = 0$ has trouble resolving the spectra accurately.",
+        "start": 40401,
+        "end": 40523,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Sometimes it may lead to undesirable artifacts, such as the side peaks around $\\omega = \\pm 1.",
+        "start": 40581,
+        "end": 40676,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "The major peaks are smoothed, and the artificial side peaks are suppressed upon increasing $b$.",
+        "start": 40765,
+        "end": 40861,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "There is an optimal $b$.",
+        "start": 40913,
+        "end": 40938,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For case (i), the optimal $b$ is 0.",
+        "start": 40938,
+        "end": 40974,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "A larger $b$ ($b > 0.",
+        "start": 40976,
+        "end": 40998,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For case (ii), the optimal $b$ is 0.",
+        "start": 41050,
+        "end": 41087,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "If $b$ is further increased, it is difficult to obtain a stable solution.",
+        "start": 41089,
+        "end": 41163,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$A = g_b \\star h$, where $h$ is a ``hidden'' function~\\cite{10.",
+        "start": 41523,
+        "end": 41587,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Then the entropy is evaluated from $h(\\omega)$, instead of $A(\\omega)$.",
+        "start": 41620,
+        "end": 41692,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Supposed that $A_{\\text{aux}}(\\omega)$ is the corresponding spectral function for $G_{\\text{aux}}(i\\omega_n)$. It is easy to prove that $A_{\\text{aux}}(\\omega)$ is positive semi-definiteness. So, it is safe to perform analytic continuation for $G_{\\text{aux}}(i\\omega_n)$ by using the traditional MaxEnt-SJ or MaxEnt-BR method. Next, the off-diagonal spectral function $A_{12}(\\omega)$ can be evaluated as follows:",
+        "start": 42324,
+        "end": 42738,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "When the rotation angle is small, the amplitude (absolute value) of $A_{12}(\\omega)$ is small.",
+        "start": 43473,
+        "end": 43568,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Both the MaxEnt-SJ method and the MaxEnt-BR method can resolve the major peaks around $\\omega = \\pm 1.",
+        "start": 43568,
+        "end": 43671,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "Increasing the $b$ parameter further could lead to wrong peaks.",
+        "start": 43738,
+        "end": 43802,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "It seems that these unphysical features are likely due to the superposition of errors in $A_{\\text{aux}}(\\omega)$, $A_{11}(\\omega)$, and $A_{22}(\\omega)$.",
+        "start": 43802,
+        "end": 43957,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "(ii) $\\theta = 0.",
+        "start": 44041,
+        "end": 44059,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "The precision of the Monte Carlo data, which strongly depends on the sampling algorithm and the estimator used, is rarely better than $10^{-5}$~\\cite{RevModPhys.",
+        "start": 44776,
+        "end": 44938,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As mentioned above, the synthetic Matsubara data for this case is assumed to be noiseless ($\\delta = 0.",
+        "start": 45465,
+        "end": 45569,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "noise}) and the noise level $\\delta$ is changed from $10^{-8}$ to $10^{-2}$.",
+        "start": 45622,
+        "end": 45698,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Here, $\\hat{A}_{\\delta}(\\omega)$ means the reconstructed (optimal) spectral function under the given noise level $\\delta$.",
+        "start": 46078,
+        "end": 46200,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "When $\\delta = 10^{-2}$, the main peaks at $\\omega \\approx \\pm 1.",
+        "start": 46361,
+        "end": 46427,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "0$ are roughly reproduced, while the side peaks at $\\omega \\approx 2.",
+        "start": 46427,
+        "end": 46496,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "When $\\delta = 10^{-3}$, the major characteristics of the off-diagonal spectrum are successfully captured.",
+        "start": 46526,
+        "end": 46633,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As the simulated errors decrease further ($\\delta < 10^{-3}$, the MaxEnt-BR method rapidly converges to the exact solution.",
+        "start": 46633,
+        "end": 46758,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "It fails to resolve the satellite peaks around $\\omega = \\pm 2.",
+        "start": 46946,
+        "end": 47010,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "Only when $\\delta \\le 10^{-6}$, the MaxEnt-SJ method can recover the exact spectrum.",
+        "start": 47013,
+        "end": 47098,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "AN}(h) exhibits the integrated error $err(\\delta)$.",
+        "start": 47115,
+        "end": 47166,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "When $10^{-6} < \\delta < 10^{-3}$, the MaxEnt-BR method exhibits better robustness with respect to noise than the MaxEnt-SJ method.",
+        "start": 47166,
+        "end": 47298,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In summary, we extend the application scope of $S_{\\text{BR}}$ to analytic continuations of imaginary-time Green's functions and Matsubara Green's functions in quantum many-body physics and condense matter physics.",
+        "start": 47356,
+        "end": 47570,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Given the spectral function $A(\\omega)$, the Matsubara Green's function $\\tilde{G}[A]$ could be reconstructed by using the following equation (the $\\tilde{~}$ symbol is used to distinguish the reconstructed Green's function from the input Green's function):",
+        "start": 49216,
+        "end": 49473,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "where $K(i\\omega_n,\\omega)$ denotes the kernel function, and $n$ is the index for Matsubara frequency. For the sake of simplicity, Eq.~(\\ref{eq:KA_orig}) is reformulated into its discretization form:",
+        "start": 49587,
+        "end": 49786,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $K_{nm} \\equiv K(i\\omega_n, \\omega_m)$, $A_i \\equiv A(\\omega_i)$, and $\\Delta_i$ means the weight of the mesh at real axis.",
+        "start": 49878,
+        "end": 50008,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The goodness-of-fit functional $\\chi^{2}[A]$ measures the distance between the input Green's function $G$ and the reconstructed Green's function $\\tilde{G}[A]$. Its expression is as follows:",
+        "start": 50010,
+        "end": 50200,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Here we just assume that there are $N$ data points, and $\\sigma_n$ denotes the standard derivative (i.e., the error bar) of $G_n$. Substituting Eq.~(\\ref{eq:KA}) into Eq.~(\\ref{eq:chi2}), then we arrive:",
+        "start": 50324,
+        "end": 50527,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The first derivative of $\\chi^2 [A]$ with respect to $A_i$ reads:",
+        "start": 50648,
+        "end": 50713,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In this appendix, the technical details for $S_{\\text{SJ}}$, $S^{\\pm}_{\\text{SJ}}$, and the MaxEnt-SJ method are reviewed. Most of the equations presented in this appendix have been derived in Refs.~\\cite{JARRELL1996133}, \\cite{PhysRevB.96.155128}, and \\cite{KAUFMANN2023108519}. We repeat the mathematical derivation here so that this paper is self-contained.",
+        "start": 50966,
+        "end": 51329,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The first derivative of $S_{\\text{SJ}}[A]$ with respect to $A_i$ reads:",
+        "start": 51794,
+        "end": 51865,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "A singular value decomposition can be readily performed for the kernel function $K$:",
+        "start": 52068,
+        "end": 52152,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $U$ and $V$ are column-orthogonal matrices and $\\xi$ is the vector of singular values. So, the matrix element of $K$ reads:",
+        "start": 52202,
+        "end": 52331,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "The columns of $V$ can be understood as basis functions for the spectral function. That is to say they span a so-called singular value space. And in the singular value space the spectrum can be parameterized through:",
+        "start": 52417,
+        "end": 52633,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Next, we will derive the equations for $\\{u_m\\}$. Let us recall the stationary condition [see also Eq.~(\\ref{eq:opt})]:",
+        "start": 52952,
+        "end": 53071,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Eliminating $\\Delta_i$:",
+        "start": 53611,
+        "end": 53634,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Now $\\sum_m V_{im}$ can be removed from the two terms in the left-hand side. Finally we get:",
+        "start": 54117,
+        "end": 54209,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Since $A_l$ depends on $\\{u_m\\}$ as well, Eq.~(\\ref{eq:um}) is actually a non-linear equation about $\\{u_m\\}$. In the \\texttt{ACFlow} package~\\cite{Huang:2022}, the Newton's method is adopted to solve it. So we have to evaluate the following two variables and pass them to the Newton's algorithm~\\cite{optimization_book}:",
+        "start": 54374,
+        "end": 54695,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "where $J_{mi}$ can be considered as a Jacobian matrix. Note that Eq.~(\\ref{eq:Avu_d}) is applied to derive Eq.~(\\ref{eq:Jmi}).",
+        "start": 55075,
+        "end": 55201,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Since the calculations for $f_m$ and $J_{mi}$ are quite complicated and time-consuming, the Einstein summation technology is used to improve the computational efficiency. The following three variables should be precomputed and stored during the initialization stage:",
+        "start": 55203,
+        "end": 55469,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Clearly, the three variables only depend on the input Green's function $G$, the default model $D$, and the singular value decomposition of the kernel function $K$. Now $f_m$ and $J_{mi}$ can be reformulated in terms of them:",
+        "start": 55743,
+        "end": 55967,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "Assuming the independence of $A^+$ and $A^{-}$, the resulting entropy $S_{\\text{SJ}}[A^+,A^-]$ is the sum of the respective entropies:",
+        "start": 56758,
+        "end": 56892,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Thus, $S_{\\text{SJ}}[A^{+},A^{-}]$ is called the positive-negative entropy in the literature~\\cite{PhysRevB.96.155128,KAUFMANN2023108519}. We at first eliminate $A^{-}$",
+        "start": 57146,
+        "end": 57314,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Since we are searching for a maximum of $Q$ with respect to $A$ and $A^{+}$, we also apply:",
+        "start": 57700,
+        "end": 57791,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "to eliminate $A^{+}$. The following equations show some intermediate steps:",
+        "start": 57933,
+        "end": 58008,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Substituting Eqs.~(\\ref{eq:a+}) and (\\ref{eq:a-}) into Eq.~(\\ref{eq:s+-}) to eliminate $A^{+}$ and $A^{-}$, we obtain:",
+        "start": 58580,
+        "end": 58698,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Note that Eq.~(\\ref{eq:sj_pm2}) is exactly the same with Eq.~(\\ref{eq:sj_pm}). $S_{\\text{SJ}}[A^+,A^-]$ is just $S^{\\pm}_{\\text{SJ}}[A]$. The first derivative of $S_{\\text{SJ}}[A^+,A^-]$ with respect to $A_i$ is:",
+        "start": 59140,
+        "end": 59352,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Inspired by Eq.~(\\ref{eq:Avu}), it is naturally to parameterize $A^{+}$ and $A^{-}$ in the singular value space as well:",
+        "start": 59681,
+        "end": 59801,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In this appendix, the technical details for $S_{\\text{BR}}$, $S^{\\pm}_{\\text{BR}}$, and the MaxEnt-BR method are discussed.",
+        "start": 60865,
+        "end": 60988,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Its first derivative with respect to $A_i$ is:",
+        "start": 61390,
+        "end": 61436,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The original parameterization of $A$ [see Eq.~(\\ref{eq:Avu})] can not be used here. A new parameterization scheme for $A$ is necessary. Assumed that",
+        "start": 61648,
+        "end": 61796,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "So, the first derivative of $A_l$ with respect to $u_i$ reads:",
+        "start": 61989,
+        "end": 62051,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Next, we would like to derive $f_m$ and $J_{mi}$ for the Bayesian reconstruction entropy. Substituting Eq.~(\\ref{eq:br_der}) into Eq.~(\\ref{eq:stationary}):",
+        "start": 62186,
+        "end": 62342,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Eliminating $\\sum_m V_{im}$ again:",
+        "start": 63048,
+        "end": 63082,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Clearly, Eq.~(\\ref{eq:um2}) is the same with Eq.~(\\ref{eq:um}). Thus, the equations for $f_m$ and $J_{mi}$ are as follows:",
+        "start": 63248,
+        "end": 63370,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Note that Eq.~(\\ref{eq:fm2}) is the same with Eq.~(\\ref{eq:fm}). However, Eq.~(\\ref{eq:Jmi2}) differs from Eq.~(\\ref{eq:Jmi}) by a factor $A_l$ in the second term of the right-hand side. To derive Eq.~(\\ref{eq:Jmi2}), Eq.~(\\ref{eq:br_ai_d}) is used. Now the Einstein summation notation is adopted to simplify the calculations of $f_m$ and $J_{mi}$ again:",
+        "start": 63756,
+        "end": 64110,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Here, the definitions of $W_{ml}$, $W_{mli}$, and $B_m$ could be found in Section~\\ref{sec:newton}.",
+        "start": 64358,
+        "end": 64457,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Since $A = A^+ - A^-$, Eq.~(\\ref{eq:br_first}) can be transformed into:",
+        "start": 65075,
+        "end": 65146,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Then we should eliminate $A^{+}$ in Eq.~(\\ref{eq:br_second}). Because",
+        "start": 65414,
+        "end": 65483,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "From the definitions of $A^{+}$ and $A^{-}$, it is easily to prove:",
+        "start": 65828,
+        "end": 65895,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\noindent We would like to express $S_{\\text{BR}}[A^+,A^-]$ in terms of $A$:",
+        "start": 66080,
+        "end": 66156,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Note that Eq.~(\\ref{eq:br_pm2}) is exactly the same with Eq.~(\\ref{eq:br_pm}). $S_{\\text{BR}}[A^+,A^-]$ is just $S^{\\pm}_{\\text{BR}}[A]$. Then the first derivative of $S_{\\text{BR}}[A^+,A^-]$ with respect to $A_i$ is:",
+        "start": 67102,
+        "end": 67319,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "So $A^+_l = D_l w^+_l$, $A^-_l = D_l w^-_l$, and $A_l = D_l (w^+_l - w^-_l)$. It is easy to verify that the definitions of $A^+_l$ and $A^-_l$ obey Eq.~(\\ref{eq:br_cons}). The first derivatives of $A^+_l$ and $A^-_l$ with respect to $u_i$ are:",
+        "start": 67946,
+        "end": 68189,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 8
+        }
+      },
+      {
+        "content": "The first derivative of $A_l$ with respect to $u_i$ is:",
+        "start": 68375,
+        "end": 68430,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      }
+    ],
+    "tables": [
+      {
+        "content": "\\begin{array}{cc}\n    A'_{11}(\\omega) & 0 \\\\\n    0 & A'_{22}(\\omega) \\\\\n\\end{array}",
+        "start": 32602,
+        "end": 32685,
+        "metadata": {
+          "type": "table",
+          "envname": "array"
+        }
+      },
+      {
+        "content": "\\begin{array}{cc}\n    A_{11}(\\omega) & A_{12}(\\omega) \\\\\n    A_{21}(\\omega) & A_{22}(\\omega) \\\\\n\\end{array}",
+        "start": 33234,
+        "end": 33341,
+        "metadata": {
+          "type": "table",
+          "envname": "array"
+        }
+      },
+      {
+        "content": "\\begin{array}{cc}\n    \\cos \\theta & \\sin \\theta \\\\\n    -\\sin \\theta & \\cos \\theta \\\\\n\\end{array}",
+        "start": 33600,
+        "end": 33696,
+        "metadata": {
+          "type": "table",
+          "envname": "array"
+        }
+      }
+    ],
+    "total_items": 259
+  }
+]

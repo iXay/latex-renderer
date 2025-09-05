@@ -1,0 +1,19 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00062/2401.00062/conference_101719.tex",
+    "display_formulas": [],
+    "inline_texts": [
+      {
+        "content": ", $\\leq$, $\\geq$, =, $\\neq$.",
+        "start": 22174,
+        "end": 22203,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      }
+    ],
+    "tables": [],
+    "total_items": 1
+  }
+]

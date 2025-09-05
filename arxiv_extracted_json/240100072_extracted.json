@@ -1,0 +1,533 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00072/2401.00072/main.tex",
+    "display_formulas": [],
+    "inline_texts": [
+      {
+        "content": "After setting up the model, we prove its usefulness in the complex problem of modeling magnetic materials in the frequency and current (out-of-linear range) domains simultaneously, for which we use measured characteristics obtained for frequency up to $10$ MHz and \\rd{current}\\ra{H-field} up to \\ra{saturation}\\rd{$27$ A}.",
+        "start": 5081,
+        "end": 5405,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "data}(a), there is presented a family of impedances as a function of frequency $f$, taken for different \\ra{DC-}bias current $I_\\mathrm{DC}$ which controls the ring magnetization:",
+        "start": 12151,
+        "end": 12330,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The color of the measured impedance curves $Z^\\mathrm{meas}$, that changes gradually from red, for $I_\\mathrm{DC}=0$~A, to blue, for $I_\\mathrm{DC}=27$~A, ($N_\\mathrm{bias}=31$ different values in total) shows impedances for different \\rd{biasings, combining this way multiple frequency characteristics controlled by the} \\ra{DC-}bias current $I_\\mathrm{DC}$ \\ra{and frequency}:",
+        "start": 12478,
+        "end": 12857,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "$Z^\\mathrm{meas}=Z^\\mathrm{meas}(I_\\mathrm{DC},f)$.",
+        "start": 12857,
+        "end": 12909,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{Impedance of a magnetic ring (a) measured \\rd{(inset)} as a function of frequency for various \\ra{DC current }biasings that controls operating point from \\rd{linear range} ($I_\\mathrm{DC}=0$~A, red curve) to the full saturation ($I_\\mathrm{DC}=27$~A, blue curve), and (b) generated \\ra{(random sample)} using lumped element model \\rd{(inset)} with \\rd{continuous transition between different curves (operating regimes)} \\rd{and} randomly selected outermost characteristics (red and blue one) \\ra{ and continuous transition between different curves)}. The generated data (b) will serve as a training set for the introduced neural network model, while the measurement ones (a) will be used to test the already trained NN model.}",
+        "start": 13697,
+        "end": 14440,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Let us now introduce the analytical model of a ring in the form of LEEC impedance synthesized out of the series of $M=7$ L and R elements connected in parallel, as presented in Fig.~\\ref{fig:data}(b), with the equivalent impedance in a form",
+        "start": 15201,
+        "end": 15441,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $s=j 2\\pi{}f$, and $j$ is the imaginary unit.",
+        "start": 15571,
+        "end": 15622,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\ra{A series of parallel LR circuits was chosen as the best representation of the measurement data, whose impedance has a phase in the range of $0$-$90$ degrees (indicating it is resistive-inductive).} \\ra{The number of $M=7$ elements was selected to ensure generality of the model and will be discussed in further sections.} The goal for the NN will be to learn the model defined in Eq.~\\ref{eq:analytical_model} and predict its parameters, i.e., to find",
+        "start": 15979,
+        "end": 16435,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "$\\{L_i,R_i\\}$ for a given frequency characteristics over the wide range of their possible behaviors. Therefore, to train the NN model and to force it to generalize over different behaviors, we have to synthesize the training dataset using the analytical model with random parameters. Generating data and training neural models on artificially synthesized datasets with controlled properties is currently a growing trend in machine learning~\\cite{nikolenko2021}.",
+        "start": 16436,
+        "end": 16897,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{\\ra{Four representative families of characteristics $Z_j(I_\\mathrm{DC},f)$, where $j=1\\dots N_\\mathrm{bias}$, from the synthesized training dataset. Solid line denotes impedance amplitude and dashed line denotes impedance phase as in Fig.\\ref{fig:data}b}}",
+        "start": 17276,
+        "end": 17548,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The synthesized dataset will be composed of families of $N_\\mathrm{bias}$ frequency characteristics gradually transforming into each other, which mimics the situation of continuous transition in the ring material operating regime;",
+        "start": 17590,
+        "end": 17820,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "in our measurements controlled by the \\ra{DC-}bias current $I_\\mathrm{DC}$.",
+        "start": 17820,
+        "end": 17896,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Each pair of the outermost characteristics $Z_1(f)$ \\ra{(for zero DC-Bias)} and $Z_{N_\\mathrm{bias}}(f)$ \\ra{(for full saturation)} were generated from Eq.",
+        "start": 17896,
+        "end": 18052,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "analytical_model} for two randomly selected sets of values (each of size $2M$:",
+        "start": 18061,
+        "end": 18140,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$R_i$ in the range from $10^{-3}$ to $10^4$~$\\mathrm{\\Omega}$, and $L_i$ in the range from $10^{-7}$ to $10^{-4}$~H.",
+        "start": 18140,
+        "end": 18257,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "Afterwards, for each pair of characteristics -- example set is presented in Fig.~\\ref{fig:data}(b) with outermost ones marked in red and blue -- we calculate $N_\\mathrm{bias}-2$ intermediate values at every frequency point",
+        "start": 18404,
+        "end": 18626,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "with equal distances for real and imaginary parts separately. This way we get $N_\\mathrm{bias}$ characteristics that form continuous transitions (across their full $f$ range) from one outermost to another -- colors between red and blue in Fig.~\\ref{fig:data}(b), in accordance to measurements with different \\ra{DC-}bias currents.",
+        "start": 18627,
+        "end": 18958,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In total, we collected $N_\\mathrm{train}=30~000$ multidimensional families, each containing $N_\\mathrm{bias}=21$ curves gradually transforming into each other.",
+        "start": 18959,
+        "end": 19118,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "After defining the generated training and measured test datasets, let us define the NN responsible for finding the model parameters. The network will take a form of AE as illustrated in Fig.~\\ref{fig:model_sieci_0}, and trained in an unsupervised way. The role of the encoder is to predict the analytical model parameters $\\{L_i,R_i\\}$ (their values define the \\textit{latent space} of our AE), while the decoder will just calculate the frequency characteristic directly using Eq.~\\ref{eq:analytical_model} with parameters (latent space) found by the encoder.",
+        "start": 20745,
+        "end": 21305,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{Neural network basic model with an autoencoder structure, which is of fundamental type and used in various fields of machine learning or image processing. The encoder is made of three convolutional layers (CNN) and three fully connected (FC) layers. The CNN layers are used as feature extractors, while the FC layers are used for parameters ($\\{L_i,R_i\\}$ predicting based on previously found representations. The decoder ($Z$ just implements an analytical formula for the impedance of the LEEC model. The goal of the network is to reconstruct the input characteristics at the output.}",
+        "start": 21425,
+        "end": 22021,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The standard solution would also be to use an NN as the decoder, but this approach makes less sense because we need the decoder only to train the encoder, which in turn, is essential for us (it predicts the analytical model parameters). Therefore, we successfully replaced the NN decoder with the analytical model itself (here defined by Eq.~\\ref{eq:analytical_model} for equivalent LEEC impedance) implemented as part of the NN (without trainable parameters, but using the model parameters ($\\{L_i,R_i\\}$ predicted by the encoder) to be able to use the standard \\textit{backpropagation} of loss mechanism during the training.",
+        "start": 22756,
+        "end": 23383,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Frequency characteristics are organized on a 1D evenly spaced grid along multiple decades on the log scale ($50$ points from $135$~Hz to $10^7$~Hz).",
+        "start": 23385,
+        "end": 23533,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The detailed structure of the encoder network is presented in Fig.~\\ref{fig:model_sieci_0}: three CNN feature extractor layers are followed by three FC layers with $2M$ \\ra{(see. Eq.\\ref{eq:analytical_model})} outputs in the last layer that predict the parameters.",
+        "start": 23988,
+        "end": 24252,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To train a NN model, we have to define a loss function $\\mathscr{L}$, which in our case will be just the decoder (reconstruction) loss $\\mathscr{L}=\\mathscr{L}_\\mathrm{dec}$, i.e. the mean squared difference between input and output impedance, taken in logarithmic scale for real and imaginary part separately:",
+        "start": 24662,
+        "end": 24973,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "with $\\hat{Z}$ meaning reconstructed characteristic (decoder output), and",
+        "start": 25149,
+        "end": 25222,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "the sum in Eq.~\\ref{eq:loss_decoder} goes over $N=N_\\mathrm{train}\\times N_\\mathrm{bias}$ frequency characteristics $Z$ in the training set. However, in practice, during a single training step of the stochastic gradient descent (SGD) method, only a smaller random portion (mini-batch) is used, here $N_\\mathrm{batch}=1024$. Training typically lasted $100$-$500$ epochs up to the loss saturation. To validate the NN model performance after the training, we also define the relative error of the fitting (FE):",
+        "start": 25513,
+        "end": 26020,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "The result presented in 1st column of Table~\\ref{tab:val_performance} shows that the basic version of the NN model (depicted in Fig.~\\ref{fig:model_sieci_0}) generalizes quite well with the fitting error slightly above $8\\%$.",
+        "start": 27753,
+        "end": 27978,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "(a,b) examples of fitting the analytical model (solid curves), with parameters predicted by the NN model, versus measurements (dots) for the selected \\ra{DC-}bias currents $I_\\mathrm{DC}=\\rd{\\{0.",
+        "start": 28795,
+        "end": 28991,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "7\\}~\\mathrm{A}}$, (c) relative fitting error for the various \\ra{DC-}bias currents $I_\\mathrm{DC}$ plotted versus frequency, and (d) characteristic frequencies \\ra{$f_i=2\\pi R_i/L_i$ of the predicted NN model parameters (each line represent $f_i$ for one LR pair in the LEEC series)} \\rd{of the predicted parameters (each representing LR pair in the LEEC series)} versus \\ra{DC-}bias current $I_\\mathrm{DC}$.",
+        "start": 29025,
+        "end": 29433,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "analytical_model}, with parameters predicted via the NN model) and the measured one, for selected $I_\\mathrm{DC}$ values, are presented in Fig.",
+        "start": 29785,
+        "end": 29928,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In general, we observe that the error does not exceed $30\\%$, which is quite a resonable result for fitting the model over so wide range\\rd{s} of frequencies, impedance amplitudes, and \\ra{DC-}bias currents $I_\\mathrm{DC}$.",
+        "start": 30379,
+        "end": 30603,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "On average it is even smaller and equals $12.",
+        "start": 30603,
+        "end": 30649,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "If we look at Fig.~\\ref{fig:result_for_model_0}(d) which presents values of characteristic frequencies defined as $\\omega_i = R_i/L_i$ for each of LR pairs in a series (of size $M=7$ for subsequent $I_\\mathrm{DC}$ currents, we observe that the values are irregular and quite independent from each other which seems to be unphysical. In order to restore the more realistic behavior which is more likely to be continuous (we do not expect to have any phase transitions in the model here), the \\rd{single}\\ra{standard} NN model was extended to the Siamese model shown in Fig.~\\ref{fig:model_sieci_2}.",
+        "start": 30791,
+        "end": 31390,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\caption{Siamese neural network model composed of two copies of the basic model that share the weights and process two neighbor characteristics (that differ in \\ra{DC-}bias current by $\\Delta I$ at the same time enabling to train the model to predict similar (or continuously changing) parameters for similar characteristics.}",
+        "start": 31525,
+        "end": 31852,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Processing multiple samples at once enables to regularize of the model behavior with respect to the similarity between data samples by adding this extra term to the loss function. In our case we can process neighbor characteristics, i.e. for $I_\\mathrm{DC}$ and $I_\\mathrm{DC}+\\Delta I$ -- see Fig.~\\ref{fig:model_sieci_2}, and enforce parameters predicted for that data points to change continuously, by including additional loss terms in a form:",
+        "start": 32497,
+        "end": 32944,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The sum in Eq.~\\ref{eq:loss_cont} goes for every $N_\\mathrm{bias}-1$ neighboring pair in a given characteristics family. It penalizes too high a change of the parameters between neighbors.",
+        "start": 33508,
+        "end": 33696,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The total continuity loss should include $M$ parameters and all $N_\\mathrm{train}$ training families:",
+        "start": 33697,
+        "end": 33798,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In the same way, we define $\\mathscr{L}_\\mathrm{cont}(R)$.",
+        "start": 33986,
+        "end": 34044,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "in order to maintain a monotonic decrease in the parameter values with the \\ra{DC-}bias current $I_\\mathrm{DC}$, which is justified by the ring material saturation.",
+        "start": 34517,
+        "end": 34681,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The total monotonicity loss $\\mathscr{L}_\\mathrm{mono}(L)$ is defined in the same way as in Eq.~\\ref{eq:loss_cont_tot}.",
+        "start": 34682,
+        "end": 34802,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "with the training hyperparameters $\\alpha_i$ that control the impact of the loss components responsible for keeping the continuity of the parameters under $I_\\mathrm{DC}$ changes.",
+        "start": 35199,
+        "end": 35378,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "If we look at the results for the Siamese NN model presented in Fig.~\\ref{fig:result_for_model_7_and_5}(a,b), where we force the model to predict similar parameters for similar characteristics, we can observe that now characteristic frequencies $\\omega_i=R_i/L_i$ change with the \\ra{DC-}bias current $I_\\mathrm{DC}$ continuously and in some case monotonically -- see Fig.~\\ref{fig:result_for_model_7_and_5}(b). Moreover,",
+        "start": 35380,
+        "end": 35802,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "a surprising but also very desirable property is that forcing the continuity for the change of the parameters $\\{L_i,R_i\\}$ with $I_\\mathrm{DC}$ at the same time has made fitting of the analytical model better than before -- in Fig.~\\ref{fig:result_for_model_7_and_5}(a) the relative fitting error typically does not exceed $15\\%$ with the average value over frequencies and currents equals $7.22\\%$.",
+        "start": 35803,
+        "end": 36206,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "LR pairs in a series, are irrelevant -- their characteristic frequencies, here $\\omega_1$, $\\omega_2$, $\\omega_3$, lie outside the ring working frequencies, which means that they can be safely skipped in the model.",
+        "start": 37448,
+        "end": 37663,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "This motivates us to reduce the dimensionality of the model by assuming $M=5$.",
+        "start": 37663,
+        "end": 37742,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "with $N=N_\\mathrm{train}\\times N_\\mathrm{bias}$, $M=5$, and the constant frequency nodes centered at",
+        "start": 38190,
+        "end": 38290,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "positions $\\Omega_i=\\{10^3,10^{4.75},10^{6.5},10^{8.25},10^{10}\\}$~Hz. \\ra{The values of $\\Omega_i$ have been chosen to evenly cover the frequency range of the measurement data. Moreover, including an extra point above this range further improved the fitting.}",
+        "start": 38291,
+        "end": 38553,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The results in Fig.~\\ref{fig:result_for_model_7_and_5}(c,d) clearly show that now the positioning of the characteristic frequencies is more homogeneous and all of $\\omega_i$ occupies ring working frequency range. In addition, the relative fitting error obtained here is less than $10\\%$ in most cases and on average is the smallest among all three NN models, reaching $5.18\\%$.",
+        "start": 38773,
+        "end": 39150,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The sum in Eq.~\\ref{eq:loss_encoder} goes over the training samples and parameters: $\\hat{y}_{ij}$ means the $i$-th parameter ($L_i$ or $R_i$ predicted for $j$-th sample, $Z_j$, whereas $y_{ij}$ represents ground truth parameters -- we already know them from the generation process.",
+        "start": 39670,
+        "end": 39953,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "\\ra{In the proposed approach, the decoder is needed only to estimate the loss function ($\\mathcal{L}_\\mathrm{dec}$, that is minimized during the training. The approach where a large component of NN model (in our case, the decoder) is used only to estimate the error of the predictive part (encoder) in ML is not unusual. It is characteristic, for example, for generative adversarial networks (GANs)\\cite{gan}, where the discriminator is trained to estimate the error of the generator, or in neural style transfer models~\\cite{styletransfer}, where the pretrained NN determines so-called style or content losses.}",
+        "start": 40916,
+        "end": 41530,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\ra{In classical methods for finding equivalent circuit elements, there is difficulty in capturing the correlation between individual $Z(f)$ characteristics for different DC-bias currents \\cite{bib:NMMcircuitSimulation}, and they are usually only able to match individual characteristics \\cite{szewczyk2014identification,gustavsen1999rational}. This results in discontinuous parameters (here, the ladder elements L, R) as a function of the DC current. The Siamese network proposed here solves this problem.",
+        "start": 42644,
+        "end": 43150,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\ra{The proposed method exhibits a robust tendency to parameter selection. Although the initially suggested complexity of analytical model was $M=7$, the NN network identified some components as having negligible contributions (as shown in Fig. 5(b)), effectively reducing the complexity $M\\rightarrow{}4$. Consequently, in the subsequent experiment (Fig. 5(d)), NN successfully predicted a simplified analytical model with $M=5$ while maintaining a comparably low error.}",
+        "start": 43597,
+        "end": 44069,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\ra{One way to further improve the presented model is to eliminate the arbitrarily determined grid of $\\Omega_i$ (Eq.~\\ref{eq:loss_omega}) by adding a term \\ra{in loss function} that penalizes the characteristic frequencies of the individual LR ladder elements coming too close to each other. This will result in a more uniform distribution of these frequencies without imposing their positions from above.}",
+        "start": 44071,
+        "end": 44480,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Measurements were taken for NANOPERM nanocrystalline rings from Magnetec GmbH labeled M-676~\\cite{magnetec_datasheet_1}, for different magnetization currents $I_\\mathrm{DC}$ up to ring saturation using the Keysight Technologies Impedance Analyzer E4990A-030 to measure the impedance frequency characteristic and Keysight Technologies DC Power Supply N8731A to supply the DC-bias current $I_\\mathrm{DC}$.",
+        "start": 45105,
+        "end": 45508,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      }
+    ],
+    "tables": [
+      {
+        "content": "\\begin{tabularx}{\\textwidth}{ p{-2.6cm} l  p{-2.6cm}  l }\n    (a) &   & (b) &  \\\\  %trim=left bottom right top, clip\n         & \\includegraphics[width=0.455\\textwidth, trim={1.1cm -0cm 0 0.1cm}]{1a.png} & &\\includegraphics[width=0.455\\textwidth, trim={1.1cm -0cm 0 0.1cm}]{1b.png} \\\\\n    \\end{tabularx}",
+        "start": 13394,
+        "end": 13696,
+        "metadata": {
+          "type": "table",
+          "envname": "tabularx"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{|ccc|}\n\\hline\n\\multicolumn{3}{|c|}{models validation error} \\\\ \\hline\n\\multicolumn{1}{|c|}{basic} & \\multicolumn{1}{c|}{Siamese} & modified Siamese \\\\ \\hline\n\\multicolumn{1}{|c|}{8.24\\%} & \\multicolumn{1}{c|}{5.29\\%} & 4.54\\% \\\\ \\hline\n\\hline\n\\multicolumn{3}{|c|}{models test error} \\\\ \\hline\n\\multicolumn{1}{|c|}{basic} & \\multicolumn{1}{c|}{Siamese} & modified Siamese \\\\ \\hline\n\\multicolumn{1}{|c|}{12.54\\%} & \\multicolumn{1}{c|}{7.22\\%} & 5.18\\% \\\\ \\hline\n\\end{tabular}",
+        "start": 27069,
+        "end": 27558,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabularx}{\\textwidth}{ p{-2.6cm} l  p{-2.6cm}  l }\n    (a) &   & (b) &  \\\\ \n         & \\includegraphics[width=0.46\\textwidth, trim={1.1cm 0 0 0.1cm}]{3a.png} & &\\includegraphics[width=0.46\\textwidth, trim={0.9cm 0 0 0.1cm}]{3b.png} \\\\\n        %& \\includesvg[width=0.46\\textwidth]{3a} & &\\includesvg[width=0.46\\textwidth]{3b} \\\\\n          (c) &   & (d) &  \\\\ \n         & \\includegraphics[width=0.46\\textwidth, trim={1.1cm 0 0 0.1cm}]{3c.png} & &\\includegraphics[width=0.46\\textwidth, trim={0.9cm 0 0 0.1cm}]{3d.png} \n         \n         %& \\includesvg[width=0.46\\textwidth]{3c} & &\\includesvg[width=0.46\\textwidth]{3d} \n    \\end{tabularx}",
+        "start": 28021,
+        "end": 28664,
+        "metadata": {
+          "type": "table",
+          "envname": "tabularx"
+        }
+      },
+      {
+        "content": "\\begin{tabularx}{\\textwidth}{ p{-2.6cm} l  p{-2.6cm}  l }\n    (a) &   & (b) &  \\\\ \n         & \\includegraphics[width=0.46\\textwidth, trim={1.1cm 0 0 0}]{5a.png} & &\\includegraphics[width=0.46\\textwidth, trim={0.9cm 0 0 0}]{5b.png} \\\\\n        %& \\includesvg[width=0.46\\textwidth]{3a} & &\\includesvg[width=0.46\\textwidth]{3b} \\\\\n          (c) &   & (d) &  \\\\ \n         & \\includegraphics[width=0.46\\textwidth, trim={1.1cm 0 0 0}]{5c.png} & &\\includegraphics[width=0.46\\textwidth, trim={0.9cm 0 0 0}]{5d.png} \n         %& \\includesvg[width=0.46\\textwidth]{3c} & &\\includesvg[width=0.46\\textwidth]{3d} \n    \\end{tabularx}",
+        "start": 36254,
+        "end": 36871,
+        "metadata": {
+          "type": "table",
+          "envname": "tabularx"
+        }
+      }
+    ],
+    "total_items": 58
+  }
+]

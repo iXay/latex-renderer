@@ -1,0 +1,1152 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00029/2401.00029/main.tex",
+    "display_formulas": [],
+    "inline_texts": [
+      {
+        "content": "\\author{Li Xu$^{1\\dag}$",
+        "start": 1496,
+        "end": 1519,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "~~~ Haoxuan Qu$^{1\\dag}$",
+        "start": 1520,
+        "end": 1544,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "~~~ Yujun Cai$^{2}$",
+        "start": 1545,
+        "end": 1564,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "~ Jun Liu$^{1\\ddag}$ \\\\",
+        "start": 1565,
+        "end": 1588,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Specifically, given an original sample $d_0$ (e.g., a clean image), the process of diffusing the sample $d_0$ iteratively towards the noise (typically Gaussian noise) $d_K \\sim \\mathcal{N}(\\textbf{0}, \\textbf{I})$ (i.e., $d_0 \\rightarrow d_1 \\rightarrow ... \\rightarrow d_K$ is called the forward process.",
+        "start": 16771,
+        "end": 17078,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "In contrast, the process of denoising the noise $d_K$ iteratively towards the sample $d_0$ (i.e., $d_K \\rightarrow d_{K-1} \\rightarrow ... \\rightarrow d_0$ is called the reverse process.",
+        "start": 17079,
+        "end": 17266,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "we need to acquire the intermediate step results $\\{d_k\\}^{K-1}_{k=1}$.",
+        "start": 17472,
+        "end": 17544,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Specifically, the posterior distribution $q(d_{1:K}|d_0)$ from $d_1$ to $d_K$ is formulated as:",
+        "start": 17655,
+        "end": 17750,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "where $\\{\\beta_k \\in (0, 1)\\}^K_{k=1}$ denotes a set of fixed variance controllers that control the scale of the injected noise at different steps.",
+        "start": 18037,
+        "end": 18185,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "According to Eq.~\\eqref{eq:revisiting_1}, we can derive $q(d_k|d_0)$ in closed form as:",
+        "start": 18186,
+        "end": 18273,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\alpha_k = 1 - \\beta_k$ and $\\overline{\\alpha}_k = \\prod^k_{s=1} \\alpha_s$.",
+        "start": 18528,
+        "end": 18612,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Based on Eq.~\\eqref{eq:revisiting_2}, $d_k$ can be further expressed as:",
+        "start": 18613,
+        "end": 18685,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\epsilon \\sim \\mathcal{N}(\\textbf{0}, \\textbf{I})$.",
+        "start": 18921,
+        "end": 18980,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "From Eq.~\\eqref{eq:revisiting_3}, we can observe that when the number of diffusion steps $K$ is sufficiently large and $\\overline{\\alpha}_K$ correspondingly decreases to nearly zero,",
+        "start": 18981,
+        "end": 19164,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "the distribution of $d_K$ is approximately a standard Gaussian distribution, i.e., $d_K \\sim \\mathcal{N}(\\textbf{0},\\textbf{I})$.",
+        "start": 19165,
+        "end": 19296,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "This means $d_0$ is gradually corrupted into Gaussian noise, which conforms to the non-equilibrium thermodynamics phenomenon of the diffusion process \\cite{sohl2015deep}.",
+        "start": 19297,
+        "end": 19467,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "With the intermediate step results $\\{d_k\\}^{K-1}_{k=1}$ acquired in the forward process, the diffusion model is trained to learn to perform the reverse process.",
+        "start": 19505,
+        "end": 19667,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Specifically, in the reverse process, each step can be formulated as a function $f$ that takes $d_k$ and the diffusion model $M_{diff}$ as inputs and generate $d_{k-1}$ as the output, i.e., $d_{k-1} = f(d_k, M_{diff})$.",
+        "start": 19668,
+        "end": 19887,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "After training the diffusion model, during inference, we do not need to conduct the forward process. Instead, we only conduct the reverse process, which converts a random Gaussian noise $d_K \\sim \\mathcal{N}(\\textbf{0}, \\textbf{I})$ into a sample $d_0$ of the desired distribution using the trained diffusion model.",
+        "start": 19889,
+        "end": 20204,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "After that, we feed the cropped ROI to the keypoints distribution initializer to obtain the heatmaps that can provide useful distribution priors about keypoints, to initialize $D_K$.",
+        "start": 20450,
+        "end": 20633,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Meanwhile, we can obtain object appearance features $f_{\\text{app}}$.",
+        "start": 20634,
+        "end": 20704,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Next, we pass $f_{\\text{app}}$ into the encoder, and the output of the encoder will serve as conditional information to aid the reverse process in the decoder.",
+        "start": 20705,
+        "end": 20865,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We sample $M$ sets of 2D keypoints coordinates from $D_K$,",
+        "start": 20866,
+        "end": 20925,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "and feed these $M$ sets of coordinates into the decoder to perform the reverse process iteratively together with the step embedding $f^k_D$.",
+        "start": 20926,
+        "end": 21066,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "At the final reverse step ($K$-th step), we average $\\{d^i_0\\}^{M}_{i=1}$ as the final keypoints coordinates prediction $d_0$, and use $d_0$ to compute the 6D pose with the pre-selected 3D keypoints via a PnP solver.}",
+        "start": 21067,
+        "end": 21284,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Specifically, (i) we first select $N$ 3D keypoints on the object CAD model and detect the corresponding $N$ 2D keypoints in the image;",
+        "start": 21541,
+        "end": 21676,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "we formulate keypoints detection as generating a determinate distribution of keypoints coordinates ($D_0$ from an indeterminate initial distribution ($D_K$ via a diffusion model.",
+        "start": 22345,
+        "end": 22525,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Instead, inspired by recent 6D object pose estimation works \\cite{castro2023crt, wang2021gdr, chen2020end}, we first extract an intermediate representation (e.g., heatmaps), and use this representation to initialize a keypoints coordinates distribution (i.e., $D_K$, which will serve as the starting point of the reverse process.",
+        "start": 22853,
+        "end": 23183,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Below, we first describe how we initialize the keypoints distribution $D_K$, and then discuss the corresponding forward and reverse processes in our new framework.",
+        "start": 23501,
+        "end": 23664,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We initialize the keypoints coordinates distribution $D_K$ with extracted heatmaps.",
+        "start": 23724,
+        "end": 23807,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "we can use these heatmaps to initialize $D_K$.",
+        "start": 24466,
+        "end": 24512,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "After distribution initialization, the next step is to iteratively reduce the noise and indeterminacy in the initialized distribution $D_K$ by performing the reverse process ($D_K \\rightarrow D_{K-1} \\rightarrow ... \\rightarrow D_0$.",
+        "start": 24550,
+        "end": 24785,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "(i.e., $\\{D_k\\}^{K-1}_{k=1}$ as the supervision signals.",
+        "start": 24910,
+        "end": 24967,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Thus, we first need to conduct the forward process to obtain samples from $\\{D_k\\}^{K-1}_{k=1}$.",
+        "start": 24968,
+        "end": 25064,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Specifically, given the ground-truth keypoints coordinates distribution $D_0$, we define the forward process as: $D_0 \\rightarrow D_1 \\rightarrow ... \\rightarrow D_K$, where $K$ is the number of diffusion steps.",
+        "start": 25065,
+        "end": 25276,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "In this forward process, we iteratively add noise to the determinate distribution $D_0$, i.e., increasing the indeterminacy of generated distributions, to transform it into the initialized distribution $D_K$ with indeterminacy.",
+        "start": 25277,
+        "end": 25507,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Via this process, we can generate $\\{D_k\\}^{K-1}_{k=1}$ along the way and use them as supervision signals to train the diffusion model to perform the reverse process.",
+        "start": 25508,
+        "end": 25674,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "However, in our framework, we do not aim to transform the ground-truth keypoints coordinates distribution $D_0$ towards a standard Gaussian distribution via the forward process,",
+        "start": 25676,
+        "end": 25854,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "because our initialized distribution $D_K$ is not a random noise.",
+        "start": 25855,
+        "end": 25920,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Instead, as discussed before, $D_K$ is initialized with heatmaps (as shown in Fig. \\ref{fig:framework}), since the heatmaps can provide rough estimations about the keypoints coordinates distribution.",
+        "start": 25921,
+        "end": 26121,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To effectively utilize such priors in $D_K$ to facilitate the reverse process, we aim to enable the diffusion model to start the reverse process (denoising process) from $D_K$ instead of random Gaussian noise.",
+        "start": 26122,
+        "end": 26333,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "However, it is non-trivial to design such a forward process, as the initialized distribution $D_K$ is based on extracted heatmaps,",
+        "start": 26547,
+        "end": 26678,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "and thus $D_K$ can be complex and irregular, as shown in Fig. \\ref{fig:denoise}.",
+        "start": 26679,
+        "end": 26759,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Hence modeling $D_K$ as a Gaussian distribution can result in potentially large errors.",
+        "start": 26760,
+        "end": 26847,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To handle this challenge, motivated by that the Mixture of Cauchy (MoC) model can effectively and reliably characterize complex and intractable distributions \\cite{sym11091186}, we leverage MoC to characterize $D_K$.",
+        "start": 26848,
+        "end": 27064,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Specifically, we denote the number of Cauchy kernels in the MoC distribution as $U$, and use the Expectation-Maximum-type (EM) algorithm \\cite{sym11091186,teimouri2018statistical} to optimize the MoC parameters $\\eta^{\\text{MoC}}$ to characterize the distribution $D_K$ as:",
+        "start": 27170,
+        "end": 27443,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "where $\\{d^v_K\\}^{V}_{v=1}$ denotes $V$ sets of keypoints coordinates sampled from the distribution $D_K$.",
+        "start": 27714,
+        "end": 27820,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Note each set of keypoints coordinates $d^v_K$ contains all the $N$ keypoints coordinates (i.e., $ d^v_K \\in \\mathbb{R}^{N\\times2}$.",
+        "start": 27821,
+        "end": 27954,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "$\\pi_u$ denotes the weight of the $u$-th Cauchy kernel ($\\sum^U_{u=1} \\pi_u$ = 1), and $\\eta^{\\text{MoC}} = \\{\\mu_1, \\gamma_1, ..., \\mu_U, \\gamma_U\\}$ denotes the MoC parameters in which $\\mu_u$ and $\\gamma_u$ are the location and scale of the $u$-th Cauchy kernel.",
+        "start": 27955,
+        "end": 28221,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "Via the above optimization, we can use the optimized parameters $\\eta_{*}^{\\text{MoC}}$ to model $D_K$ as the characterized distribution ($\\hat{D}_K$.",
+        "start": 28222,
+        "end": 28374,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Given $\\hat{D}_K$, we aim to conduct the forward process from the ground-truth keypoints coordinates distribution $D_0$, so that after $K$ steps of forward diffusion, the generated distribution reaches $\\hat{D}_K$.",
+        "start": 28375,
+        "end": 28589,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "where $\\hat{d}_k\\in\\mathbb{R}^{N\\times2}$ represents a sample (i.e., a set of $N$ keypoints coordinates) from the generated distribution $\\hat{D}_k$,",
+        "start": 28887,
+        "end": 29037,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "$\\mu^{\\text{MoC}}=\\sum^U_{u=1} \\mathds{1}_u \\mu_u$, and $\\epsilon^{\\text{MoC}} \\sim \\text{Cauchy}(\\textbf{0}, \\sum^U_{u=1} (\\mathds{1}_u \\gamma_u))$. Note that $\\mathds{1}_u$ is a zero-one indicator and $\\sum^U_{u=1} \\mathds{1}_u = 1$ and $\\text{Prob}(\\mathds{1}_u = 1) = \\pi_u$.",
+        "start": 29038,
+        "end": 29317,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "From Eq.~\\eqref{eq:training_2}, we can observe that when $K$ is sufficiently large and $\\overline{\\alpha}_K$ correspondingly decreases to nearly zero, the distribution of $\\hat{d}_K$ reaches the MoC distribution, i.e., $\\hat{d}_K = \\mu^{\\text{MoC}} + \\epsilon^{\\text{MoC}} \\sim \\text{Cauchy}(\\sum^U_{u=1} (\\mathds{1}_u \\mu_u), \\sum^U_{u=1} (\\mathds{1}_u \\gamma_u))$.",
+        "start": 29319,
+        "end": 29686,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "$\\{\\hat{D}_k\\}^{K-1}_{k=1}$ as supervision signals",
+        "start": 29756,
+        "end": 29806,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "to train the diffusion model $M_{\\text{diff}}$ to learn the reverse process.",
+        "start": 29807,
+        "end": 29883,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In the reverse process, we aim to recover a desired determinate keypoints distribution $D_0$ from the",
+        "start": 30180,
+        "end": 30282,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "initial distribution $D_K$.",
+        "start": 30283,
+        "end": 30310,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As discussed above, we characterize $D_K$ via a MoC model and then generate",
+        "start": 30311,
+        "end": 30387,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$\\{\\hat{D}_k\\}^{K-1}_{k=1}$",
+        "start": 30388,
+        "end": 30416,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "to optimize the diffusion model to learn to perform the reverse process ($\\hat{D}_K \\to \\hat{D}_{K-1} \\to ... \\to D_0$, in which the model iteratively reduces the noise and indeterminacy in $\\hat{D}_K$ to generate $D_0$.",
+        "start": 30440,
+        "end": 30661,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "However, it can still be difficult to generate $D_0$ by directly performing the reverse process from $\\hat{D}_K$,",
+        "start": 30663,
+        "end": 30776,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "because the object appearance features are lacking in $\\hat{D}_K$.",
+        "start": 30777,
+        "end": 30843,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Thus we further leverage the appearance features from the image as context to guide $M_{\\text{diff}}$ in the reverse process.",
+        "start": 30958,
+        "end": 31083,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Specifically, we reuse the features extracted from the keypoints distribution initializer as the appearance features $f_{\\text{app}}$ and feed $f_{\\text{app}}$ into the diffusion model, as shown in Fig. \\ref{fig:framework}.",
+        "start": 31084,
+        "end": 31308,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Our reverse process aims to generate a determinate distribution $D_0$ from the indeterminate distribution $\\hat{D}_K$ (during training) or $D_K$ (during testing).",
+        "start": 31311,
+        "end": 31474,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "We first obtain $f_{\\text{app}}$ from the input image.",
+        "start": 31530,
+        "end": 31584,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Then to help the diffusion model to learn to perform denoising at each reverse step, following \\cite{NEURIPS2020_DDPM, song2021denoising}, we generate the unique step embedding $f^k_{D}$ to inject the step number ($k$ information into the model.",
+        "start": 31585,
+        "end": 31831,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In this way, given a set of noisy keypoints coordinates $d_k \\in \\mathbb{R}^{N\\times2}$ drawn from ${D}_k$ at the $k^{th}$ step, we use diffusion model $M_{\\text{diff}}$, conditioned on the step embedding $f^k_D$ and the object appearance features $f_{\\text{app}}$, to recover ${d}_{k-1}$ from ${d}_{k}$ as:",
+        "start": 31832,
+        "end": 32139,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 8
+        }
+      },
+      {
+        "content": "Following \\cite{peng2019pvnet}, we first select $N$ 3D keypoints from the surface of the object CAD model using the farthest point sampling (FPS) algorithm. Then we conduct the training process in the following two stages.",
+        "start": 32405,
+        "end": 32628,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In the first stage, to initialize the distribution $D_K$, we optimize the keypoints distribution initializer.",
+        "start": 32630,
+        "end": 32739,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Specifically, for each training sample, given the pre-selected $N$ 3D keypoints, we can obtain the ground-truth coordinates of the corresponding $N$ 2D keypoints using the ground-truth 6D object pose.",
+        "start": 32740,
+        "end": 32940,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Thus for each training sample, we generate $N$ ground-truth heatmaps.",
+        "start": 33120,
+        "end": 33189,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In this way, the loss function $L_{\\text{init}}$ for optimizing the initializer can be formulated as:",
+        "start": 33190,
+        "end": 33291,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\textbf{H}_{\\text{pred}}$ and $\\textbf{H}_{\\text{GT}}$ denote the predicted heatmaps and ground-truth heatmaps, respectively.",
+        "start": 33534,
+        "end": 33666,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In the second stage, we optimize the diffusion model $M_{\\text{diff}}$.",
+        "start": 33668,
+        "end": 33740,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For each training sample, to optimize $M_{\\text{diff}}$, we perform the following steps.",
+        "start": 33741,
+        "end": 33830,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "(1) We first send the input image into an off-the-shelf object detector \\cite{tian2019fcos} and then feed the detected ROI into the trained initializer to obtain $N$ heatmaps.",
+        "start": 33831,
+        "end": 34006,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Meanwhile, we can also obtain $f_{\\text{app}}$.",
+        "start": 34007,
+        "end": 34055,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "(2) We use the $N$ predicted heatmaps to initialize $D_K$, and leverage the EM-type algorithm to characterize $D_K$ as a MoC distribution $\\hat{D}_K$.",
+        "start": 34056,
+        "end": 34207,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "(3) Based on $\\hat{D}_K$, we use the ground-truth keypoints coordinates $d_0$ to directly generate $M$ sets of ($\\hat{d}_1,..., \\hat{d}_K$ (i.e., $\\{\\hat{d}^i_1,..., \\hat{d}^i_K\\}^{M}_{i=1}$ via the forward process (Eq. \\eqref{eq:training_2}).",
+        "start": 34208,
+        "end": 34453,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "(4) Then, we aim to optimize the diffusion model $M_{\\text{diff}}$ to recover $\\hat{d}^i_{k-1}$ from $\\hat{d}^i_k$ iteratively. Following previous diffusion works \\cite{NEURIPS2020_DDPM, song2021denoising}, we formulate the loss $L_{\\text{diff}}$ for optimizing $M_{\\text{diff}}$ as follows ($\\hat{d}^i_0=d_0$ for all $i$:",
+        "start": 34454,
+        "end": 34777,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "During testing, for each testing sample, by feeding the input image to the object detector and the keypoints distribution initializer consecutively, we can initialize $D_K$ and meanwhile obtain $f_{\\text{app}}$.",
+        "start": 35096,
+        "end": 35308,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "During the reverse process, we sample $M$ sets of noisy keypoints coordinates from $D_K$ (i.e., $\\{d^i_K\\}^{M}_{i=1}$ and feed them into the trained diffusion model.",
+        "start": 35347,
+        "end": 35513,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Here we sample $M$ sets of keypoints coordinates, because we are converting from a distribution ($D_K$ towards another distribution ($D_0$.",
+        "start": 35514,
+        "end": 35655,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "After $K$ reverse diffusion steps, we obtain $M$ sets of predicted keypoints coordinates (i.e., $\\{d^i_0\\}^{M}_{i=1}$.",
+        "start": 35711,
+        "end": 35830,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "To obtain the final keypoints coordinates prediction $d_0$, we compute the mean of the $M$ predictions.",
+        "start": 35831,
+        "end": 35935,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Our framework mainly consists of the diffusion model ($M_{\\text{diff}}$ and the keypoints distribution initializer.",
+        "start": 36102,
+        "end": 36218,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\noindent\\textbf{Diffusion Model} $M_{\\text{diff}}$.",
+        "start": 36220,
+        "end": 36272,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As illustrated in Fig.~\\ref{fig:framework}, our proposed diffusion model $M_{\\text{diff}}$ mainly consists of a transformer encoder-decoder architecture.",
+        "start": 36273,
+        "end": 36426,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The appearance features $f_{\\text{app}}$",
+        "start": 36427,
+        "end": 36468,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$f^k_D$ and $\\{d^i_k\\}^{M}_{i=1}$ (or $\\{\\hat{d}^i_k\\}^{M}_{i=1}$ during training) are sent into the decoder for the reverse process.",
+        "start": 36574,
+        "end": 36707,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "More specifically, as for the encoder part, we first map $f_{\\text{app}} \\in \\mathbb{R}^{16 \\times 16 \\times 512}$ through a 1 × 1 convolution layer to a latent embedding $e_{\\text{app}} \\in \\mathbb{R}^{ 16 \\times 16 \\times 128 }$.",
+        "start": 40591,
+        "end": 40822,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "To retain the spatial information, following \\cite{vaswani2017attention}, we further incorporate positional encodings into $e_{\\text{app}}$.",
+        "start": 40823,
+        "end": 40963,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Afterwards, we flatten $e_{\\text{app}}$ into a feature sequence ($\\mathbb{R}^{256 \\times 128}$, and send it into the encoder.",
+        "start": 40964,
+        "end": 41090,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The encoder output $f_{\\text{enc}}$ containing the extracted object information will be sent into the decoder to aid the reverse process.",
+        "start": 41091,
+        "end": 41228,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Note that during testing, for each sample, we only need to conduct the above computation process once to obtain the corresponding $f_{\\text{enc}}$.",
+        "start": 41229,
+        "end": 41376,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For notation simplicity, below we describe the reverse process for a single sample $d_k$ instead of the $M$ samples ($\\{{d}^i_1,..., {d}^i_K\\}^{M}_{i=1}$.",
+        "start": 41437,
+        "end": 41592,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Specifically, at the $k$-th reverse step, to inject the current step number ($k$ information into the decoder, we first generate the step embedding $f^k_D \\in \\mathbb{R}^{1 \\times 128}$ using the sinusoidal function following \\cite{NEURIPS2020_DDPM, song2021denoising}.",
+        "start": 41593,
+        "end": 41863,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Meanwhile, we use an FC layer to map the input $d_k \\in \\mathbb{R}^{N \\times 2}$ to a latent embedding $e_{k} \\in \\mathbb{R}^{N \\times 128}$.",
+        "start": 41864,
+        "end": 42005,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Then we concatenate $f^k_D$ and $e_{k}$ along the first dimension, and send it into the decoder.",
+        "start": 42006,
+        "end": 42102,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "By interacting with the encoder output $f_{\\text{enc}}$ (extracted object information) via cross-attention at each layer,",
+        "start": 42103,
+        "end": 42224,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "the decoder produces $f_{\\text{dec}}$, which is further mapped into the keypoints coordinates prediction $d_{k-1} \\in \\mathbb{R}^{N \\times 2}$ via an FC layer.",
+        "start": 42225,
+        "end": 42385,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Then we send $d_{k-1}$ back to the decoder as the input to perform the next reverse step.",
+        "start": 42386,
+        "end": 42475,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To generate heatmaps to initialize the distribution $D_K$, we add two deconvolution layers followed by a 1 × 1 convolution layer after the ResNet-34 backbone, and then we obtain predicted heatmaps $\\textbf{H}_{\\text{pred}} \\in \\mathbb{R}^{N \\times \\frac{H}{4} \\times \\frac{W}{4}}$ where $H$ and $W$ denote the height and width of the input ROI image respectively.",
+        "start": 42682,
+        "end": 43045,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Moreover, the features outputted by the ResNet-34 backbone, combined with features obtained from methods \\cite{su2022zebrapose, Lian_2023_ICCV}, are used as the object features $f_{\\text{app}}$.",
+        "start": 43046,
+        "end": 43240,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We set the number of pre-selected 3D keypoints $N$ to 128.",
+        "start": 45549,
+        "end": 45607,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The cropped ROI image is resized to the shape of $3 \\times 256 \\times 256 $ ($H=W=256$.",
+        "start": 45899,
+        "end": 45987,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We characterize $D_K$ via a MoC model with 9 Cauchy kernels ($U=9$ for the forward diffusion process.",
+        "start": 45988,
+        "end": 46090,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We optimize the diffusion model $M_{\\text{diff}}$ for 1500 epochs using the Adam optimizer \\cite{kingma2014adam} with an initial learning rate of 4e-5.",
+        "start": 46091,
+        "end": 46242,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Moreover, we set the number of sampled sets $M$ to 5, and the number of diffusion steps $K$ to 100.",
+        "start": 46243,
+        "end": 46343,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Note that during testing, instead of performing the reverse process with all the $K$ steps, we accelerate the process with DDIM \\cite{song2021denoising}, a recently proposed diffusion acceleration method. With DDIM acceleration, we only need to perform 10 steps to finish the reverse process during testing.",
+        "start": 46447,
+        "end": 46754,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In the first variant (\\textit{Variant A}), we remove the diffusion model $M_{\\text{diff}}$ and predict keypoints coordinates directly from the heatmaps produced by the keypoints distribution initializer.",
+        "start": 49001,
+        "end": 49204,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{Evaluation on the effectiveness of the object appearance features $f_{\\text{app}}$.}",
+        "start": 50099,
+        "end": 50192,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\noindent\\textbf{Impact of object appearance features} $f_{\\text{app}}$.",
+        "start": 50428,
+        "end": 50500,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In our framework, we send the appearance features $f_{\\text{app}}$",
+        "start": 50501,
+        "end": 50569,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "into the diffusion model $M_{\\text{diff}}$ to aid the reverse process.",
+        "start": 50570,
+        "end": 50640,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To evaluate its effect, we test a variant in which we do not send $f_{\\text{app}}$ into $M_{\\text{diff}}$ (\\textit{w/o $f_{\\text{app}}$}).",
+        "start": 50641,
+        "end": 50779,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "showing that $f_{\\text{app}}$ can aid $M_{\\text{diff}}$ to get more accurate predictions.",
+        "start": 50875,
+        "end": 50964,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "During training, we model the distribution $D_K$ from the intermediate representation (heatmaps) as a MoC distribution $\\hat{D}_K$, and train the diffusion model $M_{\\text{diff}}$ to perform the reverse process from $\\hat{D}_K$.",
+        "start": 51494,
+        "end": 51723,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "To investigate the impact of this design, we evaluate two variants that train $M_{\\text{diff}}$ in different ways.",
+        "start": 51724,
+        "end": 51838,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      }
+    ],
+    "tables": [
+      {
+        "content": "\\begin{tabular}{@{}c|c|c|c|c|c|c|c|c|c|c@{}}\n    \\hline\n     Method & PVNet \\cite{peng2019pvnet} & HybridPose~\\cite{song2020hybridpose} & RePose~\\cite{iwase2021repose} & DeepIM \\cite{li2018deepim} &  GDR-Net~\\cite{wang2021gdr} &  SO-Pose~\\cite{di2021so} & CRT-6D~\\cite{castro2023crt} & ZebraPose~\\cite{su2022zebrapose} & CheckerPose~\\cite{Lian_2023_ICCV} & \\textbf{~~~Ours~~~} \\\\\n     \\hline\n     ape & 15.8 & 20.9 & 31.1 & 59.2 & 46.8 & 48.4 & 53.4 & 57.9 & 58.3 & \\textbf{60.6}\\\\\n     can & 63.3 & 75.3 & 80.0 & 63.5 & 90.8 & 85.8 & 92.0 & 95.0 & 95.7 & \\textbf{97.9}\\\\\n     cat & 16.7 & 24.9 & 25.6 & 26.2 & 40.5 & 32.7 & 42.0 & 60.6 & 62.3 & \\textbf{63.2}\\\\\n     driller & 65.7 & 70.2 & 73.1 & 55.6 & 82.6 & 77.4 & 81.4 & 94.8 & 93.7 & \\textbf{96.6}\\\\\n     duck & 25.2 & 27.9 & 43.0 & 52.4 & 46.9 & 48.9 & 44.9 & 64.5 & \\textbf{69.9} & 67.2\\\\\n     eggbox* & 50.2 & 52.4 & 51.7 & 63.0 & 54.2 & 52.4 & 62.7 & 70.9 & 70.0 & \\textbf{73.5}\\\\\n     glue* & 49.6 & 53.8 & 54.3 & 71.7 & 75.8 & 78.3 & 80.2 & 88.7 & 86.4 & \\textbf{92.0}\\\\\n     holepuncher & 39.7 & 54.2 & 53.6 & 52.5 & 60.1 & 75.3 & 74.3 & 83.0 & 83.8 & \\textbf{85.5}\\\\\n     \\hline\n     Mean & 40.8 & 47.5 & 51.6 & 55.5 & 62.2 & 62.3 & 66.3 & 76.9 & 77.5 & \\textbf{79.6}\\\\\n     \\hline\n  \\end{tabular}",
+        "start": 38041,
+        "end": 39302,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{@{}l|c|c|c@{}}\n    \\hline\n     Method & ADD(-S) & AUC of ADD-S & AUC of ADD(-S) \\\\\n    \\hline\n    SegDriven\\cite{hu2019segmentation} & 39.0 &  - &  -  \\\\\n    SingleStage\\cite{hu2020single} & 53.9 &  - &  - \\\\\n    CosyPose~\\cite{labbe2020cosypose} & - &  89.8 &  84.5 \\\\\n    RePose~\\cite{iwase2021repose} & 62.1 &  88.5 &  82.0 \\\\\n    GDR-Net~\\cite{wang2021gdr} & 60.1 &  \\textbf{91.6} &  84.4 \\\\\n    SO-Pose~\\cite{di2021so} & 56.8 &  90.9 &  83.9 \\\\\n    ZebraPose~\\cite{su2022zebrapose} & 80.5 &  90.1 &  85.3  \\\\\n    CheckerPose~\\cite{Lian_2023_ICCV} & 81.4 & 91.3 & 86.4 \\\\ \\hline\n    Ours & \\textbf{83.8} & 91.5 & \\textbf{87.0} \\\\\n    \\hline\n  \\end{tabular}",
+        "start": 39736,
+        "end": 40412,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{l|c}\n\\hline\nMethod & ADD(-S)\\\\\n\\hline\nVariant A & 49.2\\\\\nVariant B & 57.3\\\\\nVariant C & 61.1\\\\\n\\hline\n6D-Diff & 79.6\\\\\n\\hline\n\\end{tabular}",
+        "start": 48593,
+        "end": 48748,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{l|c}\n\\hline\nMethod & ADD(-S)\\\\\n\\hline\nw/o $f_{\\text{app}}$ & 74.4\\\\\n\\hline\n6D-Diff & 79.6 \\\\\n\\hline\n\\end{tabular}",
+        "start": 50251,
+        "end": 50380,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{l|c}\n\\hline\nMethod & ADD(-S)\\\\\n\\hline\nStandard diffusion w/o MoC & 73.1\\\\\nHeatmaps as condition & 76.2\\\\\n\\hline\n6D-Diff & 79.6\\\\\n\\hline\n\\end{tabular}",
+        "start": 51240,
+        "end": 51405,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      }
+    ],
+    "total_items": 126
+  },
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00029/2401.00029/preamble.tex",
+    "display_formulas": [],
+    "inline_texts": [],
+    "tables": [],
+    "total_items": 0
+  }
+]

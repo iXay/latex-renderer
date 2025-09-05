@@ -1,0 +1,1287 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00059/2401.00059/Transmission_through_interface.tex",
+    "display_formulas": [
+      {
+        "content": "$$\\begin{aligned}u^L_n &= e^{i (\\omega t + q^L a^L n)} + A^L e^{i (\\omega t - q^L a^L n)} \\nonumber \\\\ u^R_n &= B^R e^{i (\\omega t + q^R a^R n)}.\\end{aligned}$$",
+        "start": 11772,
+        "end": 11926,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}u^L_n &= e^{i (\\omega t + q^L a^L n)} + A^L e^{i (\\omega t - q^L a^L n)}\n\\nonumber \\\\\nu^R_n &= B^R e^{i (\\omega t + q^R a^R n)}.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\omega^2 ( 1 + A ) &= -\\beta^L (1 + A^L - e^{i q^L a^L} - A^L e^{- i q^L a^L}) - \\beta (1 + A^L - B^R) \\nonumber \\\\ \\omega^2 B &= -\\beta (B^R - 1 - A^L) - \\beta^R (B^R - B^R e^{i q a}).\\end{aligned}$$",
+        "start": 12005,
+        "end": 12217,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\omega^2 ( 1 + A ) &= -\\beta^L (1 + A^L - e^{i q^L a^L} - A^L e^{- i q^L a^L}) - \\beta (1 + A^L - B^R)\n \\nonumber \\\\\n\\omega^2 B &= -\\beta (B^R - 1 - A^L) - \\beta^R (B^R - B^R e^{i q a}).\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\beta^L (1 + A^L - e^{-i q^L a^L} - A^L e^{i q^L a^L}) &= \\beta (1 + A^L - B^R) \\nonumber \\\\ \\beta^R (B^R - B^R e^{i q^R a^R}) &= \\beta (B^R - 1 - A^L) .\\end{aligned}$$",
+        "start": 13140,
+        "end": 13321,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\beta^L (1 + A^L - e^{-i q^L a^L} - A^L e^{i q^L a^L}) &=  \\beta (1 + A^L - B^R)\n \\nonumber \\\\\n\\beta^R (B^R - B^R e^{i q^R a^R}) &= \\beta (B^R - 1 - A^L) .\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{pmatrix} M^L_+ & \\beta \\\\ \\beta & M^R_+ \\end{pmatrix} \\begin{pmatrix} A^L \\\\ B^R \\end{pmatrix} = - \\begin{pmatrix} M^L_- \\\\ \\beta \\end{pmatrix}$$",
+        "start": 13950,
+        "end": 14134,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{pmatrix} M^L_+ & \\beta \\\\ \\beta & M^R_+ \\end{pmatrix}\n\\begin{pmatrix} A^L \\\\ B^R  \\end{pmatrix} = \n- \\begin{pmatrix} M^L_- \\\\ \\beta \\end{pmatrix}"
+        }
+      },
+      {
+        "content": "$$\\rho^L v^L \\beta^R \\sin q^R a^R = \\rho^R v^R \\beta^L \\sin q^L a^L .$$",
+        "start": 18703,
+        "end": 18803,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\rho^L v^L \\beta^R \\sin q^R a^R = \\rho^R v^R \\beta^L \\sin q^L a^L ."
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\rho^L v^L (M^L_+ M^R_- - \\beta^2) \\beta (M^R_+ - M^R_-) &+ \\rho^R v^R \\beta (M^L_- - M^L_+) (M^L_+ M^R_- - \\beta^2) = 0.\\end{aligned}$$",
+        "start": 19126,
+        "end": 19277,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\rho^L v^L (M^L_+ M^R_- -  \\beta^2) \\beta  (M^R_+ - M^R_-) &+\n\\rho^R v^R  \\beta (M^L_- - M^L_+) (M^L_+ M^R_- -  \\beta^2) = 0.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\begin{pmatrix} 1 & 1 \\\\ 1 & 1 \\end{pmatrix} \\begin{pmatrix} 1 & -1 \\\\ -1 & 1 \\end{pmatrix} = 0,\\end{aligned}$$",
+        "start": 21308,
+        "end": 21432,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\begin{pmatrix}  1 & 1 \\\\ 1 & 1 \\end{pmatrix} \\begin{pmatrix}  1 & -1 \\\\ -1 & 1 \\end{pmatrix} = 0,\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\mathcal A = \\setstretch{1.5} \\frac{1}{\\beta^L a^L/v^L + \\beta^R a^R/v^R} \\begin{pmatrix} \\beta^L a^L/v^L - \\beta^R a^R/v^R & 2 \\beta^R a^R/v^R \\\\ 2 \\beta^L a^L/v^L & \\beta^R a^R/v^R -\\beta^L a^L/v^L \\end{pmatrix}.\\end{aligned}$$",
+        "start": 22430,
+        "end": 22674,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\mathcal A =\n\\setstretch{1.5}\n \\frac{1}{\\beta^L a^L/v^L +  \\beta^R a^R/v^R}\n\\begin{pmatrix} \\beta^L a^L/v^L -  \\beta^R a^R/v^R & 2 \\beta^R a^R/v^R \\\\\n2 \\beta^L a^L/v^L &  \\beta^R a^R/v^R -\\beta^L a^L/v^L \\end{pmatrix}.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}2\\pi \\frac{a^L}{\\lambda^L} \\ll \\frac{\\beta}{\\beta^L}, 2\\pi \\frac{a^R}{\\lambda^R} \\ll \\frac{\\beta}{\\beta^R}.\\end{aligned}$$",
+        "start": 23968,
+        "end": 24101,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}2\\pi \\frac{a^L}{\\lambda^L} \\ll \\frac{\\beta}{\\beta^L},\n2\\pi \\frac{a^R}{\\lambda^R} \\ll \\frac{\\beta}{\\beta^R}.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\dot {\\hat p}_i = \\frac{i}{\\hbar} [\\hat H, \\hat p_i] &= - \\beta (\\hat u_i - \\hat u_{i-1}) \\nonumber \\\\ \\dot {\\hat u}_i = \\frac{i}{\\hbar} [\\hat H, \\hat u_i] &= \\hat p_i/m.\\end{aligned}$$",
+        "start": 26377,
+        "end": 26574,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\dot {\\hat p}_i = \\frac{i}{\\hbar} [\\hat H, \\hat p_i] &= - \\beta (\\hat u_i - \\hat u_{i-1})\n\\nonumber \\\\\n\\dot {\\hat u}_i = \\frac{i}{\\hbar} [\\hat H, \\hat u_i] &=  \\hat p_i/m.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\hat u_1^L = \\sum_\\omega \\left( \\hat A^L_{\\leftarrow} e^{i (\\omega t - q a)} + \\hat A^L_{\\rightarrow} e^{i (\\omega t + q a )} \\right) + H.C. \\nonumber \\\\ \\hat u_{-1}^R = \\sum_\\omega \\left( \\hat A^R_{\\leftarrow} e^{i (\\omega t + q a)} + \\hat A^R_{\\rightarrow} e^{i (\\omega t - q a)} \\right) + H.C.\\end{aligned}$$",
+        "start": 29551,
+        "end": 29877,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\hat u_1^L = \\sum_\\omega \\left( \\hat A^L_{\\leftarrow} e^{i (\\omega t - q a)}\n + \\hat A^L_{\\rightarrow} e^{i (\\omega t + q a )} \\right) + H.C.  \\nonumber \\\\\n\\hat u_{-1}^R = \\sum_\\omega \\left( \\hat A^R_{\\leftarrow} e^{i (\\omega t + q a)}\n + \\hat A^R_{\\rightarrow} e^{i (\\omega t - q a)} \\right)  + H.C.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\beta^L (1- e^{- i q^L a^L}) \\hat A^L_{\\leftarrow} + \\beta^L (1- e^{ i q^L a^L}) \\hat A^L_{\\rightarrow} = \\beta (\\hat A^L_{\\leftarrow} + \\hat A^L_{\\rightarrow} - \\hat A^R_{\\leftarrow} - \\hat A^R_{\\rightarrow}) \\nonumber \\\\ \\beta^R (1- e^{ i q^R a^R}) \\hat A^R_{\\leftarrow} + \\beta^R (1- e^{- i q^R a^R}) \\hat A^R_{\\rightarrow} = \\beta (\\hat A^R_{\\leftarrow} + \\hat A^R_{\\rightarrow} - \\hat A^L_{\\leftarrow} - \\hat A^L_{\\rightarrow}).\\end{aligned}$$",
+        "start": 30722,
+        "end": 31184,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\beta^L (1- e^{- i q^L a^L}) \\hat A^L_{\\leftarrow} +\n \\beta^L (1- e^{ i q^L a^L}) \\hat A^L_{\\rightarrow} =\n\\beta (\\hat A^L_{\\leftarrow} + \\hat A^L_{\\rightarrow} -  \\hat A^R_{\\leftarrow} - \\hat A^R_{\\rightarrow})\n\\nonumber \\\\\n\\beta^R (1- e^{ i q^R a^R}) \\hat A^R_{\\leftarrow} +\n \\beta^R (1- e^{- i q^R a^R}) \\hat A^R_{\\rightarrow} =\n\\beta (\\hat A^R_{\\leftarrow} + \\hat A^R_{\\rightarrow} - \\hat A^L_{\\leftarrow} - \\hat A^L_{\\rightarrow}).\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\mathcal N \\begin{pmatrix} \\hat a^L_{\\leftarrow} \\\\ \\hat a^R_{\\rightarrow} \\end{pmatrix} = \\mathcal A \\mathcal N \\begin{pmatrix} \\hat a^L_{\\rightarrow } \\\\ \\hat a^R_{\\leftarrow} \\end{pmatrix}.\\end{aligned}$$",
+        "start": 33858,
+        "end": 34077,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\mathcal N \\begin{pmatrix} \\hat a^L_{\\leftarrow} \\\\ \\hat a^R_{\\rightarrow} \\end{pmatrix} = \n\\mathcal A \\mathcal N \\begin{pmatrix} \\hat a^L_{\\rightarrow } \\\\ \\hat a^R_{\\leftarrow} \\end{pmatrix}.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}[\\hat a^{L^\\dag}_{\\leftarrow}, \\hat a^L_{\\leftarrow}] = [u_{11}^* \\hat a^{L^\\dag}_{\\rightarrow} + u_{12}^* a^{R^\\dag}_{\\leftarrow}, u_{11} \\hat a^L_{\\rightarrow} + u_{12} a^R_{\\leftarrow}] = \\nonumber \\\\ = |u_{11}|^2 [\\hat a^{L^\\dag}_{\\rightarrow}, \\hat a^L_{\\rightarrow}] + u_{11}^* u_{12} [\\hat a^{L^\\dag}_{\\rightarrow}, \\hat a^R_{\\leftarrow}] + u_{12}^* u_{11} [\\hat a^{R^\\dag}_{\\leftarrow}, \\hat a^L_{\\rightarrow}] + |u_{12}|^2 [\\hat a^{R^\\dag}_{\\leftarrow}, \\hat a^R_{\\leftarrow}] .\\end{aligned}$$",
+        "start": 36480,
+        "end": 36996,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}[\\hat a^{L^\\dag}_{\\leftarrow}, \\hat a^L_{\\leftarrow}] = [u_{11}^* \\hat a^{L^\\dag}_{\\rightarrow} + u_{12}^* a^{R^\\dag}_{\\leftarrow}, u_{11} \\hat a^L_{\\rightarrow} + u_{12} a^R_{\\leftarrow}] =\n\\nonumber \\\\\n= |u_{11}|^2 [\\hat a^{L^\\dag}_{\\rightarrow},  \\hat a^L_{\\rightarrow}] + u_{11}^* u_{12} [\\hat a^{L^\\dag}_{\\rightarrow}, \\hat a^R_{\\leftarrow}] +  u_{12}^* u_{11} [\\hat a^{R^\\dag}_{\\leftarrow}, \\hat a^L_{\\rightarrow}] + |u_{12}|^2\n [\\hat a^{R^\\dag}_{\\leftarrow}, \\hat a^R_{\\leftarrow}] .\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}|u_{11}|^2 + |u_{12}|^2 = 1\\end{aligned}$$",
+        "start": 37042,
+        "end": 37096,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}|u_{11}|^2 + |u_{12}|^2 = 1\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}[\\hat a^{L^\\dag}_{\\leftarrow}, \\hat a^R_{\\rightarrow}] = u_{11}^* u_{21} + u_{12}^*u_{22} = 0 \\nonumber \\\\ [\\hat a^{R^\\dag}_{\\leftarrow}, \\hat a^R_{\\leftarrow}] = |u_{21}|^2 + |u_{22}|^2 = 1.\\end{aligned}$$",
+        "start": 37108,
+        "end": 37326,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}[\\hat a^{L^\\dag}_{\\leftarrow}, \\hat a^R_{\\rightarrow}] = u_{11}^* u_{21} + u_{12}^*u_{22} = 0 \n\\nonumber \\\\\n[\\hat a^{R^\\dag}_{\\leftarrow}, \\hat a^R_{\\leftarrow}] = |u_{21}|^2 + |u_{22}|^2 = 1.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\varepsilon = \\frac{p^{L^{2}}}{2m^{L}}, \\, \\, \\, \\varepsilon = \\frac{p^{R^{2}}}{2m^{R}}+V.\\end{aligned}$$",
+        "start": 44856,
+        "end": 44972,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\varepsilon = \\frac{p^{L^{2}}}{2m^{L}}, \\, \\, \\,\n\\varepsilon = \\frac{p^{R^{2}}}{2m^{R}}+V.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\mathcal M_\\pm = \\begin{pmatrix} M^L_\\pm & \\beta \\\\ \\beta & M^R_\\pm \\end{pmatrix}, \\, \\mathcal A = \\begin{pmatrix} A^L & B^L \\\\ B^R & A^R \\end{pmatrix}.$$",
+        "start": 46742,
+        "end": 46926,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\mathcal M_\\pm = \\begin{pmatrix} M^L_\\pm & \\beta \\\\ \\beta & M^R_\\pm \\end{pmatrix}, \\,\n\\mathcal A = \\begin{pmatrix} A^L & B^L \\\\ B^R & A^R \\end{pmatrix}."
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\mathcal A = -\\mathcal M_+^{-1}\\, \\mathcal M_-.\\end{aligned}$$",
+        "start": 46953,
+        "end": 47026,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\mathcal A = -\\mathcal M_+^{-1}\\, \\mathcal M_-.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}t=\\frac{ v^Lv^R}{(v^L + v^R)^2}\\end{aligned}$$",
+        "start": 49654,
+        "end": 49711,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}t=\\frac{ v^Lv^R}{(v^L + v^R)^2}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}f_0^L = f_0^R + \\frac{\\partial f_0}{\\partial T} \\Delta T + \\frac{\\partial f_0}{\\partial \\zeta} \\Delta \\zeta\\end{aligned}$$",
+        "start": 53681,
+        "end": 53818,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}f_0^L =  f_0^R + \\frac{\\partial  f_0}{\\partial T} \\Delta T +  \\frac{\\partial  f_0}{\\partial \\zeta} \\Delta \\zeta\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}f_0^L = f_0^R - \\frac{\\partial f_0}{\\partial x} \\frac{\\varepsilon - \\zeta}{T^2} \\Delta T - \\frac{\\partial f_0}{\\partial x} \\frac{1}{T} \\Delta \\zeta\\end{aligned}$$",
+        "start": 53915,
+        "end": 54089,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}f_0^L = f_0^R - \\frac{\\partial f_0}{\\partial x} \\frac{\\varepsilon - \\zeta}{T^2} \\Delta T - \\frac{\\partial  f_0}{\\partial x} \\frac{1}{T} \\Delta \\zeta\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}f_{\\rightarrow} - f_{\\leftarrow} = - \\frac{t}{1-t} \\left( f_0^L - f_0^R \\right)\\end{aligned}$$",
+        "start": 56469,
+        "end": 56576,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}f_{\\rightarrow} - f_{\\leftarrow}  = - \\frac{t}{1-t} \\left( f_0^L - f_0^R \\right)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\mathcal A = \\mathcal N \\mathcal U \\mathcal N^{-1} => \\mathcal A^{-1} = \\mathcal N \\mathcal U^\\dag \\mathcal N^{-1} \\nonumber \\\\ \\mathcal U^\\dag = \\mathcal U => \\mathcal A^{-1} = \\mathcal A.\\end{aligned}$$",
+        "start": 77145,
+        "end": 77362,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\mathcal A =  \\mathcal N \\mathcal U \\mathcal N^{-1} => \\mathcal A^{-1} =  \\mathcal N \\mathcal U^\\dag \\mathcal N^{-1} \\nonumber \\\\\n\\mathcal U^\\dag = \\mathcal U => \\mathcal A^{-1} = \\mathcal A.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}I^L_{\\leftarrow} = (1-t) I^L_{\\rightarrow } + t I^R_{\\leftarrow} => \\, \\, \\, I^L_{\\rightarrow } - I^L_{\\leftarrow} = t ( I^L_{\\rightarrow } - I^R_{\\leftarrow})>0 => I^L_{\\rightarrow } > I^L_{\\leftarrow}.\\end{aligned}$$",
+        "start": 78532,
+        "end": 78761,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}I^L_{\\leftarrow} = (1-t) I^L_{\\rightarrow } + t I^R_{\\leftarrow} => \\, \\, \\,\nI^L_{\\rightarrow } - I^L_{\\leftarrow} = t ( I^L_{\\rightarrow } - I^R_{\\leftarrow})>0 =>\nI^L_{\\rightarrow } > I^L_{\\leftarrow}.\\end{aligned}"
+        }
+      }
+    ],
+    "inline_texts": [
+      {
+        "content": "\\affiliation{$^1$Ioffe Institute, 26 Politekhnicheskaya, St. Petersburg 194021, Russian Federation\\\\",
+        "start": 658,
+        "end": 758,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$^2$Centro Atomico Constituyentes, CNEA, Av. Gral. Paz 1499, San Martin, Buenos Aires, 1650, Argentina }",
+        "start": 759,
+        "end": 864,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In this case, the Landauer-Buttiker formula implies that the conductivity of such a system is proportional to the probability of particle transmission through the interface, denoted as $t$.",
+        "start": 4353,
+        "end": 4543,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "However, considering the non-equilibrium state of incident phonons at the interface reveals that the conductivity is actually proportional to $t/(1-t)$.",
+        "start": 4543,
+        "end": 4696,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Notably, Landauer himself employed the expression $t/(1-t)$ in his original manuscript \\cite{Landauer}.",
+        "start": 4696,
+        "end": 4800,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We consider a coupled one-dimensional chain characterized by a set of elastic constants $\\beta^L, \\beta^R, \\beta$, which define interaction among atoms inside the left (L) and the right (R) media and at the interface. The masses of atoms in the media are $m^L$ and $m^R$, and interatomic distances are $a^L$ and $a^R$ (Fig. \\ref{fig1}). The atoms in the left chain are numbered from $-\\infty$ to $0$, and in the right chain from $0$ to $+\\infty$. We denote the displacement of the atom on the left side as $u^L_n$ and on the right side as $u^R_n$. For all the atoms but those on the interface ($u^L_0$ and $u^R_0$ we write down the motion equation in the form",
+        "start": 9288,
+        "end": 9948,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 13
+        }
+      },
+      {
+        "content": "where we omitted the side index $L$ or $R$, since the equation is the same for both indexes.",
+        "start": 10055,
+        "end": 10147,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "while wave vector $q$ and frequency $\\omega$ satisfies the dispersion relation. Starting from here we will only write down the first part and not the complex conjugate part. We substitute Eq. \\eqref{1firstsol} into Eq. \\eqref{1first}, and obtain",
+        "start": 10386,
+        "end": 10631,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Let us assume the wave with a unit amplitude is incident on the interface from the left. Part of it is reflected and part of it is transmitted. We denote the amplitude of the reflected wave as $A^L$ and the amplitude of the transmitted wave as $B^R$. So the displacement of the $n$-th atom is",
+        "start": 11478,
+        "end": 11770,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\caption{Propagation of vibrations over two coupled semi-infinite one-dimensional chains. Indices $L$ and $R$ label the semi-infinite media on the left and right, respectively. The atoms in the left chain are numbered from $-\\infty$ to $0$, and in the right chain from $0$ to $+\\infty$. $\\beta_{L,R}$ and $m_{L,R}$ denote the chain coupling parameters and atomic masses in the left and right media, respectively. The coupling parameter at the interface, specified by the vertical line, is denoted as $\\beta$. The left medium encompasses incident and reflected waves and the right media encompasses the transmitted wave. The incident wave is assumed to have a unit amplitude, and $A_L$ and $B_R$ represent the amplitudes of the reflected and transmitted waves, respectively. }",
+        "start": 12281,
+        "end": 13056,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 11
+        }
+      },
+      {
+        "content": "We can obtain a similar set of equations in the case of the incidence of a wave with a unit amplitude on the interface from the right. We denote the amplitude of the reflected wave as $A^R$ and the amplitude of the transmitted wave as $B^L$. With all the same substitutions that we have done to obtain Eq. \\eqref{1leftinc} we get",
+        "start": 14137,
+        "end": 14466,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "For explicit computations, we will need the inverse of $\\mathcal M_+$. We use the formula:",
+        "start": 15566,
+        "end": 15656,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "here $\\mathrm{adj}\\, \\mathcal M_+$ is the adjoint matrix.",
+        "start": 15889,
+        "end": 15946,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We want to investigate the properties of the matrix of amplitudes $\\mathcal A$. For the solution to hold physical significance, it must adhere to the conservation of energy flow condition. Considering that the energy flow associated with a plane wave is proportional to the group velocity of the wave, the density of the media, and the square of amplitudes, the following relations arise:",
+        "start": 15948,
+        "end": 16336,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Let's verify identities (\\ref{1flowcons}, \\ref{1flowort}) or, which is the same, the identity \\eqref{1mainres}. We will start with the first equation of\\eqref{1flowcons}. We would substitute the amplitudes $A^L, B^R$ in the form given by equations (\\ref{1mathcal}, \\ref{1solution}, \\ref{1inverse}) and use the properties of introduced coefficients \\eqref{1Ms} $\\overline{M^{L,R}_\\pm} = M^{L,R}_\\mp$:",
+        "start": 17719,
+        "end": 18118,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "But it is true, because for a one-dimensional harmonic chain $\\rho v = \\beta \\sin qa$ \\cite{Kotkin}.",
+        "start": 18805,
+        "end": 18906,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "we aim to explore another aspect. In a prior study \\cite{AnDin2}, it was demonstrated that in the low-frequency limit, the amplitudes of transmission and reflection become independent of the value of $\\beta$, the constant of interaction between the chains. The amplitudes equal to those found for two connected elastic strings:",
+        "start": 19600,
+        "end": 19927,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We see that it is also independent of the frequency $\\omega$. With imminent use in mind, we want to see, which properties of coefficients in Eq. \\eqref{1maineq} make it this way.",
+        "start": 20150,
+        "end": 20329,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In the limit $q \\rightarrow 0$, formulae \\eqref{1Ms} can be rewritten as",
+        "start": 20331,
+        "end": 20404,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We substitute these expressions into definition \\eqref{1mathcal} and we see that the matrices $\\mathcal M$ can be presented as a sum of two components:",
+        "start": 20558,
+        "end": 20710,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The first summand is singular and is the same for both matrices $\\mathcal M_+$ and $\\mathcal M_-$. The second is proportional to the small parameter $\\omega$.",
+        "start": 20922,
+        "end": 21080,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "We recall the formula for amplitudes \\eqref{1solution} and the formula for inverse matrix \\eqref{1inverse}. For a singular matrix $\\mathcal S$ the product $(\\mathrm{adj}\\, \\mathcal S)\\, \\mathcal S = 0$. In our case that means",
+        "start": 21082,
+        "end": 21307,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "which is easy to check. We also discard terms that are proportional to $\\omega^2$. So we have",
+        "start": 21434,
+        "end": 21527,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We see that it is proportional to $\\omega \\beta$.",
+        "start": 21891,
+        "end": 21941,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Concerning the determinant of $\\mathcal M_+$, from formula \\eqref{1inverse}, the determinant of a singular matrix is zero, and we also want to discard the second order in $\\omega$ terms, so the determinant is also proportional $\\omega \\beta$. Expression for the amplitude matrix is \\eqref{1partial} divided by determinant of $\\mathcal M_+$. So $\\omega \\beta$ cancels out.",
+        "start": 21943,
+        "end": 22316,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "To verify our reasoning, we perform the direct computation, descard terms proportional to $\\omega^2$ and obtain",
+        "start": 22318,
+        "end": 22429,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We use expressions $v=a\\sqrt{\\beta/m}$ and $\\rho = m/a$ and with simple algebra we arrive to identity \\eqref{1elastic}.",
+        "start": 22676,
+        "end": 22796,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In summary, the amplitudes at zero frequency are independent of both $\\beta$ and $\\omega$ because the $\\mathcal M$ matrices are singular at zero frequency.",
+        "start": 22798,
+        "end": 22953,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "We observe that in that case as well, the $\\mathcal M$ matrices are singular in the low-frequency limit.",
+        "start": 23286,
+        "end": 23391,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Consequently, following the presented arguments, the amplitudes of transmission and reflection become frequency-independent and do not vary with the value of $\\beta$, the constant of inter-lattice interaction.",
+        "start": 23391,
+        "end": 23601,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The expression \\eqref{1components} shows what exactly does it mean that $\\omega$ is \"small\". To treat $\\omega$ as a small parameter both conditions should be satisfied: $\\omega a^L/v^L \\ll \\beta/\\beta^L$ and $\\omega a^R/v^R \\ll \\beta/\\beta^R$. This conditions have a clear meaning when we pass from the frequency to the wavelengthes $\\lambda^{L,R}$ in both media:",
+        "start": 23603,
+        "end": 23967,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "As we can see, when the interfacial coupling parameter $\\beta$ is of the same order of magnitude as the coupling parameters within the media, elastic continuum models work well for wavelengths up to the lattice parameters. This implies that continuum theory is a valid approximation to describe the transmission of waves with frequencies up to the Debye frequency of the media. This observation provides an explanation for the surprisingly accurate approximation of the temperature dependence of Kapitza resistance by the Debye function \\cite{KinDMM}.",
+        "start": 24103,
+        "end": 24654,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\hat u_i$ and $\\hat p_i$ are operators of displacement and momentum of $i$-th atom. Those operators obey the standard coordinate-momentum commutation relations:",
+        "start": 25589,
+        "end": 25756,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Phonons that are incident on the interface and those departing from the interface should be treated separately. To distinguish their directions of propagation, we introduce arrow indices $\\leftarrow$ and $\\rightarrow$ (indicating the wave travels from the right to the left and vice versa, respectively). Employing this notation, we express the displacement operators for the atoms on the left and right sides of the interface:",
+        "start": 28381,
+        "end": 28808,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "H.C. stands for the Hermitian conjugate. Modes that are incident on the interface now have indices ($L, \\rightarrow$ and ($R, \\leftarrow$ and the modes that depart from the interface have indices ($L, \\leftarrow$ and ($R, \\rightarrow$.",
+        "start": 29157,
+        "end": 29396,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "We substitute $\\hat u_1^L$ and $\\hat u_{-1}^R$ into Eq. \\eqref{2Eq} for the zeroth atoms on both sides, then substitute the result into \\eqref{2System}:",
+        "start": 29878,
+        "end": 30030,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We substitute definition \\eqref{2fullsum} to the system of equations \\eqref{2System2}. We multiply equations by $e^{i \\omega t }$ and integrate over time from minus infinity to infinity, so only one frequency is left in the system of equations. This way we obtain",
+        "start": 30456,
+        "end": 30721,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "After multiplying equations by $e^{i \\omega t }$ and integrating over time we also got rid of Hermitian conjugate parts of $\\hat u$ operators. To obtain the equation for Hermitian conjugated amplitude operators we need to multiply by $e^{-i \\omega t }$ before integrating. We will proceed to write equations for amplitudes keeping in mind that there is a symmetric equation for the Hermitian conjugated amplitudes.",
+        "start": 31186,
+        "end": 31600,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "To achieve this, we aim to convert the relation between amplitude operators to the relation between phonon annihilation operators (and, consequently, hermitian conjugate amplitude operators to phonon creation operators). We leverage the fact that the amplitude operators are proportional to annihilation operators \\cite{Anselm}: $\\hat A^L = \\nu^L \\hat a^L, \\hat A^R = \\nu^R \\hat a^R$, where $\\nu^L$ and $\\nu^R$ are normalization constants. We omit the arrow indices, as both directions in each crystal are symmetric, and the normalization constants are the same. Our goal is to determine the values of $\\nu^L$ and $\\nu^R$.",
+        "start": 33067,
+        "end": 33689,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "Here the last equality defines the new matrix $\\mathcal U$. We denote it this way because this matrix will turn out to be unitary. But at this point, we do not know it yet. We proceed to prove the unitarity of",
+        "start": 34440,
+        "end": 34649,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$\\mathcal U$.",
+        "start": 34650,
+        "end": 34663,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We will rewrite the last equation explicitely, through elements of matrix $\\mathcal U$",
+        "start": 34665,
+        "end": 34752,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Analogous relations hold for creation and annihilation operators corresponding to phonons departing from the interface. We frame the state of departing phonons as a subsequent state of incident phonons. In general, the commutation relations for operators at different moments are unknown. However, in the case under investigation, the connection is specified by Eqs. (\\ref{2connect}, \\ref{2hats}). By commuting both sides of the system of equations \\eqref{2hats} first with $\\hat a^{L^\\dag}{\\rightarrow}$, then with $\\hat a^{R^\\dag}{\\leftarrow}$, and using relations \\eqref{2comms}, we can obtain the commutators:",
+        "start": 35409,
+        "end": 36022,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "To investigate the properties of the matrix $\\mathcal U$ we coomute both sides of Eq. \\eqref{2hats} and find",
+        "start": 36371,
+        "end": 36479,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "But these conditions mean the raws of matrix $\\mathcal U$ form an orthonormal basis which implies $\\mathcal U$ is unitary.",
+        "start": 37328,
+        "end": 37450,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "So we know the relation \\eqref{1mainres} for amplitude matrix and connection between amplitude matrix and some yet unknown unitary matrix \\eqref{2connect}. We need to find such $\\mathcal N$ that its substitution into \\eqref{1mainres} in the form",
+        "start": 37808,
+        "end": 38053,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "will transform this relation into the relation that defines a unitary matrix. It is easy to see that the required matrix is $N = F^{-1/2}$.",
+        "start": 38150,
+        "end": 38289,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\mathcal E$ is identity matrix. But this is exactly the definition of matrix $\\mathcal U$ being unitary. So the normalization constants are $(\\rho^L v^L)^{-1/2}$ and $(\\rho^R v^R)^{-1/2}$. Now we see why relation \\eqref{1mainres} looks so similar to orthonormality condition. $\\mathcal A$ turns out to be matrix of unitary transformation but in non-normalized basis.",
+        "start": 38632,
+        "end": 39005,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "We want to note here briefly, that in an arbitrary basis, a matrix of unitary transformation, $\\mathcal U$ obeys the relation $\\mathcal U^\\dag \\mathcal H \\mathcal U = \\mathcal H$ where $\\mathcal H$ is some hermitian matrix.",
+        "start": 39007,
+        "end": 39231,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "$\\mathcal H$ is a diagonal matrix only on an orthogonal basis and is an identity matrix on an orthonormal basis.",
+        "start": 39231,
+        "end": 39344,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "This means the transition from the amplitudes matrix $\\mathcal A$ to the unitary transformation matrix is only possible if amplitudes satisfy the condition \\eqref{1mainres}, and it is not possible for an arbitrary matrix of amplitudes.",
+        "start": 39443,
+        "end": 39679,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Now we want to derive the transformation of distribution functions of phonons that are incident on the interface to those departing from the interface. We write down Eq. \\eqref{2connect} explicitly, with $\\mathcal U$ being defined by the inverse transform of \\eqref{2transform}",
+        "start": 40543,
+        "end": 40820,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We recall that for all the equations for $\\hat a$ there are Hermitian conjugated counterparts for $\\hat a^\\dag$. Using this we calculate the number of particles operators $ \\hat n = \\hat a^\\dag \\hat a $:",
+        "start": 41117,
+        "end": 41320,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "We denote the state of the departing particles $| D \\rangle$. If the state that creation and annihilation operators act on has a defenite number of particles, then",
+        "start": 42022,
+        "end": 42185,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Setting the origin of the energy axis at the bottom of the conduction band of the left crystal and denoting the energy of the bottom of the conduction band of the right crystal as $V$ (Fig.",
+        "start": 44584,
+        "end": 44774,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\varepsilon$ is the energy of an electron, $m^{L,R}$ and $p^{L,R}$ are effective masses and momenta of electrons on the left and the right sides, respectively.",
+        "start": 44973,
+        "end": 45139,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "where $v=p/m$, the momenta of the electron divided by the effective mass of the electron. Analogous equations can be written for incidence from the other side. We solve both cases and find the amplitude matrix",
+        "start": 45439,
+        "end": 45648,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We do not introduce a special index that denotes amplitude matrix $\\mathcal A$ for electron problem that would distinguish it from the phonon problem to keep formulas tidy. Given that the electron and phonon problems are discussed in different sections, we believe this approach will not lead to any confusion.",
+        "start": 45855,
+        "end": 46165,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We see that the solution to the electron problem is structurally similar to the solution to the elastic springs problem \\eqref{1elastic}. One can be obtained from the other by interchange $p/m \\leftrightarrow v \\rho $ with the corresponding side index. This gives us the idea that we can find an effective Hamiltonian for electron transmission with such an interchange.",
+        "start": 46167,
+        "end": 46537,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Where $\\beta$ is some parameter with the dimension of velocity. Similarly",
+        "start": 46667,
+        "end": 46741,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "It is easy to see that the solution is given by formula \\eqref{3solution}. For matrices $\\mathcal M_\\pm$ to be a Hamiltonian, they should be multiplied on some parameter with the dimension of momenta. Note that we can straightforwardly find the amplitude matrix based on equation \\eqref{3bastard}, but we believe that the listed approach is useful for it gives an insight into the possible form of the true Hamiltonian that describes the electron transfer through the interface.",
+        "start": 47028,
+        "end": 47506,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{The electron wave with unit amplitude, depicted as an arrow, is incident on the interface between semiconductors from the left. The reflected wave with amplitude $A^L$ and the transmitted wave with amplitude $B^R$ are also depicted. The interface between semiconductors is at the zero of $x$ axis. We count the potential energy from the bottom of the left semiconductor, the bottom of the right semiconductor has the potential $V$.}",
+        "start": 47577,
+        "end": 48018,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "And, as it is easy to check, equation \\eqref{1mainres} holds for the electronic amplitude matrix and flow matrix. Similarly to how we have done it in the previous section, we can introduce the unitary matrix $\\mathcal U = \\mathcal F^{1/2} \\mathcal A \\mathcal F^{-1/2}$ and write the relation between annihilation operators of the incident and departing electrons",
+        "start": 48277,
+        "end": 48639,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In Ref. \\cite{SemiKapitza} it was promised to derive matching equations for the distribution functions of electrons at the interface. The promise is kept here. To get to 3D equations considered in \\cite{SemiKapitza} we should integrate over the angle of incidence and multiply on the density of states, that is proportional to momenta squared, hence we add multilier $p^2$.",
+        "start": 49227,
+        "end": 49601,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For simplification, we introduce the parameter $t$",
+        "start": 49603,
+        "end": 49653,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Since the sum of coefficients in each row is equal to one, we can naturally interpret $t$ as the electron transmission probability (similarly, we could have introduced phonon transmission probability at the end of Section 2).",
+        "start": 49961,
+        "end": 50186,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Elements of matrix $\\mathcal T$ are obtained by taking a square of absolute values of elements of matrix $\\mathcal U$. We can write it down compactly with the help of Hadamard product, denoted as \"$\\circ$\"\\, the elementwise matrix multiplication:",
+        "start": 50447,
+        "end": 50693,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "We omit the side index because these conditions are equal for both sides. Here $f_0$ denotes the Fermi distribution function",
+        "start": 51971,
+        "end": 52095,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The temperatures $T^{L,R}$ and electrochemical potential $\\zeta^{L,R}$ are assumed to be known for both sides. This conditions are just the definition of temperatures and electrochemical potentials on both sides. With such definition, we only have a system of linear algebraic equations to solve.",
+        "start": 52209,
+        "end": 52505,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We solve the system of equations (\\ref{3GeneralKinetic}, \\ref{3Chapman}, \\ref{3Fermi}) and find $f^L_{\\leftarrow}, f^L_{\\rightarrow}, f^R_{\\leftarrow}, f^R_{\\leftarrow}$. We find that for both sides",
+        "start": 52774,
+        "end": 52972,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Now we can assume that the temperature and the electrochemical potential difference ($\\Delta T$ and $\\Delta \\zeta$ respectively) on both sides are small compared to their absolute values. Then we can expand the Fermi distribution function to the Tailor series to the first order in these small parameters",
+        "start": 53376,
+        "end": 53680,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Further, we introduce $x=\\frac{\\varepsilon - \\zeta}{T}$ and rewrite the previous expression as",
+        "start": 53820,
+        "end": 53914,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "and substitute it into Eq. \\eqref{3solution2}. We also introduce effective electric potential $\\Delta U^* = \\Delta \\zeta/e$. We obtain",
+        "start": 54091,
+        "end": 54226,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We see, that at $t=1$ we have infinite values of these coefficients, indicating the absence of jumps in this case. This aligns with the expected behavior, as $t=1$ corresponds to a crystal plane in a uniform lattice. A reasonable model should not predict any jumps in a homogeneous medium. Additionally, the Onsager reciprocity holds, as the symmetrical coefficients (between $\\Delta T$ and $j$ and between $\\Delta U^*$ and $q$ only differ in the multiplier $T$.",
+        "start": 54901,
+        "end": 55366,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "It does not coincide with equation \\eqref{4ReverseKinetic}! The coefficients can no longer be interpreted as probabilities. While the sum of the coefficients in one row still equals 1, either one of them is negative, or $t=1/2$, and the matrix $\\mathcal T$ is not invertible. Thus, we have transitioned from reversible wave equations to irreversible kinetic equations. We need to understand this shift both mathematically and physically.",
+        "start": 57638,
+        "end": 58075,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "From a mathematical perspective, matrix $\\mathcal T$ belongs to the class of bistochastic matrices. These are square matrices of nonnegative real numbers, each of whose rows and columns sum to one. This can be directly observed for the two-dimensional case, and for every dimension, it follows from formula \\eqref{3Hadamar} and the property of a unitary matrix that the sum of the squares of absolute values of elements in every row and every column is equal to one.",
+        "start": 58077,
+        "end": 58543,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The subset of two-by-two bistochastic matrices possesses particularly elegant characteristics. The coefficients are so constrained that any two-dimensional bistochastic matrix can be uniquely characterized by a single parameter. Specifically, if we set one element to $t$, the element in the same row and the element in the same column become $1-t$, and these conditions dictate that the cross-diagonal element equals $t$. This allows us to introduce a remarkably simple rule for the multiplication of two-by-two bistochastic matrices, employing an alternative parameterization:",
+        "start": 59932,
+        "end": 60510,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "where $x$ belongs to the interval $[-1, 1]$. We can see that",
+        "start": 60696,
+        "end": 60756,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Matrices multiply like numbers on the $[-1, 1]$ segment. The absence of inverses for elements other than $x=1, x=-1$ is especially obvious from this formula. The matrices for the case of $x=1, x=-1$ are",
+        "start": 61632,
+        "end": 61835,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "With formula \\eqref{4parameters} we can make an observation that for any matrix other than $x=1, x=-1$ its repeated multiplication upon itself has a certain limit",
+        "start": 62104,
+        "end": 62266,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Matrix $\\mathcal A$ was derived as a combination of solutions for two cases:",
+        "start": 62896,
+        "end": 62973,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In a more general scenario, the amplitudes of incident waves are denoted as $A^L_{\\rightarrow}$ and $A^R_{\\leftarrow}$, while the amplitudes of departing waves are $A^L_{\\leftarrow}$ and $A^R_{\\rightarrow}$.",
+        "start": 63061,
+        "end": 63269,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "By linearity, they are interconnected by matrix $\\mathcal A$:",
+        "start": 63269,
+        "end": 63331,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Indeed $\\mathcal U^\\dag$ is inverse to $\\mathcal U$ and is also unitary.",
+        "start": 64482,
+        "end": 64554,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Now amplitudes are complex numbers with given absolute values and the argument $a = |a|e^{i\\phi}$. We want to calculate the intensity which is a real, observable parameter. We write down equations \\eqref{4namps} componentwise and have",
+        "start": 64556,
+        "end": 64790,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Let us denote the difference between the arguments of $a^L_{\\rightarrow}$ and $a^R_{\\leftarrow}$ as",
+        "start": 65583,
+        "end": 65683,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$\\Delta \\phi$. We also introduce the intensities $I = |a|^2$. We get",
+        "start": 65684,
+        "end": 65753,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "So if there is a fixed $\\Delta \\phi$ we can deduce intensities of transmission from the complex amplitudes, and the amplitude transformation is given by equation \\eqref{4amps}.",
+        "start": 66273,
+        "end": 66449,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "because $|U_{11}|^2 + |U_{21}|^2 = 1$, $|U_{12}|^2 + |U_{22}|^2 = 1$ and $\\overline U_{11} U_{12} + \\overline U_{21} U_{22} = 0$, which is the consequence of orthonormality of columns in a unitary matrix. So we see that the total energy flux is conserved.",
+        "start": 66637,
+        "end": 66894,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Here we uncover the physical meaning of relation \\eqref{1flowort} and, more broadly, the \"orthonormality of flow\" condition \\eqref{1mainres}. This condition ensures that the interference of waves incident on the interface will not violate the conservation of energy. As energy is conserved in any physically meaningful system, this relation holds for any field. It guarantees that we can construct a unitary matrix $\\mathcal U$ from the amplitude matrix $\\mathcal A$ using the formula \\eqref{2transform}. In turn, this ensures that we can quantize the field using the arguments presented in Section 3 and subsequently derive a kinetic equation from the quantized equation.",
+        "start": 66897,
+        "end": 67569,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Returning to classical fields, let's consider incoherent waves. This implies that we \"do not know\" the complex amplitudes, only the intensities of the waves. In other words, we \"do not know\" the arguments of the amplitudes in Eq. \\eqref{4intensity}, only their absolute values. To determine how the intensities transform at the interface, as commonly done with incoherent oscillations \\cite{Optics}, we average over different values of arguments. This entails integrating equations \\eqref{4intensity} over the range from $0$ to $2\\pi$ and dividing by $2\\pi$. The result is:",
+        "start": 67571,
+        "end": 68144,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "where $\\mathcal T$ is given by the formula \\eqref{3Hadamar}. We see that intensities of incoherent waves transforms at the interface the same way as distribution function of particles \\eqref{3Transf1}.",
+        "start": 68581,
+        "end": 68782,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$|D\\rangle = A_1 |n_1, n_2\\rangle + A_2 |n_1 + 1, n_2 - 1\\rangle $. Then",
+        "start": 68979,
+        "end": 69051,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Now if we apply the incoherence condition, like we did to get to equation \\eqref{4incoherent}, that is, we integrate over the phase difference between $A_2$ and $A_1$, we get $\\langle D| \\hat a_1^\\dag \\hat a_2 |D\\rangle = 0$. And this gives us the condition \\eqref{2Kronecker} which is needed to get to the kinetic equation \\eqref{2PhononKinetic}.",
+        "start": 69275,
+        "end": 69623,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\eqref{2PhononKinetic} there is still a probability, the parameter $t$ denotes the probability for the particle to transmit through the interface.",
+        "start": 69631,
+        "end": 69778,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Let us consider the classical topic of transmission of light through the interface. The amplitudes of transmitted and reflected waves for this case are given by the famous Fresnel formula. For simplicity, we would talk about the interface between the air and some non-magnetic material, with refraction index $n$. The air side would be the left side and the material side would be the right side. Also, we would consider the waves to be linearly polarized and the direction of polarization to be perpendicular to the plane of incidence. In this case, the amplitude matrix is given by",
+        "start": 72926,
+        "end": 73510,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Where angles $\\phi$ and $\\psi$ are angles between the propagation direction of the wave and the axis perpendicular to the interface, $\\phi$ is the angle on the air side and $\\psi$ is the angle on the material side. By Snell's law $\\sin\\phi$ = $n \\sin\\psi$.",
+        "start": 73722,
+        "end": 73979,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "In the considered case the intensity in the direction perpendicular to the interface is proportional to the velocity perpendicular to the interface and to $n^2$ so the flow matrix is given by",
+        "start": 74323,
+        "end": 74514,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We want to find the amplitudes of the waves coming from both sides so that they will assemble into a single wave. That means we want to substitute the matrix on the right side instead of the identity matrix so that on the left side we get an identity matrix instead of the matrix of amplitudes. As it is easy to see, the correct matrix is $\\mathcal A^{-1}$.",
+        "start": 75657,
+        "end": 76015,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{In the first segment of the image, labeled \"\\textit{coherent},\" a laser beam with unit amplitude is incident on the interface between air and a transparent material with a refraction index $n$ (depicted in light blue). The angle between the beam and the line perpendicular to the air-side interface is $\\phi$, and on the opposite side, it is $\\psi$. If the beam separates into two beams with amplitudes $A^L$ and $B^R$, then the two beams, both with amplitudes $A^L$ and $B^R$ and the same phase, combine to form a single beam with unit amplitude.\\\\",
+        "start": 76081,
+        "end": 76639,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "We can quickly find that $\\mathcal A = \\mathcal A^{-1}$ with the help of the following line",
+        "start": 77053,
+        "end": 77144,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Or we can simply verify that $\\mathcal A^2 = \\mathcal E$ by direct computation.",
+        "start": 77364,
+        "end": 77443,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "That implies, when combining beams with amplitudes $A^L, B^R$ at the angles $\\phi, \\psi$ at one point of the interface they will assemble into one beam with a unit amplitude on the side of the air, and if we combine beams with amplitudes $A^R, B^L$ we will get one ray with a unit amplitude on the side of the material (Fig. \\ref{Fassemble}).",
+        "start": 77445,
+        "end": 77787,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "For incoherent radiation the intensities transform by transmission matrix $\\mathcal T$ \\eqref{4Transf}. We substitute the unitary matrix given by formula \\eqref{5unitary} to equation \\eqref{3Hadamar} and get",
+        "start": 77789,
+        "end": 77996,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We can observe that incoherent light behaves principialy different then the coherent one. Let $ I^L_{\\rightarrow }> I^R_{\\leftarrow}$. We can observe that $ I^L_{\\rightarrow }> I^L_{\\leftarrow}> I^R_{\\leftarrow}$, $ I^L_{\\rightarrow }> I^R_{\\rightarrow}> I^R_{\\leftarrow}$. Indeed",
+        "start": 78251,
+        "end": 78531,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\caption{In the first segment of the image, labeled \"\\textit{non-coherent},\" a non-coherent beam of light with intensity $I$ is incident on the interface between air and a transparent material with a refraction index $n$ (depicted in light blue).",
+        "start": 79055,
+        "end": 79301,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "This recurrence is ensured by the angles $\\phi$ and $\\psi$ and the distances between the interface and mirrors satisfying the relation $h^L/h^R = \\tan \\psi/\\tan \\phi$.",
+        "start": 79450,
+        "end": 79618,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "If this occurs enough times, the intensities of the beams on both sides of the interface equalize to $I/2$.",
+        "start": 79751,
+        "end": 79859,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We aim to examine the asymptotic behavior of a beam traversing an interface, undergoing a bifurcation into two beams. Subsequently, these beams reflect, reconvene at the interface, interchange intensities, reflect once more, reconvene at the interface again, and iterate through this process multiple times (Fig. \\ref{Fequilibrium}). According to geometric optics principles, the distance between the interface and the mirrors on both sides ($h^L, h^R$ must satisfy the relation $h^L/h^R = \\tan \\psi/\\tan \\phi$ to ensure the infinite recurrence of the two beams at the interface.",
+        "start": 80174,
+        "end": 80754,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Since at every instance of beams meeting at the interface their intensities transform by the formula \\eqref{4Transf}, the intensities after $n$ meets will be given by",
+        "start": 80756,
+        "end": 80923,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "the columns on the right side represent intensities at the first meet of beams. Since for matrices, $\\mathcal T$ exists a limiting behavior described by the formula \\eqref{4Markov}, given enough meets of beams at the interface, the intensities on both sides will become",
+        "start": 81127,
+        "end": 81397,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where the limiting in intensities are denoted by index $\\infty$. But that means simply that",
+        "start": 81648,
+        "end": 81740,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "On the contrary, coherent light does not exhibit any limiting behavior. As demonstrated, the entirety of the intensity from two intersecting rays can be directed into a single direction. In the geometry of the experiment described above, where beams meet repeatedly after reflections, starting with a single beam leads to a process of splitting into two, merging back into one, splitting again, and so forth, as long as the coherence length of the laser is sufficient (refer to Fig. \\ref{Fequilibrium}). This outcome arises from the equality $\\mathcal A^2 = 1$, signifying that performing the same transformation twice yields the initial result. Additionally, the fact that two beams meet again at the interface ensures that the phase shift is identical for both beams.",
+        "start": 82179,
+        "end": 82948,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "It is the consequence of equation \\eqref{1mainres} that we can form a unitary matrix by relation $\\mathcal U = \\mathcal F^{-1/2} \\mathcal A \\mathcal F^{1/2}$ (see Eq. \\ref{2transform} and the text around). According to general principles of quantum mechanics, the time evolution of a quantum system is described by unitary transformation. We associate the constructed unitary matrix with the transition from the state of quantum particles incident on the interface to the state of departing particles.",
+        "start": 86583,
+        "end": 87086,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      }
+    ],
+    "tables": [],
+    "total_items": 139
+  }
+]

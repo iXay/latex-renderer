@@ -1,0 +1,1772 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00019/2401.00019/FABLEpy.tex",
+    "display_formulas": [],
+    "inline_texts": [
+      {
+        "content": "pd1=pd.DataFrame(liste1,columns=[\"$Eig$\",\"$\\exp(-iEig)$\",\"$(\\phi|O_A|\\phi)$\"],index=[\"mx\",\"my\",\"me\"])",
+        "start": 7128,
+        "end": 7229,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "pd2=pd.DataFrame(liste2,columns=[\"$Eig$\",\"$\\exp(-iEig)$\",\"$(\\phi|O_A|\\phi)$\"],index=[\"mx\",\"my\",\"me\"])",
+        "start": 7267,
+        "end": 7368,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "pdall=pd.DataFrame(lall,columns=[\"$Eig$\",\"$\\exp(-iEig)$\",\"$(\\phi|O_A|\\phi)$\"],index=[\"mx\",\"my\",\"me\",\"mx\",\"my\",\"me\"])",
+        "start": 7405,
+        "end": 7521,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "pd1=pd.DataFrame(liste1,columns=[\"$E$\",\"$\\exp(-iE)$\",\"$(\\phi|O_A|\\phi)$\"],index=[\"mx\",\"my\",\"me\"])",
+        "start": 8888,
+        "end": 8985,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "pd2=pd.DataFrame(liste2,columns=[\"$E$\",\"$\\exp(-iE)$\",\"$(\\phi|O_A|\\phi)$\"],index=[\"mx\",\"my\",\"me\"])",
+        "start": 9005,
+        "end": 9102,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "pd1=pd.DataFrame(liste1,columns=[\"$E$\",\"$(\\phi|A|\\phi)$\",\"$(\\phi|O_A|\\phi)$\"],index=[\"mx\",\"my\",\"me\"])",
+        "start": 17676,
+        "end": 17777,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "pdSZABO=pd.DataFrame(SZABOCALC,columns=[\"$e$\",\"$x$\",\"$y$\"],index=[\"STO-3G\"])",
+        "start": 18372,
+        "end": 18448,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "pd2=pd.DataFrame(liste1,columns=[\"$E$\",\"$(\\phi|A|\\phi)$\",\"$(\\phi|O_A|\\phi)$\"],index=[\"mx\",\"my\",\"me\"])",
+        "start": 18542,
+        "end": 18643,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "pd2=pd.DataFrame(liste1,columns=[\"$E$\",\"$\\exp(-iE)$\",\"$(\\phi|O_A|\\phi)$\"],index=[\"mx\",\"my\",\"me\"])",
+        "start": 21814,
+        "end": 21911,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "for mop ,mtype in zip([mx,my,me],[\"$m_x$\",\"$m_y$\",\"$m_e$\"]):",
+        "start": 22255,
+        "end": 22323,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "pdC=pd.DataFrame(listeC,columns=[\"$\\text{Eig}$\",\"$(\\phi|m_x^T|\\phi)$\",\"$(\\phi|m_y^T|\\phi)$\",\"$(\\phi|m_e^T|\\phi)$\"])",
+        "start": 22709,
+        "end": 22824,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "pdB=pd.DataFrame(listeB,columns=[\"$M$\",\"$\\text{Eig}$\",\"$(\\phi|M|\\phi)$\",\"$(\\phi|O_M|\\phi)$\"],\\",
+        "start": 23943,
+        "end": 24037,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "pdA=pd.DataFrame(listeA,columns=[\"$M$\",\"$\\text{Eig}$\",\"$(\\phi|\\exp(-\\sqrt{-1}M)|\\phi)$\",\"$(\\phi|O_{\\exp}|\\phi)$\"],\\",
+        "start": 25235,
+        "end": 25350,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      }
+    ],
+    "tables": [],
+    "total_items": 13
+  },
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00019/2401.00019/SCRIPT.tex",
+    "display_formulas": [],
+    "inline_texts": [],
+    "tables": [],
+    "total_items": 0
+  },
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00019/2401.00019/SZ-SYM-RHF.tex",
+    "display_formulas": [],
+    "inline_texts": [],
+    "tables": [],
+    "total_items": 0
+  },
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00019/2401.00019/main.tex",
+    "display_formulas": [
+      {
+        "content": "$$\\begin{aligned}\\bar{x}_i \\cdot b = b \\cdot M_{x_i}\\end{aligned}$$",
+        "start": 6889,
+        "end": 6953,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\bar{x}_i \\cdot b  = b \\cdot M_{x_i}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\bar{\\xi}_i^{(j)} \\ v_j = v_j \\cdot M_{x_i}\\end{aligned}$$",
+        "start": 7302,
+        "end": 7374,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\bar{\\xi}_i^{(j)} \\ v_j  = v_j \\cdot M_{x_i}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}f_1(x_1,x_2,...,x_n)=f_2(x_1,x_2,...,x_n)=...=f_t(x_1,x_2,...,x_n)=0\\end{aligned}$$",
+        "start": 7623,
+        "end": 7719,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}f_1(x_1,x_2,...,x_n)=f_2(x_1,x_2,...,x_n)=...=f_t(x_1,x_2,...,x_n)=0\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}(x_1,x_2,...,x_n)=(\\bar{\\xi}_1^{(j)},\\bar{\\xi}_2^{(j)},...,\\bar{\\xi}_n^{(j)})\\end{aligned}$$",
+        "start": 7741,
+        "end": 7846,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}(x_1,x_2,...,x_n)=(\\bar{\\xi}_1^{(j)},\\bar{\\xi}_2^{(j)},...,\\bar{\\xi}_n^{(j)})\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\bar{\\xi}_i^{(j)}= \\frac{(v_j \\cdot M_{x_i},v_j)}{ (v_j ,v_j)}.\\end{aligned}$$",
+        "start": 7981,
+        "end": 8072,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\bar{\\xi}_i^{(j)}= \\frac{(v_j \\cdot M_{x_i},v_j)}{ (v_j ,v_j)}.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}| v_j\\rangle |Ancilla_1\\rangle |Ancilla_2\\rangle \\cdots |Ancilla_n\\rangle \\rightarrow | v_j\\rangle |\\bar{\\xi}_1^{(j)}\\rangle |\\bar{\\xi}_2^{(j)}\\rangle \\cdots |\\bar{\\xi}_n^{(j)}\\rangle\\end{aligned}$$",
+        "start": 8431,
+        "end": 8647,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}| v_j\\rangle |Ancilla_1\\rangle\n |Ancilla_2\\rangle \\cdots\n |Ancilla_n\\rangle\n \\rightarrow | v_j\\rangle \n |\\bar{\\xi}_1^{(j)}\\rangle |\\bar{\\xi}_2^{(j)}\\rangle \\cdots |\\bar{\\xi}_n^{(j)}\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\begin{pmatrix} V(x,y) & -1\\\\ -1 & V(x,y) \\end{pmatrix} \\begin{pmatrix} x \\\\ y \\end{pmatrix} =e\\begin{pmatrix} x \\\\ y \\end{pmatrix}\\end{aligned}$$",
+        "start": 8933,
+        "end": 9132,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\begin{pmatrix}\n     V(x,y) & -1\\\\\n     -1 \n& V(x,y)\n \\end{pmatrix} \n \\begin{pmatrix}\n     x \\\\\n     y \n \\end{pmatrix} \n =e\\begin{pmatrix}\n     x \\\\\n     y \n \\end{pmatrix}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}I=(x V(x,y)-y - e\\,x, y V(x,y)-x - e\\,y,x^2+y^2-1)\\end{aligned}$$",
+        "start": 9485,
+        "end": 9563,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}I=(x V(x,y)-y - e\\,x, y V(x,y)-x - e\\,y,x^2+y^2-1)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}I_{std}=(e^2-1,2y^2-1,x+ye)\\end{aligned}$$",
+        "start": 9627,
+        "end": 9682,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}I_{std}=(e^2-1,2y^2-1,x+ye)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}(x,y,e)=\\left(\\pm\\frac{1}{\\sqrt{2}},\\pm\\frac{1}{\\sqrt{2}},-1\\right),\\left(\\pm\\frac{1}{\\sqrt{2}},\\mp\\frac{1}{\\sqrt{2}},1\\right)\\end{aligned}$$",
+        "start": 9743,
+        "end": 9897,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}(x,y,e)=\\left(\\pm\\frac{1}{\\sqrt{2}},\\pm\\frac{1}{\\sqrt{2}},-1\\right),\\left(\\pm\\frac{1}{\\sqrt{2}},\\mp\\frac{1}{\\sqrt{2}},1\\right)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}b[0]&=y\\,e \\\\ b[1]&=y \\\\ b[2]&=e \\\\ b[3]&=1\\end{aligned}$$",
+        "start": 10027,
+        "end": 10101,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}b[0]&=y\\,e \\\\\n b[1]&=y \\\\\n b[2]&=e \\\\\n b[3]&=1\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}m_x= \\begin{pmatrix} 0 & 0 & 0 &-1\\\\ 0 & 0 & -1 & 0\\\\ 0 & -0.5 & 0 & 0 \\\\ -0.5 & 0 & 0 & 0 \\\\ \\end{pmatrix}\\end{aligned}$$",
+        "start": 10288,
+        "end": 10448,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}m_x=\n \\begin{pmatrix}\n     0 \n& 0 & 0 &-1\\\\\n     0 \n& 0 & -1 & 0\\\\\n     0 & -0.5 & 0 & 0 \\\\\n     -0.5 & 0 & 0 & 0 \\\\\n \\end{pmatrix}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}m_y= \\begin{pmatrix} 0 & 0 & 1 & 0\\\\ 0 & 0 & 0 & 1\\\\ 0.5 & 0 & 0 & 0 \\\\ 0 & 0.5 & 0 & 0 \\\\ \\end{pmatrix}\\end{aligned}$$",
+        "start": 10452,
+        "end": 10609,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}m_y=\n \\begin{pmatrix}\n     0 \n& 0 & 1 & 0\\\\\n     0 \n& 0 & 0 & 1\\\\\n     0.5 & 0 & 0 & 0 \\\\\n     0 & 0.5 & 0 & 0 \\\\\n \\end{pmatrix}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}m_e= \\begin{pmatrix} 0 & 1 & & 0\\\\ 1 & 0 & 0 & 0\\\\ 0 & 0 & 0 & 1 \\\\ 0 & 0 & 1 & 0 \\\\ \\end{pmatrix}\\end{aligned}$$",
+        "start": 10613,
+        "end": 10765,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}m_e=\n \\begin{pmatrix}\n     0 \n& 1 &  & 0\\\\\n     1 \n& 0 & 0 & 0\\\\\n     0 & 0 & 0 & 1 \\\\\n     0 & 0 & 1 & 0 \\\\\n \\end{pmatrix}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}E_{HF}=\\sum_i\\langle i|h|i\\rangle+\\frac{1}{2}\\sum_{ij}\\left([ii|jj]-[ij|ji]\\right)\\end{aligned}$$",
+        "start": 12945,
+        "end": 13055,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}E_{HF}=\\sum_i\\langle i|h|i\\rangle+\\frac{1}{2}\\sum_{ij}\\left([ii|jj]-[ij|ji]\\right)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\langle i|h|i\\rangle=\\int d{\\bf x}_1\\chi_i^*({\\bf x}_1)h({\\bf r}_1)\\chi_j({\\bf x}_1)\\end{aligned}$$",
+        "start": 13059,
+        "end": 13171,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\langle i|h|i\\rangle=\\int d{\\bf x}_1\\chi_i^*({\\bf x}_1)h({\\bf r}_1)\\chi_j({\\bf x}_1)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}[ij|kl]=\\int d{\\bf x}_1 d{\\bf x}_2 \\chi_i^*({\\bf x}_1)\\chi_j({\\bf x}_1 )\\frac{1}{r_{12}} \\chi_i^*({\\bf x}_2)\\chi_j({\\bf x}_2)\\end{aligned}$$",
+        "start": 13175,
+        "end": 13329,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}[ij|kl]=\\int d{\\bf x}_1 d{\\bf x}_2 \\chi_i^*({\\bf x}_1)\\chi_j({\\bf x}_1 )\\frac{1}{r_{12}}\n \\chi_i^*({\\bf x}_2)\\chi_j({\\bf x}_2)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\chi_i({\\bf x})=\\left(x\\,\\phi_{1s,He}(r-R_{He})+y\\,\\phi_{1s,H}(r-R_H)\\right)\\sigma_i\\end{aligned}$$",
+        "start": 13333,
+        "end": 13445,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\chi_i({\\bf x})=\\left(x\\,\\phi_{1s,He}(r-R_{He})+y\\,\\phi_{1s,H}(r-R_H)\\right)\\sigma_i\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\sigma_i : \\text{spin function}\\end{aligned}$$",
+        "start": 13451,
+        "end": 13511,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\sigma_i : \\text{spin  function}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\phi^{STO-3G}_{1s}({\\bf r})=\\sum_{i=1}^3 c(i)\\exp(- z(i) r^2)\\end{aligned}$$",
+        "start": 13513,
+        "end": 13602,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\phi^{STO-3G}_{1s}({\\bf r})=\\sum_{i=1}^3 c(i)\\exp(- z(i) r^2)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}i=\\alpha,\\beta\\end{aligned}$$",
+        "start": 13667,
+        "end": 13709,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}i=\\alpha,\\beta\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}h({\\bf r})=-\\frac{1}{2}\\nabla^2-\\frac{Z_{H_e}}{|\\bf r - R_{H_e}|}--\\frac{Z_H}{|\\bf r - R_H|}\\end{aligned}$$",
+        "start": 13780,
+        "end": 13900,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}h({\\bf r})=-\\frac{1}{2}\\nabla^2-\\frac{Z_{H_e}}{|\\bf r - R_{H_e}|}--\\frac{Z_H}{|\\bf r - R_H|}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}R=|{\\bf R}_{He}-{\\bf R}_{H}|, Z_{He}=2, Z_H=1\\end{aligned}$$",
+        "start": 13902,
+        "end": 13975,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}R=|{\\bf R}_{He}-{\\bf R}_{H}|, Z_{He}=2, Z_H=1\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}E_{tot}(x,y,e,R)=E_{HF}(x,y,R)-e\\sum_i (\\langle \\chi_i|\\chi_j\\rangle-1) + \\frac{Z_{He} Z_{H}}{R}\\end{aligned}$$",
+        "start": 13979,
+        "end": 14103,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}E_{tot}(x,y,e,R)=E_{HF}(x,y,R)-e\\sum_i (\\langle \\chi_i|\\chi_j\\rangle-1) + \\frac{Z_{He} Z_{H}}{R}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}I=\\left(\\frac{\\partial f_{obj}}{\\partial x},\\frac{\\partial f_{obj}}{\\partial y},\\frac{\\partial f_{obj}}{\\partial e},\\frac{\\partial f_{obj}}{\\partial R} \\right)\\end{aligned}$$",
+        "start": 16803,
+        "end": 16991,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}I=\\left(\\frac{\\partial f_{obj}}{\\partial x},\\frac{\\partial f_{obj}}{\\partial y},\\frac{\\partial f_{obj}}{\\partial e},\\frac{\\partial f_{obj}}{\\partial R}\n \\right)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}I=\\left(\\frac{\\partial f_{obj}}{\\partial x},\\frac{\\partial f_{obj}}{\\partial y},\\frac{\\partial f_{obj}}{\\partial e},100R-146 \\right)\\end{aligned}$$",
+        "start": 17083,
+        "end": 17244,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}I=\\left(\\frac{\\partial f_{obj}}{\\partial x},\\frac{\\partial f_{obj}}{\\partial y},\\frac{\\partial f_{obj}}{\\partial e},100R-146\n \\right)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\tilde{A}=\\left(\\langle 0|^{\\otimes a}\\otimes I_n\\right) U \\left(| 0\\rangle^{\\otimes a}\\otimes I_n\\right)\\end{aligned}$$",
+        "start": 20481,
+        "end": 20614,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\tilde{A}=\\left(\\langle 0|^{\\otimes a}\\otimes I_n\\right) U \\left(| 0\\rangle^{\\otimes a}\\otimes I_n\\right)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}U \\left( |0\\rangle^{\\otimes a}\\otimes |\\phi\\rangle \\right) =|0\\rangle^{\\otimes a}\\otimes \\tilde{A} |\\phi\\rangle +\\sqrt{1-\\| \\tilde{A} |\\phi\\rangle\\|^2}|\\sigma^{\\perp}\\rangle\\end{aligned}$$",
+        "start": 20855,
+        "end": 21058,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}U \\left( |0\\rangle^{\\otimes a}\\otimes |\\phi\\rangle \\right)\n =|0\\rangle^{\\otimes a}\\otimes \\tilde{A} |\\phi\\rangle\n +\\sqrt{1-\\| \\tilde{A} |\\phi\\rangle\\|^2}|\\sigma^{\\perp}\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\left(\\langle 0|^{\\otimes a}\\otimes I_n\\right)|\\sigma^{\\perp}\\rangle=0\\end{aligned}$$",
+        "start": 21066,
+        "end": 21164,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\left(\\langle 0|^{\\otimes a}\\otimes I_n\\right)|\\sigma^{\\perp}\\rangle=0\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\||\\sigma^{\\perp}\\rangle\\|=1\\end{aligned}$$",
+        "start": 21171,
+        "end": 21227,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\||\\sigma^{\\perp}\\rangle\\|=1\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}O_A |0\\rangle|i\\rangle |j\\rangle =\\left( a_{ij} +\\sqrt{1-|a_{ij}|^2}\\right) |i\\rangle |j\\rangle\\end{aligned}$$",
+        "start": 21616,
+        "end": 21743,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}O_A |0\\rangle|i\\rangle |j\\rangle\n =\\left( \n a_{ij} +\\sqrt{1-|a_{ij}|^2}\\right) \n|i\\rangle |j\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}O_A= \\begin{pmatrix} c_{00} & & & & -s_{00} & & & & \\\\ &c_{01} & & & & -s_{01} & & & \\\\ & & \\ddots & & & & \\ddots& & \\\\ & & & c_{N-1,N-1} & & & & -s_{N-1,N-1}& \\\\ s_{00} & & & & c_{00} & & & & \\\\ &s_{01} & & & & c_{01} & & & \\\\ & & \\ddots & & & & \\ddots& & \\\\ & & & s_{N-1,N-1} & & & & c_{N-1,N-1}& \\\\ \\end{pmatrix}\\end{aligned}$$",
+        "start": 21869,
+        "end": 22408,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}O_A=\n\\begin{pmatrix}\nc_{00} &       &    &  & -s_{00} &         & & & \\\\\n       &c_{01} &    &  &         & -s_{01} & & &  \\\\\n       &       & \\ddots    &  &         &  & \\ddots& &  \\\\\n       &       &           & c_{N-1,N-1}  &         &  & & -s_{N-1,N-1}&  \\\\\ns_{00} &       &    &  & c_{00} &         & & & \\\\\n       &s_{01} &    &  &         & c_{01} & & &  \\\\\n       &       & \\ddots    &  &         &  & \\ddots& &  \\\\\n       &       &           & s_{N-1,N-1}  &         &  & & c_{N-1,N-1}&  \\\\\n\\end{pmatrix}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}U_A=(I_1\\otimes H^{\\otimes n} \\otimes I_n) (I_1\\otimes \\text{SWAP}) O_A (I_1\\otimes H^{\\otimes n} \\otimes I_n)\\end{aligned}$$",
+        "start": 22690,
+        "end": 22828,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}U_A=(I_1\\otimes H^{\\otimes n} \\otimes I_n) (I_1\\otimes \\text{SWAP}) O_A (I_1\\otimes H^{\\otimes n} \\otimes I_n)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\langle 0| \\langle 0|^{\\otimes n} \\langle i| U_A |0\\rangle |0\\rangle^{\\otimes n} |j\\rangle =\\frac{1}{2^n}a_{ij}\\end{aligned}$$",
+        "start": 22970,
+        "end": 23109,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\langle 0| \\langle 0|^{\\otimes n} \\langle i| U_A |0\\rangle |0\\rangle^{\\otimes n} |j\\rangle =\\frac{1}{2^n}a_{ij}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\frac{1}{\\sqrt{2}} \\left( |0\\rangle + {\\alpha} e^{i2^k\\lambda} |1\\rangle \\right) \\otimes |\\psi\\rangle\\end{aligned}$$",
+        "start": 23640,
+        "end": 23774,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\frac{1}{\\sqrt{2}}\n \\left(\n  |0\\rangle +\n {\\alpha} e^{i2^k\\lambda} |1\\rangle\n \\right) \\otimes |\\psi\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}|0\\rangle + e^{i2^k\\lambda} |1\\rangle\\end{aligned}$$",
+        "start": 23887,
+        "end": 23952,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}|0\\rangle + e^{i2^k\\lambda} |1\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\frac{\\lambda}{2\\pi} = \\frac{j_1}{2^1} + \\frac{j_2}{2^2} +\\cdots+ \\frac{j_n}{2^n}\\end{aligned}$$",
+        "start": 29734,
+        "end": 29844,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\frac{\\lambda}{2\\pi} = \\frac{j_1}{2^1} + \\frac{j_2}{2^2} +\\cdots+ \\frac{j_n}{2^n}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}| 0 \\rangle | \\phi \\rangle \\frac{1}{\\sqrt{2}} \\left( |0\\rangle + |1\\rangle \\right) | \\phi \\rangle\\end{aligned}$$",
+        "start": 29972,
+        "end": 30114,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}| 0 \\rangle | \\phi \\rangle \\xrightarrow{H} \\frac{1}{\\sqrt{2}} \\left( |0\\rangle + |1\\rangle \\right) | \\phi \\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\frac{1}{\\sqrt{2}} \\left( |0\\rangle + |1\\rangle \\right) | \\phi \\rangle })} \\frac{1}{\\sqrt{2}} \\left(| 0 \\rangle + e^{i (2\\pi) j_n} | 1 \\rangle \\right) | \\phi \\rangle\\end{aligned}$$",
+        "start": 30116,
+        "end": 30344,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\frac{1}{\\sqrt{2}} \\left( |0\\rangle + |1\\rangle \\right) | \\phi \\rangle  \\xrightarrow{\\Lambda (U^{2^{n-1}})} \\frac{1}{\\sqrt{2}} \\left(| 0 \\rangle + e^{i (2\\pi) j_n} | 1 \\rangle \\right) | \\phi \\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}|\\psi_{init}\\rangle = \\sum \\beta_j |E_j\\rangle |\\bar{E}_j\\rangle\\end{aligned}$$",
+        "start": 31633,
+        "end": 31725,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}|\\psi_{init}\\rangle = \\sum \\beta_j |E_j\\rangle |\\bar{E}_j\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}e^{2\\pi i\\lambda_j \\Delta T}|E_j\\rangle |\\bar{E}_j\\rangle\\end{aligned}$$",
+        "start": 31971,
+        "end": 32056,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}e^{2\\pi i\\lambda_j \\Delta T}|E_j\\rangle |\\bar{E}_j\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}e^{2\\pi i \\mu_j \\Delta T}|E_j\\rangle |\\bar{E}_j\\rangle\\end{aligned}$$",
+        "start": 32136,
+        "end": 32218,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}e^{2\\pi i \\mu_j \\Delta T}|E_j\\rangle |\\bar{E}_j\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}|\\lambda_j\\rangle |\\mu_j\\rangle |E_j\\rangle |\\bar{E}_j\\rangle\\end{aligned}$$",
+        "start": 32316,
+        "end": 32405,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}|\\lambda_j\\rangle |\\mu_j\\rangle |E_j\\rangle |\\bar{E}_j\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\begin{pmatrix} 0 & (A-\\lambda I) \\\\ (A^T-\\lambda I) & 0 \\end{pmatrix} \\begin{pmatrix} 0 \\\\ x_{k} \\end{pmatrix}= \\begin{pmatrix} x_{k-1}\\\\ 0 \\end{pmatrix}\\end{aligned}$$",
+        "start": 34595,
+        "end": 34792,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\begin{pmatrix}\n  0 & (A-\\lambda I) \\\\ \n  (A^T-\\lambda I) & 0 \n \\end{pmatrix}\n \\begin{pmatrix}\n 0 \\\\\n x_{k}\n \\end{pmatrix}=\n \\begin{pmatrix}\n x_{k-1}\\\\\n 0\n \\end{pmatrix}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\sum_{s}\\sum_j C_ j(A-e_s)^{-N}|v_j\\rangle|e_ s\\rangle\\end{aligned}$$",
+        "start": 35447,
+        "end": 35530,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\sum_{s}\\sum_j C_ j(A-e_s)^{-N}|v_j\\rangle|e_ s\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\sum_{s}\\sum_l D_l |v_{e_s}(l)\\rangle|e_ s\\rangle\\end{aligned}$$",
+        "start": 35576,
+        "end": 35653,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\sum_{s}\\sum_l D_l |v_{e_s}(l)\\rangle|e_ s\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}|\\psi\\rangle=\\left(p |\\lambda+i\\mu\\rangle+q|\\lambda-i\\mu\\rangle\\right)|e_s\\rangle.\\end{aligned}$$",
+        "start": 36554,
+        "end": 36665,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}|\\psi\\rangle=\\left(p |\\lambda+i\\mu\\rangle+q|\\lambda-i\\mu\\rangle\\right)|e_s\\rangle.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\sum_{s}\\sum_k C_k|k\\rangle|e_s\\rangle\\end{aligned}$$",
+        "start": 36797,
+        "end": 36863,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\sum_{s}\\sum_k C_k|k\\rangle|e_s\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}C_1\\sum_{i} x_i + C_2 \\sum_{i_1,i_2} x_{i_1}x_{i_2}+\\cdots+C_n \\sum_{i_1,...,i_n}x_{i_1}\\cdots x_{i_n}-e=0\\end{aligned}$$",
+        "start": 41214,
+        "end": 41349,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}C_1\\sum_{i} x_i + C_2 \\sum_{i_1,i_2} x_{i_1}x_{i_2}+\\cdots+C_n  \\sum_{i_1,...,i_n}x_{i_1}\\cdots x_{i_n}-e=0\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}x_i^2-x_i=0\\ \\text{for}\\ i=1,...,n.\\end{aligned}$$",
+        "start": 41356,
+        "end": 41419,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}x_i^2-x_i=0\\ \\text{for}\\ i=1,...,n.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}v_1&=\\left(-\\frac{1}{\\sqrt{2}},\\frac{1}{\\sqrt{2}},-1,1\\right) \\\\ v_2&=\\left(\\frac{1}{\\sqrt{2}},-\\frac{1}{\\sqrt{2}},-1,1\\right)\\end{aligned}$$",
+        "start": 42136,
+        "end": 42293,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}v_1&=\\left(-\\frac{1}{\\sqrt{2}},\\frac{1}{\\sqrt{2}},-1,1\\right)  \\\\ \n v_2&=\\left(\\frac{1}{\\sqrt{2}},-\\frac{1}{\\sqrt{2}},-1,1\\right)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}w_1=\\frac{1}{2}\\left(v_1+v_2\\right)&=(0,0,-1,1) \\\\ w_2=\\frac{1}{\\sqrt{2}}\\left(v_1-v_2\\right)&=(-1,1,0,0)\\end{aligned}$$",
+        "start": 42351,
+        "end": 42487,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}w_1=\\frac{1}{2}\\left(v_1+v_2\\right)&=(0,0,-1,1) \n\\\\ \n w_2=\\frac{1}{\\sqrt{2}}\\left(v_1-v_2\\right)&=(-1,1,0,0)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}w_1\\,m_x= (-1/2,1/2,0,0)\\end{aligned}$$",
+        "start": 42695,
+        "end": 42747,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}w_1\\,m_x= (-1/2,1/2,0,0)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}w_2\\, m_x= (0,0,1,-1)\\end{aligned}$$",
+        "start": 42749,
+        "end": 42798,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}w_2\\, m_x= (0,0,1,-1)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}w_1\\, m_y= (-1/2,1/2,0,0)\\end{aligned}$$",
+        "start": 42800,
+        "end": 42853,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}w_1\\, m_y= (-1/2,1/2,0,0)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}w_2\\, m_y= (0,0,-1,1)\\end{aligned}$$",
+        "start": 42855,
+        "end": 42904,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}w_2\\, m_y= (0,0,-1,1)\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}m_1^T\\, v_1 = E_v v_1, m_1^T\\, v_2 =E_v v_2.\\end{aligned}$$",
+        "start": 43483,
+        "end": 43555,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}m_1^T\\, v_1 = E_v v_1, m_1^T\\, v_2 =E_v v_2.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\left[ \\begin{pmatrix} (v_1|m_2^T|v_1) & (v_1|m_2^T|v_2)\\\\ (v_2|m_2^T|v_1) & (v_2|m_2^T|v_2) \\end{pmatrix} -E_j\\begin{pmatrix} (v_1|v_1) & (v_1|v_2)\\\\ (v_2|v_1) & (v_2|v_2) \\end{pmatrix} \\right]\\begin{pmatrix} c_1^j\\\\ c_2^j\\end{pmatrix}=\\begin{pmatrix} 0\\\\ 0\\end{pmatrix}\\end{aligned}$$",
+        "start": 43880,
+        "end": 44188,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\left[\n \\begin{pmatrix}\n (v_1|m_2^T|v_1) & (v_1|m_2^T|v_2)\\\\\n (v_2|m_2^T|v_1) & (v_2|m_2^T|v_2)\n \\end{pmatrix}\n -E_j\\begin{pmatrix}\n (v_1|v_1) & (v_1|v_2)\\\\\n (v_2|v_1) & (v_2|v_2)\n \\end{pmatrix}\n \\right]\\begin{pmatrix} c_1^j\\\\ c_2^j\\end{pmatrix}=\\begin{pmatrix} 0\\\\ 0\\end{pmatrix}\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}w_j=c_1^j v_1 + c_2^j v_2 \\ \\text{for}\\ j=1,2\\end{aligned}$$",
+        "start": 44235,
+        "end": 44308,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}w_j=c_1^j v_1 + c_2^j v_2 \\ \\text{for}\\ j=1,2\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}|\\psi\\rangle&=(p |v_1\\rangle + q |v_2\\rangle) |Ancilla_1\\rangle|Ancilla_2\\rangle\\cdots|Ancilla_N\\rangle \\\\\\nonumber &=(s |w_1\\rangle + t |w_2\\rangle) |Ancilla_1\\rangle|Ancilla_2\\rangle\\cdots|Ancilla_N\\rangle.\\end{aligned}$$",
+        "start": 44565,
+        "end": 44802,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}|\\psi\\rangle&=(p |v_1\\rangle + q |v_2\\rangle) |Ancilla_1\\rangle|Ancilla_2\\rangle\\cdots|Ancilla_N\\rangle \\\\\\nonumber\n &=(s |w_1\\rangle + t |w_2\\rangle) |Ancilla_1\\rangle|Ancilla_2\\rangle\\cdots|Ancilla_N\\rangle.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}|\\psi\\rangle=(s |w_1\\rangle + t |w_2\\rangle) |E_v\\rangle|Ancilla_2\\rangle\\cdots|Ancilla_N\\rangle\\end{aligned}$$",
+        "start": 44989,
+        "end": 45113,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}|\\psi\\rangle=(s |w_1\\rangle + t |w_2\\rangle) |E_v\\rangle|Ancilla_2\\rangle\\cdots|Ancilla_N\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}|\\psi\\rangle & =s |w_1\\rangle |E_v\\rangle|E_{w_1}\\rangle\\cdots|Ancilla_N\\rangle \\\\\\nonumber & + t |w_2\\rangle|E_v\\rangle|E_{w_2}\\rangle\\cdots|Ancilla_N\\rangle\\end{aligned}$$",
+        "start": 45258,
+        "end": 45450,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}|\\psi\\rangle & =s |w_1\\rangle \n  |E_v\\rangle|E_{w_1}\\rangle\\cdots|Ancilla_N\\rangle \\\\\\nonumber\n  & + t \n|w_2\\rangle|E_v\\rangle|E_{w_2}\\rangle\\cdots|Ancilla_N\\rangle\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}O\\left(m\\,D\\,\\begin{pmatrix}n+D-1 \\\\ D\\end{pmatrix}^{\\omega}\\right)\\ \\text{as}\\ D\\rightarrow \\infty\\end{aligned}$$",
+        "start": 46931,
+        "end": 47058,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}O\\left(m\\,D\\,\\begin{pmatrix}n+D-1 \\\\ D\\end{pmatrix}^{\\omega}\\right)\\ \\text{as}\\ D\\rightarrow \\infty\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}S(f_i,f_j)=\\frac{a_{ij}}{g_j}f_i-\\frac{a_{ij}}{g_i} f_j.\\end{aligned}$$",
+        "start": 48855,
+        "end": 48939,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}S(f_i,f_j)=\\frac{a_{ij}}{g_j}f_i-\\frac{a_{ij}}{g_i} f_j.\\end{aligned}"
+        }
+      }
+    ],
+    "inline_texts": [
+      {
+        "content": "\\author{Ichio Kikuchi$^{1}$, Akihito Kikuchi$^{2}$\\footnote{akihito\\_kikuchi@gakushikai.jp (The corresponding author; a visiting researcher in IFQT)}",
+        "start": 650,
+        "end": 801,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\small $^{1}$Internationales Forschungszentrum f\\\"ur Quantentechnik\\\\",
+        "start": 805,
+        "end": 883,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\small $^{2}$International Research Center for Quantum Technology, Tokyo \\\\",
+        "start": 884,
+        "end": 968,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Namely, we compose an ideal $I$ from the given polynomials and transform them into another system that has a more suitable form for root-finding \\cite{gianni1988grobner, eisenbud1992direct,moller1993decomposing,primdecSY,lazard1992solving,moller1993decomposing}.",
+        "start": 3541,
+        "end": 3804,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\item Let $I$ be an ideal made of multivariate polynomials $(f_1, f_2,...,f_{t})$ in $R[x_1,x_2,...,x_n]$. Once the Gr\\\"obner for the ideal $I$ is computed, it is an easy task to represent any element in $R[x_1,x_2,...,x_n]/I$ uniquely as the linear combination of the monomial basis of the quotient ring.",
+        "start": 6261,
+        "end": 6568,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "\\item Let $\\bar{x}_1,\\bar{x}_2,...,\\bar{x}_2$",
+        "start": 6571,
+        "end": 6618,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "be the representatives of $x_1,x_2,...,x_n$ in $R[x_1,x_2,...,x_n]/ I$. Additionally, let $b$ be a vector that is composed of the representatives of the monomial basis of the quotient ring.",
+        "start": 6619,
+        "end": 6808,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\item For any $i$, the multiplication $\\bar{x}_i \\cdot b$ is represented by",
+        "start": 6811,
+        "end": 6887,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "with a transformation matrix $M_{x_i}$. The entries of the matrix are numbers, but not symbols.",
+        "start": 6954,
+        "end": 7050,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\item As $M_{x_i}\\cdot M_{x_j}=M_{x_j}\\cdot M_{x_i}$, those transformation matrices share common eigenvectors $\\{v_j |j=1,...,M\\}$, where $M$ is size of the monomial basis $b$.",
+        "start": 7053,
+        "end": 7230,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "for $i=1,...,n$ and $j=1,...,M$. Those equations are solved numerically, and the eigenvalues give the common zeros of the polynomials included in the ideal $I$. Namely, the eigenvalues give the roots of the set of polynomial equations defined by",
+        "start": 7375,
+        "end": 7621,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "for $j=1,...,M$. Note that if eigenvectors $\\{v_j\\}_j$ for one $M_i$ is obtained, the other components of the roots are computed by",
+        "start": 7847,
+        "end": 7979,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The root-finding of a system of polynomial equations is replaced by a set of eigenvalue problems, which could be solved by quantum algorithms. We put the eigenvectors $\\{v_j\\}_j$ into a set of quantum states $\\{| v_j\\rangle\\}$, and the computational steps are carried out by a quantum circuit, which conducts the following transformation:",
+        "start": 8090,
+        "end": 8429,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where the eigenvalues of $M_{x_i}$ $(i=1,...,n)$ for $v_j$ are recorded in ancilla qubits through a successive application of quantum phase estimation.",
+        "start": 8648,
+        "end": 8800,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "$x^2+y^2=1$.",
+        "start": 9173,
+        "end": 9187,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The variables $(x,y)$ are the amplitudes of the wavefunction and $e$ is the orbital energy. $V(x, y)$ is the on-site potential that is the function of the amplitude of the wavefunction. We assume that the roots are real.",
+        "start": 9188,
+        "end": 9410,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "In the case of $V(x,y)=0$, the Gr\\\"obner basis is given by",
+        "start": 9566,
+        "end": 9625,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The entries in the quotient ring $Q(x,y,e)/ I$ are the linear combinations of the monomial basis $b=(b[0],b[1],b[2],b[3])$:",
+        "start": 9900,
+        "end": 10025,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In the quotient ring, the multiplications of the entries of the basis $b$ by $x$, $y$, and $e$ are represented by the transformation matrices: $b\\cdot p=b \\cdot m_p $ for $p=x,y,e$.",
+        "start": 10104,
+        "end": 10286,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "In this section, the restricted Hartree-Fock computation of a realistic molecule HeH$^+$ is used as an example. This molecule is the simplest heteronuclear molecule and is used as a benchmark problem for the solving of the Hartree-Fock model \\cite{szabo2012modern}.",
+        "start": 12233,
+        "end": 12499,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "At first, we compute the total energy functional of the RHF model of the molecule through STO-3g basis set \\cite{Boys1950electronic}. The analytic formulas of the molecular integrals are computed and substituted into the formula of the energy, namely, the objective function. The total energy functional is a function of the LCAO coefficients $(x,y)$, the orbital energy $e$, and the interatomic distance $R$, as defined in the following.",
+        "start": 12502,
+        "end": 12941,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "For the computation of $HeH^+$, we use two spin orbitals.",
+        "start": 13607,
+        "end": 13665,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\item The total energy functional is converted to a polynomial through the Taylor expansion with respect to the atomic distance $R$. The expansion is carried out at the center $R_0=1.5$.",
+        "start": 14123,
+        "end": 14310,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\item The numerical coefficients in the total energy are approximated by fractional numbers so that the objective function, multiplied by the powers of ten, is given by a polynomial with integer coefficients. To this end, we simply approximate the numerical coefficient $C$ by rounding $10^n C$ to the nearest integer $N_c$ and get $N_c/10^n$. We multiply the polynomial by $10^n$ and get the objective function.",
+        "start": 14313,
+        "end": 14726,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "\\item A set of polynomial equations is derived by the partial differentiation with respect to $(x,y)$ and $e$ so that the roots of those equations give the optima of the objective function. For the sake of simplicity, we do not carry out the optimization for $R$. Instead, we replace $\\frac{\\partial\\Omega}{\\partial R}$ with $100R-146$ so that the interatomic distance is fixed at $R=1.46$.",
+        "start": 14729,
+        "end": 15121,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "\\item We apply algebra. We use the ring $Q[x,y,e]$ (a ring over the field of rational numbers $Q$ with the degree reverse lexicographic monomial ordering, such that $x>y>e$. The generators of the set of polynomial equations form an ideal $I$. We compute the Gr\\\"obner basis of $I$, by which the quotient ring $Q[x,y,e]/I$ is defined. In this quotient ring, the monomial basis and the transformation matrices representing the operation of $x$, $y$, and $e$ over $b$ are computed.",
+        "start": 15124,
+        "end": 15605,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 10
+        }
+      },
+      {
+        "content": "The objective function $f_{obj}$ is computed as",
+        "start": 15748,
+        "end": 15796,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To save the computational cost, the atomic distance $R$ is fixed, and $I$ is modified as",
+        "start": 16992,
+        "end": 17081,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The quotient ring $Q[x,y,e]/I$ has the monomial basis $b=(y^2,xe,ye,e2,x,y,e,1)$, and the transformation matrices ($m_x$, $m_y$, and $m_e$ for three variables ($x$,$y$, $e$ are obtained.",
+        "start": 17371,
+        "end": 17562,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 8
+        }
+      },
+      {
+        "content": "The solutions obtained from the symbolic-numeric method are shown in Table \\ref{HFSYM}. We use the normalized right eigenvectors $\\phi)$ and compute the expectation values for $m_x^T$ and $m_e^T$. The solutions at the third and fourth rows correspond to the ground state in the reference data. Those results are quantitatively satisfactory in giving the electronic structure of the molecule, although there is a bit of deviation from the reference data. The cause of the deviation is that we have approximated the objective function as a polynomial with integer coefficients after the Taylor expansion, and as a result, this rough approximation dropped the subtle features of the numeric data used in the standard self-consistent method.",
+        "start": 18125,
+        "end": 18864,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Now we have restated the given question as an eigenvalue problem, and we anticipate the application of quantum phase estimation to get the eigenvalues. The remaining question is that the QPE is not applied directly, since the transformation matrices $m_p$ are not Hermitian, and the time-evolution operator $\\exp(-i T m_p)$ is not unitary. To settle this issue, we use the block-encoding, by which any complex matrix can be embedded in the diagonal part of certain unitary matrices. Several algorithms enable us to conduct the block-encoding and design the quantum circuits \\cite{daskin2014universal,low2019hamiltonian, camps2022fable}.",
+        "start": 19760,
+        "end": 20398,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The block encoding of an n-qubit operator $A$ is formally defined as follows:",
+        "start": 20401,
+        "end": 20479,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In the above, $\\tilde{A}=\\alpha A$, for which the factor $\\alpha$ is chosen in such a way that $|\\tilde{A}_{ij}|\\leq 1$ for all $i$ and $j$.",
+        "start": 20617,
+        "end": 20759,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "$U$ is a unitary matrix operating on $a+n$ qubits, and its action on the qubits is given by",
+        "start": 20760,
+        "end": 20853,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "A repetition of partial measurements of the ancilla qubits yields $|0\\rangle^{\\otimes a}$ with probability $\\|\\tilde{A}|\\phi\\rangle\\}^2$, and the circuit gives rise to $\\frac{\\|\\tilde{A}|\\phi\\rangle}{\\|\\tilde{A}|\\phi\\rangle\\|}$.",
+        "start": 21228,
+        "end": 21458,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "For simplicity, let us assume that $\\alpha=1$ and $|{A}_{ij}|\\leq 1$ for all $i$ and $j$. In this case, the matrix query",
+        "start": 21461,
+        "end": 21583,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "operation $O_A$ is defined by",
+        "start": 21584,
+        "end": 21614,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $|i\\rangle$ and $|j\\rangle$ are n-qubit computational basis states.",
+        "start": 21744,
+        "end": 21818,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The unitary representation of $O_A$ is given by",
+        "start": 21819,
+        "end": 21867,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$c_{ij}=\\cos(\\theta_{ij})$, $s_{ij}=\\sin(\\theta_{ij})$, and $\\theta_{ij}=\\text{arccos}(a_{ij})$. Keep in mind that the indices of $c_{ij}$ and $S_{ij}$ are given by n-qubit computational basis states.",
+        "start": 22416,
+        "end": 22618,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "where $I_1$ and $I_n$ means the identity operations; $\\text{SWAP}$ is the swap gate; $H$ is the Hadamard gate.",
+        "start": 22829,
+        "end": 22940,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "This relation means that, if the $n+1$ ancilla qubits are measured as the zero-state, the signal register, which is initialized by $|\\phi\\rangle$, returns $\\frac{A|\\phi\\rangle}{\\|A\\phi\\rangle\\|}$.",
+        "start": 23110,
+        "end": 23308,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "If $\\|A_{ij}\\| > 1$ for some $i$ and $j$, we must replace $A$ with $\\alpha A$, using a scale factor $\\alpha$ such that $|\\alpha|< 1$. It increases the complexity of the quantum circuit for the QPE.",
+        "start": 23313,
+        "end": 23512,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "If we use the block encoding of $U^{2k}$ for a unitary $U$ with $\\alpha < 1$, during the QPE, the controlled $U^{2k}$ yields",
+        "start": 23513,
+        "end": 23638,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "To record the eigenvalue $\\lambda$ in the bit string, however, the state at the left qubit should be given by",
+        "start": 23775,
+        "end": 23885,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To get the latter state, we prepare $U_{\\alpha \\bf{I}}$, and we apply $(X\\otimes {\\bf I}) U_{\\alpha\\bf{I}}(X\\otimes {\\bf I})$ though the controlled gate operation. Then we get",
+        "start": 23953,
+        "end": 24131,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In (\\ref{AfterRot}), $\\alpha$ could be neglected on account of the normalization of the output state.",
+        "start": 24259,
+        "end": 24361,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The problem in the above construction is that the naive design of the quantum circuit to conduct the operation $O_A$ requires too many numbers of $R_y$ gates, which causes worse complexity than the classical case. To avoid it, the FABLE algorithm uses Gray codes to designate the operations on the ancilla qubits so that this algorithm achieves improved scaling with respect to the number of the $R_y$ gates \\cite{camps2022fable}.",
+        "start": 24364,
+        "end": 24796,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "In this section, the accuracy of block encodings for the simple examples (the simple toy model and the Hartree-Fock computation for HeH$^+$ are investigated. Those models are equally given in $Q[x,y,e]$ (in the ring with three variables), and they are studied together.",
+        "start": 24894,
+        "end": 25164,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Using the FABLE algorithm, we construct the block encoding of the unitary operator $A$.",
+        "start": 25167,
+        "end": 25256,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In Tables \\ref{TOYMODELQUANT} and \\ref{HFQUANT}, the expectation values of the block encoding form of unitary operators $(\\phi|A|\\phi)$ and $(\\phi|\\exp(-iA)|\\phi)$ for $A=m_x^T, m_y^T$, and $m_e^T$ are shown, respectively, for the two examples. They are computed by numerical linear algebra with a suitable choice of $\\phi$.",
+        "start": 25257,
+        "end": 25583,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "$(\\phi|O_{\\exp}|\\phi)$, where $O_{\\exp}=O_{\\exp(-i M)}$ is obtained by the FABLE algorithm. The block encodings by the FABLE algorithm are quantitatively accurate for representing the corresponding evolution of non-unitary $A$.",
+        "start": 25844,
+        "end": 26071,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The existence of complex roots of the given system of polynomial equations is an obstacle to full-fledged quantum computation in the current problem setting. The standard quantum phase estimation is applied to the Hermitian operators which have real eigenvalues only. Let $\\lambda$ be an eigenvalue, which is represented in the following way:",
+        "start": 29387,
+        "end": 29732,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "However, if the eigenvalue is given by $\\lambda+\\sqrt{-1}\\nu$, the quantum circuit yields",
+        "start": 30525,
+        "end": 30615,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "from which, the integer $j_n$ cannot be extracted at $|j_n\\rangle| \\phi \\rangle$ by the Hadamard transformation.",
+        "start": 30779,
+        "end": 30893,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The algorithm in \\cite{wang2010measurement} generates the state of the form of (\\ref{CaseComplexEig}), estimates the factor $|\\exp(-2^k(2\\pi)\\nu)|$ by projective measurements on the index qubit in the basis $|1\\rangle\\langle 1|$, rotates the quantum state to cancel that factor, and obtains the wanted form of (\\ref{CaseRealEig}).",
+        "start": 31029,
+        "end": 31360,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The algorithm in \\cite{daskin2014universal} similarly estimates $|\\exp(-2^k(2\\pi)\\nu)|$ by measurements and then obtains the phase part of the eigenvalue.",
+        "start": 31370,
+        "end": 31526,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $|E_j\\rangle$ and $|\\bar{E}_j\\rangle$ are the eigenvectors of a matrix $M$, and they have the conjugated eigenvalues $\\lambda_i + i\\mu_j$ and $\\lambda_i - i\\mu_j$, respectively. The time evolution using $M\\otimes I + I \\otimes M$ yields",
+        "start": 31726,
+        "end": 31969,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "In addition, the time evolution using $ i( M\\otimes I + I \\otimes M)$ yields",
+        "start": 32057,
+        "end": 32134,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Any of those approaches increases the complexity of the quantum circuits. The former two approaches require additional measurements to determine the complex amplitude Indeed, before applying those methods, we should prepare a particular eigenvector that has a complex eigenvalue $\\lambda + i\\mu$. If not, the measurements do not report correctly $|\\exp(-2^k\\mu)|$. The third approach needs a special preparation of the initial state in which conjugate states are paired.",
+        "start": 32425,
+        "end": 32898,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The inverse power iteration yields the eigenvectors that have the eigenvalues closest to the given $\\lambda$.",
+        "start": 34297,
+        "end": 34408,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In the present work, we choose real $\\lambda$, and we use the parallel character of quantum computation.",
+        "start": 34409,
+        "end": 34516,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To this end, we apply the method with $(A-\\lambda I)^{-1}$, solving",
+        "start": 34525,
+        "end": 34593,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$|x_0\\rangle=|\\beta_{init}\\rangle$, repeat the computation, and after a suitable number of iterations, obtain the desired quantum states $|x_k\\rangle$.",
+        "start": 34848,
+        "end": 35001,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Prepare the initial state: $\\sum_s|\\beta\\rangle \\to \\sum_s|\\beta\\rangle|e_s\\rangle$. This state is implicitly given by",
+        "start": 35102,
+        "end": 35221,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$\\sum_{s}\\sum_j C_j|v_j\\rangle|e_s\\rangle$, where $\\{v_j\\}_j$ are the eigenvectors of $A$, and $e_s$ is the index to the sampling points for $\\lambda$ in the inverse power method.",
+        "start": 35222,
+        "end": 35402,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "with a sufficiently large $N$. Then we get",
+        "start": 35531,
+        "end": 35574,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\{v_{e_s}(l)\\}_l$ are the eigenvectors that have the eigenvalue closest to $e_s$.",
+        "start": 35654,
+        "end": 35743,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Similarly, doubly applying the inverse power method to $|\\beta\\rangle|\\beta'\\rangle$",
+        "start": 35753,
+        "end": 35838,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "by $(A-(\\lambda+i\\mu) I)^{-1} \\otimes (A-(\\lambda-i\\mu) I)^{-1}$, we get the state",
+        "start": 35839,
+        "end": 35922,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$\\sum C_j|E_j\\rangle|\\hat{E}_j\\rangle$.",
+        "start": 35923,
+        "end": 35963,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\hat{\\lambda}(e_s)$ is the bit string representation of the eigenvalue closest to $e_s$. Note that one label $|e_s\\rangle$ shall catch exactly one real eigenvalue.",
+        "start": 36190,
+        "end": 36361,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "In exceptional cases, however, we would prepare an initial state composed of two conjugated eigenvectors that have the eigenvalues $\\lambda \\pm i\\mu$. The initial state vector is given by",
+        "start": 36362,
+        "end": 36552,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $|k\\rangle=|k_0k_1\\cdots k_N\\rangle$. In this case, the label $|e_s\\rangle$ is connected to the noisy superposition of the states $\\{|k\\rangle\\}_k$. If such a result is measured for the label $|e_s\\rangle$, it means that the corresponding eigenvalues are complex. We should discard them since complex eigenvalues are meaningless in our problem setting.",
+        "start": 36864,
+        "end": 37224,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "In the inverse power iteration, we could use $\\lambda - \\sqrt{-1} \\delta$ (with a shift by small positive $\\delta$, instead of genuine real $\\lambda$, so that we shake off the eigenstate that has the eigenvalue with the positive imaginary part, which causes the unbounded growth of the amplitude in the time evolution.",
+        "start": 37225,
+        "end": 37545,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "There is another rare exceptional case where two different state vectors are involved. This case shall happen that the sampling point $e_s$ is located exactly in the middle of two adjacent real eigenvalues $lambda_1$ and $\\lambda_2$. The measurement also gives the noisy superposition of $\\{|k\\rangle\\}_k$. However, such a circumstance almost surely does not take place, and a small shift of the sampling point $e_s \\rightarrow e_s +\\delta$ shall avoid it.",
+        "start": 37546,
+        "end": 38003,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "This kind of equation is without complex solutions, thanks to the restriction of the ranges of $\\{x_i\\}_i$, which is explicitly written by the polynomials. It follows that, if we construct a set of polynomial equations of the Hartree-Fock model as a QUBO one, there is no problem concerning the complex eigenvalues, although this construction increases the number of qubits and the cost of symbolic computations.",
+        "start": 41420,
+        "end": 41834,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Note that there is an ambiguity in the choice of the basis vectors. In the toy model case, the matrix $m_e$ has two eigenvectors for eigenvalue 1, which are given by",
+        "start": 41967,
+        "end": 42134,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "However, $w_1$ and $w_2$ are not suitable choices in the present problem, for they are not represented by the monomial basis vector $b=(ye,y,e,1)$. Indeed, they are not the eigenvectors of $m_x$ or $m_y$.",
+        "start": 42488,
+        "end": 42693,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "Therefore, if there is a degeneracy of the eigenvalues, we should make the basis vectors for the corresponding subspace in such a way that all the basis vectors are potentially given by the monomial basis vector $b$.",
+        "start": 42905,
+        "end": 43122,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To see the superiority of the quantum algorithm over the classical one, let us consider the following circumstances. Let $\\{m_i\\}_i$ be the list of transformation matrices, and assume that $m_1^T$ has two eigenvectors ($v_1$ and $v_2$ with a common eigenvalue $E_v$:",
+        "start": 43213,
+        "end": 43481,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "These two vectors are not necessarily the eigenvectors of the other $m_i$ if they are not suitably prepared, as pointed out in Section \\ref{Thechoiceofbasisvectorsintheeigenvalueproblems}.",
+        "start": 43556,
+        "end": 43745,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In the classical algorithm, we prepare the eigenvectors of the other $m_i^T$, say $m_2^T$, by the generalized eigenvalue problem:",
+        "start": 43748,
+        "end": 43878,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "and two corresponding eigenvalues $E_{w_1}$ and $E_{w_2}$.",
+        "start": 44309,
+        "end": 44368,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In the above, $p$ and $q$ would randomly be chosen. Consequently, $s$ and $t$ are determined.",
+        "start": 44803,
+        "end": 44897,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Then let us apply the QPE by $m_1^T$ and record the phase at $|Ancilla_1\\rangle$. We get",
+        "start": 44898,
+        "end": 44987,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Next, apply the QPE by $m_2^T$ and record the phase at $|Ancilla_2\\rangle$. We record the corresponding phases at $|Ancilla_2\\rangle$ and get",
+        "start": 45114,
+        "end": 45256,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "If $E_{w_1}\\ne E_{w_2}$, the two data $(E_v, E_{w_1})$ and $(E_v, E_{w_2})$ in $|\\psi\\rangle$ are distinguished, and they are the parts of two distinct roots of the given set of polynomial equations. If $E_{w_1}= E_{w_2}$, we successively apply the QPE using $m_3^T$,...,$m_N^T$. Then we finally get the distinct roots of the form $(E_v, E_w, E_{w^{'}},...,E_{w^{('\\cdots ')}})$. Each of the roots is recorded in one of the orthonormalized bases in the output state and measured distinctly one from the other since the orthogonality is guaranteed by the bit string representation of the ancilla.",
+        "start": 45451,
+        "end": 46047,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 8
+        }
+      },
+      {
+        "content": "Another obstacle is the enormous complexity in the computation of Gr\\\"obner basis, which scales with the number of variables ($n$ and the maximal degree of the input polynomials ($d$.",
+        "start": 46125,
+        "end": 46312,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "If the primitive algorithm (as was initially proposed) is applied, the complexity is doubly exponential in $n$ for the worst case. However, detailed inspections have revealed the following fact \\cite{bardet2015complexity}.",
+        "start": 46313,
+        "end": 46535,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\item Let $(f_1, ..., f_m)$ be a system of homogeneous polynomials in $k[x_1, ..., x_n]$ where $k$ is an arbitrary field. (A homogeneous polynomial is composed of nonzero monomials, all of which have the same degree.)",
+        "start": 46555,
+        "end": 46773,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\item The number of operations to compute a Gr\\\"obner basis of the ideal $I=(f_1, ..., f_m)$ for a graded monomial ordering up to degree $D$ scales with",
+        "start": 46776,
+        "end": 46929,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $\\omega$ is the exponent of matrix multiplication over $k$. Namely, $\\omega$ is the smallest constant such that two $N \\times N$ matrices could be multiplied by performing $O(N\\omega+\\epsilon)$ arithmetic operations",
+        "start": 47059,
+        "end": 47281,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "for every $\\epsilon > 0$.",
+        "start": 47282,
+        "end": 47310,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In this estimation, the bound $D$ for a full Gr\\\"obner basis is not yet given. However, it could be estimated under a certain assumption, and the conclusion is that the complexity is simply exponential in $n$, thanks to the assumption that the polynomials are homogeneous \\cite{bardet2015complexity}. As any system of polynomials can be transformed into this form by adding a variable and homogenizing, it means that the doubly exponential complexity could be avoided.",
+        "start": 47328,
+        "end": 47798,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Note that the estimation of the complexity is carried out for the worst cases, meanwhile, the actual computations often finish with much lower computational costs. Moreover, the algorithmic improvements are successful in facilitating the computation. Currently, the F5 algorithm is regarded as the most effective one \\cite{faugere2002new}. The complexity of this algorithm was studied in \\cite{bardet2015complexity}. The formula of the complexity is given in a refined style that reflects the special feature of the algorithm, although it is still exponential in $n$.",
+        "start": 47801,
+        "end": 48370,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Input: $F=(f_1, ..., f_m)$; Output: the Gr\\\"obner basis $G$ for $F$",
+        "start": 48660,
+        "end": 48728,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\item $G:=F$",
+        "start": 48731,
+        "end": 48744,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For every pair of polynomials $(f_i,f_j)$ in $F$, compute the s-polynomial, which is defined by",
+        "start": 48755,
+        "end": 48851,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In the above, $g_{i}$ (resp. $g_{j})$ the leading term of $f_i$ (resp. $f_j$ in the given monomial ordering, and $a_{ij}$ is the least common multiple of $g_i$ and $g_j$.",
+        "start": 48942,
+        "end": 49114,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "Reduce $S(f_i,f_j)$. By the division algorithm, it is represented as $S(f_i,f_j)=\\sum_l c_l f_l +r$, and the residual $r$ is the result. If $r\\ne 0$, add $r$ to $G$.",
+        "start": 49125,
+        "end": 49291,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "Repeat the computation of s-polynomials and the reduction until the extension of $G$ terminates.",
+        "start": 49302,
+        "end": 49399,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\item Return $G$.",
+        "start": 49402,
+        "end": 49420,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In the reduction of $S(f_i,f_j)$, it happens that many pairs of the polynomials reduce to zero, being completely useless to the construction of the Gr\\\"obner basis. It is necessary to detect the unnecessary pairs beforehand, and the trials to improve the efficiency of the algorithm are intensively carried out regarding this issue.",
+        "start": 49724,
+        "end": 50058,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The size of the Gaussian elimination would vary, indeed increase, during the computation. The computation of s-polynomials shall increase the total number of the maximum degree of the polynomials in $G$. The expanding matrix requires ever-increasing usage of a vast amount of memory.",
+        "start": 50066,
+        "end": 50350,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      }
+    ],
+    "tables": [
+      {
+        "content": "\\begin{tabular}{lrrr}\n \\toprule\n  & $x$ & $y$ & $e$ \\\\\n \\midrule\n STO-3G & 0.801918 & 0.336800 & -1.597448 \\\\\n \\bottomrule\n \\end{tabular}",
+        "start": 17772,
+        "end": 17909,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{lrrrr}\n \\midrule\n $i$  & $Eig$ & $(\\phi_i|x|\\phi_i)$ & $(\\phi_i|y|\\phi_i)$ & $(\\phi_i|e|\\phi_i)$ \\\\\n \\midrule\n 1 & -1.114772 & 0.604062 & -1.114772 & -0.537546 \\\\\n 2 & 1.114772 & -0.604062 & 1.114772 & -0.537546 \\\\\n 3 & -0.337484 & -0.801308 & -0.337484 & -1.600455 \\\\\n 4 & 0.337484 & 0.801308 & 0.337484 & -1.600455 \\\\\n \\bottomrule\n \\end{tabular}",
+        "start": 18901,
+        "end": 19264,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{llrrr}\n \\toprule\n i &$M$ &$(\\phi_i|M|\\phi_i)$ & $(\\phi_i|\\exp(-\\sqrt{-1} M^T)|\\phi_i)$ & $(\\phi|O_{\\exp}|\\phi_i)$ \\\\\n \\midrule\n 1 & $m_x$ & 0.707107 & 0.760245-0.649637j & 0.760245-0.649637j \\\\\n 1 & $m_y$ & 0.707107 & 0.760245-0.649637j & 0.760245-0.649637j \\\\\n 1 & $m_e$ & -1.000000 & 0.540302+0.841471j & 0.540302+0.841471j \\\\\n 2 & $m_x$ & 0.707107 & 0.760245-0.649637j & 0.760245-0.649637j \\\\\n 2 & $m_y$ & -0.707107 & 0.760245+0.649637j & 0.760245+0.649637j \\\\\n 2 & $m_e$ & 1.000000 & 0.540302-0.841471j & 0.540302-0.841471j \\\\\n \\bottomrule\n \\end{tabular}",
+        "start": 26093,
+        "end": 26667,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{llrrr}\n \\toprule\n  i& $M$ & $(\\phi_i|M^T|\\phi_i)$ & $(\\phi_i|\\exp(-\\sqrt{-1}M^T)|\\phi_i)$ & $(\\phi_i|O_{\\exp}|\\phi_i)$ \\\\\n \\midrule\n 1 & $m_x$ & 0.604062 & 0.823035-0.567990j & 0.823035-0.567990j \\\\\n 1 & $m_y$ & -1.114772 & 0.440383+0.897810j & 0.440383+0.897810j \\\\\n 1 & $m_e$ & -0.537546 & 0.858968+0.512030j & 0.858968+0.512030j \\\\\n 2 & $m_x$ & -0.604062 & 0.823035+0.567990j & 0.823035+0.567990j \\\\\n 2 & $m_y$ & 1.114772 & 0.440383-0.897810j & 0.440383-0.897810j \\\\\n 2 & $m_e$ & -0.537546 & 0.858968+0.512030j & 0.858968+0.512030j \\\\\n 3 & $m_x$ & -0.801308 & 0.695768+0.718267j & 0.695768+0.718267j \\\\\n 3 & $m_y$ & -0.337484 & 0.943591+0.331114j & 0.943591+0.331114j \\\\\n 3 & $m_e$ & -1.600455 & -0.029654+0.999560j & -0.029654+0.999560j \\\\\n 4 & $m_x$ & 0.801308 & 0.695768-0.718267j & 0.695768-0.718267j \\\\\n 4 & $m_y$ & 0.337484 & 0.943591-0.331114j & 0.943591-0.331114j \\\\\n 4 & $m_e$ & -1.600455 & -0.029654+0.999560j & -0.029654+0.999560j \\\\\n \\bottomrule\n \\end{tabular}",
+        "start": 27254,
+        "end": 28245,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      }
+    ],
+    "total_items": 173
+  }
+]

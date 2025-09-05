@@ -1,0 +1,2599 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00047/2401.00047/ms_gaiden.tex",
+    "display_formulas": [
+      {
+        "content": "$$\\sigma_{a_1 \\cdots a_r b_1' \\cdots b_s'} \\equiv \\nabla_{a_r} \\cdots \\nabla_{a_1} \\nabla_{b_s'} \\cdots \\nabla_{b_1'} \\sigma(x, x').$$",
+        "start": 18171,
+        "end": 18335,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\sigma_{a_1 \\cdots a_r b_1' \\cdots b_s'} \\equiv \\nabla_{a_r} \\cdots \\nabla_{a_1} \\nabla_{b_s'} \\cdots \\nabla_{b_1'} \\sigma(x, x')."
+        }
+      },
+      {
+        "content": "$$\\sigma(x, x') = \\frac{1}{2} \\sigma^a (x') \\sigma_a (x') = \\frac{1}{2} \\sigma^{a'} (x) \\sigma_{a'} (x),$$",
+        "start": 18801,
+        "end": 18937,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\sigma(x, x') = \\frac{1}{2} \\sigma^a (x') \\sigma_a (x') = \\frac{1}{2} \\sigma^{a'} (x) \\sigma_{a'} (x),"
+        }
+      },
+      {
+        "content": "$$[\\Omega_{\\ms A} (x')]_{x' \\to x} \\equiv \\lim_{x' \\to x} \\Omega_{\\ms A} (x').$$",
+        "start": 20418,
+        "end": 20528,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "[\\Omega_{\\ms A} (x')]_{x' \\to x} \\equiv \\lim_{x' \\to x} \\Omega_{\\ms A} (x')."
+        }
+      },
+      {
+        "content": "$$[\\Omega_{\\ms A \\ms B'}]_{x' \\to x} \\equiv \\lim_{x' \\to x} (\\Omega_{\\ms A \\ms B'} Z^{\\ms B'}{}_{\\ms B}),$$",
+        "start": 20680,
+        "end": 20817,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "[\\Omega_{\\ms A \\ms B'}]_{x' \\to x} \\equiv \\lim_{x' \\to x} (\\Omega_{\\ms A \\ms B'} Z^{\\ms B'}{}_{\\ms B}),"
+        }
+      },
+      {
+        "content": "$$\\dot \\gamma^b \\nabla_b (e_\\alpha)^a = 0, \\qquad \\dot \\gamma^b \\nabla_b (\\omega^\\alpha)_a = 0.$$",
+        "start": 23547,
+        "end": 23674,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\dot \\gamma^b \\nabla_b (e_\\alpha)^a = 0, \\qquad \\dot \\gamma^b \\nabla_b (\\omega^\\alpha)_a = 0."
+        }
+      },
+      {
+        "content": "$$\\pbg g^{a'}{}_a = \\sum_\\alpha (e_\\alpha)^{a'} (\\omega^\\alpha)_a.$$",
+        "start": 23887,
+        "end": 23985,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg g^{a'}{}_a = \\sum_\\alpha (e_\\alpha)^{a'} (\\omega^\\alpha)_a."
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\pbg g^{a''}{}_{a'} \\pbg g^{a'}{}_a &= \\pbg g^{a''}{}_a, \\\\ \\pbg g^a{}_{a'} \\pbg g^{a'}{}_b &= \\delta^a{}_b,\\end{aligned}$$",
+        "start": 24501,
+        "end": 24645,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\pbg g^{a''}{}_{a'} \\pbg g^{a'}{}_a &= \\pbg g^{a''}{}_a, \\\\\n    \\pbg g^a{}_{a'} \\pbg g^{a'}{}_b &= \\delta^a{}_b,\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\pbg g^{a'}{}_a \\dot \\gamma^a = \\dot \\gamma^{a'}, \\qquad \\dot \\gamma_{a'} \\pbg g^{a'}{}_a = \\dot \\gamma_a.$$",
+        "start": 24995,
+        "end": 25135,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg g^{a'}{}_a \\dot \\gamma^a = \\dot \\gamma^{a'}, \\qquad \\dot \\gamma_{a'} \\pbg g^{a'}{}_a = \\dot \\gamma_a."
+        }
+      },
+      {
+        "content": "$$\\sigma^a{}_{a'} H^{a'}{}_b = -\\delta^a{}_b.$$",
+        "start": 26547,
+        "end": 26624,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\sigma^a{}_{a'} H^{a'}{}_b = -\\delta^a{}_b."
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\nabla_{c'} H^{a'}{}_b &= H^{a'}{}_a H^{b'}{}_b \\sigma^a{}_{b'c'}, \\\\ \\nabla_c H^{a'}{}_b &= H^{a'}{}_a H^{b'}{}_b \\sigma^a{}_{b'c}.\\end{aligned}$$",
+        "start": 26716,
+        "end": 26884,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\nabla_{c'} H^{a'}{}_b &= H^{a'}{}_a H^{b'}{}_b \\sigma^a{}_{b'c'}, \\\\\n    \\nabla_c H^{a'}{}_b &= H^{a'}{}_a H^{b'}{}_b \\sigma^a{}_{b'c}.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\nabla_{c'} K^{a'}{}_b &= H^{a'}{}_a (K^{b'}{}_b \\sigma^a{}_{b'c'} + \\sigma^a{}_{bc'}), \\\\ \\nabla_c K^{a'}{}_b &= H^{a'}{}_a [K^{b'}{}_b \\sigma^a{}_{b'c} + \\sigma^a{}_{bc} (x')].\\end{aligned}$$",
+        "start": 27017,
+        "end": 27231,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\nabla_{c'} K^{a'}{}_b &= H^{a'}{}_a (K^{b'}{}_b \\sigma^a{}_{b'c'} + \\sigma^a{}_{bc'}), \\\\\n    \\nabla_c K^{a'}{}_b &= H^{a'}{}_a [K^{b'}{}_b \\sigma^a{}_{b'c} + \\sigma^a{}_{bc} (x')].\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$X^A \\equiv \\begin{pmatrix} \\xi^a \\\\ \\dot \\xi^a \\end{pmatrix};$$",
+        "start": 30288,
+        "end": 30393,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "X^A \\equiv \\begin{pmatrix}\n    \\xi^a \\\\\n    \\dot \\xi^a\n  \\end{pmatrix};"
+        }
+      },
+      {
+        "content": "$$\\pbg \\hat \\nabla_c X^A = \\nabla_c X^A + \\hat C^A{}_{Bc} X^B,$$",
+        "start": 31200,
+        "end": 31294,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg \\hat \\nabla_c X^A = \\nabla_c X^A + \\hat C^A{}_{Bc} X^B,"
+        }
+      },
+      {
+        "content": "$$\\pbg \\hat C^A{}_{Bc} = \\begin{pmatrix} 0 & \\dot \\gamma_c \\delta^a{}_b \\\\ R^a{}_{cb \\dot \\gamma} & 0 \\end{pmatrix}.$$",
+        "start": 31372,
+        "end": 31532,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg \\hat C^A{}_{Bc} = \\begin{pmatrix}\n     0 & \\dot \\gamma_c \\delta^a{}_b \\\\\n     R^a{}_{cb \\dot \\gamma} & 0\n  \\end{pmatrix}."
+        }
+      },
+      {
+        "content": "$$\\dot \\gamma^{b'} \\pbg \\hat \\nabla_{b'} \\pbg J^{A'}{}_A = 0.$$",
+        "start": 31650,
+        "end": 31743,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\dot \\gamma^{b'} \\pbg \\hat \\nabla_{b'} \\pbg J^{A'}{}_A = 0."
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\left[\\frac{\\uD \\pbg K^{a'}{}_b}{\\ud \\tau}\\right]_{\\tau' \\to \\tau} &= 0, \\\\ \\left[\\frac{\\uD \\{(\\tau' - \\tau) \\pbg H^{a'}{}_b\\}}{\\ud \\tau}\\right]_{\\tau' \\to \\tau} &= -\\delta^a{}_b,\\end{aligned}$$",
+        "start": 32875,
+        "end": 33090,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\left[\\frac{\\uD \\pbg K^{a'}{}_b}{\\ud \\tau}\\right]_{\\tau' \\to \\tau} &= 0, \\\\\n    \\left[\\frac{\\uD \\{(\\tau' - \\tau) \\pbg H^{a'}{}_b\\}}{\\ud \\tau}\\right]_{\\tau' \\to \\tau} &= -\\delta^a{}_b,\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\left[\\frac{\\uD^2 \\pbg K^{a'}{}_b}{\\ud \\tau' \\ud \\tau}\\right]_{\\tau' \\to \\tau} = R^a{}_{\\dot \\gamma b \\dot \\gamma}, \\\\ \\left[\\frac{\\uD^2 \\{(\\tau' - \\tau) \\pbg H^{a'}{}_b\\}}{\\ud \\tau' \\ud \\tau}\\right]_{\\tau' \\to \\tau} = 0.\\end{aligned}$$",
+        "start": 33177,
+        "end": 33434,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\left[\\frac{\\uD^2 \\pbg K^{a'}{}_b}{\\ud \\tau' \\ud \\tau}\\right]_{\\tau' \\to \\tau} = R^a{}_{\\dot \\gamma b \\dot \\gamma}, \\\\\n    \\left[\\frac{\\uD^2 \\{(\\tau' - \\tau) \\pbg H^{a'}{}_b\\}}{\\ud \\tau' \\ud \\tau}\\right]_{\\tau' \\to \\tau} = 0.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\frac{\\uD^2 (\\pbg A^{a'}{}_a \\dot \\gamma^a)}{\\ud \\tau'^2} = 0,$$",
+        "start": 34230,
+        "end": 34326,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\uD^2 (\\pbg A^{a'}{}_a \\dot \\gamma^a)}{\\ud \\tau'^2} = 0,"
+        }
+      },
+      {
+        "content": "$$\\pbg A^{a'}{}_a \\dot \\gamma^a = \\pbg g^{a'}{}_a B^a + (\\tau' - \\tau) \\pbg g^{a'}{}_a C^a,$$",
+        "start": 34420,
+        "end": 34543,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg A^{a'}{}_a \\dot \\gamma^a = \\pbg g^{a'}{}_a B^a + (\\tau' - \\tau) \\pbg g^{a'}{}_a C^a,"
+        }
+      },
+      {
+        "content": "$$\\pbg K^{a'}{}_a \\dot \\gamma^a = \\pbg H^{a'}{}_a \\dot \\gamma^a = \\dot \\gamma^{a'}.$$",
+        "start": 34647,
+        "end": 34762,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg K^{a'}{}_a \\dot \\gamma^a = \\pbg H^{a'}{}_a \\dot \\gamma^a = \\dot \\gamma^{a'}."
+        }
+      },
+      {
+        "content": "$$W_{ab} (\\tau') \\equiv g_{a'b'} \\left(B^{b'}{}_b \\frac{\\ud}{\\ud \\tau'} A^{a'}{}_a - A^{a'}{}_a \\frac{\\ud}{\\ud \\tau'} B^{b'}{}_b\\right).$$",
+        "start": 35318,
+        "end": 35486,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "W_{ab} (\\tau') \\equiv g_{a'b'} \\left(B^{b'}{}_b \\frac{\\ud}{\\ud \\tau'} A^{a'}{}_a - A^{a'}{}_a \\frac{\\ud}{\\ud \\tau'} B^{b'}{}_b\\right)."
+        }
+      },
+      {
+        "content": "$$\\begin{split} \\frac{\\ud}{\\ud \\tau'} W_{ab} (\\tau') &= R_{a' \\dot \\gamma' c' \\dot \\gamma'} A^{c'}{}_a B^{a'}{}_b - R_{a' \\dot \\gamma' c' \\dot \\gamma'} A^{a'}{}_a B^{c'}{}_b \\\\ &= 0, \\end{split}$$",
+        "start": 35556,
+        "end": 35792,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    \\frac{\\ud}{\\ud \\tau'} W_{ab} (\\tau') &= R_{a' \\dot \\gamma' c' \\dot \\gamma'} A^{c'}{}_a B^{a'}{}_b - R_{a' \\dot \\gamma' c' \\dot \\gamma'} A^{a'}{}_a B^{c'}{}_b \\\\\n    &= 0,\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$A^{a'}{}_a = (\\tau' - \\tau) \\pbg H^{a'}{}_a, \\qquad B^{a'}{}_a = \\pbg K^{a'}{}_a.$$",
+        "start": 36089,
+        "end": 36204,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A^{a'}{}_a = (\\tau' - \\tau) \\pbg H^{a'}{}_a, \\qquad B^{a'}{}_a = \\pbg K^{a'}{}_a."
+        }
+      },
+      {
+        "content": "$$A^{a'}{}_a = (\\tau' - \\tau) \\pbg H^{a'}{}_a, \\quad B^{a'}{}_a = (\\tau' - \\tau'') \\pbg H^{a'}{}_{a''} \\pbg g^{a''}{}_a.$$",
+        "start": 37175,
+        "end": 37327,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A^{a'}{}_a = (\\tau' - \\tau) \\pbg H^{a'}{}_a, \\quad B^{a'}{}_a = (\\tau' - \\tau'') \\pbg H^{a'}{}_{a''} \\pbg g^{a''}{}_a."
+        }
+      },
+      {
+        "content": "$$W_{ab} = -(\\tau'' - \\tau) g_{a''b''} \\pbg H^{a''}{}_a \\pbg g^{b''}{}_b,$$",
+        "start": 37386,
+        "end": 37491,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "W_{ab} = -(\\tau'' - \\tau) g_{a''b''} \\pbg H^{a''}{}_a \\pbg g^{b''}{}_b,"
+        }
+      },
+      {
+        "content": "$$W_{ab} = (\\tau - \\tau'') g_{ac} \\pbg H^c{}_{b''} \\pbg g^{b''}{}_b.$$",
+        "start": 37531,
+        "end": 37631,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "W_{ab} = (\\tau - \\tau'') g_{ac} \\pbg H^c{}_{b''} \\pbg g^{b''}{}_b."
+        }
+      },
+      {
+        "content": "$$A^{a'}{}_a = \\pbg K^{a'}{}_a, \\qquad B^{a'}{}_a = \\pbg K^{a'}{}_{a''} \\pbg g^{a''}{}_a,$$",
+        "start": 37948,
+        "end": 38069,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "A^{a'}{}_a = \\pbg K^{a'}{}_a, \\qquad B^{a'}{}_a = \\pbg K^{a'}{}_{a''} \\pbg g^{a''}{}_a,"
+        }
+      },
+      {
+        "content": "$$W_{ab} = g_{a''b''} \\pbg g^{b''}{}_b \\frac{\\uD \\pbg K^{a''}{}_a}{\\ud \\tau''}$$",
+        "start": 38109,
+        "end": 38219,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "W_{ab} = g_{a''b''} \\pbg g^{b''}{}_b \\frac{\\uD \\pbg K^{a''}{}_a}{\\ud \\tau''}"
+        }
+      },
+      {
+        "content": "$$W_{ab} = -g_{ac} \\frac{\\uD \\pbg K^c{}_{b''}}{\\ud \\tau} \\pbg g^{b''}{}_b.$$",
+        "start": 38248,
+        "end": 38354,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "W_{ab} = -g_{ac} \\frac{\\uD \\pbg K^c{}_{b''}}{\\ud \\tau} \\pbg g^{b''}{}_b."
+        }
+      },
+      {
+        "content": "$$(\\tau' - \\tau) \\pbg H^a{}_{b'} \\frac{\\uD \\pbg K^{b'}{}_b}{\\ud \\tau'} = \\pbg K^a{}_{b'} \\pbg K^{b'}{}_b - \\delta^a{}_b,$$",
+        "start": 39575,
+        "end": 39727,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "(\\tau' - \\tau) \\pbg H^a{}_{b'} \\frac{\\uD \\pbg K^{b'}{}_b}{\\ud \\tau'} = \\pbg K^a{}_{b'} \\pbg K^{b'}{}_b - \\delta^a{}_b,"
+        }
+      },
+      {
+        "content": "$$\\xi^a \\equiv -\\sigma^a [\\bar \\gamma(\\tau)].$$",
+        "start": 41216,
+        "end": 41293,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\xi^a \\equiv -\\sigma^a [\\bar \\gamma(\\tau)]."
+        }
+      },
+      {
+        "content": "$$\\frac{\\uD \\Omega_{\\ms A \\bar{\\ms B}}}{\\ud \\tau} = (\\dot \\gamma^c \\nabla_c + \\dot{\\bar \\gamma}^{\\bar c} \\nabla_{\\bar c}) \\Omega_{\\ms A \\bar{\\ms B}}.$$",
+        "start": 41480,
+        "end": 41661,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\uD \\Omega_{\\ms A \\bar{\\ms B}}}{\\ud \\tau} = (\\dot \\gamma^c \\nabla_c + \\dot{\\bar \\gamma}^{\\bar c} \\nabla_{\\bar c}) \\Omega_{\\ms A \\bar{\\ms B}}."
+        }
+      },
+      {
+        "content": "$$\\dot \\xi^a = -\\dot \\gamma^b \\sigma^a{}_b (\\bar x) - \\dot{\\bar \\gamma}^{\\bar b} \\sigma^a{}_{\\bar b}.$$",
+        "start": 41699,
+        "end": 41832,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\dot \\xi^a = -\\dot \\gamma^b \\sigma^a{}_b (\\bar x) - \\dot{\\bar \\gamma}^{\\bar b} \\sigma^a{}_{\\bar b}."
+        }
+      },
+      {
+        "content": "$$\\nabla_{a \\bar *} \\equiv \\nabla_a + K^{\\bar a}{}_a \\nabla_{\\bar a}, \\quad \\nabla_{\\bar * a} \\equiv H^{\\bar a}{}_a \\nabla_{\\bar a}$$",
+        "start": 42541,
+        "end": 42704,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\nabla_{a \\bar *} \\equiv \\nabla_a + K^{\\bar a}{}_a \\nabla_{\\bar a}, \\quad \\nabla_{\\bar * a} \\equiv H^{\\bar a}{}_a \\nabla_{\\bar a}"
+        }
+      },
+      {
+        "content": "$$\\nabla_{*'a} \\sigma^b (x') = H^{a'}{}_a \\sigma^b{}_{a'} = -\\delta^b{}_a,$$",
+        "start": 42834,
+        "end": 42940,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\nabla_{*'a} \\sigma^b (x') = H^{a'}{}_a \\sigma^b{}_{a'} = -\\delta^b{}_a,"
+        }
+      },
+      {
+        "content": "$$\\begin{split} \\Omega_{\\ms A} (x') = \\sum_{n = 0}^\\infty \\frac{(-1)^n}{n!} &\\sigma^{b_1} (x') \\cdots \\sigma^{b_n} (x') \\\\ \\times &[\\nabla_{*'b_1} \\cdots \\nabla_{*'b_n} \\Omega_{\\ms A} (x')]_{x' \\to x}. \\end{split}$$",
+        "start": 43054,
+        "end": 43309,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    \\Omega_{\\ms A} (x') = \\sum_{n = 0}^\\infty \\frac{(-1)^n}{n!} &\\sigma^{b_1} (x') \\cdots \\sigma^{b_n} (x') \\\\\n    \\times &[\\nabla_{*'b_1} \\cdots \\nabla_{*'b_n} \\Omega_{\\ms A} (x')]_{x' \\to x}.\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$\\nabla_{a*'} \\sigma^b (x') = \\sigma^b{}_a (x') + K^{a'}{}_a \\sigma^b{}_{a'} = 0.$$",
+        "start": 43573,
+        "end": 43687,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\nabla_{a*'} \\sigma^b (x') = \\sigma^b{}_a (x') + K^{a'}{}_a \\sigma^b{}_{a'} = 0."
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}I^{\\bar a}{}_{ab} &\\equiv \\nabla_{\\bar * b} H^{\\bar a}{}_a, \\\\ J^{\\bar a}{}_{ab} &\\equiv \\frac{1}{2} (\\nabla_{\\bar * a} K^{\\bar a}{}_b + \\nabla_{b \\bar *} H^{\\bar a}{}_{a}), \\\\ L^{\\bar a}{}_{ab} &\\equiv \\nabla_{b \\bar *} K^{\\bar a}{}_a.\\end{aligned}$$",
+        "start": 44159,
+        "end": 44435,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}I^{\\bar a}{}_{ab} &\\equiv \\nabla_{\\bar * b} H^{\\bar a}{}_a, \\\\\n    J^{\\bar a}{}_{ab} &\\equiv \\frac{1}{2} (\\nabla_{\\bar * a} K^{\\bar a}{}_b + \\nabla_{b \\bar *} H^{\\bar a}{}_{a}), \\\\\n    L^{\\bar a}{}_{ab} &\\equiv \\nabla_{b \\bar *} K^{\\bar a}{}_a.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{split} \\ddot \\xi^a &= -[\\sigma^a{}_b (\\bar x) \\ddot \\gamma^b + \\sigma^a{}_{\\bar b} \\ddot{\\bar \\gamma}^{\\bar b}] \\\\ &\\hspace{1.1em}+ \\mc I^a{}_{bc} (\\bar x) \\dot \\xi^b \\dot \\xi^c + 2 \\mc J^a{}_{bc} (\\bar x) \\dot \\xi^b \\dot \\gamma^c + \\mc L^a{}_{bc} (\\bar x) \\dot \\gamma^b \\dot \\gamma^c, \\end{split}$$",
+        "start": 44596,
+        "end": 44944,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    \\ddot \\xi^a &= -[\\sigma^a{}_b (\\bar x) \\ddot \\gamma^b + \\sigma^a{}_{\\bar b} \\ddot{\\bar \\gamma}^{\\bar b}] \\\\\n    &\\hspace{1.1em}+ \\mc I^a{}_{bc} (\\bar x) \\dot \\xi^b \\dot \\xi^c + 2 \\mc J^a{}_{bc} (\\bar x) \\dot \\xi^b \\dot \\gamma^c + \\mc L^a{}_{bc} (\\bar x) \\dot \\gamma^b \\dot \\gamma^c,\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\mc I^a{}_{bc} (\\bar x) &\\equiv \\sigma^a{}_{\\bar a} I^{\\bar a}{}_{bc}, \\\\ \\mc J^a{}_{bc} (\\bar x) &\\equiv \\sigma^a{}_{\\bar a} J^{\\bar a}{}_{bc}, \\\\ \\mc L^a{}_{bc} (\\bar x) &\\equiv \\sigma^a{}_{\\bar a} L^{\\bar a}{}_{bc}.\\end{aligned}$$",
+        "start": 44978,
+        "end": 45236,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\mc I^a{}_{bc} (\\bar x) &\\equiv \\sigma^a{}_{\\bar a} I^{\\bar a}{}_{bc}, \\\\\n    \\mc J^a{}_{bc} (\\bar x) &\\equiv \\sigma^a{}_{\\bar a} J^{\\bar a}{}_{bc}, \\\\\n    \\mc L^a{}_{bc} (\\bar x) &\\equiv \\sigma^a{}_{\\bar a} L^{\\bar a}{}_{bc}.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}H^{\\bar a}{}_a &= g^{\\bar a}{}_a + O(\\bs \\xi)^2, \\\\ K^{\\bar a}{}_a &= g^{\\bar a}{}_a + O(\\bs \\xi)^2, \\\\ \\mc I^a{}_{bc} (\\bar x) &= O(\\bs \\xi), \\\\ \\mc J^a{}_{bc} (\\bar x) &= O(\\bs \\xi), \\\\ \\mc L^a{}_{bc} (\\bar x) &= -R^a{}_{bdc} \\xi^d + O(\\bs \\xi^2),\\end{aligned}$$",
+        "start": 45353,
+        "end": 45650,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}H^{\\bar a}{}_a &= g^{\\bar a}{}_a + O(\\bs \\xi)^2, \\\\\n    K^{\\bar a}{}_a &= g^{\\bar a}{}_a + O(\\bs \\xi)^2, \\\\\n    \\mc I^a{}_{bc} (\\bar x) &= O(\\bs \\xi), \\\\\n    \\mc J^a{}_{bc} (\\bar x) &= O(\\bs \\xi), \\\\\n    \\mc L^a{}_{bc} (\\bar x) &= -R^a{}_{bdc} \\xi^d + O(\\bs \\xi^2),\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\sigma^a{}_b (\\bar x) &= \\delta^a{}_b + O(\\bs \\xi^2), \\\\ \\sigma^a{}_{\\bar b} &= -g^a{}_{\\bar b} + O(\\bs \\xi^2).\\end{aligned}$$",
+        "start": 45731,
+        "end": 45878,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\sigma^a{}_b (\\bar x) &= \\delta^a{}_b + O(\\bs \\xi^2), \\\\\n    \\sigma^a{}_{\\bar b} &= -g^a{}_{\\bar b} + O(\\bs \\xi^2).\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$a^a \\equiv g^a{}_{\\bar a} \\ddot{\\bar \\gamma}^{\\bar a} - \\ddot{\\gamma}^a$$",
+        "start": 46177,
+        "end": 46282,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "a^a \\equiv g^a{}_{\\bar a} \\ddot{\\bar \\gamma}^{\\bar a} - \\ddot{\\gamma}^a"
+        }
+      },
+      {
+        "content": "$$\\dot \\gamma^b \\pbg \\hat \\nabla_b X^A = S^A,$$",
+        "start": 47231,
+        "end": 47308,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\dot \\gamma^b \\pbg \\hat \\nabla_b X^A = S^A,"
+        }
+      },
+      {
+        "content": "$$S^A \\equiv \\begin{pmatrix} 0 \\\\ S^a \\end{pmatrix}.$$",
+        "start": 47319,
+        "end": 47413,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "S^A \\equiv \\begin{pmatrix}\n    0 \\\\\n    S^a\n  \\end{pmatrix}."
+        }
+      },
+      {
+        "content": "$$\\frac{\\ud}{\\ud \\tau'} (\\pbg J^A{}_{A'} X^{A'}) = \\pbg J^A{}_{A'} S^{A'},$$",
+        "start": 47499,
+        "end": 47605,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\ud}{\\ud \\tau'} (\\pbg J^A{}_{A'} X^{A'}) = \\pbg J^A{}_{A'} S^{A'},"
+        }
+      },
+      {
+        "content": "$$\\pbg J^A{}_{A'} X^{A'} - X^A = \\int_\\tau^{\\tau'} \\ud \\tau'' \\pbg J^A{}_{A''} S^{A''},$$",
+        "start": 47694,
+        "end": 47813,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg J^A{}_{A'} X^{A'} - X^A = \\int_\\tau^{\\tau'} \\ud \\tau'' \\pbg J^A{}_{A''} S^{A''},"
+        }
+      },
+      {
+        "content": "$$X^{A'} = \\pbg J^{A'}{}_A X^A + \\int_\\tau^{\\tau'} \\ud \\tau'' \\pbg J^{A'}{}_{A''} S^{A''},$$",
+        "start": 47821,
+        "end": 47943,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "X^{A'} = \\pbg J^{A'}{}_A X^A + \\int_\\tau^{\\tau'} \\ud \\tau'' \\pbg J^{A'}{}_{A''} S^{A''},"
+        }
+      },
+      {
+        "content": "$$\\ddot \\xi_{\\rm flat}^{a'} = a^{a'},$$",
+        "start": 50731,
+        "end": 50800,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\ddot \\xi_{\\rm flat}^{a'} = a^{a'},"
+        }
+      },
+      {
+        "content": "$$\\begin{split} \\xi_{\\rm flat}^{a'} &= \\pbg g^{a'}{}_a [\\xi^a + (\\tau' - \\tau) \\dot \\xi^a] \\\\ &\\hspace{1.1em}+ \\int_\\tau^{\\tau'} \\ud \\tau'' (\\tau' - \\tau'') \\pbg g^{a'}{}_{a''} a^{a''}. \\end{split}$$",
+        "start": 50856,
+        "end": 51095,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    \\xi_{\\rm flat}^{a'} &= \\pbg g^{a'}{}_a [\\xi^a + (\\tau' - \\tau) \\dot \\xi^a] \\\\\n    &\\hspace{1.1em}+ \\int_\\tau^{\\tau'} \\ud \\tau'' (\\tau' - \\tau'') \\pbg g^{a'}{}_{a''} a^{a''}.\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$\\Delta \\xi^{a'} \\equiv \\xi^{a'} - \\xi_{\\rm flat}^{a'}.$$",
+        "start": 51266,
+        "end": 51354,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\Delta \\xi^{a'} \\equiv \\xi^{a'} - \\xi_{\\rm flat}^{a'}."
+        }
+      },
+      {
+        "content": "$$\\xi^{a'} = \\pbg K^{a'}{}_a \\xi^a + O(\\bs \\xi)^2,$$",
+        "start": 52012,
+        "end": 52094,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\xi^{a'} = \\pbg K^{a'}{}_a \\xi^a + O(\\bs \\xi)^2,"
+        }
+      },
+      {
+        "content": "$$\\Delta \\xi^{a'} = \\pbg \\Delta K^{a'}{}_a \\xi^a + O(\\bs \\xi)^2,$$",
+        "start": 52106,
+        "end": 52202,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\Delta \\xi^{a'} = \\pbg \\Delta K^{a'}{}_a \\xi^a + O(\\bs \\xi)^2,"
+        }
+      },
+      {
+        "content": "$$\\pbg \\Delta K^{a'}{}_a \\equiv \\pbg K^{a'}{}_a - \\pbg g^{a'}{}_a.$$",
+        "start": 52213,
+        "end": 52311,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg \\Delta K^{a'}{}_a \\equiv \\pbg K^{a'}{}_a - \\pbg g^{a'}{}_a."
+        }
+      },
+      {
+        "content": "$$\\Delta \\xi^{a'} = \\pbg \\Delta K^{a'}{}_a \\xi^a + (\\tau' - \\tau) \\pbg \\Delta H^{a'}{}_a \\dot \\xi^a + O(\\bs \\xi, \\dot{\\bs \\xi})^2,$$",
+        "start": 52584,
+        "end": 52746,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\Delta \\xi^{a'} = \\pbg \\Delta K^{a'}{}_a \\xi^a + (\\tau' - \\tau) \\pbg \\Delta H^{a'}{}_a \\dot \\xi^a + O(\\bs \\xi, \\dot{\\bs \\xi})^2,"
+        }
+      },
+      {
+        "content": "$$\\pbg \\Delta H^{a'}{}_a \\equiv \\pbg H^{a'}{}_a - \\pbg g^{a'}{}_a.$$",
+        "start": 52777,
+        "end": 52875,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg \\Delta H^{a'}{}_a \\equiv \\pbg H^{a'}{}_a - \\pbg g^{a'}{}_a."
+        }
+      },
+      {
+        "content": "$$a^a = g^a{}_{\\bar a} \\ddot{\\bar \\gamma}^{\\bar a}.$$",
+        "start": 57150,
+        "end": 57233,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "a^a = g^a{}_{\\bar a} \\ddot{\\bar \\gamma}^{\\bar a}."
+        }
+      },
+      {
+        "content": "$$a^{a''} = \\pbg g^{a''}{}_a g^a{}_{\\bar a} \\sum_{n = 0}^\\infty \\frac{(\\tau'' - \\tau)^n}{n!} \\frac{\\uD^n \\ddot{\\bar \\gamma}^{\\bar a}}{\\ud \\tau^n} + O(\\bs \\xi, \\dot{\\bs \\xi}, \\bs a)^2.$$",
+        "start": 57481,
+        "end": 57696,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "a^{a''} = \\pbg g^{a''}{}_a g^a{}_{\\bar a} \\sum_{n = 0}^\\infty \\frac{(\\tau'' - \\tau)^n}{n!} \\frac{\\uD^n \\ddot{\\bar \\gamma}^{\\bar a}}{\\ud \\tau^n} + O(\\bs \\xi, \\dot{\\bs \\xi}, \\bs a)^2."
+        }
+      },
+      {
+        "content": "$$g_{a'b'} \\pbg K^{b'}{}_b \\frac{\\uD [(\\tau' - \\tau) \\pbg H^{a'}{}_a]}{\\ud \\tau'} = g_{ab} + g_{a'b'} \\left\\{\\pbg \\Delta K^{b'}{}_b \\pbg g^{a'}{}_a + \\pbg K^{b'}{}_b \\frac{\\uD [(\\tau' - \\tau) \\pbg \\Delta H^{a'}{}_a]}{\\ud \\tau'}\\right\\},$$",
+        "start": 59531,
+        "end": 59799,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "g_{a'b'} \\pbg K^{b'}{}_b \\frac{\\uD [(\\tau' - \\tau) \\pbg H^{a'}{}_a]}{\\ud \\tau'} = g_{ab} + g_{a'b'} \\left\\{\\pbg \\Delta K^{b'}{}_b \\pbg g^{a'}{}_a + \\pbg K^{b'}{}_b \\frac{\\uD [(\\tau' - \\tau) \\pbg \\Delta H^{a'}{}_a]}{\\ud \\tau'}\\right\\},"
+        }
+      },
+      {
+        "content": "$$\\pbg \\Delta \\mc K^a{}_b (\\tau') \\equiv \\pbg g^a{}_{a'} \\pbg \\Delta K^{a'}{}_b,$$",
+        "start": 61485,
+        "end": 61597,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg \\Delta \\mc K^a{}_b (\\tau') \\equiv \\pbg g^a{}_{a'} \\pbg \\Delta K^{a'}{}_b,"
+        }
+      },
+      {
+        "content": "$$\\pbg \\mc K^a{}_b (\\tau') \\equiv \\pbg g^a{}_{a'} \\pbg K^{a'}{}_b = \\delta^a{}_b + \\pbg \\Delta \\mc K^a{}_b (\\tau').$$",
+        "start": 61616,
+        "end": 61763,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg \\mc K^a{}_b (\\tau') \\equiv \\pbg g^a{}_{a'} \\pbg K^{a'}{}_b = \\delta^a{}_b + \\pbg \\Delta \\mc K^a{}_b (\\tau')."
+        }
+      },
+      {
+        "content": "$$\\begin{split} (\\pbg K^{-1})^a{}_{a'} &= (\\pbg \\mc K^{-1})^a{}_b \\pbg g^b{}_{a'} \\\\ &= \\pbg g^b{}_{a'} \\sum_{n = 0}^\\infty (-1)^n (\\pbg \\Delta \\mc K^n)^a{}_b (\\tau'). \\end{split}$$",
+        "start": 61974,
+        "end": 62195,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    (\\pbg K^{-1})^a{}_{a'} &= (\\pbg \\mc K^{-1})^a{}_b \\pbg g^b{}_{a'} \\\\\n    &= \\pbg g^b{}_{a'} \\sum_{n = 0}^\\infty (-1)^n (\\pbg \\Delta \\mc K^n)^a{}_b (\\tau').\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$(\\tau' - \\tau) \\pbg H^{a'}{}_a = \\int_\\tau^{\\tau'} \\ud \\tau''\\; \\pbg K^{a'}{}_{a''} \\pbg g^{a''}{}_a,$$",
+        "start": 62939,
+        "end": 63074,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "(\\tau' - \\tau) \\pbg H^{a'}{}_a = \\int_\\tau^{\\tau'} \\ud \\tau''\\; \\pbg K^{a'}{}_{a''} \\pbg g^{a''}{}_a,"
+        }
+      },
+      {
+        "content": "$$\\frac{\\ud}{\\ud \\tau} (\\pbg K^{a'}{}_a \\pbg g^a{}_{b'}) = (\\tau' - \\tau) \\pbg H^{a'}{}_b R^b{}_{\\dot \\gamma a \\dot \\gamma} g^a{}_{b'};$$",
+        "start": 64096,
+        "end": 64263,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\ud}{\\ud \\tau} (\\pbg K^{a'}{}_a \\pbg g^a{}_{b'}) = (\\tau' - \\tau) \\pbg H^{a'}{}_b R^b{}_{\\dot \\gamma a \\dot \\gamma} g^a{}_{b'};"
+        }
+      },
+      {
+        "content": "$$\\frac{\\ud}{\\ud \\tau''} \\left[\\frac{(\\tau'' - \\tau)^{n + 1}}{n + 1} \\int_{\\tau''}^{\\tau'} \\ud \\tau'''\\; f^{a'}{}_a (\\tau'')\\right] = (\\tau'' - \\tau)^n \\int_{\\tau''}^{\\tau'} \\ud \\tau''' f^{a'}{}_a (\\tau'') - \\frac{(\\tau'' - \\tau)^{n + 1}}{n + 1} f^{a'}{}_a (\\tau''),$$",
+        "start": 65123,
+        "end": 65421,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\frac{\\ud}{\\ud \\tau''} \\left[\\frac{(\\tau'' - \\tau)^{n + 1}}{n + 1} \\int_{\\tau''}^{\\tau'} \\ud \\tau'''\\; f^{a'}{}_a (\\tau'')\\right] = (\\tau'' - \\tau)^n \\int_{\\tau''}^{\\tau'} \\ud \\tau''' f^{a'}{}_a (\\tau'') - \\frac{(\\tau'' - \\tau)^{n + 1}}{n + 1} f^{a'}{}_a (\\tau''),"
+        }
+      },
+      {
+        "content": "$$\\pbg \\Delta \\ord{n} \\alpha^{a'}{}_a = \\frac{1}{(n + 1)!} \\int_\\tau^{\\tau'} \\ud \\tau''\\; (\\tau'' - \\tau)^{n + 1} \\int_{\\tau''}^{\\tau'} \\ud \\tau'''\\; \\pbg E^{a'}{}_a (\\tau'''),$$",
+        "start": 66943,
+        "end": 67151,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg \\Delta \\ord{n} \\alpha^{a'}{}_a = \\frac{1}{(n + 1)!} \\int_\\tau^{\\tau'} \\ud \\tau''\\; (\\tau'' - \\tau)^{n + 1} \\int_{\\tau''}^{\\tau'} \\ud \\tau'''\\; \\pbg E^{a'}{}_a (\\tau'''),"
+        }
+      },
+      {
+        "content": "$$\\pbg E^{a'}{}_{a''} (\\tau''') \\pbg g^{a''}{}_a = \\pbg E^{a'}{}_a (\\tau''').$$",
+        "start": 67231,
+        "end": 67340,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg E^{a'}{}_{a''} (\\tau''') \\pbg g^{a''}{}_a = \\pbg E^{a'}{}_a (\\tau''')."
+        }
+      },
+      {
+        "content": "$$\\pbg \\Delta \\ord{n} \\alpha^{a'}{}_a = \\frac{1}{(n + 2)!} \\int_\\tau^{\\tau'} \\ud \\tau''\\; (\\tau'' - \\tau)^{n + 2} \\pbg E^{a'}{}_a (\\tau''),$$",
+        "start": 67415,
+        "end": 67586,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg \\Delta \\ord{n} \\alpha^{a'}{}_a = \\frac{1}{(n + 2)!} \\int_\\tau^{\\tau'} \\ud \\tau''\\; (\\tau'' - \\tau)^{n + 2} \\pbg E^{a'}{}_a (\\tau''),"
+        }
+      },
+      {
+        "content": "$$\\pbg \\ord{n}{\\ms E}^{a'}{}_a \\equiv \\frac{1}{n!} \\int_\\tau^{\\tau'} \\ud \\tau''\\; (\\tau'' - \\tau)^n \\pbg E^{a'}{}_a (\\tau'')$$",
+        "start": 67664,
+        "end": 67820,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg \\ord{n}{\\ms E}^{a'}{}_a \\equiv \\frac{1}{n!} \\int_\\tau^{\\tau'} \\ud \\tau''\\; (\\tau'' - \\tau)^n \\pbg E^{a'}{}_a (\\tau'')"
+        }
+      },
+      {
+        "content": "$$\\begin{aligned}\\pbg \\Delta K^{a'}{}_a &= \\pbg \\ord{0}{\\ms E}^{a'}{}_a, \\\\ (\\tau' - \\tau) \\pbg \\Delta H^{a'}{}_a &= \\pbg \\ord{1}{\\ms E}^{a'}{}_a, \\\\ \\pbg \\Delta \\ord{n} \\alpha^{a'}{}_a &= \\pbg \\ord{n + 2}{\\ms E}^{a'}{}_a.\\end{aligned}$$",
+        "start": 67955,
+        "end": 68200,
+        "metadata": {
+          "type": "display_env",
+          "envname": "align",
+          "latex": "\\begin{aligned}\\pbg \\Delta K^{a'}{}_a &= \\pbg \\ord{0}{\\ms E}^{a'}{}_a, \\\\\n    (\\tau' - \\tau) \\pbg \\Delta H^{a'}{}_a &= \\pbg \\ord{1}{\\ms E}^{a'}{}_a, \\\\\n    \\pbg \\Delta \\ord{n} \\alpha^{a'}{}_a &= \\pbg \\ord{n + 2}{\\ms E}^{a'}{}_a.\\end{aligned}"
+        }
+      },
+      {
+        "content": "$$\\begin{split} \\pbg \\ord{n}{\\widetilde{\\ms E}}^{a'}{}_a &\\equiv \\frac{\\uD \\pbg \\ord{n}{\\ms E}^{a'}{}_a}{\\ud \\tau'} \\\\ &= \\frac{1}{n!} \\int_\\tau^{\\tau'} \\ud \\tau''\\; (\\tau'' - \\tau)^n \\pbg \\widetilde E^{a'}{}_a (\\tau''), \\end{split}$$",
+        "start": 68493,
+        "end": 68767,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    \\pbg \\ord{n}{\\widetilde{\\ms E}}^{a'}{}_a &\\equiv \\frac{\\uD \\pbg \\ord{n}{\\ms E}^{a'}{}_a}{\\ud \\tau'} \\\\\n    &= \\frac{1}{n!} \\int_\\tau^{\\tau'} \\ud \\tau''\\; (\\tau'' - \\tau)^n \\pbg \\widetilde E^{a'}{}_a (\\tau''),\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$\\pbg E^i{}_j (u', u; u'') = \\frac{1}{2r} (u' - u'') \\partial_{u''} N^i{}_j (u'').$$",
+        "start": 70214,
+        "end": 70329,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg E^i{}_j (u', u; u'') = \\frac{1}{2r} (u' - u'') \\partial_{u''} N^i{}_j (u'')."
+        }
+      },
+      {
+        "content": "$$u' - u'' = (u' - u) - (u'' - u),$$",
+        "start": 70348,
+        "end": 70414,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "u' - u'' = (u' - u) - (u'' - u),"
+        }
+      },
+      {
+        "content": "$$\\begin{split} \\frac{1}{n!} \\int_u^{u'} \\ud u'' (u'' - u)^n (u' - u'') \\dot f(u'') &= \\frac{1}{n!} \\left[(u' - u) \\int_u^{u'} \\ud u'' (u'' - u)^n \\dot f(u'') - \\int_u^{u'} \\ud u'' (u'' - u)^{n + 1} \\dot f(u'')\\right] \\\\ &= \\frac{n + 1}{n!} \\int_u^{u'} \\ud u' (u'' - u)^n f(u'') - \\begin{dcases} 0 & n = 0 \\\\ \\frac{u' - u}{(n - 1)!} \\int_u^{u'} \\ud u'' (u'' - u)^{n - 1} f(u'') & n \\neq 0 \\end{dcases}, \\end{split}$$",
+        "start": 70506,
+        "end": 70978,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    \\frac{1}{n!} \\int_u^{u'} \\ud u'' (u'' - u)^n (u' - u'') \\dot f(u'') &= \\frac{1}{n!} \\left[(u' - u) \\int_u^{u'} \\ud u'' (u'' - u)^n \\dot f(u'') - \\int_u^{u'} \\ud u'' (u'' - u)^{n + 1} \\dot f(u'')\\right] \\\\\n    &= \\frac{n + 1}{n!} \\int_u^{u'} \\ud u' (u'' - u)^n f(u'') - \\begin{dcases}\n      0 & n = 0 \\\\\n      \\frac{u' - u}{(n - 1)!} \\int_u^{u'} \\ud u'' (u'' - u)^{n - 1} f(u'') & n \\neq 0\n    \\end{dcases},\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$\\ord{n}{\\mc N}^i{}_j (u', u) \\equiv \\frac{1}{n!} \\int_u^{u'} \\ud u''\\; (u'' - u)^n N^i{}_j (u'')$$",
+        "start": 71497,
+        "end": 71627,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\ord{n}{\\mc N}^i{}_j (u', u) \\equiv \\frac{1}{n!} \\int_u^{u'} \\ud u''\\; (u'' - u)^n N^i{}_j (u'')"
+        }
+      },
+      {
+        "content": "$$\\pbg \\widetilde E^i{}_j (u', u; u'') = \\frac{1}{2r} \\partial_u N^i{}_j (u'') + O(1/r^2).$$",
+        "start": 72194,
+        "end": 72316,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg \\widetilde E^i{}_j (u', u; u'') = \\frac{1}{2r} \\partial_u N^i{}_j (u'') + O(1/r^2)."
+        }
+      },
+      {
+        "content": "$$\\begin{split} \\pbg \\ord{n}{\\widetilde{\\ms E}}^i{}_j (u', u) &= -\\frac{1}{2r} \\begin{cases} 0 & n = 0 \\\\ \\ord{n - 1}{\\mc N}^i{}_j (u', u) & n > 0 \\end{cases} \\\\ &\\hspace{1.1em}+ O(1/r^2). \\end{split}$$",
+        "start": 72429,
+        "end": 72687,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    \\pbg \\ord{n}{\\widetilde{\\ms E}}^i{}_j (u', u) &= -\\frac{1}{2r} \\begin{cases}\n      0 & n = 0 \\\\\n      \\ord{n - 1}{\\mc N}^i{}_j (u', u) & n > 0\n    \\end{cases} \\\\\n    &\\hspace{1.1em}+ O(1/r^2).\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$\\xi^{a'} \\dot \\gamma_{a'} = O(\\bs \\xi)^2$$",
+        "start": 73698,
+        "end": 73772,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\xi^{a'} \\dot \\gamma_{a'} = O(\\bs \\xi)^2"
+        }
+      },
+      {
+        "content": "$$\\Delta \\xi^{a'} \\dot \\gamma_{a'} = O(\\ddot{\\bs \\gamma}, \\ddot{\\bar{\\bs \\gamma}}) + O(\\bs \\xi, \\dot{\\bs \\xi})^2.$$",
+        "start": 73946,
+        "end": 74091,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\Delta \\xi^{a'} \\dot \\gamma_{a'} = O(\\ddot{\\bs \\gamma}, \\ddot{\\bar{\\bs \\gamma}}) + O(\\bs \\xi, \\dot{\\bs \\xi})^2."
+        }
+      },
+      {
+        "content": "$$\\Delta \\tau \\dot \\gamma^{\\hat a} = \\sigma^{\\hat a} (x).$$",
+        "start": 74922,
+        "end": 75011,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\Delta \\tau \\dot \\gamma^{\\hat a} = \\sigma^{\\hat a} (x)."
+        }
+      },
+      {
+        "content": "$$w^{\\hat a} \\equiv g^{\\hat a}{}_a \\xi_\\perp^a,$$",
+        "start": 75121,
+        "end": 75200,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "w^{\\hat a} \\equiv g^{\\hat a}{}_a \\xi_\\perp^a,"
+        }
+      },
+      {
+        "content": "$$w^{\\hat a} = -\\Delta \\tau \\dot \\gamma^{\\hat a} - \\xi^{\\hat a} + O(\\Delta \\tau, \\bs \\xi)^3.$$",
+        "start": 76388,
+        "end": 76512,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "w^{\\hat a} = -\\Delta \\tau \\dot \\gamma^{\\hat a} - \\xi^{\\hat a} + O(\\Delta \\tau, \\bs \\xi)^3."
+        }
+      },
+      {
+        "content": "$$\\xi^{\\hat a} = g^{\\hat a}{}_a \\xi^a + \\Delta \\tau g^{\\hat a}{}_a \\dot \\xi^a + O(\\Delta \\tau, \\bs \\xi, \\dot{\\bs \\xi}, \\ddot{\\bar{\\bs \\gamma}})^3. \\vspace{1em}$$",
+        "start": 76636,
+        "end": 76827,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\xi^{\\hat a} = g^{\\hat a}{}_a \\xi^a + \\Delta \\tau g^{\\hat a}{}_a \\dot \\xi^a + O(\\Delta \\tau, \\bs \\xi, \\dot{\\bs \\xi}, \\ddot{\\bar{\\bs \\gamma}})^3. \\vspace{1em}"
+        }
+      },
+      {
+        "content": "$$\\begin{split} 0 &= \\dot \\gamma_{\\hat a} w^{\\hat a} \\\\ &= \\Delta \\tau - \\xi^a \\dot \\gamma_a - \\Delta \\tau \\dot \\xi^a \\dot \\gamma_a + O(\\Delta \\tau, \\bs \\xi, \\dot{\\bs \\xi}, \\ddot{\\bar{\\bs \\gamma}})^3. \\end{split}$$",
+        "start": 76943,
+        "end": 77197,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    0 &= \\dot \\gamma_{\\hat a} w^{\\hat a} \\\\\n    &= \\Delta \\tau - \\xi^a \\dot \\gamma_a - \\Delta \\tau \\dot \\xi^a \\dot \\gamma_a + O(\\Delta \\tau, \\bs \\xi, \\dot{\\bs \\xi}, \\ddot{\\bar{\\bs \\gamma}})^3.\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$\\Delta \\tau = \\frac{\\xi^a \\dot \\gamma_a}{1 - \\dot \\gamma_a \\dot \\xi^a} + O(\\bs \\xi, \\dot{\\bs \\xi}, \\ddot{\\bar{\\bs \\gamma}})^3.$$",
+        "start": 77278,
+        "end": 77438,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\Delta \\tau = \\frac{\\xi^a \\dot \\gamma_a}{1 - \\dot \\gamma_a \\dot \\xi^a} + O(\\bs \\xi, \\dot{\\bs \\xi}, \\ddot{\\bar{\\bs \\gamma}})^3."
+        }
+      },
+      {
+        "content": "$$\\begin{split} \\xi^{a'} \\dot \\gamma_{a'} &= [\\xi^a + (\\tau' - \\tau) \\dot \\xi^a] \\dot \\gamma_a \\\\ &\\hspace{1.1em}+ \\int_\\tau^{\\tau'} \\ud \\tau''\\; (\\tau' - \\tau'') \\dot \\gamma_{a''} S^{a''}, \\end{split}$$",
+        "start": 77917,
+        "end": 78160,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    \\xi^{a'} \\dot \\gamma_{a'} &= [\\xi^a + (\\tau' - \\tau) \\dot \\xi^a] \\dot \\gamma_a \\\\\n    &\\hspace{1.1em}+ \\int_\\tau^{\\tau'} \\ud \\tau''\\; (\\tau' - \\tau'') \\dot \\gamma_{a''} S^{a''},\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$\\dot \\xi^{a'} \\dot \\gamma_{a'} = \\dot \\xi^a \\dot \\gamma_a + \\int_\\tau^{\\tau'} \\ud \\tau''\\; \\dot \\gamma_{a''} S^{a''}.$$",
+        "start": 78192,
+        "end": 78343,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\dot \\xi^{a'} \\dot \\gamma_{a'} = \\dot \\xi^a \\dot \\gamma_a + \\int_\\tau^{\\tau'} \\ud \\tau''\\; \\dot \\gamma_{a''} S^{a''}."
+        }
+      },
+      {
+        "content": "$$\\begin{split} S^{a'} &= -\\left(2 R^{a'}{}_{c'b' \\dot \\gamma'} \\dot \\xi^{c'} + \\nabla_{(\\dot \\gamma'} R^{a'}{}_{c')b' \\dot \\gamma'} \\xi^{c'}\\right) \\xi^{b'} \\\\ &\\hspace{1.1em}+ O(\\bs \\xi, \\dot{\\bs \\xi})^2, \\end{split}$$",
+        "start": 78770,
+        "end": 79030,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    S^{a'} &= -\\left(2 R^{a'}{}_{c'b' \\dot \\gamma'} \\dot \\xi^{c'} + \\nabla_{(\\dot \\gamma'} R^{a'}{}_{c')b' \\dot \\gamma'} \\xi^{c'}\\right) \\xi^{b'} \\\\\n    &\\hspace{1.1em}+ O(\\bs \\xi, \\dot{\\bs \\xi})^2,\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$\\dot \\gamma_{a'} S^{a'} = \\frac{1}{2} \\pbg K^{b'}{}_b \\xi^a \\xi^b \\left[\\frac{\\uD}{\\ud \\tau'} \\left(\\pbg K^{a'}{}_a R_{a' \\dot \\gamma' b' \\dot \\gamma'}\\right) + 3 R_{a' \\dot \\gamma' b' \\dot \\gamma'} \\frac{\\uD \\pbg K^{a'}{}_a}{\\ud \\tau'}\\right] + O(\\bs \\xi)^3.$$",
+        "start": 79258,
+        "end": 79551,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\dot \\gamma_{a'} S^{a'} = \\frac{1}{2} \\pbg K^{b'}{}_b \\xi^a \\xi^b \\left[\\frac{\\uD}{\\ud \\tau'} \\left(\\pbg K^{a'}{}_a R_{a' \\dot \\gamma' b' \\dot \\gamma'}\\right) + 3 R_{a' \\dot \\gamma' b' \\dot \\gamma'} \\frac{\\uD \\pbg K^{a'}{}_a}{\\ud \\tau'}\\right] + O(\\bs \\xi)^3."
+        }
+      },
+      {
+        "content": "$$\\pbg K^{a'}{}_a = \\pbg g^{a'}{}_a + O(\\bs R).$$",
+        "start": 80226,
+        "end": 80305,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\pbg K^{a'}{}_a = \\pbg g^{a'}{}_a + O(\\bs R)."
+        }
+      },
+      {
+        "content": "$$\\begin{split} \\widetilde \\Omega^A{}_B &\\equiv \\widetilde \\Lambda^A{}_B - \\delta^A{}_B \\\\ &= \\int_\\tau^{\\tau'} \\ud \\tau'' \\pbg \\widetilde g^A{}_{A''} \\widetilde R^{A''}{}_{B''c''d''} \\xi^{c''} \\dot \\gamma^{d''} \\pbg \\widetilde g^{B''}{}_B, \\end{split}$$",
+        "start": 83103,
+        "end": 83397,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    \\widetilde \\Omega^A{}_B &\\equiv \\widetilde \\Lambda^A{}_B - \\delta^A{}_B \\\\\n    &= \\int_\\tau^{\\tau'} \\ud \\tau'' \\pbg \\widetilde g^A{}_{A''} \\widetilde R^{A''}{}_{B''c''d''} \\xi^{c''} \\dot \\gamma^{d''} \\pbg \\widetilde g^{B''}{}_B,\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$\\begin{split} [\\sigma^c{}_{(b_1'} \\sigma^a{}_{b_2' \\cdots b_n')c}]_{x' \\to x} = &-\\nabla_{(b_1} [\\sigma^a{}_{b_2' \\cdots b_n')}]_{x' \\to x} \\\\ &+ [\\sigma^a{}_{(b_1 \\cdots b_n')}]_{x' \\to x}, \\end{split}$$",
+        "start": 90107,
+        "end": 90353,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    [\\sigma^c{}_{(b_1'} \\sigma^a{}_{b_2' \\cdots b_n')c}]_{x' \\to x} = &-\\nabla_{(b_1} [\\sigma^a{}_{b_2' \\cdots b_n')}]_{x' \\to x} \\\\\n    &+ [\\sigma^a{}_{(b_1 \\cdots b_n')}]_{x' \\to x},\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$\\begin{split} [\\sigma^a{}_{(b_1' \\cdots b_n')}]_{x' \\to x} &= \\nabla_{(b_1} [\\sigma^a{}_{b_2' \\cdots b_n')}]_{x' \\to x} \\\\ &\\hspace{1.1em}- \\sum_{k = 2}^{n - 1} \\binom{n}{k} \\frac{[\\sigma^c{}_{(b_1' \\cdots b_k'} \\sigma^a{}_{b_{k + 1}' \\cdots b_n')c}]_{x' \\to x}}{n}. \\end{split}$$",
+        "start": 90714,
+        "end": 91036,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\begin{split}\n    [\\sigma^a{}_{(b_1' \\cdots b_n')}]_{x' \\to x} &= \\nabla_{(b_1} [\\sigma^a{}_{b_2' \\cdots b_n')}]_{x' \\to x} \\\\\n    &\\hspace{1.1em}- \\sum_{k = 2}^{n - 1} \\binom{n}{k} \\frac{[\\sigma^c{}_{(b_1' \\cdots b_k'} \\sigma^a{}_{b_{k + 1}' \\cdots b_n')c}]_{x' \\to x}}{n}.\n  \\end{split}"
+        }
+      },
+      {
+        "content": "$$\\nabla_{b_1'} \\cdots \\nabla_{b_n'} (\\sigma^{c'} \\nabla_{c'} g^{a'}{}_a) = 0.$$",
+        "start": 91692,
+        "end": 91802,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "\\nabla_{b_1'} \\cdots \\nabla_{b_n'} (\\sigma^{c'} \\nabla_{c'} g^{a'}{}_a) = 0."
+        }
+      },
+      {
+        "content": "$$0 = \\sum_{k = 0}^n \\binom{n}{k} \\sigma^c{}_{(b_1' \\cdots b_k'} \\nabla_{b_{k + 1}'} \\cdots \\nabla_{b_n')} \\nabla_c g^{a'}{}_a.$$",
+        "start": 91906,
+        "end": 92065,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "0 = \\sum_{k = 0}^n \\binom{n}{k} \\sigma^c{}_{(b_1' \\cdots b_k'} \\nabla_{b_{k + 1}'} \\cdots \\nabla_{b_n')} \\nabla_c g^{a'}{}_a."
+        }
+      }
+    ],
+    "inline_texts": [
+      {
+        "content": "While this is an acceptable model for nonlinear plane wave spacetimes (and so was also used in Paper~II), it is \\emph{only} a valid model for asymptotically flat spacetimes up to a certain order in $1/r$.",
+        "start": 5898,
+        "end": 6102,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In asymptotically flat spacetimes, the natural notion of radiation is the non-vanishing of the \\emph{Bondi news tensor}, and in regions where it does vanish, the curvature is $O(1/r^3)$, as it is in (say) the Schwarzschild spacetime.",
+        "start": 6103,
+        "end": 6336,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As such, the displacement memory should only truly be a persistent observable, in a perturbative sense, up to $O(1/r^2)$.",
+        "start": 6337,
+        "end": 6458,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "However, by only considering observables at leading [$O(1/r)$, as in Paper~III], or at most the first subleading [$O(1/r^2)$] order, it is possible that more general features of these observables have been missed: in particular, those which are \\emph{nonlinear} in the curvature tensor.\\footnote{Since the distance to a source of gravitational waves is typically assumed to be large for astrophysically-relevant sources, considering $O(1/r^2)$ corrections arising from nonlinear effects may seem pointless, from a practical perspective.",
+        "start": 7215,
+        "end": 7751,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Since the curvature scales as $\\omega^2 h$, where $\\omega$ is the frequency of the gravitational wave and $h$ its amplitude, if the measurement timescale $T \\sim 1/(\\omega \\sqrt h)$, either because $T$ \\emph{or} $\\omega$ is large, then one cannot assume that nonlinear-in-curvature effects are small.",
+        "start": 7896,
+        "end": 8198,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "In asymptotically flat spacetimes, it was shown that this effect is $O(1/r^2)$, which is far too small to measure for astrophysical sources.",
+        "start": 9413,
+        "end": 9553,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In contrast, a different procedure was proposed by~\\cite{Nichols2017} (also bearing the name ``spin memory'') which gave an equivalent expression, but at $O(1/r)$, which is more feasible to observe.",
+        "start": 9554,
+        "end": 9752,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Here, many of the persistent observables which had been defined in Paper~I, while describing many disparate physical effects, could all be written in terms of a set of four ($2 \\times 2$-matrix-valued) functions of the coordinates.",
+        "start": 10550,
+        "end": 10781,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Moreover, at leading order in $1/r$ in asymptotically flat spacetimes, this result has already been known~\\cite{Seraj2021a, Divakarla2021}.",
+        "start": 11467,
+        "end": 11606,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In Sec.~\\ref{sec:redundant}, we show explicitly that this result holds more generally, in particular at subleading orders in $1/r$.",
+        "start": 11607,
+        "end": 11738,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "This was used in Paper~III to prove a similar result asymptotically for the curve deviation observable from Paper~I, to leading order in $1/r$, in terms of temporal moments of the Bondi news tensor.",
+        "start": 12093,
+        "end": 12291,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Apart from a few exceptions, we use only abstract indices in this paper, which we denote using Latin letters from the beginning of the alphabet ($a$, $b$, etc.).",
+        "start": 15354,
+        "end": 15515,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We use the conventions for bitensors from~\\cite{Poisson2011}, and following Paper~I we only explicitly give the dependence of a bitensor at a point when it is a scalar at that point, and use the same annotations for points and their corresponding indices [for example, $\\omega_{\\bar a} (x')$ denotes a one-form at $\\bar x$ and a scalar at $x'$].",
+        "start": 15516,
+        "end": 15861,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Moreover, for any curve $\\gamma$, we denote by $x$ the point $\\gamma(\\tau)$, and apply any adornments to $\\tau$ or $\\gamma$ to $x$ as well [so, for example, $\\bar x' \\equiv \\bar \\gamma(\\tau')$].",
+        "start": 15862,
+        "end": 16056,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "Finally, we will frequently take products of order symbols, so that (for example) $O(a, b)^2$ is shorthand for $O(a^2, ab, b^2)$.",
+        "start": 16057,
+        "end": 16186,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We start with Synge's world function, which is a scalar function $\\sigma(x, x')$ of two points $x$ and $x'$, defined to be half of the square of the geodesic distance between these two points.",
+        "start": 17569,
+        "end": 17761,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "As this quantity is a function of two points, one can take (potentially repeated) derivatives with respect to either point, which commute: as is conventional, we denote these by simply appending indices to the end of $\\sigma$:",
+        "start": 17942,
+        "end": 18168,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The most important of these derivatives are $-\\sigma_a (x')$ and $\\sigma_{a'} (x)$, as one can show that (when raised with the metric) they are the tangent vectors to the unique geodesic between $x$ and $x'$, where this geodesic is parameterized such that $x$ is where the parameter is zero and $x'$ is where the parameter is one.",
+        "start": 18338,
+        "end": 18668,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "As such, $-\\sigma^a (x')$ has a natural interpretation as a ``separation vector'' between $x$ and $x'$.",
+        "start": 18669,
+        "end": 18772,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "and differentiating these expressions with respect to $x$ or $x'$ gives",
+        "start": 18940,
+        "end": 19011,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Using these separation vectors, we can expand bitensors in the following way (see, for example,~\\cite{Vines2014b, Poisson2011}): for any bitensor of the form $\\Omega_{\\ms A} (x')$ whose indices, which we denote with a composite index $\\ms A$ \\{see, for example, the comments below Proposition~(2.2.35) of~\\cite{Penrose1987}\\}, lie entirely at $x$, we seek an expansion of the form",
+        "start": 19226,
+        "end": 19606,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "where each term in this expansion is, most importantly, \\emph{only} a tensor at $x$.",
+        "start": 19812,
+        "end": 19896,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To do so, we first need to define the \\emph{coincidence limit} of a bitensorial expression, which corresponds to the limit of taking the two points $x$ and $x'$ to coincide.",
+        "start": 20068,
+        "end": 20241,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "This is simple in the case where we consider a bitensor of the form $\\Omega_{\\ms A} (x')$, where all indices lie at $x$: the definition is given in terms of the usual limit:",
+        "start": 20242,
+        "end": 20415,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In the case where there are some indices (let us denote them by a composite index $\\ms B'$ which lie at $x'$, the coincidence limit is defined by",
+        "start": 20531,
+        "end": 20677,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $Z^{\\ms A'}{}_{\\ms A}$ is any bitensor such that $Z^{\\ms A}{}_{\\ms B} = \\delta^{\\ms A}{}_{\\ms B}$, the identity.",
+        "start": 20820,
+        "end": 20938,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Note that this is independent of which $Z^{\\ms A'}{}_{\\ms A}$ one chooses, so long as this limit is well-defined.",
+        "start": 20939,
+        "end": 21052,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As such, upon taking $k$ symmetrized derivatives of Eq.~\\eqref{eqn:coincident_expansion} with respect to $x'$, three cases arise once one takes the coincident limit.",
+        "start": 21991,
+        "end": 22156,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "For $k < n$, the coincidence limit vanishes, as there will be remaining factors of $\\sigma^{b_i} (x')$ remaining.",
+        "start": 22157,
+        "end": 22270,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "For $k = n$, the only contribution to the coincidence limit is $\\Omega_{\\ms A b_1 \\cdots b_n}$.",
+        "start": 22271,
+        "end": 22366,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "However, if $k > n$, then there will be terms which involve coincidence limits of symmetrized derivatives of $\\sigma^a (x')$.",
+        "start": 22367,
+        "end": 22492,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In the case where we have a bitensor of the form $\\Omega_{\\ms A \\ms B'}$, we can instead perform the expansion for $\\Omega_{\\ms A \\ms B'} Z^{\\ms B'}{}_{\\ms B}$, and then apply $(Z^{-1})^{\\ms B}{}_{\\ms C'}$.",
+        "start": 22865,
+        "end": 23071,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Here, unlike before, the choice of $Z^{\\ms A'}{}_{\\ms A}$ is important, as the expansion involves taking derivatives of this bitensor.",
+        "start": 23072,
+        "end": 23206,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We finally turn to a common choice of such a bitensor $Z^{a'}{}_a$, the \\emph{parallel propagator} $\\pbg g^{a'}{}_a$.",
+        "start": 23208,
+        "end": 23325,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Given a curve $\\gamma$, consider a basis $(e_\\alpha)^a$ at some point $x$ along $\\gamma$, together with its dual basis $(\\omega^\\alpha)_a$.",
+        "start": 23326,
+        "end": 23465,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "Then, extend these bases to be functions along $\\gamma$ by parallel transport:",
+        "start": 23466,
+        "end": 23544,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Note that $\\nabla_a$ here can be \\emph{any} connection, not necessarily the metric-compatible one (although in this paper, it typically will be).",
+        "start": 23677,
+        "end": 23822,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Note that this parallel propagator is always defined in terms of a given curve, which we indicate with the initial $\\gamma$ subscript.",
+        "start": 23988,
+        "end": 24122,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "However, it is occasionally useful to consider the parallel propagator defined with respect to the unique geodesic connecting two points in a convex normal neighborhood: we denote this by $g^{a'}{}_a$.",
+        "start": 24123,
+        "end": 24324,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Moreover, if $\\gamma$ is a geodesic, it follows from the geodesic equation that",
+        "start": 24913,
+        "end": 24992,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In terms of Taylor's theorem, the parallel propagator is particularly convenient to use, as symmetrized derivatives of $g^{a'}{}_a$ vanish under the coincidence limit, as shown in Appendix~\\ref{app:symmetrized}.",
+        "start": 25137,
+        "end": 25348,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $g^{\\ms A}{}_{\\ms A'}$ acts on each index in $\\ms A$ through a parallel propagator (for example, if $\\ms A$ contains two raised indices $a$ and $b$ and a lowered index $c$, then $g^{ab}{}_{ca'b'}{}^{c'} = g^a{}_{a'} g^b{}_{b'} g^{c'}{}_c$.",
+        "start": 25686,
+        "end": 25932,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "Similarly, taking a derivative of $K^{a'}{}_a$ using Eq.~\\eqref{eqn:jacobi_def} gives",
+        "start": 26906,
+        "end": 26991,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Moreover, by taking derivatives of Eq.~\\eqref{eqn:synge_geodesic} (together with the version with $x$ and $x'$ flipped) we can eliminate the third derivatives of Synge's world function from these equations by contracting with $\\sigma^{c'} (x)$ and $\\sigma^c (x')$, yielding the following expressions:",
+        "start": 27253,
+        "end": 27553,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "At this point, affinely parameterize the geodesic $\\gamma$ between $x$ and $x'$, and let $\\tau$ be the value of this affine parameter at $x$ and $\\tau'$ its value at $x'$ (in many of the cases in this paper, $\\gamma$ will be timelike and $\\tau$ proper time, but this is not necessary).",
+        "start": 28054,
+        "end": 28339,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 9
+        }
+      },
+      {
+        "content": "One can then show starting from these equations that $K^{a'}{}_a$ and $(\\tau' - \\tau) H^{a'}{}_a$ are both solutions to the following differential equation:",
+        "start": 28340,
+        "end": 28496,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Under appropriate differentiability conditions on the metric, these are the unique solutions to Eq.~\\eqref{eqn:jacobi} satisfying these boundary conditions, as these are simply ordinary differential equations along $\\gamma$.",
+        "start": 29448,
+        "end": 29672,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As with the parallel propagator, one can consider the differential equation in Eq.~\\eqref{eqn:jacobi} along \\emph{any} curve, and then use that in order to define curve-dependent Jacobi propagators $\\pbg K^{a'}{}_a$ and $\\pbg H^{a'}{}_a$.",
+        "start": 29674,
+        "end": 29912,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "First, we note that the analogy between the parallel and Jacobi propagators runs quite deep: first, consider the space of vector fields $X^A$ defined by",
+        "start": 30133,
+        "end": 30285,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "One can then consider a bitensor $\\pbg J^{A'}{}_A$ that is defined by",
+        "start": 30784,
+        "end": 30853,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\nabla_a$ acts on each component of $X^A$ in the usual sense, and",
+        "start": 31297,
+        "end": 31369,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "It is then the case that $\\pbg J^{A'}{}_A$ \\emph{is} the parallel propagator with respect to this connection, as",
+        "start": 31535,
+        "end": 31647,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where (as is usually done with connections) we have extended $\\pbg \\hat \\nabla_a$ to act on covectors such that the Leibniz rule holds.",
+        "start": 32261,
+        "end": 32396,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The next property which we consider is the fact that any solution to Eq.~\\eqref{eqn:jacobi}, along a general curve, must be a linear combination of the two solutions $\\pbg K^{a'}{}_a$ and $(\\tau' - \\tau) \\pbg H^{a'}{}_a$.",
+        "start": 32398,
+        "end": 32619,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In particular, $\\uD \\pbg K^{a'}{}_a/\\ud \\tau$ and $\\uD [(\\tau' - \\tau) \\pbg H^{a'}{}_a]/\\ud \\tau$ are also solutions to this equation (note that the derivatives act on $\\tau$, not $\\tau'$.",
+        "start": 32620,
+        "end": 32810,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "A final useful property of Jacobi propagators is that, for a geodesic $\\gamma$, it follows upon contracting Eq.~\\eqref{eqn:jacobi} with $\\dot \\gamma^a$ that",
+        "start": 34071,
+        "end": 34227,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "for $\\pbg A^{a'}{}_a = K^{a'}{}_a$ or $(\\tau' - \\tau) H^{a'}{}_a$.",
+        "start": 34329,
+        "end": 34395,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "and a direct comparison with the initial conditions for $\\pbg A^{a'}{}_a \\dot \\gamma^a$ shows that",
+        "start": 34546,
+        "end": 34644,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Given two solutions $A^{a'}{}_a$ and $B^{a'}{}_a$ to Eq.~\\eqref{eqn:jacobi}, define",
+        "start": 35232,
+        "end": 35315,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Note that $W_{ab} (\\tau')$ is in fact independent of $\\tau'$, as",
+        "start": 35489,
+        "end": 35553,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "using Eq.~\\eqref{eqn:jacobi}, the fact that $R_{abcd} = R_{cdab}$, and a relabeling.",
+        "start": 35795,
+        "end": 35879,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Considering Eq.~\\eqref{eqn:jacobi} as a second order differential equation, $W_{ab} (\\tau') \\equiv W_{ab}$ is the conserved Wronskian defined for these two solutions.",
+        "start": 35880,
+        "end": 36046,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "By the initial conditions in Eqs.~\\eqref{eqn:KH_init} and~\\eqref{eqn:dKH_init}, it follows that $W_{ab} = g_{ab}$, so that",
+        "start": 36207,
+        "end": 36329,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "It therefore follows that not all of the components of $\\pbg J^{A'}{}_A$ are independent.",
+        "start": 36609,
+        "end": 36698,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "There are further results which follow from the conservation of $W_{ab}$, which can be used to relate Jacobi propagators with flipped arguments.",
+        "start": 36997,
+        "end": 37141,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Evaluating $W_{ab}$ at $\\tau' = \\tau''$, we find that",
+        "start": 37330,
+        "end": 37383,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "whereas at $\\tau' = \\tau$, we find",
+        "start": 37494,
+        "end": 37528,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Equating these expressions (and renaming $\\tau''$ to $\\tau'$, it follows that",
+        "start": 37634,
+        "end": 37712,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "we find that (at $\\tau' = \\tau''$",
+        "start": 38072,
+        "end": 38106,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "and (at $\\tau' = \\tau$",
+        "start": 38222,
+        "end": 38245,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "It therefore follows that\\footnote{Note that there is a typo in Eq.~(4.88) of~\\cite{GrantThesis}: the derivative on the right-hand side of that equation should be with respect to $\\tau$, not $\\tau'$.}",
+        "start": 38357,
+        "end": 38557,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Note that a similar type of analysis starting from Eq.~\\eqref{eqn:K_swap} does not work, since the derivative on the right-hand side is with respect to $\\tau$, and not $\\tau'$.",
+        "start": 39265,
+        "end": 39441,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In order to determine the deviation vector between two worldlines $\\gamma$ and $\\bar \\gamma$ as a function of time, we need to have a definition of this deviation vector.",
+        "start": 40207,
+        "end": 40377,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The definition we use is given by the separation vector between two points, $x$ and $\\bar x$, which lie on $\\gamma$ and $\\bar \\gamma$, respectively.",
+        "start": 40378,
+        "end": 40526,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "In principle, we have a sort of ``gauge'' freedom to pick any rule for selecting the pairs of points $x$ and $\\bar x$.",
+        "start": 40527,
+        "end": 40645,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Following~\\cite{Vines2014a}, we call this rule a \\emph{correspondence}, and the choice that we make for much of this paper is to use the \\emph{isochronous correspondence}: given an initial choice for $x$ and $\\bar x$, we set the proper time $\\tau$ for $\\gamma$ and $\\bar \\gamma$ such that $x = \\gamma(\\tau)$ and $\\bar x = \\bar \\gamma(\\tau)$.",
+        "start": 40646,
+        "end": 40987,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "The pairs of points that we select along $\\gamma$ and $\\bar \\gamma$ at later times are then those with equal values of proper time.",
+        "start": 40988,
+        "end": 41119,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "As such, we have that the separation vector is given, at all values of proper time $\\tau$, by",
+        "start": 41120,
+        "end": 41213,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Since we ultimately want a differential equation for $\\xi^a$, we take a derivative of $\\xi^a$ with respect to $\\tau$.",
+        "start": 41295,
+        "end": 41412,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "For any bitensor at $x$ and $\\bar x$, such a derivative given by",
+        "start": 41413,
+        "end": 41477,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "For the case of $\\xi^a$, this is",
+        "start": 41664,
+        "end": 41696,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "While this expression is not useful as a differential equation for $\\xi^a$ (it is in terms of $\\dot{\\bar \\gamma}^{\\bar a}$, which is unknown), it does mean that we can write",
+        "start": 42042,
+        "end": 42215,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where the \\emph{horizontal} and \\emph{vertical} derivatives $\\nabla_{a \\bar *}$ and $\\nabla_{\\bar * a}$ are defined by",
+        "start": 42420,
+        "end": 42538,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The coincidence limit in this equation is known as the $n$th \\emph{tensor extension} of $\\Omega_{\\ms A} (x')$, and is given by $n$ partial derivatives of $\\Omega_{\\ms A} (x')$ in a normal coordinate system around $x$~\\cite{Dixon1979}.",
+        "start": 43312,
+        "end": 43546,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "Given the accelerations of the two curves, Eq.~\\eqref{eqn:ddot_gammabar} is in a desirable form; solving for $\\ddot \\xi^a$, we find that",
+        "start": 44457,
+        "end": 44593,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $S^a$ is some ``source'' term.",
+        "start": 46613,
+        "end": 46649,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "When one has $a^a \\neq 0$, but neglects higher-order terms in separation and relative velocity, this is the equation one must solve directly, for $S^a = a^a$.",
+        "start": 46650,
+        "end": 46808,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The general solution is computed as follows~\\cite{GrantThesis}: first, we note that this equation can be written in terms of the vector $X^A$ and the connection $\\pbg \\hat \\nabla_a$ defined in Sec.~\\ref{sec:jacobi} as",
+        "start": 47011,
+        "end": 47228,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "This equation appeared as Eq.~(4.10) of Paper~I, where it was proven by confirming that Eq.~\\eqref{eqn:jacobi_inhomogeneous} was satisfied, instead of by introducing $\\pbg J^{A'}{}_A$.",
+        "start": 48386,
+        "end": 48570,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "This is an observable that a pair of arbitrarily accelerating observers, following general worldlines $\\gamma$ and $\\bar \\gamma$, can in principle measure, and arises as the most natural generalization of the displacement memory.",
+        "start": 49465,
+        "end": 49694,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "This pair of observers carries out the following procedure (see Paper~I): first, the observers establish their separation $\\xi^a$ and relative velocity $\\dot \\xi^a$ at some initial proper time $\\tau$.",
+        "start": 49696,
+        "end": 49896,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "At a later proper time $\\tau'$, they then measure their separation $\\xi^{a'}$; note that they make this measurement using the isochronous correspondence, associating points on their two worldlines which have the same value of proper time.",
+        "start": 49897,
+        "end": 50135,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Moreover, the two observers should have tracked their accelerations as functions of time from $\\tau$ until $\\tau'$, which can easily be done with local accelerometers.",
+        "start": 50301,
+        "end": 50468,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Once they have communicated this data to one another, they can then compute a predicted separation $\\xi_{\\rm flat}^{a'}$, based on the assumption that they had been traveling in a region of spacetime which is flat.",
+        "start": 50469,
+        "end": 50683,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "At this point, the observers now subtract this quantity from the true value of the separation $\\xi^{a'}$, to obtain the curve deviation observable $\\Delta \\xi^{a'}$:",
+        "start": 51098,
+        "end": 51263,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "This is non-zero only when the spacetime has had non-zero curvature at (not necessarily all) points between $\\tau$ and $\\tau'$, and so is a persistent observable in the context of the flat-to-flat transitions of Paper~I.",
+        "start": 51357,
+        "end": 51577,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "As was shown in Paper~III, it is also a persistent observable in asymptotically flat spacetimes, at $O(1/r)$.",
+        "start": 51578,
+        "end": 51687,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Suppose, for example, that $\\gamma$ and $\\bar \\gamma$ are both geodesic, and that the initial relative velocity vanishes: this is the case in question when measuring the displacement memory.",
+        "start": 51746,
+        "end": 51936,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The quantity $\\pbg \\Delta K^{a'}{}_a$ is therefore the relevant quantity to compute when considering the displacement memory effect.",
+        "start": 52314,
+        "end": 52446,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\item they can be related to ``conserved quantities'' (or ``charges'') that are constructed from pieces of the metric in Bondi coordinates at higher orders in $1/r$~\\cite{Pasterski2015a, Nichols2018, Grant2021b}; and",
+        "start": 53520,
+        "end": 53736,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Note that, since $\\uD \\pbg \\Delta K^{a'}{}_a/\\ud \\tau' = \\uD \\pbg K^{a'}{}_a/\\ud \\tau'$, one can recover the velocity memory either from directly looking at the final value of $\\dot \\xi^{a'}$ or from the first derivative of the curve deviation observable, $\\uD \\Delta \\xi^{a'}/\\ud \\tau'$.",
+        "start": 54652,
+        "end": 54940,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "This observable is given by $\\uD [(\\tau' - \\tau) \\pbg \\Delta H^{a'}{}_a]/\\ud \\tau'$, and it is known that this effect is non-zero in asymptotically flat spacetimes~\\cite{Seraj2021a, Divakarla2021}.\\footnote{This provides another reason why using the term ``subleading displacement memory'' to describe the drift memory is problematic: by analogy, it motivates referring to the kick memory as the ``subleading velocity memory'', when in fact it is \\emph{super}leading in asymptotically flat spacetimes!}",
+        "start": 55750,
+        "end": 56252,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Here, we are solving Eq.~\\eqref{eqn:jacobi_inhomogeneous} with $S^a = a^a$, and so it follows that",
+        "start": 56555,
+        "end": 56653,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Moreover, as it can be done without loss of generality (see Appendix~B of Paper~II), we focus exclusively on the case where only $\\bar \\gamma$ is accelerating, and so",
+        "start": 56981,
+        "end": 57147,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As was shown in Appendix~C of Paper~III, when $a^{a''}$ can be Taylor-expanded in powers of $\\tau'' - \\tau$ (for any $\\tau''$ between $\\tau$ and $\\tau'$, one has the following expansion in initial derivatives of $\\dot{\\bar \\gamma}^{\\bar a}$:",
+        "start": 57236,
+        "end": 57478,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "In Paper~III, $\\pbg \\Delta K^{a'}{}_a$, $\\pbg \\Delta H^{a'}{}_a$, and $\\pbg \\Delta \\ord{n} \\alpha$ were all computed in asymptotically flat spacetimes in terms of (temporal) moments of the Bondi news.",
+        "start": 58378,
+        "end": 58578,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "We refer to $\\pbg \\Delta \\ord{n} \\alpha^{a'}{}_a$, interchangeably with the moments of the news from which it can be computed, as being related to \\emph{higher memories}.",
+        "start": 58655,
+        "end": 58825,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We propose the name ``ballistic memory'' for the zeroth higher memory, as $\\pbg \\Delta \\ord{0} \\alpha^{a'}{}_a$ will be relevant for the first time if the observers experience constant relative acceleration, as occurs in the projectile motion of classical mechanics.",
+        "start": 58826,
+        "end": 59092,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As such, if $\\pbg K^{a'}{}_a$ is invertible, then we can write the kick memory in terms of the other three memory effects:",
+        "start": 60166,
+        "end": 60288,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "There are many situations where $\\pbg K^{a'}{}_a$ is not invertible.",
+        "start": 60631,
+        "end": 60699,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For example, when $x$ and $x'$ are conjugate points along $\\gamma$, then for any $\\tau'' \\in (\\tau, \\tau')$, $\\pbg K^{a''}{}_a$ and $\\pbg K^{a'}{}_{a''}$ cannot be invertible.\\footnote{Note that the definition of $x$ and $x'$ being conjugate points (see, for example, Section~5.3 of~\\cite{DoCarmo1992}) is that there exists a non-zero Jacobi field that vanishes at $x$ and $x'$, or in other words that there exists a vector field $A^a$ such that $(\\tau' - \\tau) \\pbg H^{a'}{}_a A^a = 0$.",
+        "start": 60700,
+        "end": 61187,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 12
+        }
+      },
+      {
+        "content": "It does not necessarily imply that there are multiple geodesics connecting $x$ and $x'$, unless one is in a situation where the geodesic deviation equation has no higher-order corrections.}",
+        "start": 61188,
+        "end": 61379,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "However, a sufficient condition that $\\pbg K^{a'}{}_a$ be invertible is given by the following: define",
+        "start": 61380,
+        "end": 61482,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As such, if $\\pbg \\Delta \\mc K^a{}_b (\\tau')$ is ``small'' in the sense that",
+        "start": 61766,
+        "end": 61842,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Equation~\\eqref{eqn:DeltaK_small}, and therefore Eq.~\\eqref{eqn:kick_redundant}, will hold in a perturbative context, such as in an expansion in $1/r$.",
+        "start": 62198,
+        "end": 62349,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The existence of a nonlinear generalization is not immediately obvious, and it implies that one could in principle easily extend the results of Paper~III to $O(1/r^2)$.",
+        "start": 63821,
+        "end": 63989,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We start this analysis by noting that, by multiplying Eq.~\\eqref{eqn:dK_initial} by $\\pbg g^a{}_{b'}$,",
+        "start": 63991,
+        "end": 64093,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "This object is a bitensorial modification of the electric part of the Riemann tensor, hence the use of the letter `$E$'.",
+        "start": 64674,
+        "end": 64794,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Next, consider the following identity, for some $f^{a'}{}_a (\\tau'')$:",
+        "start": 65033,
+        "end": 65103,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "and so, since the term in brackets on the left-hand side vanishes when $\\tau'' = \\tau$ or $\\tau'$, we find that",
+        "start": 65424,
+        "end": 65535,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "This all relies upon the fact that we are integrating $f^{a'}{}_a (\\tau'')$ over the points over which it is a scalar, and so the usual intuition from single-variable calculus applies.",
+        "start": 65799,
+        "end": 65983,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We can now apply this equation in the case $f^{a'}{}_a (\\tau'') = \\pbg E^{a'}{}_a (\\tau'')$.",
+        "start": 65984,
+        "end": 66076,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "By using Eq.~\\eqref{eqn:DeltaH_DeltaK}, together with this equation for $n = 0$, we find that",
+        "start": 66077,
+        "end": 66170,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Applying Eq.~\\eqref{eqn:cauchy_identity} to Eq.~\\eqref{eqn:Deltaalpha_DeltaK}, where $f^{a'}{}_a (\\tau'') = \\pbg \\Delta K^{a'}{}_{a''} \\pbg g^{a''}{}_a$ [note that this is still a scalar at $\\gamma(\\tau'')$!], we find",
+        "start": 66723,
+        "end": 66940,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "the $n$th (temporal) moment of the bitensor $\\pbg E^{a'}{}_a (\\tau'')$, we find that",
+        "start": 67823,
+        "end": 67907,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "This suggests that it is useful to consider a parallel set of moments, $\\pbg \\ord{n}{\\widetilde{\\ms E}}^{a'}{}_a$, defined by",
+        "start": 68365,
+        "end": 68490,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "using the fact that $\\pbg E^{a'}{}_a (\\tau') = 0$, and where",
+        "start": 68770,
+        "end": 68830,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "First, note that, in Bondi coordinates $\\{u, r, \\theta^i\\}$, the Riemann tensor takes the following form:",
+        "start": 69158,
+        "end": 69263,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $N_{ij}$ is the \\emph{news tensor}, and angular coordinate indices (denoted by Latin letters from the middle of the alphabet) are raised and lowered using the metric on the round, unit two-sphere.",
+        "start": 69381,
+        "end": 69583,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As was shown explicitly in Paper~III, one can have asymptotic observers whose four-velocity $\\dot \\gamma^a = (\\partial_u)^a + O(1/r)$, where ``$O(1/r)$'' refers to subleading terms when this vector is expanded on an orthonormal basis.",
+        "start": 69584,
+        "end": 69818,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "As such, at leading order we are free to use $u$ as our affine parameter, and moreover, in Paper~III it was shown that $\\frac{1}{r} (\\partial_i)^a$ and $r (\\ud \\theta^i)_a$ are parallel-transported along this curve to leading order.",
+        "start": 69819,
+        "end": 70051,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Therefore, using Eqs.~\\eqref{eqn:N} and~\\eqref{eqn:asymp_R}, it follows that at leading order the angular components of $\\pbg E^{a'}{}_a (\\tau'')$ are given by",
+        "start": 70052,
+        "end": 70211,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "it follows that, for any function $f$ which vanishes at $u$ and $u'$,",
+        "start": 70417,
+        "end": 70486,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "As such, we find that, in the case where $N_{ij}$ is assumed to vanish at $u$ and $u'$ (as was done in Paper~III),",
+        "start": 71048,
+        "end": 71162,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "is the $n$th moment of the news, as defined in Paper~III (see~\\cite{Grant2023, Siddhant2024} for other definitions that are more useful in the contexts of those papers).",
+        "start": 71630,
+        "end": 71799,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Combining Eqs.~\\eqref{eqn:N_moments} and~\\eqref{eqn:N_asymp} directly proves Eqs.~(3.12-14) of Paper~III, and this procedure provides a straightforward approach for computing the extensions of those equations to higher order in $1/r$.",
+        "start": 71800,
+        "end": 72034,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "This equation shows that, at leading order in $1/r$, the velocity memory vanishes and the kick memory is (apart from a sign) the same as the displacement memory, as discussed above in Sec.~\\ref{sec:curve_dev}.",
+        "start": 72690,
+        "end": 72899,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Here, instead of the two observers associating points on their two worldlines by enforcing them to have equal values of proper time, they associate points such that the separation vector, which we denote by $\\xi_\\perp^a$, is orthogonal to $\\gamma$, for all times $\\tau$:",
+        "start": 73096,
+        "end": 73366,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Note that Eq.~\\eqref{eqn:jacobi_final_u} implies that, if $\\xi^a \\dot \\gamma_a = 0$ initially, then, assuming that there is no acceleration or initial relative velocity,",
+        "start": 73526,
+        "end": 73695,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "at all later times $\\tau'$.",
+        "start": 73775,
+        "end": 73802,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As such, it follows that any interesting differences between $\\xi_\\perp^a$ and $\\xi^a$ must arise at second order, or from the presence of acceleration terms.",
+        "start": 74094,
+        "end": 74252,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Since $\\xi_\\perp^a$ is not defined using the isochronous correspondence, it no longer points between $x \\equiv \\gamma(\\tau)$ and $\\bar x \\equiv \\bar \\gamma(\\tau)$, but $x$ and $\\hat{\\bar x} \\equiv \\bar \\gamma(\\hat \\tau)$, where $\\hat \\tau \\equiv \\tau + \\Delta \\tau$: the proper time shift observable is this quantity $\\Delta \\tau$.",
+        "start": 74254,
+        "end": 74585,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "To compute $\\Delta \\tau$, we first add to this list of points $\\hat x \\equiv \\gamma(\\tau + \\Delta \\tau)$, and consider the triangle composed of $x$, $\\hat x$, and $\\hat{\\bar x}$.",
+        "start": 74586,
+        "end": 74764,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "Assuming for simplicity that $\\gamma$ is a geodesic, and that $\\Delta \\tau$ is small enough that there is only one geodesic between $x$ and $\\hat x$, then",
+        "start": 74765,
+        "end": 74919,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "We can now determine $\\xi_\\perp^a$ by applying a procedure presented in~\\cite{Vines2014b}: first, define",
+        "start": 75014,
+        "end": 75118,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "and then expand in powers of $\\xi^{\\hat a}$ and $-\\Delta \\tau \\dot \\gamma^{\\hat a}$.",
+        "start": 75203,
+        "end": 75287,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Note that, for this entire procedure to work, we need to know that $\\Delta \\tau$ is itself small, which is not immediately clear.",
+        "start": 75289,
+        "end": 75418,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "However, this holds by the following argument: first, in the case where $\\bar \\gamma$ is a geodesic, note that when $\\gamma$ and $\\bar \\gamma$ intersect at $x$ (which corresponds to $\\xi^a = 0$, then $\\dot{\\bar \\gamma}^a$ and $\\xi_\\perp^a$ must be colinear, as $\\xi_\\perp^a$ points from $x$ to $\\hat{\\bar x}$ along the unique geodesic between them, and $\\bar \\gamma$ is such a geodesic (note that, if there are multiple geodesics, $\\xi_\\perp^a$ is not defined, so the question is moot).",
+        "start": 75419,
+        "end": 75906,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 12
+        }
+      },
+      {
+        "content": "Since $\\xi_\\perp^a \\dot \\gamma_a = 0$, this implies that $\\xi_\\perp^a$ must vanish when $\\xi^a$ vanishes. However, this means that $\\Delta \\tau$ is zero as well, and so $\\Delta \\tau$ and $\\xi_\\perp^a$ are both $O(\\bs \\xi)$, and so are small.",
+        "start": 75907,
+        "end": 76149,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "When $\\bar \\gamma$ is \\emph{not} a geodesic, $\\Delta \\tau$ is therefore $O(\\bs \\xi, \\ddot{\\bar{\\bs \\gamma}})$, which is also small.",
+        "start": 76150,
+        "end": 76281,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Since we can assume that $\\Delta \\tau$ is small, we can apply Eq.~(37) of~\\cite{Vines2014b}, obtaining",
+        "start": 76283,
+        "end": 76385,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Using Eq.~\\eqref{eqn:normal} and the fact that $\\dot \\gamma^a$ is parallel-transported, we therefore find that",
+        "start": 76830,
+        "end": 76940,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "By solving this equation iteratively for $\\Delta \\tau$, our final result is",
+        "start": 77200,
+        "end": 77275,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Considering this equation at $\\tau'$, we need both $\\xi^{a'} \\dot \\gamma_{a'}$ and $\\dot \\xi^{a'} \\dot \\gamma_{a'}$ in order to compute $\\Delta \\tau'$.",
+        "start": 77440,
+        "end": 77591,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "As we are assuming that $\\gamma$ is a geodesic, the latter is just the derivative of the former with respect to $\\tau'$.",
+        "start": 77592,
+        "end": 77712,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Using Eq.~\\eqref{eqn:jacobi_inhomogeneous_soln}, we can give $\\xi^{a'} \\dot \\gamma_{a'}$ in terms of the arbitrary source $S^a$ appearing on the right-hand side of Eq.~\\eqref{eqn:jacobi_inhomogeneous}:",
+        "start": 77713,
+        "end": 77914,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We now compute $\\Delta \\tau'$ in the concrete case considered in Paper~I, namely where $\\xi^a \\dot \\gamma_a = 0$, and there is neither initial relative velocity nor acceleration.",
+        "start": 78345,
+        "end": 78523,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where, like in Eq.~\\eqref{eqn:dotgamma_contract} we are using $\\dot \\gamma$ as an index to indicate contraction with the four-velocity.",
+        "start": 79033,
+        "end": 79168,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In this paper, we have considered nonlinear effects arising in persistent observables, which are usually studied in asymptotically flat spacetimes, in an effort both to understand these observables more deeply and to yield results which will be applicable beyond the leading order in $1/r$.",
+        "start": 80659,
+        "end": 80949,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "This observable was defined using the map which took vectors (sections of some higher-dimensional vector bundle, motivated by~\\cite{Flanagan2016}) and parallel-transported them, with respect to some connection $\\widetilde \\nabla_a$, around a loop formed by two closely-separated worldlines and the unique geodesics between them.",
+        "start": 82579,
+        "end": 82907,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Denoting this map by $\\widetilde \\Lambda^A{}_B$ (where, as in Sec.~\\ref{sec:jacobi}, capital Latin indices denote indices on this arbitrary vector bundle), the holonomy observable was given by",
+        "start": 82908,
+        "end": 83100,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\pbg \\widetilde g^{A'}{}_A$ is the parallel propagator for this connection and $\\widetilde R^A{}_{Bcd}$ its curvature tensor (see~\\cite{Flanagan2016} and Secs.~III.A-C of Paper~I for further discussion).",
+        "start": 83400,
+        "end": 83610,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "By expanding the separation vector $\\xi^{a''}$ in this integral in terms of the moments of the curve deviation observable and the flat-space separation vector $\\xi_{\\rm flat}^{a''}$, it seems plausible that one could write this observable in terms of moments as well.",
+        "start": 83611,
+        "end": 83878,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Using the framework of moments for the curve deviation in Sec.~\\ref{sec:nonlinear}, it was straightforward to derive the results of Paper~III for the values of the curve deviation in terms of moments of the Bondi news, which only hold at $O(1/r)$.",
+        "start": 84300,
+        "end": 84547,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "However, these expressions provide a path forward to compute the curve deviation at $O(1/r^2)$ that is far simpler than starting with the original expressions.",
+        "start": 84548,
+        "end": 84707,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "There is a particular reason for interest in the $O(1/r^2)$ expressions for the holonomy observables considered in Paper~I.",
+        "start": 85027,
+        "end": 85150,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Paper~I, building on~\\cite{Flanagan2016}, defined a four-parameter family of connections $\\vkappa \\nabla_a$, characterized by a quadruple of scalar constants collectively referred to as $\\varkappa$.",
+        "start": 85315,
+        "end": 85513,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The transport law for linear and angular momentum in flat spacetime~\\cite{Flanagan2014} corresponds to $\\varkappa = (0, 0, 0, 0)$, and a transport law which is related both to the Mathisson-Papapetrou equations for spinning test body motion and to the transport equations for Killing vectors (see, for example,~\\cite{Dixon1979, Harte2014}) is given by $\\varkappa = (1/2, 0, 0, 0)$.",
+        "start": 85514,
+        "end": 85895,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "However, a new transport law, given by $\\varkappa = (-1/4, 0, 0, 0)$\\footnote{It was later argued in Paper~I (see the proof at the end of Sec.~4.1.3 of~\\cite{GrantThesis}) that the more natural choice is $\\varkappa = (-1/4, 1/2, 0, 0)$; the discrepancy is due to the fact that the last three parameters in $\\varkappa$ constrain how the connection depends on the Ricci tensor, and~\\cite{Flanagan2016} was concerned with either the vacuum Kerr spacetime, or with asymptotically flat spacetimes, where the Ricci tensor falls off more rapidly.}, was singled out in~\\cite{Flanagan2016} as being interesting in asymptotically flat spacetimes.",
+        "start": 85896,
+        "end": 86532,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The path-independence of this transport law for this value of $\\varkappa$ implies that the holonomy with respect to this connection is just given by the identity, and so $\\vkappa \\Omega^A{}_B$ vanishes, but \\emph{only} for this value of $\\varkappa$, in these stationary spacetimes.",
+        "start": 87013,
+        "end": 87294,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "However, the results of Paper~I indicate that there is essentially no difference between the holonomies at $O(1/r)$, and so determining the relationship with the results of~\\cite{Flanagan2016} would require an investigation of the holonomy to at least $O(1/r^2)$.",
+        "start": 87295,
+        "end": 87558,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In this sum, if $k = 0$, then the coincidence limit vanishes.",
+        "start": 89997,
+        "end": 90058,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "If $k = 1$, then we have by Synge's rule that",
+        "start": 90059,
+        "end": 90104,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "which involves the $n - 1$ case in the first term, and the same as the left-hand side in the second.",
+        "start": 90356,
+        "end": 90456,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "If $k = n$, then we find the same expression as the left-hand side of Eq.~\\eqref{eqn:synge_derivatives} in the coincidence limit; note that if $n = 1$, this is not a distinct case from the above.",
+        "start": 90457,
+        "end": 90652,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "As such, the general expression for $n \\geq 2$ is given by",
+        "start": 90653,
+        "end": 90711,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In the case $n = 2$, the second term on the right-hand side vanishes as the sum is empty, whereas the first term vanishes because $[\\sigma^a{}_{b'}]_{x' \\to x}$ is a constant.",
+        "start": 91039,
+        "end": 91214,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Because the terms on the right-hand side are recursively given in terms of the $n - 1$ and lower cases, this means that the left-hand side must vanish when $n \\geq 2$ as well, by induction.",
+        "start": 91215,
+        "end": 91404,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "As such, including the cases $n = 0$ [coming from Eq.~\\eqref{eqn:sep_coincidence}] and $n = 1$ [coming from Eq.~\\eqref{eqn:synge_coincidence}], we find Eq.~\\eqref{eqn:symm_synge}.",
+        "start": 91405,
+        "end": 91584,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Upon expanding the left-hand side and symmetrizing over $b_1' \\cdots b_n'$, we therefore find that",
+        "start": 91805,
+        "end": 91903,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Taking a coincidence limit of this expression, by Eq.~\\eqref{eqn:symm_synge}, the only non-zero term in the sum comes from $k = 1$, and that non-zero contribution is given by a symmetrized derivative of the parallel propagator.",
+        "start": 92068,
+        "end": 92295,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Combining this result for $n > 0$ with the fact that $g^a{}_b = \\delta^a{}_b$, we find that Eq.~\\eqref{eqn:symm_parallel} holds.",
+        "start": 92296,
+        "end": 92424,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      }
+    ],
+    "tables": [],
+    "total_items": 277
+  }
+]

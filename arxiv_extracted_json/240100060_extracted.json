@@ -1,0 +1,19 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00060/2401.00060/OBC.tex",
+    "display_formulas": [],
+    "inline_texts": [],
+    "tables": [
+      {
+        "content": "\\begin{tabular}{ |c|c|c|c|c|} \n \\hline\n HST(1991-2021) & ESO(1996-present) & NRAO(1957-present) & Spitzer(2003-2020) Mid and far IR & NSF’s NOIRLab \\\\ \n \\hline\n ApJ 43\\% & A\\&A 46\\% & ApJ 42.13\\% & ApJ 43.4\\% & MNRAS 35\\% \\\\\n \\hline\n MNRAS 19\\% & MNRAS 23\\% & MNRAS 17.68\\% & MNRAS 19.5\\% &ApJ 26\\% \\\\\n \\hline\n A\\&A 14\\% & ApJ 16\\% & A\\&A 17.67\\% & A\\&A 19.0\\% &AJ 14\\% \\\\\n \\hline\n AJ 10\\% & ApJL 5\\% & AJ 8.62\\% & AJ 6.4\\% & A\\&A 10\\% \\\\\n \\hline\n ApJS 2\\% & AJ 4\\% & ApJS 2.65\\% & ApJS 4.1\\% & ApJL 4\\%\\\\\n \\hline\n Icar 2\\% & A\\&ASuppl 1\\% & Nature 1.6\\% & PASJ 1.1\\% & ApJS 4\\% \\\\\n \\hline\n PASP 1\\% & ApJS 1\\% & PASJ 0.94\\% & PASP 0.8\\% & PhRvD 1\\% \\\\\n \\hline\n Nature 1\\% & Nature 1\\% & Science 0.68\\% & Nature and NatAs 1.1\\% & PSJ 1\\% \\\\\n \\hline \n & Icar 1\\% & & Icar 0.6\\% &\\\\\n \\hline\n & AN 1\\% & & AN, Ap\\&SS, Science 0.2\\% each &\\\\\n \\hline\n\\end{tabular}",
+        "start": 91959,
+        "end": 92818,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      }
+    ],
+    "total_items": 1
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00031/2401.00031/main.tex",
+    "display_formulas": [],
+    "inline_texts": [
+      {
+        "content": "Xiaoqian Liu$^1$",
+        "start": 2498,
+        "end": 2514,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Jianbin Jiao$^1$",
+        "start": 2520,
+        "end": 2536,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Junge Zhang $^{1,2}$\\footnote{\\* Corresponding author: Junge Zhang}",
+        "start": 2542,
+        "end": 2609,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$^1$University of Chinese Academy of Sciences\\\\",
+        "start": 2624,
+        "end": 2671,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$^2$Institute of Automation, Chinese Academy of Sciences\\\\",
+        "start": 2672,
+        "end": 2730,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Sequential decision-making refers to the process of making a series of decisions to achieve a goal in continuous time, based on previous actions and observations while considering possible future states and rewards. The process can be formulated as a markov decision process (MDP) $M=<S,A,T,R,\\gamma>$,",
+        "start": 9990,
+        "end": 10292,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $S$ is the state space, $A$ the action space, $T$ the dynamics",
+        "start": 10293,
+        "end": 10361,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "transition function $T:S\\times A\\times S\\to [0,1)$, $R$ the reward",
+        "start": 10362,
+        "end": 10428,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "function $R:S\\times A\\times S\\to \\mathbb{R}$, and $\\gamma \\in [0, 1)$ is a discount",
+        "start": 10429,
+        "end": 10512,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "factor for calculating cumulative rewards. Sometimes the underlying state is not accessible to the agent (e.g, an image-based Atari game), and the process can be modified as a partially observable MDP $M=<S,A,T,R,\\mathcal{O},E>$, where $\\mathcal{O}$",
+        "start": 10513,
+        "end": 10762,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "is the observation space, and $E(o|s)$ denotes the observation emission function. Solutions to sequential decision-making often involve RL \\cite{10.5555/3312046}, which aims to learn an optimal policy $\\pi(a|s)$ that maximizes the expected discounted cumulative rewards $R=\\sum_{k=0}^{\\infty}\\gamma^kr_{k+1}$.",
+        "start": 10763,
+        "end": 11072,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "where $x_t^n$ refers to the n-th modality at the t-th timestep.",
+        "start": 14507,
+        "end": 14570,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Given a sequence of trajectories $\\tau$ collected from agent's interactions with environments, the pretraining phase aims to learn a representation function $g:\\mathbb{T}\\in\\mathbb{R}^n\\rightarrow\\mathbb{Z}\\in\\mathbb{R}^m$",
+        "start": 14571,
+        "end": 14793,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$(m \\ll n)$ to extract useful knowledge from trajectories for downstream adaptation. The knowledge can be temporal information about the same data modality (e.g., $s_t, s_{t+1}$, causal information between different data modalities (e.g., $s_t, a_t$, dynamics information about the environment (e.g., $s_t, a_t, s_{t+1}$, and reward information about the interaction between agents and environments (e.g., $s_t, a_t, r_t$.",
+        "start": 14794,
+        "end": 15220,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "During the adaptation phase, the knowledge learned by the pretrained model can help to optimize a learning objective $f_\\theta(z)$ in downstream decision-making tasks, such as the value function $V(\\pi)$ or $Q(s,a)$, policy function $\\pi(a|s)$, dynamics function $T(s,a,s)$, and reward function $r(s,a)$. Compared to learning these objectives from scratch in traditional RL, using the pretrained model will improve the sample efficiency and generalization. The relationship between pretraining and adaptation is shown in Figure \\ref{fig:pipeline}.",
+        "start": 15222,
+        "end": 15769,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "Random masked hindsight prediction \\cite{sun2023smart} only learns to recover masked action tokens conditioned on unmasked trajectory tokens and the action at the final timestep $T$ to capture global temporal relations for multi-step control.",
+        "start": 26842,
+        "end": 27085,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In contrast, random autoregressive mask prediction \\cite{wu2023masked} only conditions on unmasked trajectory sequence and learns to recover the masked trajectory tokens with a constraint that the last element in the sequence (e.g., $a_T$ must be necessarily masked to force the pretrained model to be causal at inference time.",
+        "start": 27086,
+        "end": 27414,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In pretraining for decision-making, contrastive self-prediction is another effective self-supervised objective, especially in data augmentation strategies for sample efficiency. Different from sequence modeling, contrastive prediction particularly learns state representation by applying a contrastive loss between encoded state (e.g, $\\phi(s_t)$ and target encoded state (e.g, $\\phi_{target}(s_{t+i})$. The parameters of target state encoder is non-trainable and usually defined as an exponential moving average of the weights of $\\phi$ \\cite{stooke2021decoupling,schwarzer2021pretraining,cai2023reprem}.",
+        "start": 27416,
+        "end": 28023,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\textbf{Action prediction}: Predict action based on various trajectory information. For example, reward-conditioned action inference predicts next timestep action using the returns-to-go (RTG) information $R=\\sum_{k=t}^{T}r_{k}$.",
+        "start": 28787,
+        "end": 29016,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Goal-conditioned action inference predicts action using the goal information usually provided in goal reaching tasks. It can be a single-goal reaching task given a future state at the end of trajectory sequence $P_\\theta(a_t|\\tau_{0:t-1},s_t, g_T)$, or a multi-goal reaching task given several goal states at random future timesteps \\cite{liu2022masked}. The multi-goal reaching task can also be seen as a variant of waypoint-conditioned action inference\\cite{carroll2022uni,badrinath2023waypoint} where some subgoals (or waypoints) are specified at particular timesteps $P_\\theta(a_t|\\tau_{0:t-1},s_t, s_{t+i})$.",
+        "start": 29017,
+        "end": 29630,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\textbf{Dynamics prediction}: Predict forward or inverse dynamics based on previous or future trajectory information. Forward dynamcis inference aims to predict future state $s_{t+1}$ (and reward $r_{t+1}$ based on current state $s_t$ and action $a_t$ or previous state-action sequences $(s_{0:t}, a_{0:t}$. This inference process models the environment dynamics and it is not restricted to Markovian dynamics in theory.",
+        "start": 29632,
+        "end": 30053,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "Inverse dynamics inference aims to predict previous action $a_{t-1}$ (or state $s_{t-1}$ based on current state $s_t$ and previous state $s_{t-1}$ (or action $a_{t-1}$. This inference process tries to recover action (or state) sequences that track desired reference state (or action) trajectories.",
+        "start": 30054,
+        "end": 30354,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "$P_\\theta(\\tau_{t:T}|\\tau_{0:t-1})$. Conversely, past inference task predict previous state-action sequences based on future state-action sequences $P_\\theta(\\tau_{0:t-1})|\\tau_{t:T})$.",
+        "start": 30592,
+        "end": 30778,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\cite{cai2023reprem,schwarzer2021pretraining} show that in some cases freezing pretrained weights performs better than entirely fine-tuning; (3) \\textbf{Parameter-efficient fine-tuning (PEFT)}: introduce a limited number of weights to the pretrained model which has seen notable success in fine-tuning large language models, such as LoRA \\cite{hu2021lora}, Prefix Tuning \\cite{li2021prefix}, P-Tuning\\cite{liu-etal-2022-p} and $(IA)^3$ \\cite{liu2022few,boige2023pasta}.",
+        "start": 34574,
+        "end": 35043,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      }
+    ],
+    "tables": [
+      {
+        "content": "\\begin{tabular}{l|c|c}\n    \\toprule\n    Environment & Task & Continuous/Discrete Action\\\\\n     \\hline\n    DMControl \\cite{tassa2018deepmind}& robotic locomotion and manipulation & continuous\\\\\n    Atari \\cite{bellemare2013arcade}  & arcade-style games  & discrete\\\\\n    Gym MuJoCo from D4RL \\cite{fu2020d4rl}& simulated locomotion & continuous\\\\\n    Adroit \\cite{rajeswaran2017learning} & dexterous manipulation & continuous \\\\\n    Maze2D \\cite{fu2020d4rl} & goal-conditioned navigation & continuous\\\\\n    MiniGrid \\cite{chevalier2018minimalistic} & 2D map navigation with hierarchical missions & discrete\\\\\n    MiniWorld \\cite{MinigridMiniworld23} & 3D visual navigation & continuous\\\\ \n    Dark Room \\cite{zintgraf2019varibad} & 2D goal-oriented navigation & discrete\\\\\n    \\bottomrule\n    \\end{tabular}",
+        "start": 17658,
+        "end": 18463,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{l|l|c}\n    \\toprule\n    Objective  & Loss Function  & Base Pattern\\\\\n    \\hline\n    Next action prediction &$-logP_\\theta(a_t|\\tau_{0:t-1},s_t)$ & Next token prediction\\\\\n    Reward-conditioned action prediction & $-logP_\\theta(a_t|\\tau_{0:t-1},s_t, R_t)$&Next token prediction\\\\\n    Future value and reward prediction & $-logP_\\theta(a_t, \\hat{R_t}, r_t|\\tau_{0:t-1},s_t)$&Next token prediction\\\\\n    Future-conditioned action prediction &$-logP_\\theta(a_t|\\tau_{0:t-1},s_t, z)$ &Next token prediction\\\\\n    Forward dynamics prediction  &$-logP_\\theta(s_t|\\tau_{0:t-1})$ &Next token prediction\\\\\n    Inverse dynamics prediction  &$-logP_\\theta(a_t|s_t, s_{t+1})$ & Next token prediction\\\\\n    Multiple proportion random masking &$-logP_\\theta(masked(\\tau)|unmasked(\\tau)$ &Masked token prediction\\\\\n    Reward-conditioned random mask prediction&\n    $-logP_\\theta(masked(\\tau)|unmasked(\\tau), R_0)$ & Masked token prediction\\\\\n    Random masked hindsight prediction  &$-logP_\\theta(masked(a)|unmasked(\\tau), a_T)$ &Masked token prediction\\\\\n    Random autoregressive mask prediction  &$-logP_\\theta(masked(\\tau, a_T)|unmasked(\\tau))$ &Masked\\&Next token prediction\\\\\n    \\bottomrule\n    \\end{tabular}",
+        "start": 21761,
+        "end": 22978,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      }
+    ],
+    "total_items": 26
+  }
+]

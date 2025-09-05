@@ -1,0 +1,8 @@
+.DS_Store
+info.log
+__pycache__/
+
+rendered_images/
+rendered_images_cache/
+
+venv/

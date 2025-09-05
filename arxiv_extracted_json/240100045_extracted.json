@@ -1,0 +1,2792 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00045/2401.00045/IFCA_paper_nobold.tex",
+    "display_formulas": [],
+    "inline_texts": [
+      {
+        "content": "For that purpose, we use $\\sim 35\\,000$ X-ray detected AGN in the 4XMM-DR11 catalogue for which there are available measurements for their X-ray spectral parameters, such as the hydrogen column density, N$_H$, and photon index, $\\Gamma$, from the XMM2Athena Horizon 2020 European project.",
+        "start": 1878,
+        "end": 2167,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "In the first part of our analysis, we use different N$_H$ thresholds (10$^{23}$\\,cm$^{-2}$ or 10$^{22}$\\,cm$^{-2}$, taking also into account the uncertainties associated with the N$_H$ measurements, to classify these sources into obscured and unobscured (or mildly obscured).",
+        "start": 2512,
+        "end": 2789,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "We find that obscured AGN tend to live in more massive systems (by $\\sim 0.",
+        "start": 2789,
+        "end": 2865,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "1$\\,dex) that have lower SFR (by $\\sim 0.",
+        "start": 2865,
+        "end": 2906,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "However, only the difference in stellar mass, M$_*$, appears statistically significant ($>2\\sigma$.",
+        "start": 2958,
+        "end": 3059,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The results do not depend on the N$_H$ threshold used to classify AGN.",
+        "start": 3059,
+        "end": 3130,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The differences in M$_*$ and SFR are not statistically significant for luminous AGN ($\\rm log\\,(L_{X,2-10\\,KeV}/erg\\,s^{-1})> 44$.",
+        "start": 3130,
+        "end": 3262,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Our findings also show that unobscured AGN have, on average, higher specific black hole accretion rates, $\\lambda _{sBHAR}$, compared to their obscured counterparts, a parameter which is often used as a proxy of the Eddington ratio.",
+        "start": 3262,
+        "end": 3495,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "This results in 271 type 1 AGN, at $\\rm z<1.",
+        "start": 3664,
+        "end": 3709,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "Our findings show that type 1 AGN with increased N$_H$ ($>10^{22}$\\,cm$^{-2}$ tend to have higher black hole masses, M$_{BH}$, compared to AGN with lower N$_H$ values, at similar M$_*$.",
+        "start": 3712,
+        "end": 3899,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "The M$_{BH}$/M$_*$ ratio remains consistent for N$_H$ values below 10$^{22}$\\,cm$^{-2}$, but it exhibits signs of an increase at higher N$_H$ values.",
+        "start": 3899,
+        "end": 4049,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "Finally, we detect a correlation between $\\Gamma$ and Eddington ratio, but only for type 1 sources with N$_H<10^{22}$\\,cm$^{-2}$.",
+        "start": 4049,
+        "end": 4179,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "For instance, strong correlations have been found between the mass of the SMBH, M$_{BH}$, and various galaxy properties, such as the bulge or stellar mass, M$_*$, and the stellar velocity dispersion of galaxies \\citep[e.",
+        "start": 4509,
+        "end": 4730,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Moreover, both the AGN activity and the star formation are fed by the same material (cold gas) and peak at similar cosmic times \\citep[$\\rm z\\sim 2$;",
+        "start": 4779,
+        "end": 4929,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "When the classification is based on X-ray criteria, though, for instance on the value of the hydrogen column density, N$_H$, some studies have not observed significant differences in the host galaxy properties of obscured and unobscured AGN \\citep[e.",
+        "start": 8827,
+        "end": 9078,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": ",][]{Masoura2021, Mountrichas2021c}, while other studies found an increase of M$_*$ with N$_H$ \\citep{Lanzuisi2017}.",
+        "start": 9080,
+        "end": 9196,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Differences regarding both the M$_*$ and the stellar populations of the two AGN classes have also been reported \\citep{Georgantopoulos2023}.",
+        "start": 9196,
+        "end": 9337,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Another important aspect that can shed light on the structure of AGN is the study of the possible correlation between the X-ray spectral index, $\\Gamma$, and the Eddington ratio, n$_{Edd}$.",
+        "start": 9339,
+        "end": 9528,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "n$_{Edd}$ is defined as the ratio of the AGN bolometric luminosity, L$_{bol}$, and the Eddington luminosity, L$_{Edd}$ (L$_{Edd}=1.",
+        "start": 9528,
+        "end": 9660,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "26 \\times 10^{38}\\rm M_{BH}/M_\\odot\\,erg\\,s^{-1}$, where M$_{BH}$ is the mass of the SMBH).",
+        "start": 9660,
+        "end": 9751,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The relation between $\\Gamma$ and n$_{Edd}$ has been interpreted as the link between the accretion efficiency in the accretion disk and the physical status of the corona.",
+        "start": 9751,
+        "end": 9922,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Due to the larger amount of optical and UV photons produced by the accretion disc, the X-ray emitting plasma is more efficiently cooled at higher n$_{Edd}$ \\citep[e.",
+        "start": 9922,
+        "end": 10088,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Alternatively, a correlation between $\\Gamma$ and n$_{Edd}$ could be explained by the significant dependence of the cut-off energy on the n$_{Edd}$ \\citep[for more details see][]{Ricci2018}.",
+        "start": 10121,
+        "end": 10312,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Apart from the physical interpretation of a possible correlation between $\\Gamma$ and n$_{Edd}$, it is still not clear whether such a correlation is robust or universal, since relevant studies have found conflicting results \\citep[e.",
+        "start": 10312,
+        "end": 10546,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We then cross-match the X-ray dataset with the \\cite{Wu2022} catalogue that provides calculations for SMBH properties, such as M$_{BH}$ and L$_{bol}$, for SDSS quasars.",
+        "start": 11492,
+        "end": 11661,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "A $\\chi ^2$ test is used to estimate the goodness of fit of the background spectra.",
+        "start": 16841,
+        "end": 16925,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$\\rm p-values$ were then obtained based on the $\\chi ^2$ values and the number of effective parameters.",
+        "start": 16925,
+        "end": 17029,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$\\rm logf_X \\in -17, -7 \\,(erg/s/cm^2), \\Gamma \\in 0, 6, log\\,NH \\in 20, 26\\,(cm^{-2}), and\\, IIN\\,(normalisation) \\in 0, 5$, where $\\rm f_X$ and IIN are the X-ray flux and the inter-instrument normalization (in the case of PN and MOS detections), respectively.",
+        "start": 17371,
+        "end": 17633,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "To quantify the goodness of fit, a $\\rm p-value$ is provided in the catalogue.",
+        "start": 17633,
+        "end": 17712,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The parameters used in our analysis are the mode values of N$_H$, $\\Gamma$ and the fluxes (calculated in the 2-10\\,keV energy band).",
+        "start": 17993,
+        "end": 18126,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Using these estimated parameters, the X-ray luminosities, L$_X$, are calculated after correcting for the fitted intrinsic absorption.",
+        "start": 18126,
+        "end": 18260,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The quasars span a range of $\\rm 0.",
+        "start": 19075,
+        "end": 19111,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "1\\leq z\\leq 6$ and $\\rm 44\\leq log\\,(L_{bol}/erg\\,s^{-1})\\leq 48$.",
+        "start": 19111,
+        "end": 19178,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "L$_{bol}$ were calculated using the measured continuum luminosity at rest-frame wavelengths of 5100\\,\\AA, 3000\\,\\AA\\,and 1350\\,\\AA, depending on the redshift of the source \\citep[for more details see Sect.",
+        "start": 19178,
+        "end": 19384,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The catalogue also includes single-epoch virial M$_{BH}$.",
+        "start": 19403,
+        "end": 19461,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "M$_{BH}$ have been calculated adopting the fiducial recipes on H\\,$\\beta$ (for sources with $\\rm z<0.",
+        "start": 19461,
+        "end": 19563,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "7$ or the Mg~{\\sc ii} (for sources with $\\rm 0.",
+        "start": 19563,
+        "end": 19611,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "These M$_{BH}$ and L$_{bol}$ were used to calculate the n$_{Edd}$.",
+        "start": 19685,
+        "end": 19752,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "For the calculation of the SFR and M$_*$ of the AGN host galaxies, we applied spectral energy distribution (SED) fitting, using the CIGALE algorithm \\citep{Boquien2019, Yang2020, Yang2022}. CIGALE allows the inclusion of the X-ray flux in the fitting process and has the ability to account for the extinction of the UV and optical emission in the poles of AGN \\citep{Yang2020, Mountrichas2021a, Mountrichas2021b, Buat2021}.",
+        "start": 22863,
+        "end": 23286,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In brief, the galaxy component was modelled using a delayed SFH model with a function form $\\rm SFR\\propto t \\times exp(-t/\\tau)$.",
+        "start": 23488,
+        "end": 23619,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In the SED fitting process, the intrinsic L$_X$ in the $2-10$\\,keV band were used.",
+        "start": 24291,
+        "end": 24374,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "From the 35\\,538 AGN available in our catalogue, we used those with $\\rm flag=0$, provided by the catalogue produced by the XMM2Athena.",
+        "start": 24541,
+        "end": 24676,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In brief, sources with $\\rm flag=0$ have background and source fits with a $\\rm p-value>0.",
+        "start": 24761,
+        "end": 24853,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$(u), g, r, i, z, (y), J, H, K$, W1, W2, and W4 \\citep[e.",
+        "start": 25204,
+        "end": 25262,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For that purpose, we considered only sources for which the reduced $\\chi ^2$, $\\chi ^2_r<5$.",
+        "start": 25745,
+        "end": 25838,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "This requirement is met by $78\\%$ of the sources.",
+        "start": 26036,
+        "end": 26086,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Specifically, in our analysis, we only consider sources with $\\rm \\frac{1}{5}\\leq \\frac{SFR_{best}}{SFR_{bayes}} \\leq 5$ and $\\rm \\frac{1}{5}\\leq \\frac{M_{*, best}}{M_{*, bayes}} \\leq 5$, where SFR$\\rm _{best}$ and M$\\rm _{*, best}$ are the best-fit values of SFR and M$_*$, respectively, and SFR$\\rm _{bayes}$ and M$\\rm _{*, bayes}$ are the Bayesian values estimated by CIGALE.",
+        "start": 26459,
+        "end": 26838,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "The SFR and M$_*$ criteria are met by $88\\%$ and $97\\%$ of the sources.",
+        "start": 26838,
+        "end": 26910,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Previous studies have employed these ranges for the selection of reliable SFR and M$_*$ estimations, leveraging the CIGALE code \\citep[e.",
+        "start": 26910,
+        "end": 27048,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\cite{Mountrichas2021c}, explored variations in the range, considering $0.",
+        "start": 27222,
+        "end": 27297,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "33$ for the lower limit and $3-10$ for the upper limit.",
+        "start": 27301,
+        "end": 27356,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We also restrict the sample used in our analysis to sources with $\\rm z<1.",
+        "start": 27776,
+        "end": 27850,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "Our dataset does not include obscured sources at higher redshifts and M$_{BH}$ measurements available in the \\cite{Wu2022} catalogue are not reliable at $\\rm z>1.",
+        "start": 27876,
+        "end": 28039,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": ", M$_{BH}$ calculated using the C~{\\sc iv} broad-line are considered less reliable).",
+        "start": 28047,
+        "end": 28131,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "There are 1\\,443 X-ray AGN that fulfil these criteria. Out of these sources 1\\,231 lie at $\\rm z<0.7$ and 212 at $\\rm 0.7\\leq z<1.9$. This sample is used in the analysis presented in sections \\ref{sec_host_analysis} and \\ref{sec_smbh_analysis}. From the 1\\,443 AGN, 344 are also included in the \\cite{Wu2022} catalogue. Out of them, 271 are at $\\rm z<1.9$. These 271 AGN are used in our analysis presented in Sect. \\ref{sec_mbh_analysis}.",
+        "start": 29012,
+        "end": 29451,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\caption{Distribution of the 1\\,443 X-ray AGN in the L$_X-$redshift plane.}",
+        "start": 29700,
+        "end": 29777,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In this section, we compare the properties of host galaxies (SFR, M$_*$ and SMBHs (n$_{Edd}$ of X-ray obscured and unobscured AGN. We also study the L$_{bol}-$M$_{BH}$ and M$_{BH}-$M$_*$ relations as a function of X-ray obscuration (N$_H$. Finally, we investigate the relation between the powerlaw slope ($\\Gamma$ of the X-ray spectral model with n$_{Edd}$.",
+        "start": 29877,
+        "end": 30239,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 9
+        }
+      },
+      {
+        "content": "\\caption{Host galaxy properties of X-ray obscured (red, dashed line histograms) and unobscured AGN (blue shaded histograms). Sources are classified as obscured, when the lower limit of their N$_H$ value is higher than $10^{23}$\\,cm$^{-2}$. We classify AGN as unobscured if the upper limit of their N$_H$ value is below $10^{23}$\\,cm$^{-2}$. The top panel presents the SFR distributions of the two AGN populations. The bottom panel shows their M$_*$ distributions. The number of sources and the $\\rm p-values$ obtained by applying a KS test, are shown in the legend of the plots. Distributions are weighted based on the redshift and L$_X$ of the sources.}",
+        "start": 30419,
+        "end": 31077,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 9
+        }
+      },
+      {
+        "content": "\\caption{Similar as in Fig. \\ref{fig_sfrmstar_23}, but using a limit of N$_H=10^{22}$\\,cm$^{-2}$, to classify AGN (taking into account the errors of the N$_H$ measurements).}",
+        "start": 31295,
+        "end": 31472,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\caption{$\\lambda _{sBHAR}$ distributions for obscured and unobscured AGN. The top panel presents the distributions using an N$_H$ threshold of 10$^{23}$\\,cm$^{-2}$ for the source classification. The bottom panel presents the results using N$_H=$10$^{22}$\\,cm$^{-2}$ to characterize sources. In both cases, the errors of the N$_H$ measurements have been taken into account (see text for more details). Distributions are also weighted based on the redshift and L$_X$ of the sources.}",
+        "start": 31694,
+        "end": 32179,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 9
+        }
+      },
+      {
+        "content": "Their distribution in the L$_X-$redshift plane is presented in Fig.",
+        "start": 32437,
+        "end": 32505,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "First, we split the sources into X-ray obscured and unobscured (or mildly obscured) AGN, using a N$_H$ limit of 10$\\rm ^{23}cm^{-2}$.",
+        "start": 32530,
+        "end": 32664,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Specifically, we used the lower and upper limits of the 90\\% confidence interval on the N$_H$ mode from the spectral fitting analysis.",
+        "start": 32664,
+        "end": 32799,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "An AGN was classified as obscured when the lower limit of their N$_H$ value is higher than $10^{23}$\\,cm$^{-2}$.",
+        "start": 32799,
+        "end": 32912,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Similarly, an AGN was identified as unobscured (or moderately obscured), if the upper limit of its N$_H$ value is lower than $10^{23}$\\,cm$^{-2}$.",
+        "start": 32912,
+        "end": 33059,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Then, we compared the SFR and M$_*$ of the host galaxies of the two AGN populations.",
+        "start": 33128,
+        "end": 33213,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Firstly, it relies on recent research findings \\citep{Georgantopoulos2023}, which highlight that distinctions in the properties of SMBHs and their host galaxies between obscured and unobscured AGN tend to diminish when the N$_H$ value falls below the threshold of N$_H<23$\\,cm$^{-2}$.",
+        "start": 33277,
+        "end": 33562,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Secondly, by taking into account the uncertainties associated with N$_H$, the classification ensures that only firmly obscured and unobscured sources are categorised as such, enhancing the reliability of the classification process.",
+        "start": 33562,
+        "end": 33794,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We have restricted both datasets to $\\rm z<0.",
+        "start": 33853,
+        "end": 33899,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "This is because there are no AGN classified as obscured using the criteria described above, at $\\rm z>0.",
+        "start": 33902,
+        "end": 34007,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "We also note, that the distributions have been weighted to account for the different L$_X$ and redshift of obscured and unobscured AGN.",
+        "start": 34025,
+        "end": 34162,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For that purpose, each source was assigned a weight, based on its L$_X$ and redshift, following the procedure described in e.",
+        "start": 34162,
+        "end": 34288,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Specifically, the weight was calculated by measuring the joint L$_X$ distributions of the two populations (i.",
+        "start": 34391,
+        "end": 34501,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": ", we add the number of obscured and unosbcured AGN in each L$_X$ bin, in bins of 0.",
+        "start": 34503,
+        "end": 34586,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "1\\,dex) and then normalise the L$_X$ distributions by the total number of sources in each bin.",
+        "start": 34586,
+        "end": 34680,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Fig. \\ref{fig_sfrmstar_23}, shows the distributions of unobscured (blue shaded histograms) and obscured AGN (red, dashed line histograms). The top panel presents the SFR distributions of the two AGN classes. The (weighted) median $\\rm log\\,SFR$ of the unobscured and obscured AGN is 0.82 and 0.57 respectively (Table \\ref{table_numbers}). Applying a Kolmogorov-Smirnov (KS) test yields a $\\rm p-value$ of 0.10 (also shown in the legend of the plot). Similar $\\rm p-values$ are obtained, applying a Mann-Whitney (MW, $\\rm p-value=0.14$ and Kuiper ($\\rm p-value=0.32$ tests. Therefore, the difference of $0.25$\\,dex does not appear statistically significant (two distributions differ with a statistical significance of $\\sim 2\\sigma$ for a $\\rm p-value$ of 0.05).",
+        "start": 35055,
+        "end": 35819,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 8
+        }
+      },
+      {
+        "content": "\\ref{fig_sfrmstar_23}, shows the M$_*$ distributions of obscured (blue, shaded histogram) and unobscured (red, dashed line) AGN.",
+        "start": 35845,
+        "end": 35974,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The weighted median of the $\\rm log\\,M_*$ is 10.",
+        "start": 35974,
+        "end": 36023,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Specifically, the $\\rm p-value$ derived from a KS-test is 0.",
+        "start": 36188,
+        "end": 36249,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Similar $\\rm p-values$ are also obtained by applying MW- and Kuiper tests ($<0.",
+        "start": 36252,
+        "end": 36333,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The (weighted) 95\\% confidence intervals (CI) are $10.",
+        "start": 36459,
+        "end": 36514,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "30$ and $10.",
+        "start": 36520,
+        "end": 36532,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "However, only the M$_*$ difference appears to be statistically significant.",
+        "start": 36750,
+        "end": 36826,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Furthermore, we explored whether our outcomes are influenced by potential redshift evolution within the $\\rm z<0.7$ redshift range encompassed by our dataset. For that purpose, we split the AGN sample into two redshift bins, using the median value of the $\\rm z<0.7$ dataset (i.e., at $\\rm z=0.21$. The results do not appear redshift dependent, since similar trends and $\\rm p-values$ were obtained. Additionally, we examined whether our findings might be sensitive to uncertainties associated with photometric redshift estimates. To address this concern, we narrowed down our analysis to include only sources with spectroscopic redshifts. We obtained similar results in this restricted subset.",
+        "start": 36829,
+        "end": 37525,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Most previous studies that examined the host galaxy properties of X-ray obscured and unobscured AGN did not find (significant) differences for the SFR and M$_*$ of the hosts of the two AGN populations.",
+        "start": 37528,
+        "end": 37729,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Specifically, \\cite{Masoura2021} and \\cite{Mountrichas2021c} studied the SFR and M$_*$ of X-ray obscured and unobscured AGN at $\\rm 0<z<3.",
+        "start": 37729,
+        "end": 37868,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "5$, using data from the XMM-XXL and the Bo$\\ddot{o}$tes fields, respectively, and concluded that both AGN classes live in galaxies with similar properties \\citep[see also][]{Merloni2014}.",
+        "start": 37868,
+        "end": 38055,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We note that the aforementioned studies did not account for the uncertainties of the N$_H$ values and applied a lower N$_H$ threshold ($\\rm N_H = 10 ^{21.",
+        "start": 38055,
+        "end": 38211,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "However, \\cite{Lanzuisi2017} studied AGN, at $\\rm 0.",
+        "start": 38245,
+        "end": 38298,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "1<z<4$, in the COSMOS field and found that the average N$_H$ shows a clear positive correlation with M$_*$, but not with SFR.",
+        "start": 38298,
+        "end": 38423,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": ", optical spectra) to classify the AGN into type 1 and 2 found that the two AGN types live in galaxies with similar SFR, but type 2 sources tend to reside in more massive systems by $\\sim 0.",
+        "start": 38464,
+        "end": 38654,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "More recently, \\cite{Georgantopoulos2023} compared the stellar populations and M$_*$, among others, of X-ray obscured and unobscured AGN host galaxies in the COSMOS field at $\\rm z\\sim 1$, using $\\rm N_H = 10 ^{23}cm^{-2}$, to classify their sources.",
+        "start": 38768,
+        "end": 39018,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Their analysis showed that the distribution of M$_*$ of obscured AGN is skewed to higher M$_*$ compared to unobscured AGN.",
+        "start": 39018,
+        "end": 39141,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Specifically, they found that heavily obscured AGN live in galaxies that have higher M$_*$ by 0.",
+        "start": 39141,
+        "end": 39238,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Although the difference was small it was statistically significant ($\\rm p-value=1.",
+        "start": 39277,
+        "end": 39361,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "\\cite{Georgantopoulos2023} suggested that a possible cause for the discrepant results among previous studies could be the different N$_H$ thresholds used.",
+        "start": 40030,
+        "end": 40184,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Indeed, when they lowered the N$_H$ value used to classify their AGN, the statistical significance of the differences detected in the host galaxy properties of the two AGN classes was lower (see their Fig.",
+        "start": 40184,
+        "end": 40390,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To verify this hypothesis, we lowered the N$_H$ threshold utilised for our AGN classification to $\\rm N_H = 10 ^{22}cm^{-2}$, using the lower and upper limits of N$_H$ specified at the outset of this section, and repeated the analysis.",
+        "start": 40395,
+        "end": 40631,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "However, among these differences, only the variation in M$_*$ demonstrates statistical significance.",
+        "start": 40939,
+        "end": 41040,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The (weighted) 95\\% confidence intervals are $11.",
+        "start": 41181,
+        "end": 41231,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "40$ for the obscured AGN and $11.",
+        "start": 41237,
+        "end": 41270,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "Nonetheless, if we ignore the errors of the N$_H$ measurements, effectively classifying AGN based solely on their N$_H$ values without considering the limits of the measurements and we implement a threshold at $\\rm N_H = 10 ^{22}cm^{-2}$, similar to what most prior studies have used for AGN classification, we uncover a marginally statistically significant different in the M$_*$ distributions of the two AGN types ($\\rm p-value=0.",
+        "start": 41303,
+        "end": 41736,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "For instance, AGN in the Bo$\\ddot{o}$tes and XXM-XXL fields \\citep{Masoura2021, Mountrichas2021c} probe higher luminosities compared to those probed by sources in the COSMOS field \\citep{Lanzuisi2017, Georgantopoulos2023}.",
+        "start": 42069,
+        "end": 42292,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": ",][]{Zou2019} that, mainly, probe low to intermediate L$_X$ AGN, or they have restricted their analysis to low luminosity systems at low redshift \\citep[e.",
+        "start": 42481,
+        "end": 42636,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To examine this hypothesis, we restricted our X-ray dataset to luminous sources, by applying a luminosity cut at $\\rm log\\,[L_{X}(ergs^{-1})>44]$ (at $\\rm z<0.",
+        "start": 42661,
+        "end": 42821,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "7$ and we classified AGN using an N$_H$ value of $10^{22}$ (using the lower and upper limits of N$_H$ and repeated the analysis.",
+        "start": 42821,
+        "end": 42952,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "However, none of these differences appears statistically significant ($\\rm p-value= 0.",
+        "start": 43230,
+        "end": 43317,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "17, for the SFR and M$_*$, respectively).",
+        "start": 43327,
+        "end": 43368,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The difference with the highest statistical significance reported by \\cite{Georgantopoulos2023} was that between the n$_{Edd}$ of obscured and unobscured sources (see e.",
+        "start": 44501,
+        "end": 44670,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For the dataset used in this part of our analysis, we do not have available M$_{BH}$ and therefore n$_{Edd}$ measurements for our sources.",
+        "start": 44760,
+        "end": 44899,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\ref{sec_data}) in which there are available n$_{Edd}$ measurements, would constrain our dataset to only broad line sources and exclude narrow line AGN.",
+        "start": 44969,
+        "end": 45122,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In the next section, we examine whether n$_{Edd}$ depends on N$_H$ (for broad line AGN).",
+        "start": 45122,
+        "end": 45211,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Here, to include both broad and narrow line sources in our investigation, in place of n$_{Edd}$, we examined the specific black hole accretion rate, $\\lambda _{sBHAR}$ of obscured and unobscured AGN.",
+        "start": 45211,
+        "end": 45411,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$\\lambda _{sBHAR}$ is the rate of the accretion onto the SMBH relative to the M$_*$ of the host galaxy.",
+        "start": 45411,
+        "end": 45515,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "It is often used as a proxy of n$_{Edd}$, in particular when M$_{BH}$ measurements are not available \\citep[e.",
+        "start": 45515,
+        "end": 45626,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "For the calculation of $\\lambda _{sBHAR}$ the following expression was used \\citep[e.",
+        "start": 45692,
+        "end": 45778,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where $\\rm k_{bol}$ is a bolometric correction factor, that converts the X-ray luminosity to AGN bolometric luminosity. We adopted the value of $\\rm k_{bol}=25$ \\citep[e.g.,][]{Georgakakis2017, Aird2018, Mountrichas2021c, Mountrichas2022a}.",
+        "start": 45968,
+        "end": 46209,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\ref{fig_lambda} presents the $\\lambda _{sBHAR}$ distributions of obscured and unobscured AGN, using different N$_H$ thresholds to classify sources, as indicated on top of each panel (taking into account the errors on the N$_H$ measurements).",
+        "start": 46215,
+        "end": 46458,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "All distributions are weighted based on the L$_X$ and redshift of the sources.",
+        "start": 46458,
+        "end": 46537,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Table \\ref{table_numbers} presents the (weighted) median $\\rm log$\\,$\\lambda _{sBHAR}$ of the obscured and unobscured AGN, for N$_H=10^{23}$cm$^{-2}$ and N$_H=10^{22}$cm$^{-2}$.",
+        "start": 46537,
+        "end": 46715,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "A difference of $\\sim 0.",
+        "start": 46715,
+        "end": 46740,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "2$\\,dex is found in the $\\lambda _{sBHAR}$ values of the two populations.",
+        "start": 46744,
+        "end": 46817,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Specifically, obscured sources tend to have, on average, lower $\\lambda _{sBHAR}$ compared to unobscured sources.",
+        "start": 46817,
+        "end": 46931,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Based on the $\\rm p-values$ derived using a KS-test, this different has a high statistical significance, regardless of the N$_H$ limit used.",
+        "start": 46931,
+        "end": 47073,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Similar $\\rm p-values$ are found applying MW and Kuiper tests.",
+        "start": 47073,
+        "end": 47136,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Our results are in agreement with those reported in \\cite{Georgantopoulos2023}. We note that the difference we found appears smaller compared to that presented in the aforementioned study ($\\sim 0.3$\\,dex). As we have already pointed out, in our analysis we have used more strict criteria for the classification of AGN as obscured and unobscured compared to those used in \\cite{Georgantopoulos2023}. Moreover, in \\cite{Georgantopoulos2023}, for the calculation of n$_{Edd}$ they have applied the same bolometric correction on L$_X$ to infer L$_{bol}$, as in this study. However, they have used M$_{BH}$ measurements derived by stellar velocity dispersions, $\\sigma$, that is they have utilised a different scaling relation compared to our work.",
+        "start": 47333,
+        "end": 48077,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "We conclude that obscured AGN tend to live in more massive systems compared to unobscured, at $\\rm z<0.",
+        "start": 48082,
+        "end": 48185,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "The difference in M$_*$ is small ($\\approx 0.",
+        "start": 48188,
+        "end": 48234,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Obscured sources also live in hosts that have lower SFR, by $\\approx 0.",
+        "start": 48282,
+        "end": 48355,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "25$\\,dex, than unobscured, however, this difference is not statistically significant ($< 2\\,\\sigma$.",
+        "start": 48355,
+        "end": 48456,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Moreover, neither of these differences appears to be statistically significant for luminous AGN ($\\rm log\\,[L_{X}(ergs^{-1})>44]$ and/or when less strict criteria are used for the source classification (i.",
+        "start": 48456,
+        "end": 48662,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": ", errors on N$_H$ are ignored).",
+        "start": 48664,
+        "end": 48695,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Based on our analysis, the difference between the two AGN populations, with the highest statistical significance is that regarding the $\\lambda _{sBHAR}$, that is a proxy of the n$_{Edd}$.",
+        "start": 48695,
+        "end": 48884,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\caption{X-ray luminosity, L$_X$, as a function of redshift. AGN with $\\rm log\\,N_H >10^{22}\\,cm^{-2}$ are marked in red circles, whereas sources with $\\rm log\\,N_H <10^{22}\\,cm^{-2}$ are marked in blue triangles.}",
+        "start": 48997,
+        "end": 49213,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\caption{Stellar mass, M$_*$, as a function of redshift. AGN with $\\rm log\\,N_H >10^{22}\\,cm^{-2}$ are marked in red circles, whereas sources with $\\rm N_H <10^{22}\\,cm^{-2}$ are marked in blue triangles.}",
+        "start": 49366,
+        "end": 49573,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\caption{Black hole mass, M$_{BH}$, as a function of redshift. AGN with $\\rm log\\,N_H >10^{22}\\,cm^{-2}$ are marked in red circles, whereas sources with $\\rm N_H <10^{22}\\,cm^{-2}$ are marked in blue triangles.}",
+        "start": 49727,
+        "end": 49940,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "In the second part of our analysis, we examined the relations among L$_{bol}$, M$_{BH}$ and M$_*$, as a function of the X-ray obscuration (N$_H$.",
+        "start": 50116,
+        "end": 50262,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "We also investigated the correlation between the powerlaw slope, $\\Gamma$, of the spectral model with the n$_{Edd}$.",
+        "start": 50262,
+        "end": 50379,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Here and in the following (sub-) sections, we characterise as AGN with high N$_H$ those sources with $\\rm log\\,N_H \\geq 10 ^{22}cm^{-2}$, using the mode value of N$_H$ that is available in our catalogue (i.",
+        "start": 50533,
+        "end": 50740,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": ", without using the lower and upper limits of N$_H$.",
+        "start": 50742,
+        "end": 50795,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "There are 23 AGN with high N$_H$ values and 248 AGN with low N$_H$ values, in our dataset.",
+        "start": 50795,
+        "end": 50886,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Furthermore, we note that characterising an AGN with high N$_H$ based on requiring the lower limit of N$_H$ to be higher than $\\rm 10^{23}\\,cm^{-2}$ ($\\rm 10^{22}\\,cm^{-2}$ would result in 0 (7) sources.",
+        "start": 50985,
+        "end": 51190,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Fig. \\ref{fig_lx_redz}-\\ref{fig_mbh_redz}, present the distributions of L$_X$, M$_*$ and M$_{BH}$ as a function of redshift, respectively, for the 271 X-ray AGN. All three properties increase with redshift, regardless of the $\\rm N_H$ value of the source. Spearman correlation analysis reveals that there is significant correlation between L$_X$, M$_*$ and M$_{BH}$ with redshift, albeit these correlations appear higher in the case of sources with $\\rm N_H < 10^{22}\\,cm^{-2}$ (Table \\ref{table_spearmann_basic}). We note that in this part of our analysis, only broad-line (type 1) sources are included (see Sect. \\ref{sec_data}).",
+        "start": 51193,
+        "end": 51825,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 8
+        }
+      },
+      {
+        "content": "\\caption{L$_{bol}$ as a function of M$_{BH}$. Different symbols correspond to different redshift intervals, as indicated in the legend. The lines correspond to L$_{bol}=$L$_{Edd}$ (black, dashed line), L$_{bol}=0.1$\\,L$_{Edd}$ (green, black line) and L$_{bol}=0.01\\,$L$_{Edd}$ (red, dotted line). Measurements are colour-coded based on the N$_H$ of each source.}",
+        "start": 52557,
+        "end": 52921,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 9
+        }
+      },
+      {
+        "content": "\\subsubsection{L$_{bol}$ vs. $M_{BH}$}",
+        "start": 52960,
+        "end": 52998,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\ref{fig_lbol_mbh}, we plot the L$_{bol}$ as a function of M$_{BH}$.",
+        "start": 53007,
+        "end": 53076,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We chose to plot the L$_{bol}$ measurements that are available in the \\cite{Wu2022} catalogue.",
+        "start": 53076,
+        "end": 53171,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We note, though, that their L$_{bol}$ calculations are in excellent agreement with the L$_{bol}$ measurements from CIGALE.",
+        "start": 53171,
+        "end": 53294,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The lines correspond to L$_{bol}=$\\,L$_{Edd}$ (black, long-dashed line), L$_{bol}=0.",
+        "start": 53459,
+        "end": 53544,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "1$\\,L$_{Edd}$ (green, solid line) and L$_{bol}=0.",
+        "start": 53544,
+        "end": 53593,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "01\\,$L$_{Edd}$ (red, dotted line).",
+        "start": 53593,
+        "end": 53627,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "01 to 1, with a median value of n$_{Edd}=0.",
+        "start": 53691,
+        "end": 53734,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "The median value of n$_{Edd}$ is 0.",
+        "start": 53951,
+        "end": 53987,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "24, at $\\rm z<0.",
+        "start": 53996,
+        "end": 54012,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "7$ and $\\rm 0.",
+        "start": 54012,
+        "end": 54026,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "\\ref{fig_lbol_mbh} are colour coded based on the N$_H$ of the sources.",
+        "start": 54086,
+        "end": 54157,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Although the AGN sample used in this part of our analysis consists of type 1 sources, there are a few AGN that present low levels of X-ray obscuration (N$\\rm _H\\sim 10^{22}\\,cm^{-2}$.",
+        "start": 54157,
+        "end": 54343,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Regarding the n$_{Edd}$ values of X-ray sources with high and low N$_H$ values, we do not find a difference for the two AGN populations.",
+        "start": 54602,
+        "end": 54739,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Specifically, the median values are n$_{Edd}=0.",
+        "start": 54739,
+        "end": 54787,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "15 for AGN with N$\\rm _H> 10^{22}\\,cm^{-2}$ and AGN with N$\\rm _H< 10^{22}\\,cm^{-2}$, respectively.",
+        "start": 54797,
+        "end": 54896,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "A KS-test yields a $\\rm p-value$ of 0.",
+        "start": 54896,
+        "end": 54935,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "83 for the n$_{Edd}$ distributions of the two AGN classes.",
+        "start": 54935,
+        "end": 54993,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{M$_{BH}$ as a function of M$_*$. Different symbols correspond to different redshift bins, as indicated in the legend. The $\\rm p-values$ obtained by applying a Spearman correlation analysis, for the full redshift range ($\\rm z<1.9)$, as well as, at low redshift ($\\rm z<0.7$ and high redshift ($\\rm 0.7<z<1.9$ are also shown. Measurements are colour-coded based on the N$_H$ of each source.}",
+        "start": 55101,
+        "end": 55506,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "\\caption{M$_{BH}$ as a function of M$_*$, for sources with $\\rm log\\,N_H>10^{22}\\,cm^{-2}$ (red circles) and sources with $\\rm log\\,N_H<10^{22}\\,cm^{-2}$ (blue triangles). Different lines represent the best fits of the different subsets, as indicated in the legend.}",
+        "start": 55646,
+        "end": 55914,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "\\caption{M$_{BH}-$M$_*$ ratio. The top panel presents the M$_{BH}-$M$_*$ ratio as a function of redshift and the bottom panel shows the distributions of the M$_{BH}-$M$_*$ ratio, at different redshift intervals.}",
+        "start": 56126,
+        "end": 56340,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "\\caption{M$_{BH}$/M$_*$ ratio as a function of N$_H$.}",
+        "start": 56556,
+        "end": 56612,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\subsubsection{$M_{BH}$ versus M$_*$}",
+        "start": 56661,
+        "end": 56698,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Next, we examined the correlation between $M_{BH}$ and M$_*$.",
+        "start": 56700,
+        "end": 56762,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Applying a Spearman correlation analysis, yields a $\\rm p-value$ of $3.",
+        "start": 56879,
+        "end": 56951,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "A similar value was found using Kendall correlation analysis ($\\rm p-value=8.",
+        "start": 56969,
+        "end": 57047,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "Strong correlations between $M_{BH}$ and M$_*$ were also found when we split the dataset into two redshift intervals.",
+        "start": 57066,
+        "end": 57184,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The $\\rm p-values$ are shown in the legend of Fig.",
+        "start": 57184,
+        "end": 57236,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "This can be attributed to the narrower range of M$_{BH}$ and M$_*$ probed by the sources within distinct redshift intervals compared to the sources encompassing the entire redshift range (see Figures \\ref{fig_mstar_redz} and \\ref{fig_mbh_redz}).",
+        "start": 57372,
+        "end": 57618,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "To validate this conjecture, we employed the AGN dataset spanning the complete redshift range ($\\rm z\\leq 1.",
+        "start": 57618,
+        "end": 57728,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "9$, restricted the (log of) M$_*$ and M$_{BH}$ ranges within $11.",
+        "start": 57728,
+        "end": 57794,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "0$ and $8.",
+        "start": 57799,
+        "end": 57809,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "5-10$, respectively (resembling the intervals embraced by AGN residing within $\\rm 0.",
+        "start": 57809,
+        "end": 57894,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "This procedure resulted in a $\\rm p-value$ of 0.",
+        "start": 57961,
+        "end": 58010,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Similarly, we obtained a $\\rm p-value$ of $6\\times 10^{-4}$ by limiting the M$_*$ and M$_{BH}$ ranges to $10.",
+        "start": 58014,
+        "end": 58124,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "5$ and $7.",
+        "start": 58129,
+        "end": 58139,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "5$ (akin to the intervals pertinent to AGN existing within $\\rm z<0.",
+        "start": 58143,
+        "end": 58211,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "Prompted by the results of \\cite{Sarria2010}, who examined three X-ray AGN at $\\rm z=1-2$, with N$\\rm _H=10^{22.",
+        "start": 58218,
+        "end": 58330,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "0}\\,cm^{-2}$ and observed that they were consistent with the local M$_{BH}-$M$_*$ relation, we colour coded the symbols in Fig.",
+        "start": 58335,
+        "end": 58462,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\ref{fig_mbh_mstar} based on the N$_H$ values of the sources.",
+        "start": 58462,
+        "end": 58524,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We noticed that sources with increased N$_H$ have higher M$_{BH}$ for similar M$_*$ compared to sources with lower N$_H$.",
+        "start": 58524,
+        "end": 58646,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "\\ref{fig_mbh_mstar_nh}, where we marked differently AGN with N$_H$ values above and below $10^{22}$\\,cm$^{-2}$, as indicated in the legend of the plot.",
+        "start": 58681,
+        "end": 58833,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "As mentioned above, AGN with higher N$_H$ values tend to have more massive black holes compared to AGN with lower N$_H$ values, at similar M$_*$, at least up to $\\rm log\\,[M_*(M_\\odot)]=12$.",
+        "start": 58992,
+        "end": 59183,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "We, also, examined the ratio of M$_{BH}$/M$_*$ as a function of redshift.",
+        "start": 59185,
+        "end": 59258,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\ref{fig_mbh_mstar_ratio}, the M$_{BH}$/M$_*$ does not evolve with cosmic time up $\\rm z<2$.",
+        "start": 59314,
+        "end": 59407,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The median $\\rm log(M_{BH}/M_*)$ value is found at -2.",
+        "start": 59407,
+        "end": 59462,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "This value is in agreement with most previous studies that measured the M$_{BH}$/M$_*$ ratio in the local Universe \\citep[e.",
+        "start": 59465,
+        "end": 59591,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\ref{fig_mbh_mstar_ratio}, presents the distributions of the M$_{BH}$/M$_*$ ratio, at different redshift intervals.",
+        "start": 59714,
+        "end": 59830,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The median value of the M$_{BH}$/M$_*$ ratio at $\\rm z<0.",
+        "start": 59830,
+        "end": 59888,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "69 and at $\\rm 0.",
+        "start": 59897,
+        "end": 59914,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "Application of KS-tests confirms that the distributions are similar ($\\rm p-values >0.",
+        "start": 59932,
+        "end": 60019,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "\\ref{fig_mbh_mstar_ratio} are colour coded based on the N$_H$ of the sources.",
+        "start": 60105,
+        "end": 60183,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Sources with higher N$_H$ values seem to have higher M$_{BH}$/M$_*$ ratio.",
+        "start": 60183,
+        "end": 60258,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\ref{fig_mbh_mstar_ratio_nh}, we plot the M$_{BH}$/M$_*$ ratio as a function of N$_H$.",
+        "start": 60291,
+        "end": 60378,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The blue line shows the best fit of the $\\frac{M_{BH}}{M_*}-$log\\,N$_H$ relation for log\\,N$\\rm _H<22\\,cm^{-2}$, whereas the red line shows the best fit for log\\,N$\\rm _H>22\\,cm^{-2}$.",
+        "start": 60378,
+        "end": 60564,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "079), that indicates that the M$_{BH}$/M$_*$ ratio is almost constant for AGN with log\\,N$\\rm _H<22\\,cm^{-2}$.",
+        "start": 60635,
+        "end": 60746,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Hovever, the best-fit for AGN with log\\,N$\\rm _H>22\\,cm^{-2}$ has a slope of 0.",
+        "start": 60746,
+        "end": 60826,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "24), that indicates that the M$_{BH}$/M$_*$ ratio increases with N$_H$, for X-ray AGN with high N$_H$ values.",
+        "start": 60847,
+        "end": 60956,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Spearmann correlation analysis reveals a $\\rm p-value=0.",
+        "start": 60956,
+        "end": 61013,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "06$ for the correlation between $\\frac{M_{BH}}{M_*}-$log\\,N$_H$ for sources with log\\,N$\\rm _H>22\\,cm^{-2}$, which indicates a statistical significance of $\\sim 2\\,\\sigma$.",
+        "start": 61013,
+        "end": 61185,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "The median value of the log\\,M$_{BH}$/M$_*$ ratio is -2.",
+        "start": 61185,
+        "end": 61243,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "66 for AGN with N$_H>10^{22}$\\,cm$^{-2}$ and N$_H<10^{22}$\\,cm$^{-2}$, respectively.",
+        "start": 61253,
+        "end": 61337,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "We note, though, that a larger number of sources with N$_H>10^{22}$\\,cm$^{-2}$ is required to formulate robust conclusions.",
+        "start": 61337,
+        "end": 61461,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In the preceding sections, we observed that obscured AGN live, on average, in galaxies with higher M$_*$ compared to unobscured. Moreover, obscured AGN tend to have higher M$_{BH}$ compared to their unobscured counterparts, at similar M$_*$. When combined with the higher M$_{BH}$/M$_*$ ratio within the AGN population displaying elevated N$_H$ values, assuming this holds true, it implies that the SMBH growth in the obscured phase is higher than the galaxy growth. This may suggest that the growth of the M$_{BH}$ occurs first, while the early stellar mass assembly may not be so efficient \\citep{Mountrichas2023b}.",
+        "start": 61463,
+        "end": 62081,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "\\caption{Spectral photon index, $\\Gamma$, as a function of n$_{Edd}$.",
+        "start": 62264,
+        "end": 62335,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The results are colour coded based on the N$_H$ values of the sources.",
+        "start": 62443,
+        "end": 62514,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The $\\rm p-values$ obtained by applying Spearman correlation analysis, are shown in the legend.",
+        "start": 62514,
+        "end": 62610,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The bottom panel shows the same relation, for X-ray AGN with N$_H>10^{22}$\\,cm$^{-2}$ (red circles) and AGN with N$_H<10^{22}$\\,cm$^{-2}$ (blue triangles).",
+        "start": 62610,
+        "end": 62766,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "The $\\rm p-values$ for the $\\Gamma-$n$_{Edd}$ correlation for each AGN population is presented in the legend of the plot.",
+        "start": 62766,
+        "end": 62888,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The different lines correspond to the best-fits using the total AGN sample (black, dashed line), AGN with N$_H>10^{22}$\\,cm$^{-2}$ (red, solid line) and AGN with N$_H<10^{22}$\\,cm$^{-2}$ (blue line).",
+        "start": 62888,
+        "end": 63088,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "\\caption{n$_{Edd}$ vs. $\\lambda _{sBHAR}$ for the 271 AGN that are common between the XMM sample and the \\cite{Wu2022} catalogue.}",
+        "start": 63229,
+        "end": 63362,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\subsubsection{Powerlaw slope versus n$_{Edd}$}",
+        "start": 63407,
+        "end": 63454,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We also investigated if there is a correlation between the powerlaw slope, $\\Gamma$, of the X-ray spectral model and the n$_{Edd}$.",
+        "start": 63456,
+        "end": 63587,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "A strong correlation was found between $\\Gamma$ and n$_{Edd}$ ($\\rm p-value=8.",
+        "start": 63656,
+        "end": 63735,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Although, the correlation between the two parameters was also strong when we split the dataset into two redshift intervals, at $\\rm 0.",
+        "start": 63817,
+        "end": 63953,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "9$ the $\\rm p-value$ appears higher compared to the $\\rm p-value$ obtained at $\\rm z<0.",
+        "start": 63959,
+        "end": 64046,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "This is, most probable, due to the different lines used for the calculation of the M$_{BH}$ and not a result of cosmic evolution.",
+        "start": 64108,
+        "end": 64238,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\cite{Risaliti2009} reported a strong correlation between the two parameters when the M$_{BH}$ was calculated using the H\\,$\\beta$ line and a weaker correlation when the M$_{BH}$ was measured using the Mg~{\\sc ii} line.",
+        "start": 64238,
+        "end": 64458,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "There are only 12 sources in our dataset with $\\rm 0.",
+        "start": 64458,
+        "end": 64512,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "9$, that have M$_{BH}$ calculations from both lines, therefore we could not test, in a robust manner, this hypothesis further.",
+        "start": 64518,
+        "end": 64644,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We also split the dataset into high and low L$_X$, by applying a cut at $\\rm log\\,[L_X(ergs^{-1})]=44$.",
+        "start": 64644,
+        "end": 64748,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "A strong correlation is found both at high and low L$_X$.",
+        "start": 64748,
+        "end": 64806,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Application of the Spearman correlation analysis gives $\\rm $\\rm p-values$=5.",
+        "start": 64806,
+        "end": 64884,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "3\\times 10^{-4}$ and $3.",
+        "start": 64884,
+        "end": 64908,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "1\\times 10^{-9}$, for $\\rm log\\,[L_X(ergs^{-1})]>44$ and $\\rm log\\,[L_X(ergs^{-1})]<44$, respectively.",
+        "start": 64908,
+        "end": 65010,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We, furthermore, examined if this correlation between $\\Gamma$ and n$_{Edd}$ holds for different N$_H$ values.",
+        "start": 65012,
+        "end": 65122,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "A strong correlation was found between $\\Gamma$ and n$_{Edd}$ for AGN with N$\\rm _H<10^{22}\\,cm^{-2}$.",
+        "start": 65194,
+        "end": 65297,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Application of the Spearman correlation analysis yields $\\rm p-value=1.",
+        "start": 65297,
+        "end": 65369,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "35\\times 10^{-6}$ ($\\rm p-value=1.",
+        "start": 65369,
+        "end": 65403,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "No correlation was found, though, for the AGN population with N$\\rm _H>10^{22}\\,cm^{-2}$ ($\\rm p-value=0.",
+        "start": 65463,
+        "end": 65569,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "47$ and $0.",
+        "start": 65569,
+        "end": 65580,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "The different lines shown in the Figure, represent the best fits of the $\\Gamma-$n$_{Edd}$ relation, for the total AGN sample (black, dashed line;",
+        "start": 65647,
+        "end": 65794,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$\\Gamma = 0.",
+        "start": 65794,
+        "end": 65807,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "315\\times$\\,n$_{Edd}+0.",
+        "start": 65807,
+        "end": 65830,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "294)$, the AGN with N$\\rm _H<10^{22}\\,cm^{-2}$ blue line;",
+        "start": 65830,
+        "end": 65887,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "306\\times$\\,n$_{Edd}+2.",
+        "start": 65900,
+        "end": 65923,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "303)$ and for AGN with N$\\rm _H>10^{22}\\,cm^{-2}$ (red line;",
+        "start": 65923,
+        "end": 65984,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "083\\times$\\,n$_{Edd}+1.",
+        "start": 65997,
+        "end": 66020,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "Similar results were obtained when we split the two AGN populations in two redshift intervals, at $\\rm z=0.",
+        "start": 66027,
+        "end": 66135,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "Furthermore, our observations hold when considering the associated uncertainties of $\\Gamma$ and n$_{Edd}$, by utilizing the linmix module \\citep{Kelly2007} that performs linear regression between two parameters, by repeatedly perturbing the datapoints within their uncertainties.",
+        "start": 66138,
+        "end": 66419,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\ref{fig_gamma_nedd} there are some sources with non-physical values ($\\Gamma >2.",
+        "start": 66460,
+        "end": 66542,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "5$ or $\\Gamma <1.",
+        "start": 66542,
+        "end": 66559,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "Although their occurrence is relatively low among AGN with N$\\rm _H<10^{22}\\,cm^{-2}$ ($15\\%$, it becomes more pronounced ($57\\%$ for AGN with higher N$_H$ values.",
+        "start": 66563,
+        "end": 66729,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "To examine whether this might be influencing the absense of a correlation between $\\Gamma$ and n$_{Edd}$ for AGN with N$\\rm _H>10^{22}\\,cm^{-2}$, we opted to exclude these sources and repeated the correlation analysis.",
+        "start": 66729,
+        "end": 66948,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "However, even after this exclusion, we still did not observe a significant correlation between the two parameters for sources with elevated N$_H$ values.",
+        "start": 66948,
+        "end": 67102,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "It's essential to note, however, that this refinement in the analysis leaves us with a considerably reduced sample size, comprising only ten AGN with N$\\rm _H>10^{22}\\,cm^{-2}$.",
+        "start": 67102,
+        "end": 67280,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Therefore, a correlation between the X-ray spectral index and n$_{Edd}$ for AGN with N$\\rm _H<10^{22}\\,cm^{-2}$ may imply that changes in the accretion rate can alter the structure and properties of the accretion disk, influencing the X-ray emission.",
+        "start": 67402,
+        "end": 67653,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Thus, changes in the n$_{Edd}$ may lead to variations in the corona properties, affecting the X-ray spectrum.",
+        "start": 67874,
+        "end": 67984,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "AGN with N$\\rm _H<10^{22}\\,cm^{-2}$ allow for a clearer view of the inner regions of the accretion disk and the corona.",
+        "start": 67984,
+        "end": 68104,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Furthermore, in AGN with low N$_H$, the more direct view of the accretion disk may allow for a better determination of the Eddington ratio.",
+        "start": 68104,
+        "end": 68244,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Additionally, we investigated if this lack of correlation between the two parameters for the AGN population with N$\\rm _H>10^{22}\\,cm^{-2}$ is due to the small number of sources available.",
+        "start": 68246,
+        "end": 68434,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For that purpose, we randomly selected an equal number of AGN with N$\\rm _H<10^{22}\\,cm^{-2}$ to that with N$\\rm _H>10^{22}\\,cm^{-2}$ and we measured the correlation between $\\Gamma$ and n$_{Edd}$.",
+        "start": 68434,
+        "end": 68632,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "After 500 repetitions of this process, we got a median $\\rm p-value$ from Spearman analysis of 0.",
+        "start": 68632,
+        "end": 68730,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "047 (Kendall's correlation analysis yields $\\rm $\\rm p-value$= 0.",
+        "start": 68730,
+        "end": 68795,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The $\\rm p-value$ obtained for the simulated AGN with N$\\rm _H<10^{22}\\,cm^{-2}$ are about an order of magnitude lower compared to those obtained from the AGN with N$\\rm _H>10^{22}\\,cm^{-2}$.",
+        "start": 68801,
+        "end": 68993,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "This indicates that the lack of correlation between $\\Gamma$ and n$_{Edd}$ for AGN with N$\\rm _H>10^{22}\\,cm^{-2}$ is intrinsic and not due to their smaller sample size.",
+        "start": 68993,
+        "end": 69164,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "As already note, $\\lambda_{sBHAR}$ is often used as a proxy of n$_{Edd}$.",
+        "start": 69590,
+        "end": 69663,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\cite{Lopez2023} used X-ray selected AGN in the miniJPAS footprint and found, among others, that the n$_{Edd}$ and $\\lambda_{sBHAR}$ have a difference of 0.",
+        "start": 69663,
+        "end": 69821,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "They attributed this difference to the scatter on the M$_{BH}-$M$_*$ relation of their sources.",
+        "start": 69828,
+        "end": 69924,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "A difference between n$_{Edd}$ and $\\lambda_{sBHAR}$ was also reported by \\cite{Mountrichas2023d}, albeit lower ($\\sim 0.",
+        "start": 69924,
+        "end": 70048,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We find that overall there is a good agreement between n$_{Edd}$ and $\\lambda_{sBHAR}$, with a median difference of $0.",
+        "start": 70269,
+        "end": 70390,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We also confirm that this difference does not depend on N$_H$, at least up to N$_H=10^{22.",
+        "start": 70460,
+        "end": 70551,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "5-23}$\\,cm$^{-2}$, probed by our dataset.",
+        "start": 70551,
+        "end": 70592,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Since the n$_{Edd}$ measurements are in agreement with the $\\lambda _{sBHAR}$ calculations, we then examined the correlation between $\\Gamma$ and $\\lambda _{sBHAR}$.",
+        "start": 70595,
+        "end": 70760,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Similar results were found with those between $\\Gamma$ and n$_{Edd}$.",
+        "start": 70760,
+        "end": 70830,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Specifically, a strong correlation was found between the two parameters for AGN with N$\\rm _H<10^{22}\\,cm^{-2}$ ($\\rm p-value=2.",
+        "start": 70830,
+        "end": 70959,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "8\\times 10^{-3}$, but no correlation was detected for sources with N$\\rm _H>10^{22}\\,cm^{-2}$ ($\\rm p-value=0.",
+        "start": 70959,
+        "end": 71070,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": ", before matching the XMM sources with the][catalogue]{Wu2022}, to examine the correlation between $\\Gamma$ and $\\lambda _{sBHAR}$ for the two AGN populations.",
+        "start": 71187,
+        "end": 71346,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "This allowed us to investigate the $\\Gamma-\\lambda _{sBHAR}$ relation using a significantly larger sample of obscured sources (130 AGN) that has been defined with more strict criteria (i.",
+        "start": 71346,
+        "end": 71534,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": ", taking into account the uncertainties associated with N$_H$ and, more importantly, to include narrow-line (type 2) AGN in our investigation.",
+        "start": 71536,
+        "end": 71679,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Spearman correlation analysis yielded a $\\rm p-value$ of $1.",
+        "start": 71679,
+        "end": 71740,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "8\\times 10^{-11}$ for AGN with N$\\rm _H<10^{22}\\,cm^{-2}$ and $0.",
+        "start": 71740,
+        "end": 71805,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "31$ for AGN with N$\\rm _H>10^{22}\\,cm^{-2}$.",
+        "start": 71805,
+        "end": 71849,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We conclude that $\\Gamma$ and n$_{Edd}$ are correlated at all redshift and L$_X$ probed by our dataset.",
+        "start": 71849,
+        "end": 71953,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "However, we do not detect such correlation for AGN with increased N$_H$ values (N$\\rm _H>10^{22}\\,cm^{-2}$.",
+        "start": 71953,
+        "end": 72062,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Previous studies have found contradictory results regarding whether there is a correlation between $\\Gamma$ and n$_{Edd}$.",
+        "start": 72065,
+        "end": 72187,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\cite{Shemmer2008} used 35, unabsorbed, type 1 radio quiet (RQ) AGN at $\\rm z<3.",
+        "start": 72187,
+        "end": 72268,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "2$ (25 out of the 35 sources were at $\\rm z<0.",
+        "start": 72268,
+        "end": 72314,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "5$ and found a significant correlation between $\\Gamma$ and n$_{Edd}$.",
+        "start": 72314,
+        "end": 72385,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "They concluded that a measurement of $\\Gamma$ and L$_X$ can provide an estimate of n$_{Edd}$ and M$_{BH}$ with a mean uncertainty of a factor of $\\leq 3$.",
+        "start": 72385,
+        "end": 72540,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "\\cite{Brightman2013} used 69 RQ AGN in the COSMOS and ECDFS fields, at $\\rm z<2$ and found a significant correlation between the X-ray spectral index and n$_{Edd}$.",
+        "start": 72540,
+        "end": 72705,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "However, based on their analysis, the scatter of the $\\Gamma-$n$_{Edd}$ relation is large and thus the relation is only suitable for large samples and not for individual sources.",
+        "start": 72705,
+        "end": 72884,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We note, though, that the L$_{bol}$ of their sources have been calculated following a mix of different methods (SED fitting and bolometric correction to the L$_X$ that may contribute to this scatter.",
+        "start": 72884,
+        "end": 73085,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\cite{Trakhtenbrot2017} used 228 hard X-ray selected AGN from the Swift/Bat AGN Spectroscopic Survey (BASS) and found a very weak, but statistically significant correlation between $\\Gamma$ and n$_{Edd}$.",
+        "start": 73085,
+        "end": 73290,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Nonetheless, their M$_{BH}$ measurements come from several different methods (see their Sect.",
+        "start": 73290,
+        "end": 73384,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "More recently, \\cite{Kamraj2022} used 195 Seyfert 1 AGN in the local Universe ($\\rm z<0.",
+        "start": 73487,
+        "end": 73576,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "They studied the correlation between the X-ray spectral index and n$_{Edd}$, using three models to fit the X-ray spectra of their sources.",
+        "start": 73626,
+        "end": 73765,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "They found considerable scatter and no strong trend between $\\Gamma$ and n$_{Edd}$ for all spectral models they applied.",
+        "start": 73765,
+        "end": 73886,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "They concluded that the $\\Gamma-$n$_{Edd}$ may not be universal or robust and could vary with the choice of the sample, the luminosity range probed and the energy range of X-ray data used in the analysis.",
+        "start": 73886,
+        "end": 74091,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We note, that their M$_{BH}$ estimates come from the second data release of optical measurements from the BASS survey and are inferred using a compilation of different techniques (e.",
+        "start": 74091,
+        "end": 74274,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": ", broad-line measurements from optical spectra, stellar velocity dispersions, reverberation mapping) which could increase the scatter in the $\\Gamma-$n$_{Edd}$ and weaken any possible correlation.",
+        "start": 74276,
+        "end": 74472,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Combining the results of our analysis with those from previous works, we conclude that caution has to be taken when compiling results from different studies that have used different methods to measure the M$_{BH}$ and the L$_{bol}$. Furthermore, the correlation between $\\Gamma$ and n$_{Edd}$ may not be universal and could (also) depend on the level of the X-ray obscuration of the sources.",
+        "start": 74475,
+        "end": 74866,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "The parent sample of this work includes $\\sim 35\\,000$ X-ray AGN included in the 4XMM-DR11 catalogue, for which there are available X-ray spectra fitting measurements.",
+        "start": 76100,
+        "end": 76267,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Using the CIGALE SED fitting algorithm, we calculated the SFR and M$_*$ of the AGN.",
+        "start": 76397,
+        "end": 76481,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We, then, applied strict criteria using the N$_H$ values and their associated uncertainties to classify sources into obscured and unobscured and compare their SMBH and host galaxy properties.",
+        "start": 76714,
+        "end": 76906,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\item[$\\bullet$] Obscured AGN tend to live in more massive systems (by $\\sim 0.1$\\,dex) compared to unobscured. The difference, although small, appears to be statistically significant. Obscured sources also tend to live in galaxies with lower SFR (by $\\sim 0.25$\\,dex) compared to their unobscured counterparts, however, this different is not statistically significant. The results do not depend on the N$_H$ threshold used to classify AGN (N$\\rm _H=10^{23}\\,cm^{-2}$ or N$\\rm _H=10^{22}\\,cm^{-2}$, but the differences are not statistically significant at high L$_X$ ($\\rm log\\,[L_{X}(ergs^{-1})]>44$ or if we disregard the errors associated with the N$_H$ measurements.",
+        "start": 76963,
+        "end": 77636,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 9
+        }
+      },
+      {
+        "content": "\\item[$\\bullet$] Unobscured AGN have, on average, higher specific black hole accretion rates (a proxy of the Eddington ratio) compared to unobscured sources. The difference is $0.1-0.2$\\,dex and appears to have a high statistical significance.",
+        "start": 77638,
+        "end": 77881,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Furthermore, we cross-matched our dataset with the catalogue of \\cite{Wu2022} that includes measurements for the M$_{BH}$, L$_{bol}$ and Eddington ratio, among others, for $\\sim 750,000$ QSOs from SDSS. There are 271 type 1 AGN common in the two datasets, up to redshift of 1.9. We studied the n$_{Edd}$ and M$_{BH}$/M$_*$ ratio of the two AGN populations and we examined if there is a correlation between $\\Gamma$ and n$_{Edd}$. Our main results are summarized as follows:",
+        "start": 77899,
+        "end": 78373,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 8
+        }
+      },
+      {
+        "content": "\\item[$\\bullet$] Type 1 AGN with N$\\rm _H>10^{22}\\,cm^{-2}$ tend to have higher M$_{BH}$ compared to type 1 sources with lower N$_H$ values, at similar M$_*$.",
+        "start": 78393,
+        "end": 78553,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "\\item[$\\bullet$] For type 1 AGN, the M$_{BH}$/M$_*$ ratio is nearly constant with N$_H$ up to N$_H=10^{22}$\\,cm$^{-2}$. However, our results suggest that the M$_{BH}$/M$_*$ ratio increases at higher N$_H$ values.",
+        "start": 78556,
+        "end": 78768,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 9
+        }
+      },
+      {
+        "content": "\\item[$\\bullet$] A correlation is found between the spectral photon index, $\\Gamma$, and the Eddington ratio, n$_{Edd}$, for type 1 AGN with N$_H<10^{22}$\\,cm$^{-2}$.",
+        "start": 78770,
+        "end": 78936,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "The findings of our study indicate that the inconsistent results among previous studies regarding the host galaxy properties of obscured and unobscured AGN could be, mainly, due to the different luminosities probed. Additionally, our analysis indicates that during the obscured phase, SMBH growth exceeds that of the host galaxies, potentially implying a sequential growth pattern where M$_{BH}$ develops first, while early stellar mass assembly might not be as efficient. Furthermore, the disparities in previous research regarding the correlation between $\\Gamma$ and n$_{Edd}$ may also be partly attributed to differences in the fraction of obscured and unobscured AGN within the samples used in these previous studies.",
+        "start": 78954,
+        "end": 79676,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      }
+    ],
+    "tables": [
+      {
+        "content": "\\begin{tabular}{cc}\n       \\hline\nParameter &  Model/values \\\\\n        \\hline\n\\multicolumn{2}{c}{Star formation history: delayed model and recent burst} \\\\\nAge of the main population & 1000, 2000, 3000, 4000, 5000, 7000, 10000, 12000 Myr \\\\\ne-folding time & 300, 1000, 3000, 7000, 10000 Myr \\\\ \nAge of the burst & 50 Myr \\\\\nBurst stellar mass fraction & 0.0, 0.005, 0.01, 0.015, 0.02, 0.05, 0.10, 0.15 \\\\\n\\hline\n\\multicolumn{2}{c}{Simple Stellar population: Bruzual \\& Charlot (2003)} \\\\\nInitial Mass Function & Chabrier (2003)\\\\\nMetallicity & 0.02 (Solar) \\\\\n\\hline\n\\multicolumn{2}{c}{Galactic dust extinction} \\\\\nDust attenuation law & Charlot \\& Fall (2000) law   \\\\\nV-band attenuation $A_V$ & 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.5, 2, 2.5, 3, 3.5, 4 \\\\ \n\\hline\n\\multicolumn{2}{c}{Galactic dust emission: Dale et al. (2014)} \\\\\n$\\alpha$ slope in $dM_{dust}\\propto U^{-\\alpha}dU$ & 2.0 \\\\\n\\hline\n\\multicolumn{2}{c}{AGN module: SKIRTOR} \\\\\nTorus optical depth at 9.7 microns $\\tau _{9.7}$ & 3.0, 7.0 \\\\\nTorus density radial parameter p ($\\rho \\propto r^{-p}e^{-q|cos(\\theta)|}$) & 1.0 \\\\\nTorus density angular parameter q ($\\rho \\propto r^{-p}e^{-q|cos(\\theta)|}$) & 1.0 \\\\\nAngle between the equatorial plan and edge of the torus & $40^{\\circ}$ \\\\\nRatio of the maximum to minimum radii of the torus & 20 \\\\\nViewing angle  & $30^{\\circ}\\,\\,\\rm{(type\\,\\,1)},70^{\\circ}\\,\\,\\rm{(type\\,\\,2)}$ \\\\\nAGN fraction & 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.99 \\\\\nExtinction law of polar dust & SMC \\\\\n$E(B-V)$ of polar dust & 0.0, 0.2, 0.4 \\\\\nTemperature of polar dust (K) & 100 \\\\\nEmissivity of polar dust & 1.6 \\\\\n\\hline\n\\multicolumn{2}{c}{X-ray module} \\\\\nAGN photon index $\\Gamma$ & 1.8 \\\\\nMaximum deviation from the $\\alpha _{ox}-L_{2500 \\AA}$ relation & 0.2 \\\\\nLMXB photon index & 1.56 \\\\\nHMXB photon index & 2.0 \\\\\n\\hline\n%Total number of models (X-ray/reference galaxy catalogue) & 313,632,000/60,984,000 \\\\\n%\\hline\n\\label{table_cigale}\n\\end{tabular}",
+        "start": 20789,
+        "end": 22758,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{ccccc}\n \\hline\n & \\multicolumn{2}{c}{N$_H=10^{23}\\,\\rm cm^{-2}$} &  \\multicolumn{2}{c}{N$_H=10^{22}\\,\\rm cm^{-2}$} \\\\\n \\hline\n  & unobscured & obscured & unobscured & obscured   \\\\\n \\hline\nnumber of AGN & 1115 & 34 & 965 & 130  \\\\ \n \\hline\nlog\\,SFR  &  0.82 & 0.57 & 0.93 & 0.67  \\\\\np$-$value (SFR) & \\multicolumn{2}{c}{0.10} & \\multicolumn{2}{c}{0.26}  \\\\\n \\hline\nlog\\,M$_*$ & 10.86 & 10.95 & 10.85 & 10.97  \\\\ \np$-$value (M$_*$) & \\multicolumn{2}{c}{0.02} & \\multicolumn{2}{c}{0.007}  \\\\\n \\hline\nlog\\,$\\lambda _{sBHAR}$ & -1.60 & -1.71 & -1.52 & -1.73  \\\\\np$-$vaule ($\\lambda _{sBHAR}$) & \\multicolumn{2}{c}{0.00006} & \\multicolumn{2}{c}{0.0003} \\\\\n  \\hline\n\\label{table_numbers}\n\\end{tabular}",
+        "start": 43683,
+        "end": 44394,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{ccc}\n \\hline\n & $\\rm N_H < 10^{22}\\,cm^{-2}$ &  $\\rm N_H > 10^{22}\\,cm^{-2}$ \\\\\n  \\hline\n  & p$-$value & p$-$value \\\\\n    \\hline\n$\\rm log\\,L_{X}$-redshift & $5\\times 10^{-72}$ & $3\\times 10^{-12}$   \\\\\n \\hline\n$\\rm log\\,M_*$-redshift & $2\\times 10^{-43}$ &$ 6\\times 10^{-4}$  \\\\ \n \\hline\n$\\rm log\\,M_{BH}$-redshift & $7\\times 10^{-53}$ & $2\\times 10^{-7}$ \\\\\n  \\hline\n\\label{table_spearmann_basic}\n\\end{tabular}",
+        "start": 52017,
+        "end": 52444,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      }
+    ],
+    "total_items": 309
+  }
+]

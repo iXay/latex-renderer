@@ -1,0 +1,1460 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00070/2401.00070/GenusRev-4.tex",
+    "display_formulas": [
+      {
+        "content": "$$\\gamma(K_{m,n})=\\left\\lceil \\frac{(m-2)(n-2)}{4}\\right\\rceil.$$",
+        "start": 2729,
+        "end": 2794,
+        "metadata": {
+          "type": "display_math",
+          "latex": "\\gamma(K_{m,n})=\\left\\lceil \\frac{(m-2)(n-2)}{4}\\right\\rceil."
+        }
+      },
+      {
+        "content": "$$O\\times \\cdots \\times I\\times \\cdots \\times I\\times \\cdots\\times O,$$",
+        "start": 6007,
+        "end": 6079,
+        "metadata": {
+          "type": "display_math",
+          "latex": "O\\times \\cdots \\times I\\times  \\cdots \\times I\\times \\cdots\\times O,"
+        }
+      },
+      {
+        "content": "$$O\\times \\cdots \\times I\\times \\cdots \\times I\\times \\cdots \\times I\\times \\cdots\\times O,$$",
+        "start": 6292,
+        "end": 6387,
+        "metadata": {
+          "type": "display_math",
+          "latex": "O\\times \\cdots \\times I\\times  \\cdots \\times I\\times  \\cdots \\times I\\times \\cdots\\times O,"
+        }
+      },
+      {
+        "content": "$$\\gamma(T)=\\frac{2-v+e-f}{2}=\\frac{2-2^n+n2^{n-1}-n2^{n-2}}{2}=1+(n-4)2^{n-3}.$$",
+        "start": 13975,
+        "end": 14056,
+        "metadata": {
+          "type": "display_math",
+          "latex": "\\gamma(T)=\\frac{2-v+e-f}{2}=\\frac{2-2^n+n2^{n-1}-n2^{n-2}}{2}=1+(n-4)2^{n-3}."
+        }
+      }
+    ],
+    "inline_texts": [
+      {
+        "content": "torus in which the $n$-dimensional hypercube graph can be embedded.",
+        "start": 1017,
+        "end": 1086,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "as a union of certain faces in the hypercube's 2-skeleton. For odd dimension $n$, the entire 2-skeleton decomposes into",
+        "start": 1147,
+        "end": 1268,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$(n-1)/2$ copies of the surface, and the intersection of any two copies is",
+        "start": 1269,
+        "end": 1343,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "the complete bipartite graph $K_{m,n}$ (Figure~\\ref{Fig:K55})",
+        "start": 1545,
+        "end": 1606,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "be drawn on the sphere (or plane) without crossed edges if $\\min\\{m,n\\}\\geq 3$.",
+        "start": 1614,
+        "end": 1693,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "One can try to draw $K_{3,3}$ on the sphere, but will always fail.",
+        "start": 1694,
+        "end": 1760,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The {\\bf genus} of a graph $G$, denoted $\\gamma(G)$, is the least integer $g$",
+        "start": 1835,
+        "end": 1912,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "for which $G$ can be drawn on a closed, connected, orientable surface of genus $g$ without edges crossing.",
+        "start": 1913,
+        "end": 2020,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "(A sphere has genus 0; a surface with $g$ holes has genus $g$.) Thus $\\gamma(K_{3,3})=1$.",
+        "start": 2021,
+        "end": 2110,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "\\caption{ Left: The complete bipartite graph $K_{m,n}$ can be regarded as having $m$ black vertices,",
+        "start": 2218,
+        "end": 2318,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$n$ white vertices, and an edge joining any two vertices of different colors.",
+        "start": 2319,
+        "end": 2396,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Right: $K_{3,3}$, $K_{4,4}$, and $K_{4,5}$ on surfaces.}",
+        "start": 2397,
+        "end": 2455,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Figure~\\ref{Fig:K55} also shows $K_{4,4}$ and $K_{4,5}$, together with",
+        "start": 2536,
+        "end": 2606,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Indeed, Ringel~\\cite{RINGEL2} proved that for $2 \\leq m \\leq n$,",
+        "start": 2664,
+        "end": 2728,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Thus $\\gamma(K_{4,4})=1$ and $\\gamma(K_{4,5})=2$, so our drawings",
+        "start": 2795,
+        "end": 2860,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "For instance, the difficult proof of the simple formula $\\gamma(K_n) = \\lceil (n-3)(n-4)/12\\rceil$",
+        "start": 2983,
+        "end": 3081,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For the $n$-dimensional hypercube graph $Q_n$, Ringel~\\cite{RINGEL1} and Beineke and Harary~\\cite{BEINEKE} used recursive arguments exploiting the hypercube's product structure",
+        "start": 3194,
+        "end": 3370,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "the $n$-cube and further shows that for odd $n$, the $2$-skeleton of the $n$-cube is the union of $(n{-}1)/2$ copies of the genus surface, with no common faces, intersecting pairwise at $Q_n$.",
+        "start": 3674,
+        "end": 3867,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "while Section 5 gives the bonus: a factorization of the $2$-skeleton into genus surfaces.",
+        "start": 4507,
+        "end": 4596,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Let $I$ denote the unit interval $[0,1]$ and let $O$ denote its boundary $O := \\partial I = \\{0,1\\}$.",
+        "start": 4843,
+        "end": 4944,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "(We use the notation $O$ because it will be",
+        "start": 4945,
+        "end": 4989,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "interval as being ``active'' [$I$] or ``inactive'' [$O$] in the manner described below.)",
+        "start": 5010,
+        "end": 5098,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The {\\bf $n$-dimensional hypercube}, or {\\bf $n$-cube} is the polytope",
+        "start": 5100,
+        "end": 5170,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$H_n=I^n \\subseteq\\mathbb{R}^n$. Thus",
+        "start": 5171,
+        "end": 5208,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$H_n=\\{(x_1,\\ldots, x_n) \\mid 0\\leq x_i\\leq 1\\}\\subseteq \\mathbb{R}^n$ is the",
+        "start": 5209,
+        "end": 5287,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "intersection of the $2n$ half-spaces $x_i\\geq 0$ and $x_i\\leq1$, for $1\\leq i\\leq n$.",
+        "start": 5288,
+        "end": 5373,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "The $2^n$ {\\bf vertices} of $H_n$ are the elements of $O^n$,",
+        "start": 5430,
+        "end": 5490,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "which we identify with the binary strings of length $n$. (For example,",
+        "start": 5491,
+        "end": 5561,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$(1,0,1,0)$ is 1010, etc.)",
+        "start": 5562,
+        "end": 5588,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The {\\bf edges} of $H_n$ are the connected components of the products",
+        "start": 5589,
+        "end": 5658,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$O\\times O\\times \\cdots \\times I\\times \\cdots\\times O$",
+        "start": 5659,
+        "end": 5713,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "having one active factor $I$ and $n{-}1$ inactive factors $O$.",
+        "start": 5714,
+        "end": 5776,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Thus $H_n$ has $n2^{n-1}$ edges, and each is a line segment joining two vertices that differ in",
+        "start": 5777,
+        "end": 5872,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The {\\bf faces} of $H_n$ are the squares that are the connected components of",
+        "start": 5928,
+        "end": 6006,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "where two of the factors are $I$'s and the rest are $O$'s. Thus $H_n$ has $\\binom{n}{2}2^{n-2}$ faces, and the boundary of each",
+        "start": 6080,
+        "end": 6207,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "face consists of four edges. Likewise $H_n$ has $\\binom{n}{3}2^{n-3}$ {\\bf 3-faces}",
+        "start": 6208,
+        "end": 6291,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "formed by choosing three positions for the $I$'s. Each 3-face is a 3-cube whose boundary has six faces.",
+        "start": 6388,
+        "end": 6492,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "In general, for each $0\\leq k\\leq n$, the $n$-cube has $\\binom{n}{k}2^{n-k}$ {\\bf $k$-faces} formed by",
+        "start": 6493,
+        "end": 6595,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "choosing $k$ active factors. Each $k$-face is a $k$-cube.",
+        "start": 6596,
+        "end": 6654,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The $(n{-}1)$-faces are called the {\\bf facets} of $H_n$.",
+        "start": 6777,
+        "end": 6834,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "For each $1\\leq k\\leq n$, there are two {\\it opposite} facets that are the",
+        "start": 6835,
+        "end": 6909,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$I\\times I\\times \\cdots\\times O\\times \\cdots \\times I$,",
+        "start": 6928,
+        "end": 6985,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$O=\\{0,1\\}$ is the $k$th factor. The reader should verify that any two nonopposite facets intersect in an",
+        "start": 7001,
+        "end": 7106,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$(n{-}2)$-face. Collectively the facets form the boundary of $H_n$.",
+        "start": 7107,
+        "end": 7174,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The {\\bf $k$-skeleton} of $H_n$ is the union of all its $k$-faces, so the 2-skeleton is the",
+        "start": 7275,
+        "end": 7366,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The 1-skeleton is the {\\bf hypercube graph}, denoted $Q_n$. Its",
+        "start": 7400,
+        "end": 7463,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "vertices are the $n$-digit binary strings, and an edge",
+        "start": 7464,
+        "end": 7518,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Figure~\\ref{Fig:Cubes} shows $Q_2$, $Q_3$ and $Q_4$.",
+        "start": 7582,
+        "end": 7635,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The hypercube graph $Q_n$ of any dimension is {\\bf bipartite}, that is, its vertices can be partitioned into",
+        "start": 7637,
+        "end": 7745,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$H_n$ can be edge-colored with colors $1,\\ldots, n$, so that an edge",
+        "start": 8066,
+        "end": 8134,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "whose endpoints differ in the $k$th coordinate gets color $k$.",
+        "start": 8135,
+        "end": 8197,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "the 2-holed torus, and, in general, surfaces with $g$ holes. (Nonorientable surfaces",
+        "start": 9265,
+        "end": 9349,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We denote the (unique!) surface of genus~$g$ by $T_g$.",
+        "start": 9507,
+        "end": 9561,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "If $T$ is an arbitrary orientable surface, its genus is denoted by $\\gamma(T)$, so $\\gamma(T_g)=g$.",
+        "start": 9562,
+        "end": 9662,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The sphere has genus~0, and is thus denoted as $T_0$.",
+        "start": 9663,
+        "end": 9716,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{Examples of Tori. The sphere $T_0$ (left) followed by $T_1$, $T_2$, and $T_3$.}",
+        "start": 9869,
+        "end": 9957,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "the {\\bf genus} $\\gamma(G)$ of a graph $G$ is the",
+        "start": 10057,
+        "end": 10107,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "smallest integer $g$ for which $G$ can be drawn on $T_g$",
+        "start": 10108,
+        "end": 10164,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "without crossed edges. Such a drawing of $G$ on $T_g$ is regarded as a continuous",
+        "start": 10165,
+        "end": 10246,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "injection $G\\to T_g$, and is called an {\\bf embedding} of $G$ in $T_g$.",
+        "start": 10247,
+        "end": 10318,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "An embedding of $G$ in a surface of genus $\\gamma(G)$",
+        "start": 10319,
+        "end": 10373,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "is called a {\\bf genus embedding} of $G$.",
+        "start": 10374,
+        "end": 10415,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Figure~\\ref{Fig:K55} shows genus embeddings of $K_{3,3}$, $K_{4,4}$, and $K_{4,5}$.",
+        "start": 10416,
+        "end": 10499,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "An embedding $\\varphi\\colon G\\to T$ divides $T$ into {\\bf regions},",
+        "start": 10502,
+        "end": 10569,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "which are the connected components of $T \\setminus \\varphi(G)$.",
+        "start": 10570,
+        "end": 10633,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For example, the embedding of $K_{3,3}$ in Figure~\\ref{Fig:K55} has three faces: two",
+        "start": 10916,
+        "end": 11000,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "squares and one octagon. The embedding of $K_{4,4}$ has eight faces, each a square.",
+        "start": 11001,
+        "end": 11084,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "that if a 2-cell embedding of a connected graph in a closed orientable surface $T$ has $v$ vertices, $e$ edges, and $f$ faces, then",
+        "start": 11146,
+        "end": 11277,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "Checking this on the embedding of $K_{4,4}$ in Figure~\\ref{Fig:K55}",
+        "start": 11357,
+        "end": 11425,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "we get $1=\\frac{1}{2}(2-8+16-8)$. For $K_{4,5}$ in Figure~\\ref{Fig:K55}, we get",
+        "start": 11426,
+        "end": 11505,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$2=\\frac{1}{2}(2-9+20-f)$, so there are $f=9$ faces.% (Identify them!)",
+        "start": 11506,
+        "end": 11576,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "If a 2-cell embedding of a connected graph with $v$ vertices and $e$ edges has $f$ faces",
+        "start": 11578,
+        "end": 11666,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "$F_1,\\ldots, F_f$, and each $F_i$ is a $p_i$-gon,",
+        "start": 11667,
+        "end": 11716,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "then because each edge is on exactly two faces, we get $2e=p_1+\\cdots +p_f$.",
+        "start": 11717,
+        "end": 11793,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "If the graph is bipartite, then it has no triangles, so $2e\\geq 4f$.",
+        "start": 11794,
+        "end": 11862,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "If $G$ has $v$ vertices, $e$ edges, and is bipartite, then",
+        "start": 11958,
+        "end": 12016,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "$\\displaystyle{\\gamma(G)\\geq\\frac{1}{4}(4-2v+e)}$.",
+        "start": 12017,
+        "end": 12067,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The genus of the hypercube graph $Q_n$ is $\\gamma(Q_n)=1+(n-4)2^{n-3}$.",
+        "start": 12385,
+        "end": 12456,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Color the edges of $H_n$ with colors $1,2,\\ldots, n$, so that any edge joining vertices that",
+        "start": 12870,
+        "end": 12962,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "differ in the $k$th coordinate is given the color $k$. Any face of $H_n$ whose edges are",
+        "start": 12963,
+        "end": 13051,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "colored $k$ and $\\ell$ is then",
+        "start": 13052,
+        "end": 13082,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "``bicolored'' by the pair $k\\ell$. Assemble the collection $\\mathcal{F}$ of all",
+        "start": 13083,
+        "end": 13163,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "faces of $H_n$",
+        "start": 13164,
+        "end": 13178,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "having one of the bicolors $12,\\; 23, \\;34, \\ldots,\\, (n{-}1)n,\\; n1$.",
+        "start": 13179,
+        "end": 13249,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For any one of these $n$ bicolors, $H_n$ has $2^{n-2}$ faces of that particular bicolor,",
+        "start": 13250,
+        "end": 13338,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "so $|\\mathcal{F}|=n2^{n-2}$.",
+        "start": 13339,
+        "end": 13367,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Any edge $e$ of $Q_n$ belongs to exactly two faces in $\\mathcal{F}$: if $e$ has",
+        "start": 13368,
+        "end": 13447,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "color $k$, then these two faces have bicolors $(k{-}1)k$ and $k(k{+}1)$",
+        "start": 13448,
+        "end": 13519,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "(addition modulo $n$.",
+        "start": 13520,
+        "end": 13543,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Thus $n$ faces of $\\mathcal{F}$ are arranged cyclicly around each vertex,",
+        "start": 13544,
+        "end": 13617,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "It follows that the faces $\\mathcal{F}$ form a surface",
+        "start": 13671,
+        "end": 13725,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$T$ in the 2-skeleton of $H_n$, with $Q_n$ embedded in it.",
+        "start": 13726,
+        "end": 13785,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "This surface has $n2^{n-2}$ square regions, and it is",
+        "start": 13786,
+        "end": 13839,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "connected because $Q_n$ is connected.",
+        "start": 13840,
+        "end": 13878,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Thus we have embedded $Q_n$ in a surface of genus $1+(n-4)2^{n-3}$.",
+        "start": 14057,
+        "end": 14124,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Lemma~\\ref{Lemma} says yes: $\\gamma(Q_n)\\geq\\frac{1}{4}(4-2\\cdot 2^n+n2^{n-1})=\\gamma(T)$.",
+        "start": 14160,
+        "end": 14250,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{The squares in $\\mathcal{F}$ that surround a vertex.}",
+        "start": 14360,
+        "end": 14423,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To finish the proof we must verify that $T$ is orientable. There is indeed something to prove",
+        "start": 14512,
+        "end": 14605,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "here, for when $n\\,{\\geq}\\,4$, the 2-skeleton of $H_n$ contains M\\\"obius strips",
+        "start": 14606,
+        "end": 14685,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "(Figure~\\ref{Fig:Mobius}, left). We must verify that none exist in~$T$.",
+        "start": 14686,
+        "end": 14757,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To do this, note that each face of~$T$ has a local orientation given by the ``right-hand rule''",
+        "start": 14758,
+        "end": 14853,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "pointing from edge color $i$ to edge color $i{+}1$. Your thumb points in an ``up'' direction",
+        "start": 14944,
+        "end": 15036,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "orientation is preserved as we move from square to adjacent square on $T$.",
+        "start": 15221,
+        "end": 15295,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "It follows that $T$ is orientable.",
+        "start": 15296,
+        "end": 15330,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\caption{Left:~A M\\\"obius strip in $H_4$. Right: Squares in $T$ are oriented by the",
+        "start": 15450,
+        "end": 15533,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "right-hand rule at black vertices. Squares bicolored $(i{-}1)i$,",
+        "start": 15534,
+        "end": 15598,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$i(i{+}1)$, and $(i{+}1)(i{+}2)$ are shown.}",
+        "start": 15599,
+        "end": 15643,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Let's carry out the construction of this proof for $Q_3$, $Q_4$, and $Q_5$.",
+        "start": 15727,
+        "end": 15802,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "First, $Q_3$. Color the edges of $Q_3$ solid, dashed, and dotted, as in Figure~\\ref{Fig:Cubes}.",
+        "start": 15804,
+        "end": 15899,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "By our construction, we form a surface $T$ by including the solid/dashed faces,",
+        "start": 15900,
+        "end": 15980,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "the dashed/dotted faces, and dotted/solid faces of $H_3$. These are in fact all the faces of",
+        "start": 15981,
+        "end": 16073,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$H_3$, and we get the six faces shown in the upper left of Figure~\\ref{Fig:Domus}.",
+        "start": 16074,
+        "end": 16156,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "They form the surface of the 3-cube, which is topologically equivalent to the sphere $T_0$.",
+        "start": 16157,
+        "end": 16248,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Next, consider $Q_4$, with edges colored as in",
+        "start": 16250,
+        "end": 16296,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Our construction dictates that we form a surface $T$ by including the solid/dashed faces,",
+        "start": 16321,
+        "end": 16411,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "faces of $H_4$.",
+        "start": 16493,
+        "end": 16510,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The resulting surface is $T_1$, the torus. This surface does not include the solid/dotted",
+        "start": 16599,
+        "end": 16688,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "of $H_4$, but we clearly see their perimeters because their edges belong to the included faces.",
+        "start": 16719,
+        "end": 16814,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The representation of $H_4$ in Figure~\\ref{Fig:Cubes} has a long history.",
+        "start": 17140,
+        "end": 17213,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "According to Robbin~\\cite{ROBBIN} such a perspective view of $H_4$ (which is now standard)",
+        "start": 17214,
+        "end": 17304,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Let's now apply our construction to get a genus embedding of $Q_5$. We",
+        "start": 17348,
+        "end": 17418,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Say the five edge colors of $Q_5$ are 1, 2, 3, 4, and 5. We thus include the 5-cube faces",
+        "start": 17508,
+        "end": 17597,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "bicolored 12, 23, 34, 45, and 51 to obtain the embedding of $Q_5$ in $T_5$, shown",
+        "start": 17598,
+        "end": 17679,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\caption{Genus embeddings of $Q_3$, $Q_4$, and $Q_5$}",
+        "start": 17814,
+        "end": 17867,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "embedding uses exactly half the faces of the 5-cube. One can walk through this model and see all the edges and half the faces of $H_5$,",
+        "start": 18042,
+        "end": 18178,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "One can, for example, easily pick out all ten facets of $Q_5$, and see how they fit together.",
+        "start": 18546,
+        "end": 18639,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To highlight this, we offer a few exercises related to our model of $H_5$ in $T_5$",
+        "start": 18640,
+        "end": 18722,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "{\\bf Exercise 1:} Locate all 80 faces (squares) of $H_5$ in this model.",
+        "start": 18770,
+        "end": 18841,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "{\\bf Exercise 2:} Identify all ten facets of $H_5$. (The facets are 4-cubes.)",
+        "start": 18864,
+        "end": 18941,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Recall that a cycle $Z$ in a graph is a {\\bf Hamiltonian cycle} if $Z$ contains",
+        "start": 19850,
+        "end": 19929,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "all vertices of the graph. The {\\bf complete graph} $K_n$ is the graph with",
+        "start": 19930,
+        "end": 20006,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "vertex set $\\{1,2,\\ldots,n\\}$ and with an edge joining each pair of distinct vertices.",
+        "start": 20007,
+        "end": 20093,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Any ordering $i_1i_2\\ldots i_n$ of $\\{1,2,\\ldots,n\\}$ gives rise to a Hamiltonian cycle",
+        "start": 20094,
+        "end": 20182,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$Z=i_1i_2\\ldots i_n$ in $K_n$ whose $n$ edges are $\\{i_ki_{k{+}1}\\mid 1 \\leq k \\leq n\\}$ (arithmetic modulo $n$.",
+        "start": 20183,
+        "end": 20296,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "if $Z = i_1i_2\\ldots i_n$ is {\\it any} Hamiltonian cycle in $K_n$, then the union",
+        "start": 20556,
+        "end": 20637,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "of the faces of $H_n$ that are bicolored $i_ki_{k+1}$ ($1 \\leq k \\leq n$, addition mod $n$, is",
+        "start": 20638,
+        "end": 20733,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "a surface $T(Z)$ that is a genus embedding for $Q_n\\subseteq T(Z)$.",
+        "start": 20734,
+        "end": 20803,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In fact, if $\\sigma$ is the permutation $k \\mapsto i_k$, $1 \\leq k \\leq n$, then $\\sigma$ induces a permutation of the standard unit vectors in $\\mathbb{R}^n$ which carries $T$ isometrically onto $T(Z)$ sending vertices to vertices,",
+        "start": 20804,
+        "end": 21036,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "If $Z' =i_1'i_2'\\ldots i_n'$ is another Hamiltonian cycle in $K_n$ and if $Z$ and $Z'$ share no edge, then $T(Z)\\cap T(Z')=Q_n$.",
+        "start": 21073,
+        "end": 21201,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "We call a family of surfaces $T(Z_1), T(Z_2),\\ldots,$ $T(Z_s)$ a {\\bf parallel family} if every face (square) of",
+        "start": 21499,
+        "end": 21611,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "$H_n$ belongs to exactly one of the $T(Z_k)$.",
+        "start": 21612,
+        "end": 21657,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "A collection of Hamiltonian cycles $Z_1,Z_2,\\ldots, Z_s$ of $K_n$ is",
+        "start": 21658,
+        "end": 21726,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "a {\\bf Hamiltonian decomposition} of $K_n$ if each edge belongs to exactly one of the cycles.",
+        "start": 21727,
+        "end": 21821,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "It has long been known that for odd $n$, $K_n$ has a Hamiltonian decomposition",
+        "start": 21823,
+        "end": 21901,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "into $(n{-}1)/2$ Hamiltonian cycles. (This was a problem in recreational mathematics, asking whether one could find seating arrangements around a round table that gave each pair of people a unique side-by-side appearance. See~\\cite{alspach}.) We get a nice consequence for the hypercube.",
+        "start": 21902,
+        "end": 22192,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For odd $n \\geq 3$, each Hamiltonian decomposition of $K_n$ gives rise to a parallel family of $ (n{-}1)/2$ genus embeddings of $Q_n$. That is, the $2$-skeleton of $H_n$ can be decomposed into face-disjoint isometric copies of genus embeddings of $Q_n$.",
+        "start": 22210,
+        "end": 22464,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "Let $s = (n{-}1)/2$. Take a Hamiltonian decomposition $Z_1,\\ldots,Z_s$ of $K_n$.",
+        "start": 22493,
+        "end": 22574,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "The genus embeddings $T(Z_1),\\ldots,T(Z_s)$",
+        "start": 22607,
+        "end": 22650,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "of $Q_n$ intersect pairwise in $Q_n$.",
+        "start": 22651,
+        "end": 22688,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "From the proof of Theorem \\ref{Theorem:Main}, $T(Z_k)$ has $n 2^{n-2}$ faces, so the $s$ copies contain all $n2^{n-2}(n-1)/2={{n}\\choose{2}} 2^{n-2}$ faces of $Q_n$.",
+        "start": 22689,
+        "end": 22855,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "polyhedra~\\cite{COXETER}. Indeed, two of Coxeter's skew polyhedra coincide with our genus surfaces for $Q_4$ and $Q_5$, though Coxeter does not refer to graph genus.",
+        "start": 23762,
+        "end": 23927,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In fact, the above ideas can be generalized in other directions. Any decomposition of $K_n$ into edge-disjoint cycles, possible for $n \\geq 3$ odd by a theorem of Euler \\cite[p. 64]{harary}, yields a parallel family of surfaces for the $2$-skeleton of $H_n$; see \\cite{hk-ADAM}. But the parallel family given by Theorem 2 has all surfaces pairwise isometric.",
+        "start": 23929,
+        "end": 24288,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "about the {\\it nonorientable} genus of the $n$-cube~\\cite{JUNGERMAN}? It seems that",
+        "start": 24369,
+        "end": 24453,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Beineke, L. W., Harary F. (1965). The genus of the $n$-cube.",
+        "start": 24868,
+        "end": 24928,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Hunter, R., Kainen, P. C. (2007). Quadrilateral embedding of $G \\times Q_s$.",
+        "start": 25805,
+        "end": 25882,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\bibitem{JUNGERMAN} Jungerman, M. (1978). The non-orientable genus of the $n$-cube.",
+        "start": 25929,
+        "end": 26013,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\bibitem{RINGEL1} Ringel, G. (1955). \\\"Uber drei kombinatorische Probleme am $n$-dimensionalen",
+        "start": 26621,
+        "end": 26715,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      }
+    ],
+    "tables": [],
+    "total_items": 161
+  }
+]

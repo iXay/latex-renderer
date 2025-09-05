@@ -1,0 +1,470 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00014/2401.00014/main.tex",
+    "display_formulas": [],
+    "inline_texts": [
+      {
+        "content": "To this end, we propose a resource consumption-aware DNN for the effective estimate of the percentage of Ki67-positive cells in breast cancer screenings. Our approach reduced up to $75\\%$ and $89\\%$ the usage of memory and disk space respectively, up to $1.5\\times$ the energy consumption, and preserved or improved the overall accuracy of a benchmark state-of-the-art solution. Encouraged by such positive results, we developed and structured the adopted framework so as to allow its general purpose usage, along with a public software repository to support its usage.",
+        "start": 8317,
+        "end": 8887,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": ", 11 billions of parameters for some variants of the T5 Text-To-Text Transformer Model~\\cite{T5_20}, meaning around $44$ terabytes of RAM when using $4$ bytes per parameter).",
+        "start": 21658,
+        "end": 21832,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "In such a context, this study proposes an automated AI method for cell classification and detection of Ki67 and TILs, with a particular attention to the resource usage. We show our solution to be competitive with the state-of-the-art solution, PathoNet~\\cite{negahbani2021pathonet}, a CNN shown to be top-performing in classifying breast cancer images belonging to three classes \\emph{Ki67- immunopositive}, \\emph{Ki67- immunonegative} and \\emph{tumor infiltrating lymphocytes}, while reducing its RAM and disk requirements up to $4\\times$ and $9\\times$, respectively{, along with its energy consumption}.",
+        "start": 23502,
+        "end": 24110,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Moreover, once verified the effectiveness of our methodology, we have done a further step towards the realization of a more general framework to reduce the resource demand of existing pre-trained DL models. {In this sense, PathoNet can be considered as a use case of such a methodology, relatively `toy' for its memory size of around {$13 MB$}, but we will argument in the discussion at the end of the paper how recent researches already proposed DNNs for the same problem requiring several hundreds of megabytes of RAM.",
+        "start": 24111,
+        "end": 24632,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "in a train and a test set (containing $1656$ and $700$ images, respectively).",
+        "start": 31572,
+        "end": 31649,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "From the provided training set, we created a validation set randomly selecting $20 \\%$ of the",
+        "start": 31965,
+        "end": 32058,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We checked that the obtained train (composed by the remaining $80 \\%$ of the images) and validation set had an average number of cells per image (i.e. ``avg./IMG'') similar to the values published in Table 2 of the reference paper~\\cite{negahbani2021pathonet}. The obtained values of avg./IMG are presented in Table~\\ref{tab:stats_cells}. The train set undergoes data augmentation by flipping images w.r.t.\\ X and Y axes and applying rotations, as done in the reference paper.",
+        "start": 32084,
+        "end": 32560,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "a succinct approximation $\\bW$ of a given matrix/tensor $\\bWo$ representing the learned connection weights of a network layer. The \\textit{compression ratio} is defined as the ratio $\\psi$ between",
+        "start": 34303,
+        "end": 34500,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "that is $\\psi = \\mathrm{size}(\\bWo)/\\mathrm{size}(\\bW)$, where $\\mathrm{size}(x)$ is the memory size of $x$.",
+        "start": 34616,
+        "end": 34724,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "In general, uppercase boldface symbols will denote matrices, and the corresponding lowercase letters will refer to matrix entries (e.g., $w^\\mathrm{o}$ will be an entry of $\\bWo$. Vectors---precisely, row vectors---will be rendered using italic boldface (e.g., $\\bx$.",
+        "start": 34725,
+        "end": 34994,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "two parallel parts, the first composed by two stacked convolutional layers with kernel size $3 \\time 3$, and the second built by stacking two $3 \\times 3$ dilated convolutional layers with dilation 4. To reduce the number of parameters, and consequently the possibility of overfitting, the outputs of these two parts are not concatenated but summed up. Overall, PathoNet utilizes a U-Net-like structure~\\cite{UNET}, where most convolutional layers are replaced by RDIMs.",
+        "start": 36653,
+        "end": 37123,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The structure of the network is the following: the input layer is initially processed using two convolutional layers, in turn stacked over four encoder RDIMs and four decoder RDIMs; the latter are followed by three $1 \\times 1$ convolutional layers with linear activation function, used to produce the three-channel output of the model (see~\\cite{negahbani2021pathonet}, Figure 5, for a visual representation).",
+        "start": 37124,
+        "end": 37534,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We did not consider weight or structural pruning, since the model network structure is already tuned by the authors, with a well-conceived and precise organization of the individual blocks. Weight pruning, for instance, is rewarded when attaining high sparsity levels ($> 0.5$, which in turn allow the usage of compressed formats such as CSC. However, an",
+        "start": 38200,
+        "end": 38555,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "in building the matrix $\\bW$ using",
+        "start": 39061,
+        "end": 39095,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "a limited number of distinct weights, each represented using less bits than each entry in $\\bWo$.",
+        "start": 39148,
+        "end": 39245,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "This strategy groups weights into $k$",
+        "start": 40349,
+        "end": 40386,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "clusters via the $k$-means algorithm~\\cite{mcqueen},",
+        "start": 40387,
+        "end": 40439,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "and uses the resulting centroids $\\{c_1, \\dots, c_k \\}$ as representatives to replace the weights in the corresponding cluster~\\cite{Han15}.",
+        "start": 40440,
+        "end": 40580,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "\\item \\textit{Probabilistic WS} (PWS). This technique is based on the \\textit{Probabilistic Quantization} method~\\cite{HAMICPR}, in which a randomized algorithm transforms each weight $w^\\mathrm{o} \\in \\bWo$ in one of $k$ distinct representatives $c_1, \\ldots, c_k$. A nice feature of this method consists in the fact that the obtained $\\bW$ can be seen as the value of an unbiased estimator for $\\bWo$ (see~\\cite{HAMICPR} for details).",
+        "start": 40581,
+        "end": 41017,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 5
+        }
+      },
+      {
+        "content": "In this scheme, which achieved top compression performance in recent applications to CNNs compression~\\cite{Choi20}, representatives are selected by uniformly partitioning the entire weight domain into $k$ subintervals\\footnote{Note that the actual number of subintervals $k$ can be lower than the input value due to the internal selection of the $\\delta$ hyperparameter of the method (see~\\cite{Choi20} for further details).}.",
+        "start": 41060,
+        "end": 41487,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "Scalar Quantization} (ECSQ): This is a technique leveraging an iterative optimization algorithm to determine the optimal number of groups. It is driven by the joint optimization of the expected value for the quantization distortion (a measure of the distance between $\\bWo$ and $\\bW$ and the entropy of the resulting discrete distribution for representative weights~\\cite{chou1989entropy}.",
+        "start": 41861,
+        "end": 42252,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "an efficient solution to exploit the quantized tensors is represented by the Index Map (IM) format~\\cite{Han15}. Representatives are stored in a vector $\\bc =\\{c_1, \\ldots, c_k\\}$, whose indices",
+        "start": 42780,
+        "end": 42974,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "are entries of a new matrix/tensor $\\boldsymbol{M}$.",
+        "start": 42975,
+        "end": 43027,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Thus, if $w^\\mathrm{o}\\in \\bWo$ is associated with centroid, say, $c_2$, then the corresponding entry in $\\boldsymbol{M}$ is set to $2$.",
+        "start": 43028,
+        "end": 43164,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "When $\\bWo$ (and accordingly $\\boldsymbol{M}$ has dimension $n\\times m$, denoted by $b$ and $\\bar b$ the number of bits used to store one entry of $\\bWo$ and of $\\boldsymbol{M}$, respectively, the \\textit{compression ratio} obtained is:",
+        "start": 43165,
+        "end": 43404,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 7
+        }
+      },
+      {
+        "content": "For instance, when $k\\leq 256$, $\\bar b=8$ is enough to represent $2^8=256$ different indices, and assuming a typical FP32 format for $\\bW^\\mathrm{o}$ ($b=32$, the compression ratio would be $\\psi \\approx 4$. We remark that this format does not induce any information loss, while needing only one additional memory access to retrieve a given weight.",
+        "start": 43479,
+        "end": 43829,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "The final step of our framework is the computation of matrix/tensor products directly in the compressed format used at previous step. Without loss of generality, we can assume that the layer weights are represented by a matrix. To compute the output $\\bo = \\bx \\cdot \\bW$ of a given compressed layer with weight matrix $\\bW$ on the input $\\bx$, that is $o_i = \\sum_j x_j w_{ji}$ using IM format, we perform $o_i = \\sum_j x_j c_{m_{ji}}$. From a memory consumption standpoint, this does not need to expand the compressed matrix, and it still keeps the model memory footprint $\\psi$ times smaller than the original one.",
+        "start": 43924,
+        "end": 44542,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 6
+        }
+      },
+      {
+        "content": "One of them is the number $k$ of groups, which has a direct effect on the final size of the compressed model.",
+        "start": 46066,
+        "end": 46176,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "considered the cumulative learning rate $clr$ and the number of groups $k$, since they impacted more on the model accuracy.",
+        "start": 46475,
+        "end": 46598,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The train and validation sets (Section~\\ref{sec:data}) are used to perform the tuning of hyperparameters, i.e., the cumulative learning rate $clr$ for the fine tuning of weights after quantization (Section~\\ref{sec:algo}), and number of clusters $k$, by means of grid search. Obviously, the validation set is not augmented in this phase. The best combination of hyperparameters is the one that gives the lowest RMSE on the validation set. Then the best model is retrained on the complete augmented training set.",
+        "start": 48103,
+        "end": 48614,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "As outlined in~\\cite{HAMICPR}, the cumulative learning rate needs to be smaller than the learning rate used to train the original model: accordingly, the grid for $clr$ has been set to $[0.001, 0.0001, 0.00001, \\linebreak 0.000001]$.",
+        "start": 48616,
+        "end": 48851,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "The number of groups $k$ has been chosen in $[256, 1024, 4096]$ for all compression methods, with the first choice ensuring using 1 byte for each index, and the other 2 choices ensuring lower compression but potentially higher performance. Note that this bidimensional grid yields $12$ combinations for each method, for a total of $48$ experiments; this prevented us from using more refined grids.",
+        "start": 49246,
+        "end": 49644,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "As we can see from the results of this first set of experiments (rows 2--5 in Table~\\ref{tab:exp_perf}), the compressed networks achieve comparable performance w.r.t.\\ the original PathoNet model in terms of F1-score for the classes Ki67 immunopositive and immunonegative. Interestingly, the compression methods UQ and ECSQ obtain a significant improvement in F1-score for the TIL class ($3\\%$ for UQ and slightly lower for ECSQ).",
+        "start": 55515,
+        "end": 55947,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Moreover, all the compressed networks match the uncompressed ones for the Ki67-index cut-off accuracy while always consistently improving the corresponding metric for TIL-score. In particular, the improvement in cut-off accuracy for TIL-score ranges from $4.4\\%$ to $13.1\\%$, depending on the applied quantization approach.",
+        "start": 56104,
+        "end": 56429,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "Overall, all the compressed models almost halve the space occupancy in RAM while bringing a slow down during execution of less than $20\\%$.",
+        "start": 56430,
+        "end": 56569,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "As shown in Table~\\ref{tab:tuning_params}, the grid search process led to the selection of an high number of groups $k$, which was equal to 4096 in most cases. The performance of the compressed models is competitive with the original PathoNet model, and some metrics are often better (especially the ones related to TILs). This behaviour is expected, since an higher number of representatives gives better chances to preserve the network structure. On the other hand, it is interesting to evaluate if a lower number of representatives can lead to competitive results while significantly reducing the space occupancy in main memory.",
+        "start": 56600,
+        "end": 57231,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "To test this situation, we executed again the experiments performed in the previous section but avoiding the model selection process. In particular, the number of groups is fixed to $256$ for all quantization methods and the",
+        "start": 57443,
+        "end": 57667,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The results are showed in Table~\\ref{tab:exp_perf} (rows 6--9). Quite surprisingly, compressed PathoNet models in this setting tend to preserve or even improve their performance when using more representatives (see, e.g., the CWS method), which has the appreciated benefit that the space compression is still increased, namely to $\\approx 4 \\times$ the original uncompressed PathoNet model.",
+        "start": 57888,
+        "end": 58278,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "On the other side, CWS method exhibited an overall higher stability and effectiveness in choosing the representative weights, as confirmed by the the fact that it performed best during model selection when not using the maximum $k$ allowed (Table~\\ref{tab:tuning_params}). %Considering also the facthese results, we suggest the use of one among these networks compressed using $k=256$ when limited RAM is available.",
+        "start": 58450,
+        "end": 58865,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We showed how to obtain a CNN exhibiting performance competitive with PathoNet (reference CNN for the problem), while yielding a model much more resource-cautious, through a novel compression framework. Our solution is around $4\\times$ smaller in terms of memory footprint",
+        "start": 66036,
+        "end": 66309,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "and $9\\times$ in terms of disk size (Figure~\\ref{fig-compression-ratio}), with reference to PathoNet, while still performing the same or better.",
+        "start": 66467,
+        "end": 66613,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "{The disk storage reduction (up to $9\\times$, UQ quantization method), represents an advantage in situations in which the serialized representation of models} is used to share the latter among several actors in a distributed framework.",
+        "start": 70109,
+        "end": 70346,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We {leveraged} the Python package \\textit{codecarbon} and obtained $0.",
+        "start": 71655,
+        "end": 71726,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 0
+        }
+      },
+      {
+        "content": "000573$ kWh used for querying the original model on $500$ images}, and $0.",
+        "start": 71726,
+        "end": 71800,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "UQ, $k=256$.",
+        "start": 71845,
+        "end": 71859,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Further, it successfully tackles the problem of reducing model size and computational resource need, to enhance its applicability in low-resources context, and to limit the energy consumption. With reference to a state-of-the-art top-performing solution, we obtained a model up to $4\\times$ and $9\\times$ smaller in terms of RAM and disk space respectively,",
+        "start": 74142,
+        "end": 74500,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "while reducing the energy consumption of around $1.5\\times$, and substantially preserving classification accuracy. {Once favorably demonstrated the effectiveness of our approach in the estimation of Ki67 and TIL scores, we have done a further step to settle a general framework for compressing pre-trained DL models, that",
+        "start": 74501,
+        "end": 74824,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      }
+    ],
+    "tables": [
+      {
+        "content": "\\begin{tabular}{lS[table-format=2.2]r|S[table-format=2.2]r|S[table-format=2.2]r|S[table-format=2.2]r}\n\\toprule\n & \\multicolumn{2}{c|}{\\textbf{\\begin{tabular}{@{}c@{}}Training+ \\\\ Validation \\end{tabular}}} & \\multicolumn{2}{c|}{\\textbf{Training}} & \\multicolumn{2}{c|}{\\textbf{Validation}} & \\multicolumn{2}{c}{\\textbf{Test}} \\\\\n \n & \\multicolumn{1}{c}{avg.\\slash IMG} & \\multicolumn{1}{c|}{\\# cells} & \\multicolumn{1}{c}{avg.\\slash IMG} & \\multicolumn{1}{c|}{\\# cells} & \\multicolumn{1}{c}{avg.\\slash IMG} & \\multicolumn{1}{c|}{\\# cells} & \\multicolumn{1}{c}{avg.\\slash IMG} & \\multicolumn{1}{c}{\\# cells} \\\\\n %\\specialrule{\\cmidrulewidth}{0pt}{0pt}\n \\midrule\n\\textbf{Ki67 +} & 21.21 & 35106 & 20.88 & 27664 & 22.48 & 7442 & 22.51 & 15755 \\\\\n\\textbf{Ki67 -} & 45.31 & 75010 & 45.04 & 59683 & 46.31 & 15327 & 46.63 & 32643 \\\\\n\\textbf{TIL} & 1.88 & 3112 & 1.81 & 2402 & 2.15 & 710 & 1.97 & 1380 \\\\\n\\bottomrule\n\\end{tabular}",
+        "start": 33015,
+        "end": 33937,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{@{}c@{}}Training+ \\\\ Validation \\end{tabular}",
+        "start": 33157,
+        "end": 33218,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{lllll}\n\\toprule\nQuantization & CWS & PWS & ECSQ & UQ \\\\\n\\midrule\n\\textit{clr} & 0.00001 & 0.0001 & 0.00001 & 0.0001 \\\\\n\\textit{k}   & 1024    & 4096   & 4096    & 4096 \\\\\n\\bottomrule\n\\end{tabular}",
+        "start": 51048,
+        "end": 51260,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      },
+      {
+        "content": "\\begin{tabular}{l|ccc|cc|cc|cc}\n\\toprule\n& \\multicolumn{3}{c|}{\\textbf{F1-score}} & \\multicolumn{2}{c|}{\\textbf{RMSE}} &\\multicolumn{2}{c|}{\\textbf{Cut-off Accuracy}} \\\\\n\\textbf{Experiment} & \\textbf{Ki67+} & \\textbf{Ki67-} & \\textbf{TIL} & \\textbf{Ki67-index} & \\textbf{TIL-score} & \\textbf{Ki67-index} & \\textbf{TIL-score} & \\textbf{Space} & \\textbf{Time}\\\\ \n%\\specialrule{\\cmidrulewidth}{0pt}{0pt}\n\\midrule\nUncompressed & \\textbf{0.853} & 0.776 & 0.348 & 0.050 & 0.054 & 0.913 & 0.826 & - & - \\\\\n%1 (CWS) & 0.888 & 0.803 & 0.692 & 0.791 & 0.746 & 0.091 & 0.837 & 0.774 & 0.162 & 0.049 & 0.033 & 0.957 & 0.957 \\\\ \\hline\n%2 (CWS) & 0.986 & 1.000 & 0.714 & 0.155 & 0.000 & 0.005 & 0.267 & 0.000 & 0.010 & 0.685\t& 0.032\t& 0.435\t& 0.957 \\\\ \\hline\n%3 (CWS) & 0.848 & 0.732 & 0.341 & 0.855 & 0.836 & 0.386 & 0.852& 0.781& 0.362 & 0.049 & 0.029 & 0.957 & 0.870 \\\\ \\hline\n\nCWS & 0.852 & 0.774 & 0.355 & 0.054 & 0.044\t& 0.913\t& 0.870 &1.942 & 0.833 \\\\ \n\nPWS & 0.848\t& 0.774\t& 0.351 & 0.053\t& \\textbf{0.021} & 0.913 & \\textbf{0.957} &1.789 & 0.838 \\\\ \n\nECSQ & 0.852 & 0.776 & 0.375 & 0.054 & 0.039 & 0.913 & 0.913 &1.789 & 0.837 \\\\\n\nUQ & 0.852 & 0.775 & \\textbf{0.378} & 0.056 & 0.036 & 0.913 & 0.913 & 1.916 & 0.835 \\\\\n\nCWS - k=256 & \\textbf{0.853} & 0.778 & 0.365 & 0.053 & 0.041\t& 0.913\t& 0.870 &\\textbf{3.937} &\\textbf{0.843} \\\\\n\nPWS - k=256 & 0.835 & 0.746 & 0.193 & 0.050 & 0.028\t& \\textbf{0.957} & \\textbf{0.957} &\\textbf{3.937} & 0.839 \\\\\n\nECSQ - k=256 & 0.848 & \\textbf{0.781} & 0.355 & \\textbf{0.049} & 0.023 & 0.913 & 0.913 &\\textbf{3.937} & 0.837 \\\\\n\nUQ - k=256 & 0.852 & 0.777 & 0.374 & 0.055 & 0.038 & 0.913 & 0.913 &\\textbf{3.937} & 0.840 \\\\\n\n\\bottomrule\n\\end{tabular}",
+        "start": 53769,
+        "end": 55444,
+        "metadata": {
+          "type": "table",
+          "envname": "tabular"
+        }
+      }
+    ],
+    "total_items": 51
+  }
+]

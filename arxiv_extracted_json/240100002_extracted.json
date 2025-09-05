@@ -1,0 +1,266 @@
+[
+  {
+    "file_path": "/data/xiamaocai/DATA/PDF/2401-2406/filedata/2401.00002/2401.00002/s2_storm.tex",
+    "display_formulas": [
+      {
+        "content": "$$J_{\\mu}= (3.20 \\pm 2.51) \\times 10^{-3} muons/(cm^2\\;s\\;sr),$$",
+        "start": 27000,
+        "end": 27092,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "J_{\\mu}= (3.20 \\pm 2.51) \\times 10^{-3} muons/(cm^2\\;s\\;sr),"
+        }
+      },
+      {
+        "content": "$$F \\sim (46.0 \\pm 34.9) \\;MeV/(cm^2 sr),$$",
+        "start": 27370,
+        "end": 27441,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "F \\sim (46.0 \\pm 34.9) \\;MeV/(cm^2 sr),"
+        }
+      },
+      {
+        "content": "$$J_P(>E_P)=\\int_{Emin}^{\\infty} A_P E_P^{-\\beta}dE_P.$$",
+        "start": 27939,
+        "end": 28023,
+        "metadata": {
+          "type": "display_env",
+          "envname": "equation",
+          "latex": "J_P(>E_P)=\\int_{Emin}^{\\infty} A_P E_P^{-\\beta}dE_P."
+        }
+      }
+    ],
+    "inline_texts": [
+      {
+        "content": "as detected from several ground level detectors. Bottom right panel: correlation between $R_{max}$ (from Corsika-Fluka) versus the",
+        "start": 12882,
+        "end": 13013,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$\\pm 1 \\sigma$. }",
+        "start": 13240,
+        "end": 13258,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "cosmic protons (E $<$ 200 MeV ). In other words, the",
+        "start": 16370,
+        "end": 16422,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "based on CORSIKA-Fluka code \\citep{heck12,batt08}, where $1.0 \\times 10^6$ proton",
+        "start": 17042,
+        "end": 17123,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "values of R, called hereafter as $R_{max}$",
+        "start": 17605,
+        "end": 17647,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "$R_{max}$ in the SAA central region (SAA-CR) rigidity 9.6",
+        "start": 17698,
+        "end": 17755,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "between $R_{max}$ versus the geomagnetic Stormer rigidity",
+        "start": 17939,
+        "end": 17996,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "SAA-CR (blue square). The solid red line is a linear fit, and the two dotted red lines delimit the region with significance of $\\pm 1 \\sigma$.",
+        "start": 18059,
+        "end": 18201,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "Only two places are out from the $\\pm 1.0 \\sigma$ significance region, the Thule (Groenlandia) in the lowest rigidity region",
+        "start": 18202,
+        "end": 18326,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "to the high value of $R_{max}$ expected by the correlation.",
+        "start": 18428,
+        "end": 18487,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "value of $R_{max}$ at SAA-CR correspond to the rigidity of",
+        "start": 18548,
+        "end": 18606,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "only $3.1^{+3.0}_{-1.7}$ GV, within a confidence of $\\pm 1.0 \\sigma$.",
+        "start": 18607,
+        "end": 18676,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "On July 17, 2023, at $\\sim$18h UT, the active region AR 13363 had an explosion, reaching an M6-class solar flare followed by a resplendent coronal mass ejection. Fig.~\\ref{flare_cme} left panel shows the image from the Solar Dynamo observatory of the blaze of fire responsible for the X-ray flux reaching M6-class flare. Already the right panel shows the LASCO-C2 coronograph image of its associated CME on July 18, 2023, at 00:42 UT.",
+        "start": 18856,
+        "end": 19290,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The aim is to obtain the yield function, $S_{\\mu}(E_P)$, that is, the number of muons at sea level per primary proton, for an estimate of the upper limit of the integral proton flux in the GeV energy range, associated with the impulsive phase of M-6-class flare with onset on July 17, 2023, at $\\sim $ 18 UT.",
+        "start": 23653,
+        "end": 23962,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "\\caption{Correlation between the coefficient Ap and the spectral index $\\beta$. All possible values of Ap and $\\beta$ compatible with the New-Tupi muon counting rate excess",
+        "start": 24130,
+        "end": 24302,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $A_\\mu = (6.8 \\pm 1.4) \\times 10^{-3}$, $\\nu=1.18 \\pm 0.24$, and $E_0=10.2 \\pm 2.1$ GeV. Fig.~\\ref{yield2} shows the fits (red dot line).",
+        "start": 24768,
+        "end": 24912,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 3
+        }
+      },
+      {
+        "content": "There are two unknown quantities in the above power-law function: the coefficient $A_P$ and the spectral index $\\beta$.",
+        "start": 25739,
+        "end": 25858,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "A convolution between the yield function $S_{\\mu}(E_P)$ and the proton spectrum $J_P(E_P)$ gives the response function \\citep{augu16b}, which is the number of muons in the excess signal at New-Tupi detector generated by the SEP during the period T. We express this convolution as",
+        "start": 25861,
+        "end": 26141,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "where $F(\\theta) \\sim \\exp(\\theta/C)$ is the pitch angle distribution \\citep{shea82,miro05}. In the central region of SAA (New-Tupi), the transverse geomagnetic component is only $B_{\\perp} =18.3$ mT, that is, almost 80\\% smaller than the transverse component, at the same latitude, but outside from the SAA region, favoring the focusing factor of the geomagnetic parallel geomagnetic on the incident solar protons (small pitch angles).",
+        "start": 26267,
+        "end": 26704,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "For the present event, we found $\\exp(\\theta /C) \\sim 1$.",
+        "start": 26705,
+        "end": 26762,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "For the present case, the GOES-proton fluence in the high-energy region (Ep$\\geq$50) MeV is",
+        "start": 27278,
+        "end": 27369,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "The terms on the left side of Eq.~\\ref{yield} and Eq.~\\ref{fluence} are known. Thus, we can consider all possible values of $\\beta$ and $A_P$ compatible with the observed muon counting rate excess, $J_{\\mu}$, and the integrated GOES-proton fluence $F$. Fig.~\\ref{cruze} summarizes the situation. Giving:\\\\",
+        "start": 27443,
+        "end": 27748,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 4
+        }
+      },
+      {
+        "content": "$Ap=(1.20\\pm 0.96) \\times 10^{-3}/(cm^2s\\;sr\\;GeV)$\\\\ and $\\beta=1.89\\pm 1.10$.",
+        "start": 27749,
+        "end": 27828,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 2
+        }
+      },
+      {
+        "content": "We have reported evidence of SEPs accelerated up to GeV energies during the eruptive phase of the M6-class solar flare on July 17, 2023. The result comes from a timing analysis of a muon excess from the New-Tupi detector at the SAA central region. Muons at New-Tupi are produced by protons (ions) interaction in the upper atmosphere reaching the Earth with a magnetic rigidity above 3 GV ($\\sim$ 3 GeV for protons).",
+        "start": 28593,
+        "end": 29008,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      },
+      {
+        "content": "We want to point out that the muon excess produced by SEPs with an effective rigidity above the cutoff ($\\sim$ 3 GV) at the New-Tupi muon detector is in temporal coincidence only with the GOES proton flux from the impulsive phase (see Fig.~\\ref{goes_tupi}) . Consequently, in the gradual phase, the protons accelerated by CME's shocks do not reach the GeV energy range because a muon excess is absent at ground level.",
+        "start": 29322,
+        "end": 29739,
+        "metadata": {
+          "type": "inline_text",
+          "inline_count": 1
+        }
+      }
+    ],
+    "tables": [],
+    "total_items": 28
+  }
+]
