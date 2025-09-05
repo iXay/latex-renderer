@@ -7,6 +7,8 @@ import os
 import multiprocessing
 import time
 import logging
+import traceback
+import sys
 from datetime import datetime
 from concurrent.futures import ProcessPoolExecutor, as_completed, TimeoutError
 from latex_to_png_renderer import LaTeXRenderer
@@ -53,6 +55,9 @@ def process_single_file_worker(args):
     # 获取进程ID用于调试
     process_id = os.getpid()
     
+    # 设置进程级别的日志记录器
+    logger = logging.getLogger(f"worker_{process_id}")
+    
     try:
         # 设置matplotlib为非交互式后端（进程安全）
         import matplotlib
@@ -98,12 +103,24 @@ def process_single_file_worker(args):
         }
         
     except Exception as e:
+        # 获取详细的异常信息
+        error_type = type(e).__name__
+        error_message = str(e)
+        error_traceback = traceback.format_exc()
+        
+        # 记录详细的异常信息到日志
+        logger.error(f"进程 {process_id} 处理文件 {json_file} 时发生异常:")
+        logger.error(f"  异常类型: {error_type}")
+        logger.error(f"  异常信息: {error_message}")
+        logger.error(f"  异常堆栈:\n{error_traceback}")
+        
         # 错误情况的缓存条目
         cache_entry = {
             "timestamp": datetime.now().isoformat(),
             "process_id": process_id,
-            "error": str(e),
-            "error_type": type(e).__name__,
+            "error": error_message,
+            "error_type": error_type,
+            "error_traceback": error_traceback,
             "file_path": json_file,
             "status": "failed"
         }
@@ -113,12 +130,14 @@ def process_single_file_worker(args):
             cache_manager = DistributedCacheManager(cache_dir)
             cache_manager.save_file_cache(json_file, cache_entry)
         except Exception as cache_error:
-            print(f"警告: 进程 {process_id} 无法更新错误缓存: {cache_error}")
+            logger.error(f"进程 {process_id} 无法更新错误缓存: {cache_error}")
         
         return json_file, False, {
             "formulas_count": 0,
             "texts_count": 0,
-            "errors_count": 1
+            "errors_count": 1,
+            "error_type": error_type,
+            "error_message": error_message
         }
     
     finally:
@@ -126,13 +145,13 @@ def process_single_file_worker(args):
         try:
             import matplotlib.pyplot as plt
             plt.close('all')
-        except:
-            pass
+        except Exception as cleanup_error:
+            logger.warning(f"进程 {process_id} 清理matplotlib资源时发生异常: {cleanup_error}")
 
 
 
 
-def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_images", max_files: int = None, cache_dir: str = None, resume: bool = False, max_workers: int = 4, task_timeout: int = 1200, log_file: str = None):
+def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_images", max_files: int = None, cache_dir: str = None, resume: bool = False, max_workers: int = 4, task_timeout: int = 3600, log_file: str = None):
     """从描述文件中读取JSON文件路径列表并批量处理 - 分布式缓存版本"""
     # 设置日志
     log_file_path = setup_logging(log_file)
@@ -243,38 +262,53 @@ def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_ima
             for future in as_completed(running_tasks.keys(), timeout=task_timeout):
                 json_file, args = running_tasks.pop(future)
                 
-                try:
-                    file_path, success, stats = future.result(timeout=task_timeout)
-                    
-                    # 累计统计信息
-                    total_formulas += stats["formulas_count"]
-                    total_texts += stats["texts_count"]
-                    total_errors += stats["errors_count"]
+                # 检查future状态，如果异常就直接跳过，避免进程池中断
+                if future.exception() is not None:
+                    # 进程异常退出，记录错误但继续处理其他任务
+                    exception = future.exception()
+                    logger.error(f"进程异常退出，处理文件 {json_file} 时发生异常: {exception}")
+                    logger.error(f"  异常类型: {type(exception).__name__}")
+                    logger.error(f"  异常堆栈: {traceback.format_exc()}")
+                    total_errors += 1
                     completed_count += 1
-                    
-                    # 显示进度信息
-                    progress_percent = (completed_count / len(files_to_process)) * 100
-                    logger.info(f"[{completed_count}/{len(files_to_process)}] ({progress_percent:.1f}%) 完成: {os.path.basename(json_file)}")
-                    if success:
-                        status_msg = f"公式: {stats['formulas_count']} 个, 文本: {stats['texts_count']} 个"
-                        if stats["errors_count"] > 0:
-                            status_msg += f", 错误: {stats['errors_count']} 个"
-                        logger.info(f"  {status_msg}")
-                    else:
-                        logger.error(f"  处理失败: 进程异常")
-                    
-                    # 显示当前运行状态
-                    if len(running_tasks) > 0:
-                        logger.debug(f"  当前运行任务数: {len(running_tasks)}, 待提交任务数: {len(task_queue)}")
+                else:
+                    try:
+                        file_path, success, stats = future.result(timeout=task_timeout)
                         
-                except TimeoutError:
-                    logger.error(f"处理文件 {json_file} 超时")
-                    total_errors += 1
-                    completed_count += 1
-                except Exception as e:
-                    logger.error(f"处理文件 {json_file} 时发生异常: {e}")
-                    total_errors += 1
-                    completed_count += 1
+                        # 累计统计信息
+                        total_formulas += stats["formulas_count"]
+                        total_texts += stats["texts_count"]
+                        total_errors += stats["errors_count"]
+                        completed_count += 1
+                        
+                        # 显示进度信息
+                        progress_percent = (completed_count / len(files_to_process)) * 100
+                        logger.info(f"[{completed_count}/{len(files_to_process)}] ({progress_percent:.1f}%) 完成: {os.path.basename(json_file)}")
+                        if success:
+                            status_msg = f"公式: {stats['formulas_count']} 个, 文本: {stats['texts_count']} 个"
+                            if stats["errors_count"] > 0:
+                                status_msg += f", 错误: {stats['errors_count']} 个"
+                            logger.info(f"  {status_msg}")
+                        else:
+                            # 显示详细的错误信息
+                            error_type = stats.get("error_type", "Unknown")
+                            error_message = stats.get("error_message", "进程异常")
+                            logger.error(f"  处理失败: {error_type} - {error_message}")
+                        
+                        # 显示当前运行状态
+                        if len(running_tasks) > 0:
+                            logger.debug(f"  当前运行任务数: {len(running_tasks)}, 待提交任务数: {len(task_queue)}")
+                            
+                    except TimeoutError:
+                        logger.error(f"处理文件 {json_file} 超时 (超过 {task_timeout} 秒)")
+                        total_errors += 1
+                        completed_count += 1
+                    except Exception as e:
+                        logger.error(f"处理文件 {json_file} 时发生异常: {e}")
+                        logger.error(f"  异常类型: {type(e).__name__}")
+                        logger.error(f"  异常堆栈: {traceback.format_exc()}")
+                        total_errors += 1
+                        completed_count += 1
                 
                 # 动态提交新任务：当有任务完成时，立即提交下一个任务
                 if task_queue:
