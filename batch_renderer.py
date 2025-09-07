@@ -151,7 +151,7 @@ def process_single_file_worker(args):
 
 
 
-def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_images", max_files: int = None, cache_dir: str = None, resume: bool = False, max_workers: int = 4, task_timeout: int = 3600, log_file: str = None):
+def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_images", max_files: int = None, cache_dir: str = None, resume: bool = False, max_workers: int = 4, task_timeout: int = 3600 * 24, log_file: str = None):
     """从描述文件中读取JSON文件路径列表并批量处理 - 分布式缓存版本"""
     # 设置日志
     log_file_path = setup_logging(log_file)
@@ -367,8 +367,8 @@ def main():
                        help="断点续传模式，跳过已处理的文件")
     parser.add_argument("-j", "--max-workers", type=int, default=4,
                        help="最大并发工作进程数 (默认: 4)")
-    parser.add_argument("-t", "--task-timeout", type=int, default=1200,
-                       help="单个任务超时时间（秒） (默认: 1200)")
+    parser.add_argument("-t", "--task-timeout", type=int, default=3600*24,
+                       help="单个任务超时时间（秒） (默认: 3600*24)")
     parser.add_argument("-l", "--log-file", default=None,
                        help="日志文件路径 (默认: 自动生成带时间戳的文件名)")
     

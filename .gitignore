@@ -6,3 +6,5 @@ rendered_images/
 rendered_images_cache/
 
 venv/
+
+arxiv_extracted_json/
