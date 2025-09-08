@@ -50,7 +50,7 @@ def setup_logging(log_file: str = None, log_level: str = "INFO"):
 
 def process_single_file_worker(args):
     """多进程工作函数，使用分布式缓存（无锁，高性能）"""
-    json_file, output_dir, dpi, cache_dir = args
+    json_file, output_dir, dpi, cache_dir, render_type = args
     
     # 获取进程ID用于调试
     process_id = os.getpid()
@@ -70,7 +70,7 @@ def process_single_file_worker(args):
         
         # 创建独立的渲染器实例
         renderer = LaTeXRenderer(output_dir=output_dir, dpi=dpi)
-        results = renderer.process_json_file(json_file)
+        results = renderer.process_json_file(json_file, render_type=render_type)
         
         formulas_count = len(results['display_formulas'])
         texts_count = len(results['inline_texts'])
@@ -151,7 +151,7 @@ def process_single_file_worker(args):
 
 
 
-def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_images", max_files: int = None, cache_dir: str = None, resume: bool = False, max_workers: int = 4, task_timeout: int = 3600 * 24, log_file: str = None):
+def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_images", max_files: int = None, cache_dir: str = None, resume: bool = False, max_workers: int = 4, task_timeout: int = 3600 * 24, log_file: str = None, render_type: str = "both"):
     """从描述文件中读取JSON文件路径列表并批量处理 - 分布式缓存版本"""
     # 设置日志
     log_file_path = setup_logging(log_file)
@@ -160,6 +160,7 @@ def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_ima
     logger.info("LaTeX渲染器 - 分布式缓存版本")
     logger.info("注意: 需要安装LaTeX环境")
     logger.info(f"并发工作进程数: {max_workers}")
+    logger.info(f"渲染类型: {render_type}")
     logger.info(f"日志文件: {log_file_path}")
     
     # 设置默认缓存目录
@@ -230,9 +231,9 @@ def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_ima
     total_errors = 0
     completed_count = 0
     
-    # 准备任务参数列表（每个任务包含分布式缓存目录参数）
+    # 准备任务参数列表（每个任务包含分布式缓存目录参数和渲染类型）
     task_args = [
-        (json_file, output_dir, 300, cache_dir) 
+        (json_file, output_dir, 300, cache_dir, render_type) 
         for json_file in files_to_process
     ]
     
@@ -371,6 +372,8 @@ def main():
                        help="单个任务超时时间（秒） (默认: 3600*24)")
     parser.add_argument("-l", "--log-file", default=None,
                        help="日志文件路径 (默认: 自动生成带时间戳的文件名)")
+    parser.add_argument("-r", "--render-type", choices=["formula", "text", "both"], default="both",
+                       help="渲染类型: formula(只渲染公式), text(只渲染文本), both(都渲染) (默认: both)")
     
     args = parser.parse_args()
     
@@ -398,7 +401,8 @@ def main():
         resume=args.resume,
         max_workers=args.max_workers,
         task_timeout=args.task_timeout,
-        log_file=args.log_file
+        log_file=args.log_file,
+        render_type=args.render_type
     )
     
 if __name__ == "__main__":

@@ -454,17 +454,18 @@ class LaTeXRenderer:
             print(f"✗ 渲染文本失败 {filename}")
             return None
 
-    def process_json_file(self, json_file_path: str) -> Dict[str, List[Dict[str, str]]]:
+    def process_json_file(self, json_file_path: str, render_type: str = "both") -> Dict[str, List[Dict[str, str]]]:
         """
         处理JSON文件，渲染所有公式和文本
 
         Args:
             json_file_path: JSON文件路径
+            render_type: 渲染类型，可选值: "formula"(只渲染公式), "text"(只渲染文本), "both"(都渲染)
 
         Returns:
             包含渲染结果的字典，每个结果包含content和对应的PNG文件路径
         """
-        print(f"开始处理文件: {json_file_path}")
+        print(f"开始处理文件: {json_file_path} (渲染类型: {render_type})")
 
         with open(json_file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -483,83 +484,85 @@ class LaTeXRenderer:
             for doc_idx, document in enumerate(data):
                 print(f"处理文档 {doc_idx + 1}/{len(data)}")
 
-                # 处理display_formulas
-                display_formulas = document.get('display_formulas', [])
-                for i, formula in enumerate(display_formulas):
-                    content = formula.get('content', '')
-                    filename = f"{base_name}_doc{doc_idx+1:03d}_formula_{i+1:03d}"
+                # 处理display_formulas (只在render_type为"formula"或"both"时处理)
+                if render_type in ["formula", "both"]:
+                    display_formulas = document.get('display_formulas', [])
+                    for i, formula in enumerate(display_formulas):
+                        content = formula.get('content', '')
+                        filename = f"{base_name}_doc{doc_idx+1:03d}_formula_{i+1:03d}"
 
-                    result = self.render_display_formula(content, filename)
-                    if result:
-                        # 返回包含content和PNG文件路径的字典
-                        results['display_formulas'].append({
-                            "content": content,
-                            "image": result,
-                            "document_index": doc_idx + 1
-                        })
-                    else:
-                        # render_display_formula内部已经增加了错误计数，这里不需要重复增加
-                        results['errors'].append({
-                            "error_message": f"文档{doc_idx+1} 公式 {i+1} 渲染失败",
-                            "error_type": "FormulaRenderingError",
-                            "content_preview": content,
-                            "item_index": i+1,
-                            "item_type": "display_formula",
-                            "document_index": doc_idx + 1
-                        })
-
-                # 处理inline_texts
-                inline_texts = document.get('inline_texts', [])
-                for i, text_item in enumerate(inline_texts):
-                    content = text_item.get('content', '')
-                    filename = f"{base_name}_doc{doc_idx+1:03d}_text_{i+1:03d}"
-
-                    try:
-                        result = self.render_inline_text(content, filename)
+                        result = self.render_display_formula(content, filename)
                         if result:
                             # 返回包含content和PNG文件路径的字典
-                            results['inline_texts'].append({
+                            results['display_formulas'].append({
                                 "content": content,
                                 "image": result,
                                 "document_index": doc_idx + 1
                             })
                         else:
-                            # render_inline_text内部已经增加了错误计数，这里不需要重复增加
+                            # render_display_formula内部已经增加了错误计数，这里不需要重复增加
                             results['errors'].append({
-                                "error_message": f"文档{doc_idx+1} 文本 {i+1} 渲染失败",
-                                "error_type": "TextRenderingError",
+                                "error_message": f"文档{doc_idx+1} 公式 {i+1} 渲染失败",
+                                "error_type": "FormulaRenderingError",
+                                "content_preview": content,
+                                "item_index": i+1,
+                                "item_type": "display_formula",
+                                "document_index": doc_idx + 1
+                            })
+
+                # 处理inline_texts (只在render_type为"text"或"both"时处理)
+                if render_type in ["text", "both"]:
+                    inline_texts = document.get('inline_texts', [])
+                    for i, text_item in enumerate(inline_texts):
+                        content = text_item.get('content', '')
+                        filename = f"{base_name}_doc{doc_idx+1:03d}_text_{i+1:03d}"
+
+                        try:
+                            result = self.render_inline_text(content, filename)
+                            if result:
+                                # 返回包含content和PNG文件路径的字典
+                                results['inline_texts'].append({
+                                    "content": content,
+                                    "image": result,
+                                    "document_index": doc_idx + 1
+                                })
+                            else:
+                                # render_inline_text内部已经增加了错误计数，这里不需要重复增加
+                                results['errors'].append({
+                                    "error_message": f"文档{doc_idx+1} 文本 {i+1} 渲染失败",
+                                    "error_type": "TextRenderingError",
+                                    "content_preview": content,
+                                    "item_index": i+1,
+                                    "item_type": "inline_text",
+                                    "document_index": doc_idx + 1
+                                })
+                        except ValueError as ve:
+                            # 特殊情况：纯newcommand或空文本，记录为跳过而非错误
+                            print(f"⚠ 跳过文档{doc_idx+1} 文本 {i+1}: {ve}")
+                            self.stats['errors'] += 1  # 跳过的内容也计入失败统计
+                            results['errors'].append({
+                                "error_message": f"文档{doc_idx+1} 文本 {i+1} 跳过: {str(ve)}",
+                                "error_type": "ContentSkipped",
+                                "content_preview": content,
+                                "item_index": i+1,
+                                "item_type": "inline_text",
+                                "document_index": doc_idx + 1,
+                                "skip_reason": "pure_newcommand_or_empty"
+                            })
+                        except Exception as e:
+                            # 其他真正的错误
+                            print(f"✗ 文档{doc_idx+1} 文本 {i+1} 渲染失败: {e}")
+                            self.stats['errors'] += 1  # 其他错误也计入失败统计
+                            latex_error_type = self._categorize_latex_error(str(e))
+                            results['errors'].append({
+                                "error_message": f"文档{doc_idx+1} 文本 {i+1} 渲染失败: {str(e)}",
+                                "error_type": latex_error_type,
+                                "python_error_type": type(e).__name__,
                                 "content_preview": content,
                                 "item_index": i+1,
                                 "item_type": "inline_text",
                                 "document_index": doc_idx + 1
                             })
-                    except ValueError as ve:
-                        # 特殊情况：纯newcommand或空文本，记录为跳过而非错误
-                        print(f"⚠ 跳过文档{doc_idx+1} 文本 {i+1}: {ve}")
-                        self.stats['errors'] += 1  # 跳过的内容也计入失败统计
-                        results['errors'].append({
-                            "error_message": f"文档{doc_idx+1} 文本 {i+1} 跳过: {str(ve)}",
-                            "error_type": "ContentSkipped",
-                            "content_preview": content,
-                            "item_index": i+1,
-                            "item_type": "inline_text",
-                            "document_index": doc_idx + 1,
-                            "skip_reason": "pure_newcommand_or_empty"
-                        })
-                    except Exception as e:
-                        # 其他真正的错误
-                        print(f"✗ 文档{doc_idx+1} 文本 {i+1} 渲染失败: {e}")
-                        self.stats['errors'] += 1  # 其他错误也计入失败统计
-                        latex_error_type = self._categorize_latex_error(str(e))
-                        results['errors'].append({
-                            "error_message": f"文档{doc_idx+1} 文本 {i+1} 渲染失败: {str(e)}",
-                            "error_type": latex_error_type,
-                            "python_error_type": type(e).__name__,
-                            "content_preview": content,
-                            "item_index": i+1,
-                            "item_type": "inline_text",
-                            "document_index": doc_idx + 1
-                        })
 
         return results
 
