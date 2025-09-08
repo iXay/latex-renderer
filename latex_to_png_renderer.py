@@ -121,15 +121,15 @@ class LaTeXRenderer:
             print(f"✗ 子进程渲染异常 {output_path}: {e}")
             return None
 
-    def trim_image_whitespace(self, image_path: str) -> str:
+    def trim_image_whitespace(self, image_path: str) -> bool:
         """
         移除图片周围的白边
-
+        
         Args:
             image_path: 图片路径
-
+            
         Returns:
-            处理后的图片路径
+            True表示成功处理，False表示检测到空白图片
         """
         try:
             # 打开图片
@@ -175,14 +175,17 @@ class LaTeXRenderer:
                 cropped_img.save(image_path, 'PNG', dpi=(self.dpi, self.dpi))
                 print(
                     f"  ✓ 已移除白边: {image_path} (从 {width}x{height} 裁剪到 {right-left}x{bottom-top})")
+                return True
             else:
-                print(f"  ⚠ 未检测到内容，跳过裁剪: {image_path}")
-
-            return image_path
+                # 检测到空白图片，删除文件
+                if os.path.exists(image_path):
+                    os.remove(image_path)
+                print(f"✗ 检测到空白图片已删除: {image_path}")
+                return False
 
         except Exception as e:
             print(f"  ⚠ 白边移除失败 {image_path}: {e}")
-            return image_path
+            return True  # 处理失败时保持原有行为
 
     # preprocess_latex函数已移动到 latex_utils.py 模块中
 
@@ -194,7 +197,7 @@ class LaTeXRenderer:
 
     # _categorize_latex_error函数已移动到 latex_utils.py 模块中
 
-    def render_display_formula(self, formula_content: str, filename: str) -> str:
+    def render_display_formula(self, formula_content: str, filename: str) -> Tuple[str, str]:
         """
         渲染独立的数学公式
 
@@ -203,24 +206,30 @@ class LaTeXRenderer:
             filename: 输出文件名（不含扩展名）
 
         Returns:
-            生成的PNG文件路径
+            元组: (生成的PNG文件路径, 错误类型), 成功时错误类型为None
         """
         output_path = self.output_dir / f"{filename}.png"
         
         # 使用子进程渲染
         result = self._render_with_subprocess(formula_content, str(output_path), 'formula')
         if result:
-            # 进行白边裁剪
-            self.trim_image_whitespace(str(output_path))
-            self.stats['success'] += 1
-            print(f"✓ 渲染公式成功: {output_path}")
-            return result
+            # 进行白边裁剪并检查是否为空白图片
+            is_valid = self.trim_image_whitespace(str(output_path))
+            if is_valid:
+                self.stats['success'] += 1
+                print(f"✓ 渲染公式成功: {output_path}")
+                return result, None
+            else:
+                # 空白图片，视为渲染失败
+                self.stats['errors'] += 1
+                print(f"✗ 渲染公式失败 {filename} (空白图片)")
+                return None, "BlankImageError"
         else:
             self.stats['errors'] += 1
             print(f"✗ 渲染公式失败 {filename}")
-            return None
+            return None, "FormulaRenderingError"
 
-    def render_inline_text(self, text_content: str, filename: str) -> str:
+    def render_inline_text(self, text_content: str, filename: str) -> Tuple[str, str]:
         """
         渲染包含行内公式的文本
 
@@ -229,22 +238,28 @@ class LaTeXRenderer:
             filename: 输出文件名（不含扩展名）
 
         Returns:
-            生成的PNG文件路径
+            元组: (生成的PNG文件路径, 错误类型), 成功时错误类型为None
         """
         output_path = self.output_dir / f"{filename}.png"
         
         # 使用子进程渲染
         result = self._render_with_subprocess(text_content, str(output_path), 'text')
         if result:
-            # 进行白边裁剪
-            self.trim_image_whitespace(str(output_path))
-            self.stats['success'] += 1
-            print(f"✓ 渲染文本成功: {output_path}")
-            return result
+            # 进行白边裁剪并检查是否为空白图片
+            is_valid = self.trim_image_whitespace(str(output_path))
+            if is_valid:
+                self.stats['success'] += 1
+                print(f"✓ 渲染文本成功: {output_path}")
+                return result, None
+            else:
+                # 空白图片，视为渲染失败
+                self.stats['errors'] += 1
+                print(f"✗ 渲染文本失败 {filename} (空白图片)")
+                return None, "BlankImageError"
         else:
             self.stats['errors'] += 1
             print(f"✗ 渲染文本失败 {filename}")
-            return None
+            return None, "TextRenderingError"
 
     def process_json_file(self, json_file_path: str, render_type: str = "both") -> Dict[str, List[Dict[str, str]]]:
         """
@@ -283,7 +298,7 @@ class LaTeXRenderer:
                         content = formula.get('content', '')
                         filename = f"{base_name}_doc{doc_idx+1:03d}_formula_{i+1:03d}"
 
-                        result = self.render_display_formula(content, filename)
+                        result, error_type = self.render_display_formula(content, filename)
                         if result:
                             # 返回包含content和PNG文件路径的字典
                             results['display_formulas'].append({
@@ -293,9 +308,15 @@ class LaTeXRenderer:
                             })
                         else:
                             # render_display_formula内部已经增加了错误计数，这里不需要重复增加
+                            # 根据错误类型设置不同的错误消息
+                            if error_type == "BlankImageError":
+                                error_message = f"文档{doc_idx+1} 公式 {i+1} 渲染失败 (空白图片)"
+                            else:
+                                error_message = f"文档{doc_idx+1} 公式 {i+1} 渲染失败"
+                            
                             results['errors'].append({
-                                "error_message": f"文档{doc_idx+1} 公式 {i+1} 渲染失败",
-                                "error_type": "FormulaRenderingError",
+                                "error_message": error_message,
+                                "error_type": error_type or "FormulaRenderingError",
                                 "content_preview": content,
                                 "item_index": i+1,
                                 "item_type": "display_formula",
@@ -310,7 +331,7 @@ class LaTeXRenderer:
                         filename = f"{base_name}_doc{doc_idx+1:03d}_text_{i+1:03d}"
 
                         try:
-                            result = self.render_inline_text(content, filename)
+                            result, error_type = self.render_inline_text(content, filename)
                             if result:
                                 # 返回包含content和PNG文件路径的字典
                                 results['inline_texts'].append({
@@ -320,9 +341,15 @@ class LaTeXRenderer:
                                 })
                             else:
                                 # render_inline_text内部已经增加了错误计数，这里不需要重复增加
+                                # 根据错误类型设置不同的错误消息
+                                if error_type == "BlankImageError":
+                                    error_message = f"文档{doc_idx+1} 文本 {i+1} 渲染失败 (空白图片)"
+                                else:
+                                    error_message = f"文档{doc_idx+1} 文本 {i+1} 渲染失败"
+                                
                                 results['errors'].append({
-                                    "error_message": f"文档{doc_idx+1} 文本 {i+1} 渲染失败",
-                                    "error_type": "TextRenderingError",
+                                    "error_message": error_message,
+                                    "error_type": error_type or "TextRenderingError",
                                     "content_preview": content,
                                     "item_index": i+1,
                                     "item_type": "inline_text",
