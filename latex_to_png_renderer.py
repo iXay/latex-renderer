@@ -4,15 +4,14 @@ LaTeX to PNG Renderer
 渲染JSON文件中的LaTeX公式和文本为PNG图片
 
 支持：
-- display_formulas: 独立的数学公式（$$...$$）
-- inline_texts: 包含行内公式的文本段落
+- display_formulas: 独立的数学公式（$$...$$ 和 \\[...\\]）
+- inline_texts: 包含行内公式的文本段落（$...$ 和 \\(...\\)）
 """
 
 import json
 import re
 import os
 import sys
-import random
 import subprocess
 from pathlib import Path
 from typing import List, Dict, Any, Tuple
@@ -22,69 +21,19 @@ from matplotlib import mathtext
 import numpy as np
 from PIL import Image, ImageOps
 
+# 导入共用的LaTeX处理工具
+from latex_utils import (
+    LATEX_PREAMBLE,
+    categorize_latex_error
+)
+
 # 设置matplotlib使用完整LaTeX
 matplotlib.rcParams['text.usetex'] = True  # 使用完整LaTeX渲染
 matplotlib.rcParams['font.family'] = 'serif'
 matplotlib.rcParams['font.size'] = 12
 
 # 配置LaTeX包
-matplotlib.rcParams['text.latex.preamble'] = r'''
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsfonts}
-\usepackage{physics}
-\usepackage{braket}
-\usepackage{bm}
-\usepackage{mathtools}
-\usepackage{xcolor}
-\usepackage{natbib}
-\usepackage{graphicx}
-% Custom macro definitions for scientific papers
-\newcommand{\vvir}{v_{\text{vir}}}
-\newcommand{\vdm}{v_{\text{DM}}}
-\newcommand{\mwd}{M_{\text{WD}}}
-\newcommand{\mpbh}{M_{\text{PBH}}}
-\newcommand{\Rwd}{R_{\text{WD}}}
-\newcommand{\Rpbh}{R_{\text{PBH}}}
-\newcommand{\fmergewb}{f_{\text{merge}}^{\text{WD-PBH}}}
-\newcommand{\fmin}{f_{\text{min}}}
-\newcommand{\fmax}{f_{\text{max}}}
-\newcommand{\fpbh}{f_{\text{PBH}}}
-\newcommand{\Mc}{\mathcal{M}_c}
-\newcommand{\calO}{\mathcal{O}}
-\newcommand{\vrel}{v_{\text{rel}}}
-\newcommand{\diff}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
-\newcommand{\ee}{\mathrm{e}}
-\newcommand{\us}{\mathrm{s}}
-\newcommand{\um}{\mathrm{m}}
-\newcommand{\uh}{\mathrm{h}}
-\newcommand{\umin}{\mathrm{min}}
-\newcommand{\umax}{\mathrm{max}}
-\newcommand{\WD}{\text{WD}}
-\newcommand{\PBH}{\text{PBH}}
-\newcommand{\MS}{\text{MS}}
-% Additional macros for text rendering
-\newcommand{\ac}[1]{\text{#1}}
-\newcommand{\acp}[1]{\text{#1s}}
-\newcommand{\si}[1]{\,\text{#1}}
-% Fix \df command
-\newcommand{\df}{\,\mathrm{d}f}
-% Add missing \ms command for composite indices
-\newcommand{\ms}[1]{#1}
-% Add missing \pbg command (parallel/propagator)
-\newcommand{\pbg}{\text{p}}
-% Add missing \ud and \uD commands (differential symbols)
-\newcommand{\ud}{\mathrm{d}}
-\newcommand{\uD}{\mathrm{D}}
-% Add missing Greek letters
-\newcommand{\vkappa}{\kappa}
-% Add missing \bs command
-\newcommand{\bs}{\boldsymbol}
-% Add missing \ord command (order)
-\newcommand{\ord}[2]{\mathcal{O}^{(#1)}(#2)}
-% Add missing \mc command (mathcal)
-\newcommand{\mc}{\mathcal}
-'''
+matplotlib.rcParams['text.latex.preamble'] = LATEX_PREAMBLE
 
 
 class LaTeXRenderer:
@@ -235,172 +184,15 @@ class LaTeXRenderer:
             print(f"  ⚠ 白边移除失败 {image_path}: {e}")
             return image_path
 
-    def preprocess_latex(self, latex_content: str, is_display: bool = True) -> str:
-        """
-        预处理LaTeX内容，优化为usetex兼容格式
-        """
-        # 移除前后的$$符号
-        content = latex_content.strip()
-        if content.startswith('$$') and content.endswith('$$'):
-            content = content[2:-2].strip()
-        elif content.startswith('$') and content.endswith('$'):
-            content = content[1:-1].strip()
+    # preprocess_latex函数已移动到 latex_utils.py 模块中
 
-        # 修复下标问题：将转义的下划线 \\_ 改为正常下标 _
-        # 这是为了修复JSON中 MOM\\_{nM} 导致的下标渲染问题
-        content = content.replace('\\_', '_')
+    # calculate_figure_width函数已移动到 latex_utils.py 模块中
 
-        # 修复特殊情况：将 word$_$word 格式转换为 word_{word}
-        # 这修复了 MOM$\_$7M 这类格式在parbox中的渲染问题
-        # import re
-        # content = re.sub(r'(\w+)\$_\$(\w+)', r'\1_{\2}', content)
+    # create_latex_parbox函数已移动到 latex_utils.py 模块中
 
-        # 处理需要完整数学环境的内容
-        if is_display:
-            # 如果是display模式，需要包装在数学环境中
-            if '\\begin{aligned}' in content:
-                # 对于aligned环境，直接使用$$包围，避免嵌套环境问题
-                content = f'$${content}$$'
-            elif '\\begin{pmatrix}' in content or '\\begin{bmatrix}' in content:
-                content = f'$${content}$$'
-            else:
-                # 普通公式也需要数学环境
-                content = f'${content}$'
+    # preprocess_text_commands函数已移动到 latex_utils.py 模块中
 
-        # 处理转义字符
-        content = content.replace('\\&', '\\text{\\&}')
-
-        # 处理text环境中的特殊字符
-        content = re.sub(r'\\text\{([^}]*)\}',
-                         lambda m: f'\\text{{{m.group(1).replace("&", "\\&")}}}',
-                         content)
-
-        return content
-
-    def calculate_figure_width(self, text_content: str, is_display: bool = False) -> float:
-        """
-        根据文本内容计算合适的图片宽度
-
-        Args:
-            text_content: 文本内容
-            is_display: 是否为display公式
-
-        Returns:
-            图片宽度（英寸）
-        """
-        # 对于display公式，使用固定的较大宽度
-        if is_display:
-            min_width = 0.4 * self.a4_width_inches
-            max_width = 1.0 * self.a4_width_inches
-            return random.uniform(min_width, max_width)
-
-        # 对于文本，在A4纸宽度范围内随机选择
-        min_width = 0.4 * self.a4_width_inches
-        max_width = 1.0 * self.a4_width_inches
-        return random.uniform(min_width, max_width)
-
-    def create_latex_parbox(self, text: str, target_width_inches: float) -> str:
-        """
-        使用LaTeX parbox控制文本宽度，让LaTeX处理换行
-
-        Args:
-            text: 原始文本
-            target_width_inches: 目标宽度（英寸）
-
-        Returns:
-            包装在parbox中的LaTeX文本
-        """
-        # 计算内容宽度（英寸转换为点，1英寸 = 72.27pt）
-        content_width_pt = (target_width_inches - 2 *
-                            self.horizontal_padding) * 72.27
-
-        # 使用LaTeX parbox让LaTeX处理换行
-        latex_text = f"\\parbox{{{content_width_pt:.2f}pt}}{{{text}}}"
-
-        return latex_text
-
-    def preprocess_text_commands(self, text: str) -> str:
-        """
-        在换行之前预处理LaTeX命令，避免命令被换行截断
-
-        Args:
-            text: 原始文本
-
-        Returns:
-            预处理后的文本
-        """
-        processed_text = text
-
-        # 处理百分号注释 - 在parbox环境中，%注释会破坏结构
-        # 移除%及其后面的内容，但保留已经转义的\%
-        processed_text = re.sub(
-            r'(?<!\\)%.*$', '', processed_text, flags=re.MULTILINE)
-
-        # 处理引用命令 - 将它们转换为简单的文本格式
-        # \citep{ref1,ref2} -> [ref1, ref2]
-        processed_text = re.sub(r'\\citep\{([^}]+)\}', r'[\1]', processed_text)
-        # \cite{ref1,ref2} -> (ref1, ref2)
-        processed_text = re.sub(r'\\cite\{([^}]+)\}', r'(\1)', processed_text)
-        # \citet{ref1} -> ref1
-        processed_text = re.sub(r'\\citet\{([^}]+)\}', r'\1', processed_text)
-
-        # 处理subsection和section命令，将其转换为简单的标题文本
-        processed_text = re.sub(
-            r'\\subsection\{([^}]+)\}', r'\1', processed_text)
-        processed_text = re.sub(r'\\section\{([^}]+)\}', r'\1', processed_text)
-
-        # 移除newcommand定义
-        processed_text = re.sub(
-            r'\\newcommand\{[^}]+\}(?:\[[0-9]+\])?\{[^}]*\}', '', processed_text)
-
-        # 处理其他常见的LaTeX命令
-        processed_text = re.sub(r'\\textbf\{([^}]+)\}', r'\1', processed_text)
-        processed_text = re.sub(r'\\textit\{([^}]+)\}', r'\1', processed_text)
-        processed_text = re.sub(r'\\emph\{([^}]+)\}', r'\1', processed_text)
-
-        # 处理caption命令 - 同时处理有闭合和无闭合大括号的情况
-        # 先处理有闭合大括号的情况
-        processed_text = re.sub(
-            r'\\caption\{([^}]+)\}', r'Caption: \1', processed_text)
-        # 然后处理无闭合大括号的情况（通常是文本截断导致的）
-        processed_text = re.sub(
-            r'\\caption\{(.*)$', r'Caption: \1', processed_text)
-
-        # 修复多余的大括号（通常出现在文本片段末尾）
-        # 移除文本末尾孤立的 }
-        processed_text = re.sub(r'\s*\}\s*$', '', processed_text)
-        # 修复 $...$ } 格式为 $...$
-        processed_text = re.sub(r'\$([^$]+)\$\s*\}', r'$\1$', processed_text)
-
-        # 处理双反斜杠换行符
-        processed_text = processed_text.replace('\\\\', ' ')
-
-        return processed_text.strip()
-
-    def _categorize_latex_error(self, error_message: str) -> str:
-        """
-        根据错误消息对LaTeX错误进行分类
-        """
-        error_str = str(error_message).lower()
-
-        if 'undefined control sequence' in error_str:
-            return "UndefinedCommand"
-        elif 'missing' in error_str and ('$' in error_str or 'math' in error_str):
-            return "MathModeError"
-        elif 'extra' in error_str and ('alignment' in error_str or '&' in error_str):
-            return "AlignmentError"
-        elif 'missing' in error_str and ('{' in error_str or '}' in error_str):
-            return "BraceError"
-        elif 'package' in error_str and 'not found' in error_str:
-            return "PackageError"
-        elif 'timeout' in error_str or 'time' in error_str:
-            return "TimeoutError"
-        elif 'unicode' in error_str or 'encoding' in error_str:
-            return "EncodingError"
-        elif 'memory' in error_str or 'capacity' in error_str:
-            return "MemoryError"
-        else:
-            return "LaTeXSyntaxError"
+    # _categorize_latex_error函数已移动到 latex_utils.py 模块中
 
     def render_display_formula(self, formula_content: str, filename: str) -> str:
         """
@@ -553,7 +345,7 @@ class LaTeXRenderer:
                             # 其他真正的错误
                             print(f"✗ 文档{doc_idx+1} 文本 {i+1} 渲染失败: {e}")
                             self.stats['errors'] += 1  # 其他错误也计入失败统计
-                            latex_error_type = self._categorize_latex_error(str(e))
+                            latex_error_type = categorize_latex_error(str(e))
                             results['errors'].append({
                                 "error_message": f"文档{doc_idx+1} 文本 {i+1} 渲染失败: {str(e)}",
                                 "error_type": latex_error_type,
@@ -566,49 +358,7 @@ class LaTeXRenderer:
 
         return results
 
-    def _is_pure_newcommand(self, text: str) -> bool:
-        """
-        检查文本是否只包含newcommand定义（无法直接渲染的内容）
-        """
-        # 移除空白字符后检查
-        clean_text = text.strip()
-
-        # 检查是否以\newcommand开始
-        if not clean_text.startswith('\\newcommand'):
-            return False
-
-        # 移除所有newcommand定义，看看是否还有其他内容
-        # 这个正则表达式需要匹配嵌套的大括号
-        remaining_text = clean_text
-        while True:
-            # 找到\newcommand{...}[...]{...}模式
-            newcommand_match = re.search(
-                r'\\newcommand\{[^}]+\}(?:\[[0-9]+\])?\{', remaining_text)
-            if not newcommand_match:
-                break
-
-            # 找到匹配的结束大括号
-            start_pos = newcommand_match.end() - 1  # 指向开始的{
-            brace_count = 1
-            pos = start_pos + 1
-
-            while pos < len(remaining_text) and brace_count > 0:
-                if remaining_text[pos] == '{':
-                    brace_count += 1
-                elif remaining_text[pos] == '}':
-                    brace_count -= 1
-                pos += 1
-
-            if brace_count == 0:
-                # 找到了完整的newcommand定义，移除它
-                remaining_text = remaining_text[:newcommand_match.start(
-                )] + remaining_text[pos:]
-            else:
-                # 没有找到匹配的结束括号，可能格式有问题
-                break
-
-        # 如果移除所有newcommand后没有剩余内容，则认为是纯newcommand
-        return not remaining_text.strip()
+    # _is_pure_newcommand函数已移动到 latex_utils.py 模块中
 
     def print_stats(self):
         """打印渲染统计信息"""
