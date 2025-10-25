@@ -1,3 +1,7 @@
+# Python依赖包 - 用于图像处理和工具函数
 matplotlib>=3.5.0
 numpy>=1.20.0
 Pillow>=8.0.0
+
+# 注意：本工具主要使用pdflatex直接编译，需要安装完整的LaTeX环境
+# 还需要安装PDF转换工具：Poppler (pdftoppm) 或 ImageMagick (convert)

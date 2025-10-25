@@ -22,6 +22,13 @@ LATEX_PREAMBLE = r'''
 \usepackage{xcolor}
 \usepackage{natbib}
 \usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{CJKutf8}
+\AtBeginDocument{\begin{CJK}{UTF8}{gbsn}}
+\AtEndDocument{\end{CJK}}
 % Custom macro definitions for scientific papers
 \newcommand{\vvir}{v_{\text{vir}}}
 \newcommand{\vdm}{v_{\text{DM}}}
@@ -49,7 +56,7 @@ LATEX_PREAMBLE = r'''
 % Additional macros for text rendering
 \newcommand{\ac}[1]{\text{#1}}
 \newcommand{\acp}[1]{\text{#1s}}
-\newcommand{\si}[1]{\,\text{#1}}
+% \si command is provided by siunitx package, so we don't redefine it
 % Fix \df command
 \newcommand{\df}{\,\mathrm{d}f}
 % Add missing \ms command for composite indices
@@ -67,7 +74,180 @@ LATEX_PREAMBLE = r'''
 \newcommand{\ord}[2]{\mathcal{O}^{(#1)}(#2)}
 % Add missing \mc command (mathcal)
 \newcommand{\mc}{\mathcal}
+% Add missing commands from the failing formulas
+\newcommand{\sI}{\mathcal{I}}  % Indicator function
+\newcommand{\sH}{\mathcal{H}}  % Hilbert space
+\newcommand{\fL}{\mathcal{L}} % Linear operator
+\newcommand{\calT}{\mathcal{T}} % Set T
+\newcommand{\bE}{\mathbb{E}} % Expectation
+\newcommand{\bmu}{\boldsymbol{\mu}} % Bold mu
+\newcommand{\rmi}{\mathrm{i}} % Imaginary unit
+% Use \providecommand to avoid conflicts with physics package
+\providecommand{\dd}{\mathrm{d}} % Differential d
+% Additional common mathematical symbols
+\newcommand{\sK}{\mathcal{K}} % Another Hilbert space
+\newcommand{\fM}{\mathcal{M}} % Mapping/operator
+\newcommand{\rmm}{\mathrm{m}} % Small m
+\newcommand{\calP}{\mathcal{P}} % Probability/Projection
+\newcommand{\bbR}{\mathbb{R}} % Real numbers
+\newcommand{\bbN}{\mathbb{N}} % Natural numbers
+\newcommand{\bbZ}{\mathbb{Z}} % Integers
+\newcommand{\bbC}{\mathbb{C}} % Complex numbers
+\newcommand{\bbQ}{\mathbb{Q}} % Rational numbers
+\newcommand{\sB}{\mathcal{B}} % Borel sigma-algebra
+\newcommand{\sF}{\mathcal{F}} % Filtration
+\newcommand{\sG}{\mathcal{G}} % Another sigma-algebra
+\newcommand{\sA}{\mathcal{A}} % Algebra
+\newcommand{\sC}{\mathcal{C}} % Another algebra
+\newcommand{\sD}{\mathcal{D}} % Distribution
+\newcommand{\sE}{\mathcal{E}} % Expectation operator
+\newcommand{\sL}{\mathcal{L}} % Linear operator
+\newcommand{\sM}{\mathcal{M}} % Measure
+\newcommand{\sN}{\mathcal{N}} % Normal distribution
+\newcommand{\sO}{\mathcal{O}} % Big O notation
+\newcommand{\sP}{\mathcal{P}} % Probability
+\newcommand{\sQ}{\mathcal{Q}} % Another operator
+\newcommand{\sR}{\mathcal{R}} % Range
+\newcommand{\sS}{\mathcal{S}} % Schwartz space
+\newcommand{\sT}{\mathcal{T}} % Topology
+\newcommand{\sU}{\mathcal{U}} % Uniform distribution
+\newcommand{\sV}{\mathcal{V}} % Variance
+\newcommand{\sW}{\mathcal{W}} % Wiener process
+\newcommand{\sX}{\mathcal{X}} % Sample space
+\newcommand{\sY}{\mathcal{Y}} % Another sample space
+\newcommand{\sZ}{\mathcal{Z}} % Another space
 '''
+
+# 专门用于表格渲染的preamble（不包含CJK环境以避免冲突）
+LATEX_TABLE_PREAMBLE = r'''
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{physics}
+\usepackage{braket}
+\usepackage{bm}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{adjustbox}
+% Custom macro definitions for scientific papers
+\newcommand{\vvir}{v_{\text{vir}}}
+\newcommand{\vdm}{v_{\text{DM}}}
+\newcommand{\mwd}{M_{\text{WD}}}
+\newcommand{\mpbh}{M_{\text{PBH}}}
+\newcommand{\Rwd}{R_{\text{WD}}}
+\newcommand{\Rpbh}{R_{\text{PBH}}}
+\newcommand{\fmergewb}{f_{\text{merge}}^{\text{WD-PBH}}}
+\newcommand{\fmin}{f_{\text{min}}}
+\newcommand{\fmax}{f_{\text{max}}}
+\newcommand{\fpbh}{f_{\text{PBH}}}
+\newcommand{\Mc}{\mathcal{M}_c}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\vrel}{v_{\text{rel}}}
+\newcommand{\diff}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\newcommand{\ee}{\mathrm{e}}
+\newcommand{\us}{\mathrm{s}}
+\newcommand{\um}{\mathrm{m}}
+\newcommand{\uh}{\mathrm{h}}
+\newcommand{\umin}{\mathrm{min}}
+\newcommand{\umax}{\mathrm{max}}
+\newcommand{\WD}{\text{WD}}
+\newcommand{\PBH}{\text{PBH}}
+\newcommand{\MS}{\text{MS}}
+% Additional macros for text rendering
+\newcommand{\ac}[1]{\text{#1}}
+\newcommand{\acp}[1]{\text{#1s}}
+% \si command is provided by siunitx package, so we don't redefine it
+% Fix \df command
+\newcommand{\df}{\,\mathrm{d}f}
+% Add missing \ms command for composite indices
+\newcommand{\ms}[1]{#1}
+% Add missing \pbg command (parallel/propagator)
+\newcommand{\pbg}{\text{p}}
+% Add missing \ud and \uD commands (differential symbols)
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\uD}{\mathrm{D}}
+% Add missing Greek letters
+\newcommand{\vkappa}{\kappa}
+% Add missing \bs command
+\newcommand{\bs}{\boldsymbol}
+% Add missing \ord command (order)
+\newcommand{\ord}[2]{\mathcal{O}^{(#1)}(#2)}
+% Add missing \mc command (mathcal)
+\newcommand{\mc}{\mathcal}
+% Add missing commands from the failing formulas
+\newcommand{\sI}{\mathcal{I}}  % Indicator function
+\newcommand{\sH}{\mathcal{H}}  % Hilbert space
+\newcommand{\fL}{\mathcal{L}} % Linear operator
+\newcommand{\calT}{\mathcal{T}} % Set T
+\newcommand{\bE}{\mathbb{E}} % Expectation
+\newcommand{\bmu}{\boldsymbol{\mu}} % Bold mu
+\newcommand{\rmi}{\mathrm{i}} % Imaginary unit
+% Use \providecommand to avoid conflicts with physics package
+\providecommand{\dd}{\mathrm{d}} % Differential d
+% Additional common mathematical symbols
+\newcommand{\sK}{\mathcal{K}} % Another Hilbert space
+\newcommand{\fM}{\mathcal{M}} % Mapping/operator
+\newcommand{\rmm}{\mathrm{m}} % Small m
+\newcommand{\calP}{\mathcal{P}} % Probability/Projection
+\newcommand{\bbR}{\mathbb{R}} % Real numbers
+\newcommand{\bbN}{\mathbb{N}} % Natural numbers
+\newcommand{\bbZ}{\mathbb{Z}} % Integers
+\newcommand{\bbC}{\mathbb{C}} % Complex numbers
+\newcommand{\bbQ}{\mathbb{Q}} % Rational numbers
+\newcommand{\sB}{\mathcal{B}} % Borel sigma-algebra
+\newcommand{\sF}{\mathcal{F}} % Filtration
+\newcommand{\sG}{\mathcal{G}} % Another sigma-algebra
+\newcommand{\sA}{\mathcal{A}} % Algebra
+\newcommand{\sC}{\mathcal{C}} % Another algebra
+\newcommand{\sD}{\mathcal{D}} % Distribution
+\newcommand{\sE}{\mathcal{E}} % Expectation operator
+\newcommand{\sL}{\mathcal{L}} % Linear operator
+\newcommand{\sM}{\mathcal{M}} % Measure
+\newcommand{\sN}{\mathcal{N}} % Normal distribution
+\newcommand{\sO}{\mathcal{O}} % Big O notation
+\newcommand{\sP}{\mathcal{P}} % Probability
+\newcommand{\sQ}{\mathcal{Q}} % Another operator
+\newcommand{\sR}{\mathcal{R}} % Range
+\newcommand{\sS}{\mathcal{S}} % Schwartz space
+\newcommand{\sT}{\mathcal{T}} % Topology
+\newcommand{\sU}{\mathcal{U}} % Uniform distribution
+\newcommand{\sV}{\mathcal{V}} % Variance
+\newcommand{\sW}{\mathcal{W}} % Wiener process
+\newcommand{\sX}{\mathcal{X}} % Sample space
+\newcommand{\sY}{\mathcal{Y}} % Another sample space
+\newcommand{\sZ}{\mathcal{Z}} % Another space
+'''
+
+
+def preprocess_chinese_text(content: str) -> str:
+    """预处理中文字符，确保LaTeX兼容性"""
+    # 将裸露的中文字符包装在\text{}中
+    # 匹配中文字符（包括中文标点符号）
+    chinese_pattern = r'([一-龯]+[）】}）]*)'
+    content = re.sub(chinese_pattern, r'\\text{\1}', content)
+    
+    # 处理中文标点符号
+    content = content.replace('）', ')')
+    content = content.replace('（', '(')
+    content = content.replace('【', '[')
+    content = content.replace('】', ']')
+    content = content.replace('，', ',')
+    content = content.replace('。', '.')
+    content = content.replace('；', ';')
+    content = content.replace('：', ':')
+    
+    # 处理已经在\text{}中的中文，避免重复包装
+    content = re.sub(r'\\text\{\\text\{([^}]+)\}\}', r'\\text{\1}', content)
+    
+    return content
 
 
 def preprocess_latex(latex_content: str, is_display: bool = True) -> str:
@@ -98,6 +278,9 @@ def preprocess_latex(latex_content: str, is_display: bool = True) -> str:
     # 修复下标问题：将转义的下划线 \\_ 改为正常下标 _
     content = content.replace('\\_', '_')
 
+    # 预处理中文字符
+    content = preprocess_chinese_text(content)
+
     # 处理需要完整数学环境的内容
     if is_display:
         if '\\begin{aligned}' in content:
@@ -123,41 +306,41 @@ def preprocess_latex(latex_content: str, is_display: bool = True) -> str:
 
 
 def preprocess_text_commands(text: str) -> str:
-    """在换行之前预处理LaTeX命令，避免命令被换行截断"""
-    processed_text = text
-
-    # 处理百分号注释
+    """极简文本预处理 - 让pdflatex处理所有LaTeX命令，只做最基本的清理"""
+    processed_text = text.strip()
+    
+    # 只处理会导致LaTeX编译失败的基本问题，其他都让pdflatex处理
+    
+    # 1. 移除百分号注释（避免LaTeX解析问题）
     processed_text = re.sub(r'(?<!\\)%.*$', '', processed_text, flags=re.MULTILINE)
-
-    # 处理引用命令
-    processed_text = re.sub(r'\\citep\{([^}]+)\}', r'[\1]', processed_text)
-    processed_text = re.sub(r'\\cite\{([^}]+)\}', r'(\1)', processed_text)
-    processed_text = re.sub(r'\\citet\{([^}]+)\}', r'\1', processed_text)
-
-    # 处理subsection和section命令
-    processed_text = re.sub(r'\\subsection\{([^}]+)\}', r'\1', processed_text)
-    processed_text = re.sub(r'\\section\{([^}]+)\}', r'\1', processed_text)
-
-    # 移除newcommand定义
-    processed_text = re.sub(r'\\newcommand\{[^}]+\}(?:\[[0-9]+\])?\{[^}]*\}', '', processed_text)
-
-    # 处理其他常见的LaTeX命令
-    processed_text = re.sub(r'\\textbf\{([^}]+)\}', r'\1', processed_text)
-    processed_text = re.sub(r'\\textit\{([^}]+)\}', r'\1', processed_text)
-    processed_text = re.sub(r'\\emph\{([^}]+)\}', r'\1', processed_text)
-
-    # 处理caption命令
-    processed_text = re.sub(r'\\caption\{([^}]+)\}', r'Caption: \1', processed_text)
-    processed_text = re.sub(r'\\caption\{(.*)$', r'Caption: \1', processed_text)
-
-    # 修复多余的大括号
-    processed_text = re.sub(r'\s*\}\s*$', '', processed_text)
-    processed_text = re.sub(r'\$([^$]+)\$\s*\}', r'$\1$', processed_text)
-
-    # 处理双反斜杠换行符
+    
+    # 2. 处理双反斜杠换行符（避免LaTeX换行问题）
     processed_text = processed_text.replace('\\\\', ' ')
-
+    
     return processed_text.strip()
+
+
+def preprocess_table_content(table_content: str) -> str:
+    """预处理LaTeX表格内容 - 最小干预版本"""
+    processed_table = table_content.strip()
+    
+    # 只处理siunitx的S列类型，替换为普通列（如果存在的话）
+    processed_table = re.sub(r'S\[table-format=[^\]]+\]', 'c', processed_table)
+    
+    # 对于没有环境包装的纯表格内容，才需要添加tabular环境
+    if not processed_table.startswith('\\begin{'):
+        lines = processed_table.split('\n')
+        if lines and '&' in lines[0]:
+            # 根据第一行检测列数
+            first_line = lines[0]
+            col_count = first_line.count('&') + 1
+            # 默认使用居中对齐
+            col_format = 'c' * col_count
+            processed_table = f'\\begin{{tabular}}{{{col_format}}}\n{processed_table}\\end{{tabular}}'
+        else:
+            processed_table = f'\\begin{{tabular}}{{c}}\n{processed_table}\\end{{tabular}}'
+    
+    return processed_table
 
 
 def create_latex_parbox(text: str, target_width_inches: float) -> str:

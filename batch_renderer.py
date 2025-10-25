@@ -74,6 +74,7 @@ def process_single_file_worker(args):
         
         formulas_count = len(results['display_formulas'])
         texts_count = len(results['inline_texts'])
+        tables_count = len(results['tables'])
         errors_count = len(results['errors'])
         
         # 准备缓存数据
@@ -82,11 +83,13 @@ def process_single_file_worker(args):
             "process_id": process_id,
             "output_files": {
                 "formulas": results['display_formulas'],  # 现在每个元素是 {"content": "...", "image": "..."}
-                "texts": results['inline_texts']          # 现在每个元素是 {"content": "...", "image": "..."}
+                "texts": results['inline_texts'],         # 现在每个元素是 {"content": "...", "image": "..."}
+                "tables": results['tables']              # 现在每个元素是 {"content": "...", "image": "..."}
             },
             "stats": {
                 "formulas_count": formulas_count,
                 "texts_count": texts_count,
+                "tables_count": tables_count,
                 "errors_count": errors_count
             },
             "errors": results['errors'] if errors_count > 0 else []
@@ -99,6 +102,7 @@ def process_single_file_worker(args):
         return json_file, True, {
             "formulas_count": formulas_count,
             "texts_count": texts_count,
+            "tables_count": tables_count,
             "errors_count": errors_count
         }
         
@@ -135,6 +139,7 @@ def process_single_file_worker(args):
         return json_file, False, {
             "formulas_count": 0,
             "texts_count": 0,
+            "tables_count": 0,
             "errors_count": 1,
             "error_type": error_type,
             "error_message": error_message
@@ -151,7 +156,7 @@ def process_single_file_worker(args):
 
 
 
-def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_images", max_files: int = None, cache_dir: str = None, resume: bool = False, max_workers: int = 4, task_timeout: int = 3600 * 24, log_file: str = None, render_type: str = "both"):
+def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_images", max_files: int = None, cache_dir: str = None, resume: bool = False, max_workers: int = 4, task_timeout: int = 3600 * 24, log_file: str = None, render_type: str = "all"):
     """从描述文件中读取JSON文件路径列表并批量处理 - 分布式缓存版本"""
     # 设置日志
     log_file_path = setup_logging(log_file)
@@ -228,6 +233,7 @@ def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_ima
     
     total_formulas = 0
     total_texts = 0
+    total_tables = 0
     total_errors = 0
     completed_count = 0
     
@@ -279,6 +285,7 @@ def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_ima
                         # 累计统计信息
                         total_formulas += stats["formulas_count"]
                         total_texts += stats["texts_count"]
+                        total_tables += stats["tables_count"]
                         total_errors += stats["errors_count"]
                         completed_count += 1
                         
@@ -286,7 +293,7 @@ def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_ima
                         progress_percent = (completed_count / len(files_to_process)) * 100
                         logger.info(f"[{completed_count}/{len(files_to_process)}] ({progress_percent:.1f}%) 完成: {os.path.basename(json_file)}")
                         if success:
-                            status_msg = f"公式: {stats['formulas_count']} 个, 文本: {stats['texts_count']} 个"
+                            status_msg = f"公式: {stats['formulas_count']} 个, 文本: {stats['texts_count']} 个, 表格: {stats['tables_count']} 个"
                             if stats["errors_count"] > 0:
                                 status_msg += f", 错误: {stats['errors_count']} 个"
                             logger.info(f"  {status_msg}")
@@ -336,6 +343,7 @@ def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_ima
     logger.info("批量处理完成!")
     logger.info(f"总计渲染公式: {total_formulas} 个")
     logger.info(f"总计渲染文本: {total_texts} 个")
+    logger.info(f"总计渲染表格: {total_tables} 个")
     if total_errors > 0:
         logger.warning(f"总计错误: {total_errors} 个")
     logger.info(f"输出目录: {output_dir}")
@@ -345,7 +353,7 @@ def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_ima
     logger.info(f"缓存文件总数: {final_summary['total_cached_files']}")
     
     # 计算成功率
-    success_rate = (100 - (total_errors / (total_formulas + total_texts) * 100)) if total_formulas + total_texts > 0 else 0
+    success_rate = (100 - (total_errors / (total_formulas + total_texts + total_tables) * 100)) if total_formulas + total_texts + total_tables > 0 else 0
     logger.info(f"成功率: {success_rate:.1f}%")
     
     # 显示缓存系统性能提升信息
@@ -372,8 +380,8 @@ def main():
                        help="单个任务超时时间（秒） (默认: 3600*24)")
     parser.add_argument("-l", "--log-file", default=None,
                        help="日志文件路径 (默认: 自动生成带时间戳的文件名)")
-    parser.add_argument("-r", "--render-type", choices=["formula", "text", "both"], default="both",
-                       help="渲染类型: formula(只渲染公式), text(只渲染文本), both(都渲染) (默认: both)")
+    parser.add_argument("-r", "--render-type", choices=["formula", "text", "table", "all"], default="all",
+                       help="渲染类型: formula(只渲染公式), text(只渲染文本), table(只渲染表格), all(全部渲染) (默认: all)")
     
     args = parser.parse_args()
     

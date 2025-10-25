@@ -261,13 +261,45 @@ class LaTeXRenderer:
             print(f"✗ 渲染文本失败 {filename}")
             return None, "TextRenderingError"
 
-    def process_json_file(self, json_file_path: str, render_type: str = "both") -> Dict[str, List[Dict[str, str]]]:
+    def render_table(self, table_content: str, filename: str) -> Tuple[str, str]:
         """
-        处理JSON文件，渲染所有公式和文本
+        渲染LaTeX表格
+
+        Args:
+            table_content: 表格内容
+            filename: 输出文件名（不含扩展名）
+
+        Returns:
+            元组: (生成的PNG文件路径, 错误类型), 成功时错误类型为None
+        """
+        output_path = self.output_dir / f"{filename}.png"
+        
+        # 使用子进程渲染
+        result = self._render_with_subprocess(table_content, str(output_path), 'table')
+        if result:
+            # 进行白边裁剪并检查是否为空白图片
+            is_valid = self.trim_image_whitespace(str(output_path))
+            if is_valid:
+                self.stats['success'] += 1
+                print(f"✓ 渲染表格成功: {output_path}")
+                return result, None
+            else:
+                # 空白图片，视为渲染失败
+                self.stats['errors'] += 1
+                print(f"✗ 渲染表格失败 {filename} (空白图片)")
+                return None, "BlankImageError"
+        else:
+            self.stats['errors'] += 1
+            print(f"✗ 渲染表格失败 {filename}")
+            return None, "TableRenderingError"
+
+    def process_json_file(self, json_file_path: str, render_type: str = "all") -> Dict[str, List[Dict[str, str]]]:
+        """
+        处理JSON文件，渲染所有公式、文本和表格
 
         Args:
             json_file_path: JSON文件路径
-            render_type: 渲染类型，可选值: "formula"(只渲染公式), "text"(只渲染文本), "both"(都渲染)
+            render_type: 渲染类型，可选值: "formula"(只渲染公式), "text"(只渲染文本), "table"(只渲染表格), "all"(全部渲染)
 
         Returns:
             包含渲染结果的字典，每个结果包含content和对应的PNG文件路径
@@ -280,6 +312,7 @@ class LaTeXRenderer:
         results = {
             'display_formulas': [],
             'inline_texts': [],
+            'tables': [],
             'errors': []
         }
 
@@ -291,8 +324,8 @@ class LaTeXRenderer:
             for doc_idx, document in enumerate(data):
                 print(f"处理文档 {doc_idx + 1}/{len(data)}")
 
-                # 处理display_formulas (只在render_type为"formula"或"both"时处理)
-                if render_type in ["formula", "both"]:
+                # 处理display_formulas (只在render_type为"formula"或"all"时处理)
+                if render_type in ["formula", "all"]:
                     display_formulas = document.get('display_formulas', [])
                     for i, formula in enumerate(display_formulas):
                         content = formula.get('content', '')
@@ -323,8 +356,8 @@ class LaTeXRenderer:
                                 "document_index": doc_idx + 1
                             })
 
-                # 处理inline_texts (只在render_type为"text"或"both"时处理)
-                if render_type in ["text", "both"]:
+                # 处理inline_texts (只在render_type为"text"或"all"时处理)
+                if render_type in ["text", "all"]:
                     inline_texts = document.get('inline_texts', [])
                     for i, text_item in enumerate(inline_texts):
                         content = text_item.get('content', '')
@@ -383,9 +416,101 @@ class LaTeXRenderer:
                                 "document_index": doc_idx + 1
                             })
 
+                # 处理tables (只在render_type为"table"或"all"时处理)
+                if render_type in ["table", "all"]:
+                    tables = document.get('tables', [])
+                    for i, table in enumerate(tables):
+                        content = table.get('content', '')
+                        filename = f"{base_name}_doc{doc_idx+1:03d}_table_{i+1:03d}"
+
+                        try:
+                            result, error_type = self.render_table(content, filename)
+                            if result:
+                                # 返回包含content和PNG文件路径的字典
+                                results['tables'].append({
+                                    "content": content,
+                                    "image": result,
+                                    "document_index": doc_idx + 1
+                                })
+                            else:
+                                # render_table内部已经增加了错误计数，这里不需要重复增加
+                                # 根据错误类型设置不同的错误消息
+                                if error_type == "BlankImageError":
+                                    error_message = f"文档{doc_idx+1} 表格 {i+1} 渲染失败 (空白图片)"
+                                else:
+                                    error_message = f"文档{doc_idx+1} 表格 {i+1} 渲染失败"
+                                
+                                results['errors'].append({
+                                    "error_message": error_message,
+                                    "error_type": error_type or "TableRenderingError",
+                                    "content_preview": content,
+                                    "item_index": i+1,
+                                    "item_type": "table",
+                                    "document_index": doc_idx + 1
+                                })
+                        except Exception as e:
+                            # 表格渲染错误
+                            print(f"✗ 文档{doc_idx+1} 表格 {i+1} 渲染失败: {e}")
+                            self.stats['errors'] += 1
+                            latex_error_type = categorize_latex_error(str(e))
+                            results['errors'].append({
+                                "error_message": f"文档{doc_idx+1} 表格 {i+1} 渲染失败: {str(e)}",
+                                "error_type": latex_error_type,
+                                "python_error_type": type(e).__name__,
+                                "content_preview": content,
+                                "item_index": i+1,
+                                "item_type": "table",
+                                "document_index": doc_idx + 1
+                            })
+
         return results
 
     # _is_pure_newcommand函数已移动到 latex_utils.py 模块中
+
+    def trim_image_whitespace(self, image_path: str) -> bool:
+        """
+        移除图片周围的白边并检查是否为空白图片
+        
+        Args:
+            image_path: 图片路径
+            
+        Returns:
+            bool: True如果图片有效（非空白），False如果图片为空白
+        """
+        try:
+            # 导入trim_image_whitespace函数
+            from latex_utils import trim_image_whitespace
+            
+            # 调用trim_image_whitespace函数
+            trim_image_whitespace(image_path, self.dpi)
+            
+            # 检查图片是否为空白
+            img = Image.open(image_path)
+            img_array = np.array(img)
+            
+            # 定义白色阈值
+            white_threshold = 250
+            
+            # 检测非白色像素
+            if len(img_array.shape) == 3:  # RGB
+                non_white_mask = np.any(img_array < white_threshold, axis=2)
+            else:  # Grayscale
+                non_white_mask = img_array < white_threshold
+            
+            non_white_count = np.sum(non_white_mask)
+            
+            # 如果非白色像素太少，认为是空白图片
+            if non_white_count < 100:  # 阈值可以根据需要调整
+                # 删除空白图片
+                os.remove(image_path)
+                print(f"✗ 检测到空白图片已删除: {image_path}")
+                return False
+            else:
+                return True
+                
+        except Exception as e:
+            print(f"处理图片时出错: {e}")
+            return False
 
     def print_stats(self):
         """打印渲染统计信息"""
@@ -404,33 +529,39 @@ class LaTeXRenderer:
 
 def main():
     """主函数 - 使用子进程的usetex渲染器"""
+    import argparse
+    
+    parser = argparse.ArgumentParser(description="LaTeX渲染器 - 使用子进程避免内存积累")
+    parser.add_argument("json_file", help="JSON文件路径")
+    parser.add_argument("-r", "--render-type", choices=["formula", "text", "table", "all"], default="all",
+                       help="渲染类型: formula(只渲染公式), text(只渲染文本), table(只渲染表格), all(全部渲染) (默认: all)")
+    parser.add_argument("-o", "--output", default="rendered_images", 
+                       help="输出目录 (默认: rendered_images)")
+    parser.add_argument("-d", "--dpi", type=int, default=300,
+                       help="图片分辨率 (默认: 300)")
+    
+    args = parser.parse_args()
+    
     print("LaTeX渲染器 - 使用子进程避免内存积累")
-    print("注意: 需要安装LaTeX (texlive-latex-base + texlive-latex-recommended)")
-
-    # 检查命令行参数
-    if len(sys.argv) != 2:
-        print("用法: python latex_to_png_renderer.py <json_file_path>")
-        print("示例: python latex_to_png_renderer.py arxiv_extracted_json/240100017_extracted.json")
-        sys.exit(1)
-
-    json_file = sys.argv[1]
+    print(f"渲染类型: {args.render_type}")
 
     # 检查文件是否存在
-    if not os.path.exists(json_file):
-        print(f"错误: 文件不存在: {json_file}")
+    if not os.path.exists(args.json_file):
+        print(f"错误: 文件不存在: {args.json_file}")
         sys.exit(1)
 
     matplotlib.use('Agg')
-    renderer = LaTeXRenderer(output_dir="rendered_images", dpi=300)
+    renderer = LaTeXRenderer(output_dir=args.output, dpi=args.dpi)
     
     print("✓ 使用子进程渲染模式（避免内存积累）")
 
     # 处理指定的文件
-    results = renderer.process_json_file(json_file)
+    results = renderer.process_json_file(args.json_file, render_type=args.render_type)
 
     print(f"\n=== 处理结果 ===")
     print(f"成功渲染公式: {len(results['display_formulas'])} 个")
     print(f"成功渲染文本: {len(results['inline_texts'])} 个")
+    print(f"成功渲染表格: {len(results['tables'])} 个")
     if results['errors']:
         print(f"错误: {len(results['errors'])} 个")
         for error in results['errors'][:5]:  # 只显示前5个错误

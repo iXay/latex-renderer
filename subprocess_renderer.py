@@ -15,12 +15,15 @@ from pathlib import Path
 import matplotlib
 matplotlib.use('Agg')  # 必须在导入pyplot之前设置
 import matplotlib.pyplot as plt
+import re
 
 # 导入共用的LaTeX处理工具
 from latex_utils import (
     LATEX_PREAMBLE,
+    LATEX_TABLE_PREAMBLE,
     preprocess_latex,
     preprocess_text_commands,
+    preprocess_table_content,
     create_latex_parbox,
     calculate_figure_width,
     is_pure_newcommand,
@@ -40,33 +43,89 @@ matplotlib.rcParams['text.latex.preamble'] = LATEX_PREAMBLE
 
 
 def render_display_formula(formula_content: str, output_path: str, dpi: int = 300) -> dict:
-    """渲染独立的数学公式"""
+    """渲染独立的数学公式 - 使用pdflatex直接编译"""
+    import subprocess
+    import tempfile
+    import shutil
+    from pathlib import Path
+    
     try:
         # 预处理LaTeX内容
         processed_content = preprocess_latex(formula_content, is_display=True)
         
-        # 计算图片宽度
-        figure_width = calculate_figure_width(formula_content, is_display=True)
-        figure_height = max(figure_width * 0.3, 2.0)
-        
-        # 创建图形
-        fig, ax = plt.subplots(figsize=(figure_width, figure_height))
-        ax.axis('off')
-        
-        # 使用usetex渲染数学公式，居中显示
-        ax.text(0.5, 0.5, processed_content,
-                horizontalalignment='center',
-                verticalalignment='center',
-                transform=ax.transAxes,
-                fontsize=16)
-        
-        # 保存图片
-        horizontal_padding = 0.5
-        plt.tight_layout()
-        fig.savefig(output_path, dpi=dpi, bbox_inches='tight',
-                    facecolor='white', edgecolor='none',
-                    pad_inches=horizontal_padding/2)
-        plt.close(fig)
+        # 创建临时目录
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmpdir_path = Path(tmpdir)
+            tex_file = tmpdir_path / "formula.tex"
+            pdf_file = tmpdir_path / "formula.pdf"
+            
+            # 针对formula类型优化：使用display math环境，居中显示
+            latex_doc = f"""\\documentclass{{article}}
+{LATEX_PREAMBLE}
+\\usepackage{{geometry}}
+\\usepackage{{amsmath}}
+\\geometry{{margin=0.5in}}
+\\pagestyle{{empty}}
+\\begin{{document}}
+\\begin{{center}}
+{processed_content}
+\\end{{center}}
+\\end{{document}}
+"""
+            
+            # 写入.tex文件
+            with open(tex_file, 'w', encoding='utf-8') as f:
+                f.write(latex_doc)
+            
+            # 使用pdflatex编译
+            result = subprocess.run(
+                ['pdflatex', '-interaction=nonstopmode', '-output-directory', str(tmpdir_path), str(tex_file)],
+                capture_output=True,
+                text=True,
+                timeout=30
+            )
+            
+            if result.returncode != 0 or not pdf_file.exists():
+                error_msg = f"pdflatex compilation failed: return_code={result.returncode}"
+                if result.stderr:
+                    error_msg += f", stderr={result.stderr}"
+                if result.stdout:
+                    error_msg += f", stdout={result.stdout}"
+                return {
+                    'success': False,
+                    'output_path': None,
+                    'error': error_msg
+                }
+            
+            # 使用pdftoppm (优先) 或 ImageMagick convert 将PDF转换为PNG
+            try:
+                # 优先使用pdftoppm (更可靠，支持单页输出)
+                subprocess.run(
+                    ['pdftoppm', '-png', '-r', str(dpi), '-singlefile', str(pdf_file), str(tmpdir_path / 'formula')],
+                    check=True,
+                    capture_output=True,
+                    timeout=30
+                )
+                png_file = tmpdir_path / 'formula.png'
+            except (subprocess.CalledProcessError, FileNotFoundError):
+                # 如果pdftoppm失败，尝试使用ImageMagick的convert
+                subprocess.run(
+                    ['convert', '-density', str(dpi), str(pdf_file), str(tmpdir_path / 'formula.png')],
+                    check=True,
+                    capture_output=True,
+                    timeout=30
+                )
+                png_file = tmpdir_path / 'formula.png'
+            
+            if not png_file.exists():
+                return {
+                    'success': False,
+                    'output_path': None,
+                    'error': 'PDF to PNG conversion failed'
+                }
+            
+            # 复制PNG文件到目标位置
+            shutil.copy(png_file, output_path)
         
         # 进行白边裁剪
         trim_image_whitespace(output_path, dpi)
@@ -78,8 +137,6 @@ def render_display_formula(formula_content: str, output_path: str, dpi: int = 30
         }
         
     except Exception as e:
-        if 'fig' in locals():
-            plt.close(fig)
         return {
             'success': False,
             'output_path': None,
@@ -88,47 +145,99 @@ def render_display_formula(formula_content: str, output_path: str, dpi: int = 30
 
 
 def render_inline_text(text_content: str, output_path: str, dpi: int = 300) -> dict:
-    """渲染包含行内公式的文本"""
+    """渲染包含行内公式的文本 - 使用pdflatex直接编译"""
+    import subprocess
+    import tempfile
+    import shutil
+    from pathlib import Path
+    
     try:
         # 检查是否是纯newcommand定义
         if is_pure_newcommand(text_content):
             raise ValueError(f"纯newcommand定义无法渲染: {text_content.strip()}")
         
-        # 计算图片宽度
-        figure_width = calculate_figure_width(text_content, is_display=False)
-        
         # 预处理LaTeX命令
         preprocessed_text = preprocess_text_commands(text_content)
         
-        # 使用LaTeX parbox让LaTeX处理换行
-        latex_parbox_text = create_latex_parbox(preprocessed_text, figure_width)
-        
-        # 估算高度
-        figure_height = max(figure_width * 0.4, 1.5)
-        
-        # 创建图形
-        fig, ax = plt.subplots(figsize=(figure_width, figure_height))
-        ax.axis('off')
-        
         # 如果文本为空，直接失败
-        if not latex_parbox_text.strip():
-            plt.close(fig)
+        if not preprocessed_text.strip():
             raise ValueError(f"处理后的文本为空，无法渲染: {text_content.strip()}")
         
-        # 使用usetex渲染LaTeX parbox，居中显示
-        ax.text(0.5, 0.5, latex_parbox_text,
-                horizontalalignment='center',
-                verticalalignment='center',
-                transform=ax.transAxes,
-                fontsize=14)
-        
-        # 保存图片
-        horizontal_padding = 0.5
-        plt.tight_layout()
-        fig.savefig(output_path, dpi=dpi, bbox_inches='tight',
-                    facecolor='white', edgecolor='none',
-                    pad_inches=horizontal_padding/4)
-        plt.close(fig)
+        # 创建临时目录
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmpdir_path = Path(tmpdir)
+            tex_file = tmpdir_path / "text.tex"
+            pdf_file = tmpdir_path / "text.pdf"
+            
+            # 针对text类型优化：设置A4纸页宽，支持自动换行
+            latex_doc = f"""\\documentclass{{article}}
+{LATEX_TABLE_PREAMBLE}
+\\usepackage{{geometry}}
+\\usepackage{{amsmath}}
+\\geometry{{margin=0.5in}}
+\\pagestyle{{empty}}
+\\begin{{document}}
+\\begin{{center}}
+\\parbox{{\\textwidth}}{{
+{preprocessed_text}
+}}
+\\end{{center}}
+\\end{{document}}
+"""
+            
+            # 写入.tex文件
+            with open(tex_file, 'w', encoding='utf-8') as f:
+                f.write(latex_doc)
+            
+            # 使用pdflatex编译
+            result = subprocess.run(
+                ['pdflatex', '-interaction=nonstopmode', '-output-directory', str(tmpdir_path), str(tex_file)],
+                capture_output=True,
+                text=True,
+                timeout=30
+            )
+            
+            if result.returncode != 0 or not pdf_file.exists():
+                error_msg = f"pdflatex compilation failed: return_code={result.returncode}"
+                if result.stderr:
+                    error_msg += f", stderr={result.stderr}"
+                if result.stdout:
+                    error_msg += f", stdout={result.stdout}"
+                return {
+                    'success': False,
+                    'output_path': None,
+                    'error': error_msg
+                }
+            
+            # 使用pdftoppm (优先) 或 ImageMagick convert 将PDF转换为PNG
+            try:
+                # 优先使用pdftoppm (更可靠，支持单页输出)
+                subprocess.run(
+                    ['pdftoppm', '-png', '-r', str(dpi), '-singlefile', str(pdf_file), str(tmpdir_path / 'text')],
+                    check=True,
+                    capture_output=True,
+                    timeout=30
+                )
+                png_file = tmpdir_path / 'text.png'
+            except (subprocess.CalledProcessError, FileNotFoundError):
+                # 如果pdftoppm失败，尝试使用ImageMagick的convert
+                subprocess.run(
+                    ['convert', '-density', str(dpi), str(pdf_file), str(tmpdir_path / 'text.png')],
+                    check=True,
+                    capture_output=True,
+                    timeout=30
+                )
+                png_file = tmpdir_path / 'text.png'
+            
+            if not png_file.exists():
+                return {
+                    'success': False,
+                    'output_path': None,
+                    'error': 'PDF to PNG conversion failed'
+                }
+            
+            # 复制PNG文件到目标位置
+            shutil.copy(png_file, output_path)
         
         # 进行白边裁剪
         trim_image_whitespace(output_path, dpi)
@@ -140,8 +249,6 @@ def render_inline_text(text_content: str, output_path: str, dpi: int = 300) -> d
         }
         
     except Exception as e:
-        if 'fig' in locals():
-            plt.close(fig)
         return {
             'success': False,
             'output_path': None,
@@ -149,11 +256,204 @@ def render_inline_text(text_content: str, output_path: str, dpi: int = 300) -> d
         }
 
 
+def render_table(table_content: str, output_path: str, dpi: int = 300) -> dict:
+    """渲染LaTeX表格 - 使用pdflatex直接编译保持原始样式，支持宽表格"""
+    import subprocess
+    import tempfile
+    import shutil
+    from pathlib import Path
+    
+    try:
+        # 直接使用原始表格内容，不进行预处理
+        processed_table = table_content.strip()
+        
+        # 创建临时目录
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmpdir_path = Path(tmpdir)
+            tex_file = tmpdir_path / "table.tex"
+            pdf_file = tmpdir_path / "table.pdf"
+            
+            # 统一使用数学模式 + adjustbox 包装所有表格（支持宽表格）
+            latex_doc = f"""\\documentclass{{article}}
+{LATEX_TABLE_PREAMBLE}
+\\usepackage{{geometry}}
+\\usepackage{{amsmath}}
+\\usepackage{{adjustbox}}
+\\geometry{{margin=0.5in}}
+\\pagestyle{{empty}}
+\\begin{{document}}
+\\begin{{center}}
+\\begin{{adjustbox}}{{width=\\textwidth,center}}
+\\begin{{math}}
+{processed_table}
+\\end{{math}}
+\\end{{adjustbox}}
+\\end{{center}}
+\\end{{document}}
+"""
+            
+            # 写入.tex文件
+            with open(tex_file, 'w', encoding='utf-8') as f:
+                f.write(latex_doc)
+            
+            # 使用pdflatex编译
+            result = subprocess.run(
+                ['pdflatex', '-interaction=nonstopmode', '-output-directory', str(tmpdir_path), str(tex_file)],
+                capture_output=True,
+                text=True,
+                timeout=30
+            )
+            
+            if result.returncode != 0 or not pdf_file.exists():
+                error_msg = f"pdflatex compilation failed: return_code={result.returncode}"
+                if result.stderr:
+                    error_msg += f", stderr={result.stderr}"
+                if result.stdout:
+                    error_msg += f", stdout={result.stdout}"
+                return {
+                    'success': False,
+                    'output_path': None,
+                    'error': error_msg
+                }
+            
+            # 使用pdftoppm (优先) 或 ImageMagick convert 将PDF转换为PNG
+            try:
+                # 优先使用pdftoppm (更可靠，支持单页输出)
+                subprocess.run(
+                    ['pdftoppm', '-png', '-r', str(dpi), '-singlefile', str(pdf_file), str(tmpdir_path / 'table')],
+                    check=True,
+                    capture_output=True,
+                    timeout=30
+                )
+                png_file = tmpdir_path / 'table.png'
+            except (subprocess.CalledProcessError, FileNotFoundError):
+                # 如果pdftoppm失败，尝试使用ImageMagick的convert
+                subprocess.run(
+                    ['convert', '-density', str(dpi), str(pdf_file), str(tmpdir_path / 'table.png')],
+                    check=True,
+                    capture_output=True,
+                    timeout=30
+                )
+                png_file = tmpdir_path / 'table.png'
+            
+            if not png_file.exists():
+                return {
+                    'success': False,
+                    'output_path': None,
+                    'error': 'PDF to PNG conversion failed'
+                }
+            
+            # 复制PNG文件到目标位置
+            shutil.copy(png_file, output_path)
+        
+        # 进行白边裁剪
+        trim_image_whitespace(output_path, dpi)
+        
+        return {
+            'success': True,
+            'output_path': output_path,
+            'error': None
+        }
+        
+    except Exception as e:
+        return {
+            'success': False,
+            'output_path': None,
+            'error': str(e)
+        }
+
+
+def parse_table_to_matplotlib(table_content: str) -> dict:
+    """将LaTeX表格内容解析为matplotlib表格格式"""
+    lines = table_content.split('\n')
+    table_data = []
+    headers = None
+    
+    for line in lines:
+        line = line.strip()
+        if not line or line.startswith('\\begin{') or line.startswith('\\end{'):
+            continue
+        
+        # 处理表格行
+        if '\\\\' in line:
+            # 移除\\和hline
+            line = line.replace('\\\\', '')
+            line = line.replace('\\hline', '')
+            
+            # 分割列
+            if '&' in line:
+                cells = line.split('&')
+                # 清理每个单元格
+                cleaned_cells = []
+                for cell in cells:
+                    cell = cell.strip()
+                    # 移除LaTeX命令但保留数学符号
+                    cell = re.sub(r'\\[a-zA-Z]+\{[^}]*\}', '', cell)
+                    cell = re.sub(r'\\[a-zA-Z]+', '', cell)
+                    cell = cell.replace('{', '').replace('}', '')
+                    # 处理下标
+                    cell = cell.replace('\\_', '_')
+                    cleaned_cells.append(cell)
+                
+                if cleaned_cells:
+                    if headers is None:
+                        headers = cleaned_cells
+                    else:
+                        table_data.append(cleaned_cells)
+    
+    if headers and table_data:
+        return {
+            'headers': headers,
+            'data': table_data
+        }
+    else:
+        return None
+
+
+def parse_table_to_text(table_content: str) -> str:
+    """将LaTeX表格内容解析为纯文本表格"""
+    lines = table_content.split('\n')
+    table_lines = []
+    
+    for line in lines:
+        line = line.strip()
+        if not line or line.startswith('\\begin{') or line.startswith('\\end{'):
+            continue
+        
+        # 处理表格行
+        if '\\\\' in line:
+            # 移除\\和hline
+            line = line.replace('\\\\', '')
+            line = line.replace('\\hline', '')
+            line = line.replace('\\hline', '')
+            
+            # 分割列
+            if '&' in line:
+                cells = line.split('&')
+                # 清理每个单元格
+                cleaned_cells = []
+                for cell in cells:
+                    cell = cell.strip()
+                    # 移除LaTeX命令
+                    cell = re.sub(r'\\[a-zA-Z]+\{[^}]*\}', '', cell)
+                    cell = re.sub(r'\\[a-zA-Z]+', '', cell)
+                    cell = cell.replace('{', '').replace('}', '')
+                    cleaned_cells.append(cell)
+                
+                if cleaned_cells:
+                    table_lines.append(' | '.join(cleaned_cells))
+    
+    if table_lines:
+        return '\n'.join(table_lines)
+    else:
+        return "Table content could not be parsed"
+
+
 def main():
     """主函数 - 从命令行参数获取渲染任务"""
     if len(sys.argv) < 4:
         print("用法: python subprocess_renderer.py <type> <content> <output_path> [dpi]")
-        print("type: 'formula' 或 'text'")
+        print("type: 'formula', 'text' 或 'table'")
         print("content: LaTeX内容（JSON编码）")
         print("output_path: 输出文件路径")
         print("dpi: 可选，默认300")
@@ -172,11 +472,17 @@ def main():
             # 如果不是有效的JSON，直接使用原始字符串
             content = content_json
         
+        # 如果content是字典且包含content键，提取实际的字符串内容
+        if isinstance(content, dict) and 'content' in content:
+            content = content['content']
+        
         # 根据类型调用相应的渲染函数
         if render_type == 'formula':
             result = render_display_formula(content, output_path, dpi)
         elif render_type == 'text':
             result = render_inline_text(content, output_path, dpi)
+        elif render_type == 'table':
+            result = render_table(content, output_path, dpi)
         else:
             result = {
                 'success': False,
