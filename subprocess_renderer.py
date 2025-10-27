@@ -42,7 +42,7 @@ matplotlib.rcParams['text.latex.preamble'] = LATEX_PREAMBLE
 # 重复的函数已移动到 latex_utils.py 模块中
 
 
-def render_display_formula(formula_content: str, output_path: str, dpi: int = 300) -> dict:
+def render_display_formula(formula_content: str, output_path: str, dpi: int = 150) -> dict:
     """渲染独立的数学公式 - 使用pdflatex直接编译"""
     import subprocess
     import tempfile
@@ -144,7 +144,7 @@ def render_display_formula(formula_content: str, output_path: str, dpi: int = 30
         }
 
 
-def render_inline_text(text_content: str, output_path: str, dpi: int = 300) -> dict:
+def render_inline_text(text_content: str, output_path: str, dpi: int = 150) -> dict:
     """渲染包含行内公式的文本 - 使用pdflatex直接编译"""
     import subprocess
     import tempfile
@@ -256,7 +256,7 @@ def render_inline_text(text_content: str, output_path: str, dpi: int = 300) -> d
         }
 
 
-def render_table(table_content: str, output_path: str, dpi: int = 300) -> dict:
+def render_table(table_content: str, output_path: str, dpi: int = 150) -> dict:
     """渲染LaTeX表格 - 使用pdflatex直接编译保持原始样式，支持宽表格"""
     import subprocess
     import tempfile
@@ -456,13 +456,13 @@ def main():
         print("type: 'formula', 'text' 或 'table'")
         print("content: LaTeX内容（JSON编码）")
         print("output_path: 输出文件路径")
-        print("dpi: 可选，默认300")
+        print("dpi: 可选，默认150")
         sys.exit(1)
     
     render_type = sys.argv[1]
     content_json = sys.argv[2]
     output_path = sys.argv[3]
-    dpi = int(sys.argv[4]) if len(sys.argv) > 4 else 300
+    dpi = int(sys.argv[4]) if len(sys.argv) > 4 else 150
     
     try:
         # 解码JSON内容，如果失败则直接使用原始字符串

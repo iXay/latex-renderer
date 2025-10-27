@@ -39,7 +39,7 @@ matplotlib.rcParams['text.latex.preamble'] = LATEX_PREAMBLE
 class LaTeXRenderer:
     """增强的LaTeX到PNG渲染器 - 使用完整usetex引擎"""
 
-    def __init__(self, output_dir: str = "rendered_images", dpi: int = 300):
+    def __init__(self, output_dir: str = "rendered_images", dpi: int = 150):
         """
         初始化渲染器
 
@@ -95,7 +95,7 @@ class LaTeXRenderer:
                 cmd,
                 capture_output=True,
                 text=True,
-                timeout=30  # 30秒超时
+                timeout=30
             )
             
             if result.returncode != 0:
@@ -537,13 +537,14 @@ def main():
                        help="渲染类型: formula(只渲染公式), text(只渲染文本), table(只渲染表格), all(全部渲染) (默认: all)")
     parser.add_argument("-o", "--output", default="rendered_images", 
                        help="输出目录 (默认: rendered_images)")
-    parser.add_argument("-d", "--dpi", type=int, default=300,
-                       help="图片分辨率 (默认: 300)")
+    parser.add_argument("-d", "--dpi", type=int, default=150,
+                       help="图片分辨率 (默认: 150)")
     
     args = parser.parse_args()
     
     print("LaTeX渲染器 - 使用子进程避免内存积累")
     print(f"渲染类型: {args.render_type}")
+    print(f"DPI: {args.dpi}")
 
     # 检查文件是否存在
     if not os.path.exists(args.json_file):

@@ -156,7 +156,7 @@ def process_single_file_worker(args):
 
 
 
-def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_images", max_files: int = None, cache_dir: str = None, resume: bool = False, max_workers: int = 4, task_timeout: int = 3600 * 24, log_file: str = None, render_type: str = "all"):
+def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_images", max_files: int = None, cache_dir: str = None, resume: bool = False, max_workers: int = 8, task_timeout: int = 1800, log_file: str = None, render_type: str = "all", dpi: int = 150):
     """从描述文件中读取JSON文件路径列表并批量处理 - 分布式缓存版本"""
     # 设置日志
     log_file_path = setup_logging(log_file)
@@ -166,6 +166,7 @@ def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_ima
     logger.info("注意: 需要安装LaTeX环境")
     logger.info(f"并发工作进程数: {max_workers}")
     logger.info(f"渲染类型: {render_type}")
+    logger.info(f"DPI: {dpi}")
     logger.info(f"日志文件: {log_file_path}")
     
     # 设置默认缓存目录
@@ -239,7 +240,7 @@ def batch_process_from_list(file_list_path: str, output_dir: str = "rendered_ima
     
     # 准备任务参数列表（每个任务包含分布式缓存目录参数和渲染类型）
     task_args = [
-        (json_file, output_dir, 300, cache_dir, render_type) 
+        (json_file, output_dir, dpi, cache_dir, render_type) 
         for json_file in files_to_process
     ]
     
@@ -382,6 +383,8 @@ def main():
                        help="日志文件路径 (默认: 自动生成带时间戳的文件名)")
     parser.add_argument("-r", "--render-type", choices=["formula", "text", "table", "all"], default="all",
                        help="渲染类型: formula(只渲染公式), text(只渲染文本), table(只渲染表格), all(全部渲染) (默认: all)")
+    parser.add_argument("-d", "--dpi", type=int, default=150,
+                       help="图片分辨率 (默认: 150)")
     
     args = parser.parse_args()
     
@@ -392,14 +395,17 @@ def main():
     if args.resume:
         print("启用断点续传模式")
     
+    print(f"DPI: {args.dpi}")
+    print(f"并发工作进程数: {args.max_workers}")
+    
     # 验证并发数范围
     if args.max_workers < 1:
         print("错误: 并发工作进程数必须大于0")
         return
-    if args.max_workers > multiprocessing.cpu_count():
-        print(f"警告: 并发工作进程数 ({args.max_workers}) 超过CPU核心数 ({multiprocessing.cpu_count()})")
-    if args.max_workers > 16:
-        print("警告: 并发工作进程数过大，建议不超过16")
+    if args.max_workers > multiprocessing.cpu_count() * 2:
+        print(f"警告: 并发工作进程数 ({args.max_workers}) 超过CPU核心数的2倍 ({multiprocessing.cpu_count() * 2})")
+    if args.max_workers > 32:
+        print("警告: 并发工作进程数过大，建议不超过32")
     
     batch_process_from_list(
         file_list_path=args.file_list,
@@ -410,7 +416,8 @@ def main():
         max_workers=args.max_workers,
         task_timeout=args.task_timeout,
         log_file=args.log_file,
-        render_type=args.render_type
+        render_type=args.render_type,
+        dpi=args.dpi
     )
     
 if __name__ == "__main__":
